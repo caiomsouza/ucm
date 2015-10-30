@@ -5,4 +5,6 @@ wget http://downloads.sourceforge.net/project/vtigercrm/vtiger%20CRM%206.4.0/Cor
 tar -vzxf vtigercrm6.4.0.tar.gz
 
 
+sudo cp -r vtigercrm /var/www
+
 
