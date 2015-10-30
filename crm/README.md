@@ -1,6 +1,6 @@
 # CRM Class - UCM
 
-MySQL User: root
-MySQL Password: vtigercrm
+MySQL User: root<BR>
+MySQL Password: vtigercrm<BR>
 
-VtigerCRM 6
+VtigerCRM 6<BR>
