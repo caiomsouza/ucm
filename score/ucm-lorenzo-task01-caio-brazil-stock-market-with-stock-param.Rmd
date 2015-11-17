@@ -7,6 +7,19 @@ output: html_document
 
 In this analysis I used real data from Brazil Stock Market.
 
+I will create a R package called r-stock-analysis
+https://github.com/caiomsouza/r-stock-analysis
+
+http://www.thertrader.com
+
+http://www.thertrader.com/2014/02/28/using-cart-for-stock-market-forecasting/
+
+https://cran.r-project.org/web/packages/stocks/index.html
+
+https://www.youtube.com/watch?v=iMET2gbsbHY
+
+http://www.r-chart.com/2010/06/stock-analysis-using-r.html
+
 
 
 
@@ -200,6 +213,23 @@ HURST
 
 t<-(HURST@hurst$diag[2,1]-0.5)/HURST@hurst$diag[2,2]
 t
+
+
+####PREDICCIONES
+predict(d.series.name.ARMA, n.ahead=10, conf=c(90,95), dplot=True)
+
+
+#alternativo
+d.series.name.ARMAGARCH<-garchFit(~ arma(1,1) + garch(2,1), data=d.series.name, include.mean=TRUE) ####aqu? el orden es GARCH,ARCH
+summary(d.series.name.ARMAGARCH)
+plot(d.series.name.ARMAGARCH@residuals)
+residuogarch<-residuals(d.series.name.ARMAGARCH)
+volatilitygarch<-volatility(d.series.name.ARMAGARCH)
+plot(volatilitygarch)
+lines(volatilitygarch)
+plot(d.series.name^2)
+
+predict(d.series.name.ARMAGARCH, n.ahead=10, conf=c(90,95), dplot=TRUE)
 
 
 }
