@@ -13,3 +13,5 @@ http://vtigercrm-azure.cloudapp.net/transfer/
 
 http://vtigercrm-azure.cloudapp.net/vtigercrm/
 
+###A lot of good stuff about Business Intelligence and Data Mining from UGR
+http://sci2s.ugr.es/graduateCourses/in
