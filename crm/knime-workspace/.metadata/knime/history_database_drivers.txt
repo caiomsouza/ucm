@@ -1,0 +1,3 @@
+com.mysql.jdbc.Driver
+com.mysql.jdbc.NonRegisteringDriver
+sun.jdbc.odbc.JdbcOdbcDriver
