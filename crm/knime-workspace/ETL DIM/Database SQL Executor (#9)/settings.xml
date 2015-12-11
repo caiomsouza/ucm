@@ -35,7 +35,7 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.database.DatabaseConnectionPortObjectSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.port.database.DatabaseConnectionPortObject"/>
-<entry key="port_object_summary" type="xstring" value="DB: mysql URL: jdbc:mysql://127.0.0.1:3306/DW_VTIGERCRM521"/>
+<entry key="port_object_summary" type="xstring" value="DB: mysql URL: jdbc:mysql://127.0.0.1:3306/edw_crm_analytics"/>
 <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
 <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -43,6 +43,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="1258f8a1-c26a-49ed-a5a5-953a542c6bf6"/>
+<entry key="file_store_id" type="xstring" value="0947a91e-05c2-46b4-82c8-78aacf01c928"/>
 </config>
 </config>

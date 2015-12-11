@@ -4,44 +4,44 @@
     "created":"2015-12-04 20:10",
     "nodestats":{
         "org.knime.base.node.io.database.DBReaderNodeModel":{
-            "nrexecs":47,
-            "exectime":8643,
+            "nrexecs":67,
+            "exectime":12490,
             "nrcreated":2,
             "successor":"org.knime.base.node.preproc.joiner.Joiner2NodeModel"
         },
         "org.knime.base.node.preproc.rename.RenameNodeModel":{
-            "nrexecs":6,
-            "exectime":7,
+            "nrexecs":8,
+            "exectime":8,
             "nrcreated":1,
             "successor":"org.knime.base.node.preproc.joiner.Joiner2NodeModel"
         },
         "org.knime.base.node.io.database.connection.JDBCConnectorNodeModel":{
-            "nrexecs":41,
-            "exectime":5550,
+            "nrexecs":53,
+            "exectime":8415,
             "nrcreated":1,
             "successor":"org.knime.base.node.io.database.DBSQLExecutorNodeModel"
         },
         "org.knime.base.node.io.database.DBSQLExecutorNodeModel":{
-            "nrexecs":39,
-            "exectime":14231,
+            "nrexecs":51,
+            "exectime":17554,
             "nrcreated":1,
             "successor":"org.knime.base.node.io.database.DBReaderNodeModel"
         },
         "org.knime.base.node.preproc.joiner.Joiner2NodeModel":{
-            "nrexecs":10,
-            "exectime":1531,
+            "nrexecs":21,
+            "exectime":3026,
             "nrcreated":1,
-            "successor":"n/a"
+            "successor":"org.knime.base.node.preproc.filter.row.RowFilterNodeModel"
         },
         "org.knime.base.node.io.database.DBWriterNodeModel":{
-            "nrexecs":33,
-            "exectime":17080,
+            "nrexecs":43,
+            "exectime":22244,
             "nrcreated":0,
             "successor":"n/a"
         },
         "org.knime.base.node.preproc.double2int.DoubleToIntNodeModel":{
-            "nrexecs":7,
-            "exectime":469,
+            "nrexecs":9,
+            "exectime":627,
             "nrcreated":0,
             "successor":"n/a"
         },
@@ -52,26 +52,26 @@
             "successor":"n/a"
         },
         "org.knime.base.node.preproc.filter.row.RowFilterNodeModel":{
-            "nrexecs":10,
-            "exectime":301,
+            "nrexecs":26,
+            "exectime":929,
             "nrcreated":0,
-            "successor":"n/a"
+            "successor":"org.knime.base.node.preproc.joiner.Joiner2NodeModel"
         },
         "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeModel":{
-            "nrexecs":5,
-            "exectime":4,
+            "nrexecs":11,
+            "exectime":10,
             "nrcreated":0,
-            "successor":"n/a"
+            "successor":"org.knime.base.node.io.database.DBWriterNodeModel"
         },
         "org.knime.base.node.jsnippet.JavaSnippetNodeModel":{
-            "nrexecs":5,
-            "exectime":13,
+            "nrexecs":10,
+            "exectime":25,
             "nrcreated":0,
             "successor":"n/a"
         }
     },
-    "uptime":2235199,
-    "launches":5,
+    "uptime":2849834,
+    "launches":6,
     "crashes":0,
     "properlyShutDown":true
 }

@@ -7,7 +7,7 @@
 </config>
 <config key="model">
 <entry key="driver" type="xstring" value="com.mysql.jdbc.Driver"/>
-<entry key="database" type="xstring" value="jdbc:mysql://127.0.0.1:3306/DW_VTIGERCRM521"/>
+<entry key="database" type="xstring" value="jdbc:mysql://127.0.0.1:3306/edw_crm_analytics"/>
 <entry key="user" type="xstring" value="root"/>
 <entry key="password" type="xstring" value=""/>
 <entry key="timezone" type="xstring" value="current"/>
@@ -44,7 +44,7 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.database.DatabaseConnectionPortObjectSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.port.database.DatabaseConnectionPortObject"/>
-<entry key="port_object_summary" type="xstring" value="DB: mysql URL: jdbc:mysql://127.0.0.1:3306/DW_VTIGERCRM521"/>
+<entry key="port_object_summary" type="xstring" value="DB: mysql URL: jdbc:mysql://127.0.0.1:3306/edw_crm_analytics"/>
 <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
 <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -52,6 +52,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="7c263911-ed38-4d7b-9390-2da4d3f380b3"/>
+<entry key="file_store_id" type="xstring" value="94489c00-8a28-4065-a398-a7e1aba79dbf"/>
 </config>
 </config>

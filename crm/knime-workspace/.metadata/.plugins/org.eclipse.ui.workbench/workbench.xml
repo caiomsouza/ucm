@@ -21,11 +21,15 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="0: ETL FACT" title="0: ETL FACT" tooltip="0: ETL FACT" workbook="DefaultEditorWorkbook">
+<editor id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="0: ETL DIM" title="0: ETL DIM" tooltip="0: ETL DIM" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="knime://LOCAL/ETL%20DIM/workflow.knime"/>
+</editor>
+<editor activePart="true" focus="true" id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="2: ETL FACT" title="2: ETL FACT" tooltip="2: ETL FACT" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="knime://LOCAL/ETL%20FACT/workflow.knime"/>
 </editor>
 </editors>
@@ -51,7 +55,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.knime.workbench.editor.WorkflowEditor" activePerspective="org.knime.workbench.ui.ModellerPerspective">
+<perspectives activePart="org.knime.workbench.explorer.view" activePerspective="org.knime.workbench.ui.ModellerPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.knime.workbench.ui.perspective.ModellerPerspectiveFactory" id="org.knime.workbench.ui.ModellerPerspective" label="KNIME"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -103,8 +107,8 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.2992126" ratioLeft="304" ratioRight="712" relationship="2" relative="org.eclipse.ui.internal.ViewStack@6f2b18e7"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1feafdd1" ratio="0.75883836" ratioLeft="601" ratioRight="191" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.20503849" ratioLeft="293" ratioRight="1136" relationship="2" relative="org.eclipse.ui.internal.ViewStack@6f2b18e7"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1feafdd1" ratio="0.88383836" ratioLeft="700" ratioRight="92" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -153,9 +157,14 @@
 <editors>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/ETL%20DIM/workflow.knime"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/ETL%20FACT/workflow.knime"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/ETL%20DIM/workflow.knime"/>
 </editors>
 <item historyLabel="0: ETL DIM" index="0"/>
-<item active="true" historyLabel="0: ETL FACT" index="1"/>
+<item historyLabel="0: ETL FACT" index="1"/>
+<item historyLabel="0: ETL DIM" index="2"/>
+<item historyLabel="2: ETL FACT" index="1"/>
+<item historyLabel="0: ETL DIM" index="2"/>
+<item active="true" historyLabel="2: ETL FACT" index="1"/>
 </navigationHistory>
 </page>
 <workbenchWindowAdvisor/>
