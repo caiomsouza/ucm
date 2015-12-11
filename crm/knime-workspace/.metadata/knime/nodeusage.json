@@ -4,38 +4,38 @@
     "created":"2015-12-04 20:10",
     "nodestats":{
         "org.knime.base.node.io.database.DBReaderNodeModel":{
-            "nrexecs":67,
-            "exectime":12490,
+            "nrexecs":79,
+            "exectime":23508,
             "nrcreated":2,
             "successor":"org.knime.base.node.preproc.joiner.Joiner2NodeModel"
         },
         "org.knime.base.node.preproc.rename.RenameNodeModel":{
-            "nrexecs":8,
-            "exectime":8,
+            "nrexecs":10,
+            "exectime":10,
             "nrcreated":1,
             "successor":"org.knime.base.node.preproc.joiner.Joiner2NodeModel"
         },
         "org.knime.base.node.io.database.connection.JDBCConnectorNodeModel":{
-            "nrexecs":53,
-            "exectime":8415,
+            "nrexecs":55,
+            "exectime":8879,
             "nrcreated":1,
             "successor":"org.knime.base.node.io.database.DBSQLExecutorNodeModel"
         },
         "org.knime.base.node.io.database.DBSQLExecutorNodeModel":{
-            "nrexecs":51,
-            "exectime":17554,
+            "nrexecs":53,
+            "exectime":19556,
             "nrcreated":1,
             "successor":"org.knime.base.node.io.database.DBReaderNodeModel"
         },
         "org.knime.base.node.preproc.joiner.Joiner2NodeModel":{
-            "nrexecs":21,
-            "exectime":3026,
+            "nrexecs":31,
+            "exectime":6013,
             "nrcreated":1,
             "successor":"org.knime.base.node.preproc.filter.row.RowFilterNodeModel"
         },
         "org.knime.base.node.io.database.DBWriterNodeModel":{
-            "nrexecs":43,
-            "exectime":22244,
+            "nrexecs":53,
+            "exectime":26897,
             "nrcreated":0,
             "successor":"n/a"
         },
@@ -52,26 +52,32 @@
             "successor":"n/a"
         },
         "org.knime.base.node.preproc.filter.row.RowFilterNodeModel":{
-            "nrexecs":26,
-            "exectime":929,
+            "nrexecs":44,
+            "exectime":1812,
             "nrcreated":0,
             "successor":"org.knime.base.node.preproc.joiner.Joiner2NodeModel"
         },
         "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeModel":{
-            "nrexecs":11,
-            "exectime":10,
+            "nrexecs":21,
+            "exectime":22,
             "nrcreated":0,
             "successor":"org.knime.base.node.io.database.DBWriterNodeModel"
         },
         "org.knime.base.node.jsnippet.JavaSnippetNodeModel":{
-            "nrexecs":10,
-            "exectime":25,
+            "nrexecs":18,
+            "exectime":50,
             "nrcreated":0,
+            "successor":"n/a"
+        },
+        "org.knime.base.node.viz.table.TableNodeModel":{
+            "nrexecs":0,
+            "exectime":0,
+            "nrcreated":1,
             "successor":"n/a"
         }
     },
-    "uptime":2849834,
-    "launches":6,
+    "uptime":2547372,
+    "launches":8,
     "crashes":0,
-    "properlyShutDown":true
+    "properlyShutDown":false
 }
