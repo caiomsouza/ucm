@@ -1,6 +1,6 @@
-jdbc:mysql://localhost:3306/edw_crm_analytics
-jdbc:mysql://<host>:<port>/<database_name>
 jdbc:mysql://localhost:3306/vtigercrm521
+jdbc:mysql://<host>:<port>/<database_name>
+jdbc:mysql://localhost:3306/edw_crm_analytics
 jdbc:mysql://127.0.0.1:3306/edw_crm_analytics
 jdbc:mysql://127.0.0.1:3306/vtigercrm521
 jdbc:mysql://localhost:3306/DW_VTIGERCRM521
