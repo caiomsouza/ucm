@@ -2,8 +2,11 @@
 -- CREACION BASE DE DATOS DW
 -- ----------------------------------------------------
 
-CREATE DATABASE DW_VTIGERCRM521;
-USE DW_VTIGERCRM521;
+-- CREATE DATABASE DW_VTIGERCRM521;
+-- USE DW_VTIGERCRM521;
+
+CREATE DATABASE edw_crm_analytics;
+USE edw_crm_analytics;
 
 -- ----------------------------------------------------
 -- CREACION TABLAS DW
