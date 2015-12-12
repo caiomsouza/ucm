@@ -136,8 +136,8 @@
             "successor":"n/a"
         }
     },
-    "uptime":3400294,
+    "uptime":3442011,
     "launches":8,
     "crashes":0,
-    "properlyShutDown":false
+    "properlyShutDown":true
 }
