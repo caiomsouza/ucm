@@ -49,4 +49,14 @@ plot AUC*modelo;
 run;
 
 
+/* EJEMPLO */
+%cruzadacorte (archivo=uno,vardepen=chd,
+conti=tobacco famhist ldl age,
+categor=famhist,ngrupos=4,
+sinicio=12345,
+sfinal=12348,
+objetivos=capturados tasafallos Youden,
+corteinicio=0.3,cortefin=0.7,
+incremento=0.10,porcaptura=0.2,
+directorio=C:\Users\win\Documents\Bitbucket\ucm\TECNICAS_Y_METODOLOGIA_DE_LA_MINERIA_DE_DATOS_SEMMA\Tema 6 logistica 2015-16\output-macros);
 

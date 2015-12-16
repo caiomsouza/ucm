@@ -1013,7 +1013,7 @@ proc printto print="&directorio\outp.txt" log="&directorio\log.txt";run;/*SE PUE
 %do icor=&co1 %to &co2 %by &incre;
 data _null_;cor=&icor/1000;call symput('cor',left(cor));run;
 %cruzadalogistica(archivo=&archivo,vardepen=&vardepen,conti=&conti,categor=&categor,
-ngrupos=&ngrupos,sinicio=&sinicio,sfinal=&sfinal,objetivos=&objetivos,corte=&cor,porcaptura=&porcaptura,directorio=c:);
+ngrupos=&ngrupos,sinicio=&sinicio,sfinal=&sfinal,objetivos=&objetivos,corte=&cor,porcaptura=&porcaptura,directorio=&directorio);
  data final&icor;set final;corte=&cor;run;
 %end;
 data union;set %do icor=&co1 %to &co2 %by &incre; final&icor %end;;;;
