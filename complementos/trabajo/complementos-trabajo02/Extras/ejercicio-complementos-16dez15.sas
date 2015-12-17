@@ -17,7 +17,7 @@ var E0A9 E10A19 E20A29 E30A39 E40A49 E50A59 E60A69 E70A79 E80ANDMO;
 id CATEGORI;
 run;
 
-proc corresp data=nacidos all chi2p print=both dim=2;
+proc corresp data=nacidos all chi2p print=both dim=4;
 var E0A9 E10A19 E20A29 E30A39 E40A49 E50A59 E60A69 E70A79 E80ANDMO;
 id CATEGORI;
 run;
