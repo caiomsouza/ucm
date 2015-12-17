@@ -1,0 +1,3 @@
+PROC MEANS DATA=Viajeros.Zaragoza;
+VAR VIAJEROS;
+RUN;
