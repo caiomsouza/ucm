@@ -1,0 +1,3693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div class="c proctitle">The TIMESERIES Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Timeseries: Input Data Set">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Input Data Set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Name</th>
+<td class="r data">SERIES.ZARAGOZA</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Label</th>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Time ID Variable</th>
+<td class="r data">FECHA</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Time Interval</th>
+<td class="r data">MONTH</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Length of Seasonal Cycle</th>
+<td class="r data">12</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX1"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Timeseries: Variable Information">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Variable Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Name</th>
+<td class="r data">VIAJEROS</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Label</th>
+<td class="r data">VIAJEROS</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">First</th>
+<td class="r data">JAN1999</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Last</th>
+<td class="r data">SEP2015</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">201</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX2"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Timeseries: Seasonal Statistics">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">Season Statistics for Variable VIAJEROS</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Season Index</th>
+<th class="r b header" scope="col">N</th>
+<th class="r b header" scope="col">Minimum</th>
+<th class="r b header" scope="col">Maximum</th>
+<th class="r b header" scope="col">Sum</th>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Standard Deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">17</td>
+<td class="r data">93382.00</td>
+<td class="r data">133884.0</td>
+<td class="r data">1801023</td>
+<td class="r data">105942.5</td>
+<td class="r data">10776.297</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">17</td>
+<td class="r data">88102.00</td>
+<td class="r data">164520.0</td>
+<td class="r data">1803945</td>
+<td class="r data">106114.4</td>
+<td class="r data">19008.382</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">17</td>
+<td class="r data">85991.00</td>
+<td class="r data">157244.0</td>
+<td class="r data">1702880</td>
+<td class="r data">100169.4</td>
+<td class="r data">16507.966</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">17</td>
+<td class="r data">76871.00</td>
+<td class="r data">131166.0</td>
+<td class="r data">1606304</td>
+<td class="r data">94488.5</td>
+<td class="r data">13564.183</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">17</td>
+<td class="r data">79494.00</td>
+<td class="r data">118176.0</td>
+<td class="r data">1667861</td>
+<td class="r data">98109.5</td>
+<td class="r data">11336.902</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">17</td>
+<td class="r data">72240.00</td>
+<td class="r data">110949.0</td>
+<td class="r data">1593014</td>
+<td class="r data">93706.7</td>
+<td class="r data">11498.429</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">17</td>
+<td class="r data">66929.00</td>
+<td class="r data">104001.0</td>
+<td class="r data">1498864</td>
+<td class="r data">88168.5</td>
+<td class="r data">10735.292</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">17</td>
+<td class="r data">47028.00</td>
+<td class="r data">93669.0</td>
+<td class="r data">1247218</td>
+<td class="r data">73365.8</td>
+<td class="r data">11886.485</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">17</td>
+<td class="r data">40202.00</td>
+<td class="r data">73385.0</td>
+<td class="r data">994346</td>
+<td class="r data">58490.9</td>
+<td class="r data">8330.193</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="r data">16</td>
+<td class="r data">61729.00</td>
+<td class="r data">93288.0</td>
+<td class="r data">1112901</td>
+<td class="r data">69556.3</td>
+<td class="r data">7851.813</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="r data">16</td>
+<td class="r data">69347.00</td>
+<td class="r data">96190.0</td>
+<td class="r data">1277216</td>
+<td class="r data">79826.0</td>
+<td class="r data">7428.619</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="r data">16</td>
+<td class="r data">91226.00</td>
+<td class="r data">119847.0</td>
+<td class="r data">1694736</td>
+<td class="r data">105921.0</td>
+<td class="r data">10146.253</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX3"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Timeseries: Multiplicative Seasonal Decomposition">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">Seasonal Decomposition for Variable VIAJEROS</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Obs</th>
+<th class="r b header" scope="col">Time</th>
+<th class="r b header" scope="col">Season</th>
+<th class="r b header" scope="col">Trend-Cycle</th>
+<th class="r b header" scope="col">Seasonal</th>
+<th class="r b header" scope="col">Irregular</th>
+<th class="r b header" scope="col">Seasonally Adjusted</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<th class="r rowheader" scope="row">JAN1999</th>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">1.177971</td>
+<td class="r data">.</td>
+<td class="r data">102896.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<th class="r rowheader" scope="row">FEB1999</th>
+<td class="r data">2</td>
+<td class="r data">.</td>
+<td class="r data">1.170905</td>
+<td class="r data">.</td>
+<td class="r data">110958.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<th class="r rowheader" scope="row">MAR1999</th>
+<td class="r data">3</td>
+<td class="r data">.</td>
+<td class="r data">1.115695</td>
+<td class="r data">.</td>
+<td class="r data">99558.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<th class="r rowheader" scope="row">APR1999</th>
+<td class="r data">4</td>
+<td class="r data">.</td>
+<td class="r data">1.049414</td>
+<td class="r data">.</td>
+<td class="r data">107221.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<th class="r rowheader" scope="row">MAY1999</th>
+<td class="r data">5</td>
+<td class="r data">.</td>
+<td class="r data">1.094136</td>
+<td class="r data">.</td>
+<td class="r data">108008.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<th class="r rowheader" scope="row">JUN1999</th>
+<td class="r data">6</td>
+<td class="r data">.</td>
+<td class="r data">1.050876</td>
+<td class="r data">.</td>
+<td class="r data">105577.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<th class="r rowheader" scope="row">JUL1999</th>
+<td class="r data">7</td>
+<td class="r data">103378.3</td>
+<td class="r data">0.992249</td>
+<td class="r data">1.001365</td>
+<td class="r data">103519.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<th class="r rowheader" scope="row">AUG1999</th>
+<td class="r data">8</td>
+<td class="r data">102784.3</td>
+<td class="r data">0.830886</td>
+<td class="r data">0.920634</td>
+<td class="r data">94626.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<th class="r rowheader" scope="row">SEP1999</th>
+<td class="r data">9</td>
+<td class="r data">102197.1</td>
+<td class="r data">0.663434</td>
+<td class="r data">0.937935</td>
+<td class="r data">95854.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<th class="r rowheader" scope="row">OCT1999</th>
+<td class="r data">10</td>
+<td class="r data">101511.2</td>
+<td class="r data">0.775560</td>
+<td class="r data">1.184941</td>
+<td class="r data">120284.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<th class="r rowheader" scope="row">NOV1999</th>
+<td class="r data">11</td>
+<td class="r data">100786.8</td>
+<td class="r data">0.892449</td>
+<td class="r data">0.977419</td>
+<td class="r data">98510.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<th class="r rowheader" scope="row">DEC1999</th>
+<td class="r data">12</td>
+<td class="r data">99999.0</td>
+<td class="r data">1.186424</td>
+<td class="r data">0.959497</td>
+<td class="r data">95948.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<th class="r rowheader" scope="row">JAN2000</th>
+<td class="r data">1</td>
+<td class="r data">98937.3</td>
+<td class="r data">1.177971</td>
+<td class="r data">0.983600</td>
+<td class="r data">97314.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<th class="r rowheader" scope="row">FEB2000</th>
+<td class="r data">2</td>
+<td class="r data">98499.8</td>
+<td class="r data">1.170905</td>
+<td class="r data">1.059888</td>
+<td class="r data">104398.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<th class="r rowheader" scope="row">MAR2000</th>
+<td class="r data">3</td>
+<td class="r data">98721.8</td>
+<td class="r data">1.115695</td>
+<td class="r data">0.950271</td>
+<td class="r data">93812.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<th class="r rowheader" scope="row">APR2000</th>
+<td class="r data">4</td>
+<td class="r data">97974.4</td>
+<td class="r data">1.049414</td>
+<td class="r data">0.996628</td>
+<td class="r data">97644.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<th class="r rowheader" scope="row">MAY2000</th>
+<td class="r data">5</td>
+<td class="r data">96941.6</td>
+<td class="r data">1.094136</td>
+<td class="r data">1.045016</td>
+<td class="r data">101305.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<th class="r rowheader" scope="row">JUN2000</th>
+<td class="r data">6</td>
+<td class="r data">96591.9</td>
+<td class="r data">1.050876</td>
+<td class="r data">0.979015</td>
+<td class="r data">94565.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<th class="r rowheader" scope="row">JUL2000</th>
+<td class="r data">7</td>
+<td class="r data">96196.7</td>
+<td class="r data">0.992249</td>
+<td class="r data">0.930414</td>
+<td class="r data">89502.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<th class="r rowheader" scope="row">AUG2000</th>
+<td class="r data">8</td>
+<td class="r data">95442.1</td>
+<td class="r data">0.830886</td>
+<td class="r data">1.034419</td>
+<td class="r data">98727.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<th class="r rowheader" scope="row">SEP2000</th>
+<td class="r data">9</td>
+<td class="r data">94642.3</td>
+<td class="r data">0.663434</td>
+<td class="r data">1.043385</td>
+<td class="r data">98748.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<th class="r rowheader" scope="row">OCT2000</th>
+<td class="r data">10</td>
+<td class="r data">94043.5</td>
+<td class="r data">0.775560</td>
+<td class="r data">1.006796</td>
+<td class="r data">94682.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<th class="r rowheader" scope="row">NOV2000</th>
+<td class="r data">11</td>
+<td class="r data">93501.8</td>
+<td class="r data">0.892449</td>
+<td class="r data">0.994468</td>
+<td class="r data">92984.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<th class="r rowheader" scope="row">DEC2000</th>
+<td class="r data">12</td>
+<td class="r data">92736.3</td>
+<td class="r data">1.186424</td>
+<td class="r data">1.003194</td>
+<td class="r data">93032.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<th class="r rowheader" scope="row">JAN2001</th>
+<td class="r data">1</td>
+<td class="r data">92843.0</td>
+<td class="r data">1.177971</td>
+<td class="r data">0.993075</td>
+<td class="r data">92200.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<th class="r rowheader" scope="row">FEB2001</th>
+<td class="r data">2</td>
+<td class="r data">92862.5</td>
+<td class="r data">1.170905</td>
+<td class="r data">1.013076</td>
+<td class="r data">94076.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<th class="r rowheader" scope="row">MAR2001</th>
+<td class="r data">3</td>
+<td class="r data">91898.2</td>
+<td class="r data">1.115695</td>
+<td class="r data">0.951484</td>
+<td class="r data">87439.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<th class="r rowheader" scope="row">APR2001</th>
+<td class="r data">4</td>
+<td class="r data">91240.9</td>
+<td class="r data">1.049414</td>
+<td class="r data">0.994355</td>
+<td class="r data">90725.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<th class="r rowheader" scope="row">MAY2001</th>
+<td class="r data">5</td>
+<td class="r data">91161.3</td>
+<td class="r data">1.094136</td>
+<td class="r data">1.053720</td>
+<td class="r data">96058.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<th class="r rowheader" scope="row">JUN2001</th>
+<td class="r data">6</td>
+<td class="r data">91774.4</td>
+<td class="r data">1.050876</td>
+<td class="r data">0.899439</td>
+<td class="r data">82545.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<th class="r rowheader" scope="row">JUL2001</th>
+<td class="r data">7</td>
+<td class="r data">92091.2</td>
+<td class="r data">0.992249</td>
+<td class="r data">1.138148</td>
+<td class="r data">104813.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<th class="r rowheader" scope="row">AUG2001</th>
+<td class="r data">8</td>
+<td class="r data">91584.0</td>
+<td class="r data">0.830886</td>
+<td class="r data">0.884516</td>
+<td class="r data">81007.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<th class="r rowheader" scope="row">SEP2001</th>
+<td class="r data">9</td>
+<td class="r data">91144.5</td>
+<td class="r data">0.663434</td>
+<td class="r data">0.944147</td>
+<td class="r data">86053.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<th class="r rowheader" scope="row">OCT2001</th>
+<td class="r data">10</td>
+<td class="r data">90900.1</td>
+<td class="r data">0.775560</td>
+<td class="r data">0.937326</td>
+<td class="r data">85203.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<th class="r rowheader" scope="row">NOV2001</th>
+<td class="r data">11</td>
+<td class="r data">90342.4</td>
+<td class="r data">0.892449</td>
+<td class="r data">1.096718</td>
+<td class="r data">99080.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<th class="r rowheader" scope="row">DEC2001</th>
+<td class="r data">12</td>
+<td class="r data">90476.1</td>
+<td class="r data">1.186424</td>
+<td class="r data">1.114660</td>
+<td class="r data">100850.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<th class="r rowheader" scope="row">JAN2002</th>
+<td class="r data">1</td>
+<td class="r data">90324.0</td>
+<td class="r data">1.177971</td>
+<td class="r data">1.005065</td>
+<td class="r data">90781.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<th class="r rowheader" scope="row">FEB2002</th>
+<td class="r data">2</td>
+<td class="r data">90325.4</td>
+<td class="r data">1.170905</td>
+<td class="r data">0.942234</td>
+<td class="r data">85107.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<th class="r rowheader" scope="row">MAR2002</th>
+<td class="r data">3</td>
+<td class="r data">91195.7</td>
+<td class="r data">1.115695</td>
+<td class="r data">0.958352</td>
+<td class="r data">87397.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<th class="r rowheader" scope="row">APR2002</th>
+<td class="r data">4</td>
+<td class="r data">91646.5</td>
+<td class="r data">1.049414</td>
+<td class="r data">0.929461</td>
+<td class="r data">85181.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<th class="r rowheader" scope="row">MAY2002</th>
+<td class="r data">5</td>
+<td class="r data">91447.1</td>
+<td class="r data">1.094136</td>
+<td class="r data">0.974808</td>
+<td class="r data">89143.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<th class="r rowheader" scope="row">JUN2002</th>
+<td class="r data">6</td>
+<td class="r data">90939.9</td>
+<td class="r data">1.050876</td>
+<td class="r data">1.020430</td>
+<td class="r data">92797.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<th class="r rowheader" scope="row">JUL2002</th>
+<td class="r data">7</td>
+<td class="r data">90974.2</td>
+<td class="r data">0.992249</td>
+<td class="r data">0.992333</td>
+<td class="r data">90276.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<th class="r rowheader" scope="row">AUG2002</th>
+<td class="r data">8</td>
+<td class="r data">91919.4</td>
+<td class="r data">0.830886</td>
+<td class="r data">1.070593</td>
+<td class="r data">98408.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<th class="r rowheader" scope="row">SEP2002</th>
+<td class="r data">9</td>
+<td class="r data">93090.9</td>
+<td class="r data">0.663434</td>
+<td class="r data">1.028486</td>
+<td class="r data">95742.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<th class="r rowheader" scope="row">OCT2002</th>
+<td class="r data">10</td>
+<td class="r data">94092.8</td>
+<td class="r data">0.775560</td>
+<td class="r data">0.965693</td>
+<td class="r data">90864.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<th class="r rowheader" scope="row">NOV2002</th>
+<td class="r data">11</td>
+<td class="r data">95098.0</td>
+<td class="r data">0.892449</td>
+<td class="r data">0.933756</td>
+<td class="r data">88798.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<th class="r rowheader" scope="row">DEC2002</th>
+<td class="r data">12</td>
+<td class="r data">96023.2</td>
+<td class="r data">1.186424</td>
+<td class="r data">1.023970</td>
+<td class="r data">98324.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<th class="r rowheader" scope="row">JAN2003</th>
+<td class="r data">1</td>
+<td class="r data">96660.0</td>
+<td class="r data">1.177971</td>
+<td class="r data">0.972724</td>
+<td class="r data">94023.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<th class="r rowheader" scope="row">FEB2003</th>
+<td class="r data">2</td>
+<td class="r data">96625.5</td>
+<td class="r data">1.170905</td>
+<td class="r data">1.047540</td>
+<td class="r data">101219.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<th class="r rowheader" scope="row">MAR2003</th>
+<td class="r data">3</td>
+<td class="r data">96216.1</td>
+<td class="r data">1.115695</td>
+<td class="r data">0.994534</td>
+<td class="r data">95690.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<th class="r rowheader" scope="row">APR2003</th>
+<td class="r data">4</td>
+<td class="r data">96115.4</td>
+<td class="r data">1.049414</td>
+<td class="r data">1.032897</td>
+<td class="r data">99277.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<th class="r rowheader" scope="row">MAY2003</th>
+<td class="r data">5</td>
+<td class="r data">96321.3</td>
+<td class="r data">1.094136</td>
+<td class="r data">1.014047</td>
+<td class="r data">97674.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<th class="r rowheader" scope="row">JUN2003</th>
+<td class="r data">6</td>
+<td class="r data">96479.7</td>
+<td class="r data">1.050876</td>
+<td class="r data">1.088776</td>
+<td class="r data">105044.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<th class="r rowheader" scope="row">JUL2003</th>
+<td class="r data">7</td>
+<td class="r data">96441.5</td>
+<td class="r data">0.992249</td>
+<td class="r data">0.961294</td>
+<td class="r data">92708.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<th class="r rowheader" scope="row">AUG2003</th>
+<td class="r data">8</td>
+<td class="r data">95573.5</td>
+<td class="r data">0.830886</td>
+<td class="r data">0.988872</td>
+<td class="r data">94510.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<th class="r rowheader" scope="row">SEP2003</th>
+<td class="r data">9</td>
+<td class="r data">94538.1</td>
+<td class="r data">0.663434</td>
+<td class="r data">0.907704</td>
+<td class="r data">85812.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<th class="r rowheader" scope="row">OCT2003</th>
+<td class="r data">10</td>
+<td class="r data">93810.8</td>
+<td class="r data">0.775560</td>
+<td class="r data">1.025924</td>
+<td class="r data">96242.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<th class="r rowheader" scope="row">NOV2003</th>
+<td class="r data">11</td>
+<td class="r data">93192.6</td>
+<td class="r data">0.892449</td>
+<td class="r data">0.962106</td>
+<td class="r data">89661.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<th class="r rowheader" scope="row">DEC2003</th>
+<td class="r data">12</td>
+<td class="r data">92667.5</td>
+<td class="r data">1.186424</td>
+<td class="r data">1.088637</td>
+<td class="r data">100881.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<th class="r rowheader" scope="row">JAN2004</th>
+<td class="r data">1</td>
+<td class="r data">92477.3</td>
+<td class="r data">1.177971</td>
+<td class="r data">0.980451</td>
+<td class="r data">90669.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<th class="r rowheader" scope="row">FEB2004</th>
+<td class="r data">2</td>
+<td class="r data">92739.2</td>
+<td class="r data">1.170905</td>
+<td class="r data">0.935990</td>
+<td class="r data">86802.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<th class="r rowheader" scope="row">MAR2004</th>
+<td class="r data">3</td>
+<td class="r data">93445.0</td>
+<td class="r data">1.115695</td>
+<td class="r data">0.947589</td>
+<td class="r data">88547.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<th class="r rowheader" scope="row">APR2004</th>
+<td class="r data">4</td>
+<td class="r data">93623.0</td>
+<td class="r data">1.049414</td>
+<td class="r data">0.963834</td>
+<td class="r data">90237.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<th class="r rowheader" scope="row">MAY2004</th>
+<td class="r data">5</td>
+<td class="r data">93014.9</td>
+<td class="r data">1.094136</td>
+<td class="r data">0.997524</td>
+<td class="r data">92784.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<th class="r rowheader" scope="row">JUN2004</th>
+<td class="r data">6</td>
+<td class="r data">92337.7</td>
+<td class="r data">1.050876</td>
+<td class="r data">1.062869</td>
+<td class="r data">98142.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<th class="r rowheader" scope="row">JUL2004</th>
+<td class="r data">7</td>
+<td class="r data">91578.7</td>
+<td class="r data">0.992249</td>
+<td class="r data">1.041919</td>
+<td class="r data">95417.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">68</th>
+<th class="r rowheader" scope="row">AUG2004</th>
+<td class="r data">8</td>
+<td class="r data">90758.6</td>
+<td class="r data">0.830886</td>
+<td class="r data">1.089046</td>
+<td class="r data">98840.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">69</th>
+<th class="r rowheader" scope="row">SEP2004</th>
+<td class="r data">9</td>
+<td class="r data">90118.4</td>
+<td class="r data">0.663434</td>
+<td class="r data">1.175394</td>
+<td class="r data">105924.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">70</th>
+<th class="r rowheader" scope="row">OCT2004</th>
+<td class="r data">10</td>
+<td class="r data">89798.3</td>
+<td class="r data">0.775560</td>
+<td class="r data">0.941517</td>
+<td class="r data">84546.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">71</th>
+<th class="r rowheader" scope="row">NOV2004</th>
+<td class="r data">11</td>
+<td class="r data">89503.2</td>
+<td class="r data">0.892449</td>
+<td class="r data">0.932608</td>
+<td class="r data">83471.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">72</th>
+<th class="r rowheader" scope="row">DEC2004</th>
+<td class="r data">12</td>
+<td class="r data">88623.9</td>
+<td class="r data">1.186424</td>
+<td class="r data">1.036268</td>
+<td class="r data">91838.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">73</th>
+<th class="r rowheader" scope="row">JAN2005</th>
+<td class="r data">1</td>
+<td class="r data">87197.9</td>
+<td class="r data">1.177971</td>
+<td class="r data">0.966912</td>
+<td class="r data">84312.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">74</th>
+<th class="r rowheader" scope="row">FEB2005</th>
+<td class="r data">2</td>
+<td class="r data">86106.5</td>
+<td class="r data">1.170905</td>
+<td class="r data">0.887143</td>
+<td class="r data">76388.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">75</th>
+<th class="r rowheader" scope="row">MAR2005</th>
+<td class="r data">3</td>
+<td class="r data">84852.1</td>
+<td class="r data">1.115695</td>
+<td class="r data">1.010056</td>
+<td class="r data">85705.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">76</th>
+<th class="r rowheader" scope="row">APR2005</th>
+<td class="r data">4</td>
+<td class="r data">83987.3</td>
+<td class="r data">1.049414</td>
+<td class="r data">1.023243</td>
+<td class="r data">85939.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">77</th>
+<th class="r rowheader" scope="row">MAY2005</th>
+<td class="r data">5</td>
+<td class="r data">84160.2</td>
+<td class="r data">1.094136</td>
+<td class="r data">1.074523</td>
+<td class="r data">90432.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">78</th>
+<th class="r rowheader" scope="row">JUN2005</th>
+<td class="r data">6</td>
+<td class="r data">84203.0</td>
+<td class="r data">1.050876</td>
+<td class="r data">0.956154</td>
+<td class="r data">80511.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">79</th>
+<th class="r rowheader" scope="row">JUL2005</th>
+<td class="r data">7</td>
+<td class="r data">85465.0</td>
+<td class="r data">0.992249</td>
+<td class="r data">0.931387</td>
+<td class="r data">79601.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">80</th>
+<th class="r rowheader" scope="row">AUG2005</th>
+<td class="r data">8</td>
+<td class="r data">90033.4</td>
+<td class="r data">0.830886</td>
+<td class="r data">0.957444</td>
+<td class="r data">86202.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">81</th>
+<th class="r rowheader" scope="row">SEP2005</th>
+<td class="r data">9</td>
+<td class="r data">95729.2</td>
+<td class="r data">0.663434</td>
+<td class="r data">0.797827</td>
+<td class="r data">76375.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">82</th>
+<th class="r rowheader" scope="row">OCT2005</th>
+<td class="r data">10</td>
+<td class="r data">100004.3</td>
+<td class="r data">0.775560</td>
+<td class="r data">0.830577</td>
+<td class="r data">83061.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">83</th>
+<th class="r rowheader" scope="row">NOV2005</th>
+<td class="r data">11</td>
+<td class="r data">102390.6</td>
+<td class="r data">0.892449</td>
+<td class="r data">0.873259</td>
+<td class="r data">89413.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">84</th>
+<th class="r rowheader" scope="row">DEC2005</th>
+<td class="r data">12</td>
+<td class="r data">104046.1</td>
+<td class="r data">1.186424</td>
+<td class="r data">0.848020</td>
+<td class="r data">88233.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">85</th>
+<th class="r rowheader" scope="row">JAN2006</th>
+<td class="r data">1</td>
+<td class="r data">106012.6</td>
+<td class="r data">1.177971</td>
+<td class="r data">1.072103</td>
+<td class="r data">113656.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">86</th>
+<th class="r rowheader" scope="row">FEB2006</th>
+<td class="r data">2</td>
+<td class="r data">107921.0</td>
+<td class="r data">1.170905</td>
+<td class="r data">1.301940</td>
+<td class="r data">140506.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">87</th>
+<th class="r rowheader" scope="row">MAR2006</th>
+<td class="r data">3</td>
+<td class="r data">109786.0</td>
+<td class="r data">1.115695</td>
+<td class="r data">1.283753</td>
+<td class="r data">140938.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">88</th>
+<th class="r rowheader" scope="row">APR2006</th>
+<td class="r data">4</td>
+<td class="r data">111150.9</td>
+<td class="r data">1.049414</td>
+<td class="r data">1.124505</td>
+<td class="r data">124989.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">89</th>
+<th class="r rowheader" scope="row">MAY2006</th>
+<td class="r data">5</td>
+<td class="r data">111946.9</td>
+<td class="r data">1.094136</td>
+<td class="r data">0.940816</td>
+<td class="r data">105321.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">90</th>
+<th class="r rowheader" scope="row">JUN2006</th>
+<td class="r data">6</td>
+<td class="r data">112956.4</td>
+<td class="r data">1.050876</td>
+<td class="r data">0.910229</td>
+<td class="r data">102816.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">91</th>
+<th class="r rowheader" scope="row">JUL2006</th>
+<td class="r data">7</td>
+<td class="r data">112852.1</td>
+<td class="r data">0.992249</td>
+<td class="r data">0.917515</td>
+<td class="r data">103543.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">92</th>
+<th class="r rowheader" scope="row">AUG2006</th>
+<td class="r data">8</td>
+<td class="r data">109657.8</td>
+<td class="r data">0.830886</td>
+<td class="r data">1.028051</td>
+<td class="r data">112733.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">93</th>
+<th class="r rowheader" scope="row">SEP2006</th>
+<td class="r data">9</td>
+<td class="r data">105026.2</td>
+<td class="r data">0.663434</td>
+<td class="r data">1.053202</td>
+<td class="r data">110613.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">94</th>
+<th class="r rowheader" scope="row">OCT2006</th>
+<td class="r data">10</td>
+<td class="r data">101763.6</td>
+<td class="r data">0.775560</td>
+<td class="r data">0.943455</td>
+<td class="r data">96009.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">95</th>
+<th class="r rowheader" scope="row">NOV2006</th>
+<td class="r data">11</td>
+<td class="r data">99988.8</td>
+<td class="r data">0.892449</td>
+<td class="r data">0.995788</td>
+<td class="r data">99567.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">96</th>
+<th class="r rowheader" scope="row">DEC2006</th>
+<td class="r data">12</td>
+<td class="r data">99071.3</td>
+<td class="r data">1.186424</td>
+<td class="r data">1.019622</td>
+<td class="r data">101015.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">97</th>
+<th class="r rowheader" scope="row">JAN2007</th>
+<td class="r data">1</td>
+<td class="r data">98557.7</td>
+<td class="r data">1.177971</td>
+<td class="r data">1.001024</td>
+<td class="r data">98658.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">98</th>
+<th class="r rowheader" scope="row">FEB2007</th>
+<td class="r data">2</td>
+<td class="r data">97890.6</td>
+<td class="r data">1.170905</td>
+<td class="r data">0.920637</td>
+<td class="r data">90121.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">99</th>
+<th class="r rowheader" scope="row">MAR2007</th>
+<td class="r data">3</td>
+<td class="r data">97129.8</td>
+<td class="r data">1.115695</td>
+<td class="r data">0.969675</td>
+<td class="r data">94184.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">100</th>
+<th class="r rowheader" scope="row">APR2007</th>
+<td class="r data">4</td>
+<td class="r data">96766.3</td>
+<td class="r data">1.049414</td>
+<td class="r data">1.034251</td>
+<td class="r data">100080.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">101</th>
+<th class="r rowheader" scope="row">MAY2007</th>
+<td class="r data">5</td>
+<td class="r data">97083.7</td>
+<td class="r data">1.094136</td>
+<td class="r data">0.929932</td>
+<td class="r data">90281.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">102</th>
+<th class="r rowheader" scope="row">JUN2007</th>
+<td class="r data">6</td>
+<td class="r data">96661.1</td>
+<td class="r data">1.050876</td>
+<td class="r data">1.008911</td>
+<td class="r data">97522.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">103</th>
+<th class="r rowheader" scope="row">JUL2007</th>
+<td class="r data">7</td>
+<td class="r data">95225.5</td>
+<td class="r data">0.992249</td>
+<td class="r data">1.015775</td>
+<td class="r data">96727.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">104</th>
+<th class="r rowheader" scope="row">AUG2007</th>
+<td class="r data">8</td>
+<td class="r data">94079.1</td>
+<td class="r data">0.830886</td>
+<td class="r data">1.079993</td>
+<td class="r data">101604.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">105</th>
+<th class="r rowheader" scope="row">SEP2007</th>
+<td class="r data">9</td>
+<td class="r data">93479.6</td>
+<td class="r data">0.663434</td>
+<td class="r data">1.037964</td>
+<td class="r data">97028.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">106</th>
+<th class="r rowheader" scope="row">OCT2007</th>
+<td class="r data">10</td>
+<td class="r data">92931.1</td>
+<td class="r data">0.775560</td>
+<td class="r data">1.037120</td>
+<td class="r data">96380.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">107</th>
+<th class="r rowheader" scope="row">NOV2007</th>
+<td class="r data">11</td>
+<td class="r data">92700.6</td>
+<td class="r data">0.892449</td>
+<td class="r data">1.162689</td>
+<td class="r data">107782.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">108</th>
+<th class="r rowheader" scope="row">DEC2007</th>
+<td class="r data">12</td>
+<td class="r data">92825.9</td>
+<td class="r data">1.186424</td>
+<td class="r data">0.929566</td>
+<td class="r data">86287.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">109</th>
+<th class="r rowheader" scope="row">JAN2008</th>
+<td class="r data">1</td>
+<td class="r data">92783.4</td>
+<td class="r data">1.177971</td>
+<td class="r data">0.907955</td>
+<td class="r data">84243.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">110</th>
+<th class="r rowheader" scope="row">FEB2008</th>
+<td class="r data">2</td>
+<td class="r data">92816.0</td>
+<td class="r data">1.170905</td>
+<td class="r data">0.874044</td>
+<td class="r data">81125.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">111</th>
+<th class="r rowheader" scope="row">MAR2008</th>
+<td class="r data">3</td>
+<td class="r data">92916.4</td>
+<td class="r data">1.115695</td>
+<td class="r data">0.976469</td>
+<td class="r data">90730.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">112</th>
+<th class="r rowheader" scope="row">APR2008</th>
+<td class="r data">4</td>
+<td class="r data">92525.9</td>
+<td class="r data">1.049414</td>
+<td class="r data">0.985767</td>
+<td class="r data">91209.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">113</th>
+<th class="r rowheader" scope="row">MAY2008</th>
+<td class="r data">5</td>
+<td class="r data">91372.5</td>
+<td class="r data">1.094136</td>
+<td class="r data">1.025857</td>
+<td class="r data">93735.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">114</th>
+<th class="r rowheader" scope="row">JUN2008</th>
+<td class="r data">6</td>
+<td class="r data">90673.4</td>
+<td class="r data">1.050876</td>
+<td class="r data">1.067434</td>
+<td class="r data">96787.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">115</th>
+<th class="r rowheader" scope="row">JUL2008</th>
+<td class="r data">7</td>
+<td class="r data">90751.8</td>
+<td class="r data">0.992249</td>
+<td class="r data">1.063095</td>
+<td class="r data">96477.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">116</th>
+<th class="r rowheader" scope="row">AUG2008</th>
+<td class="r data">8</td>
+<td class="r data">91102.6</td>
+<td class="r data">0.830886</td>
+<td class="r data">1.128873</td>
+<td class="r data">102843.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">117</th>
+<th class="r rowheader" scope="row">SEP2008</th>
+<td class="r data">9</td>
+<td class="r data">91061.7</td>
+<td class="r data">0.663434</td>
+<td class="r data">1.088384</td>
+<td class="r data">99110.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">118</th>
+<th class="r rowheader" scope="row">OCT2008</th>
+<td class="r data">10</td>
+<td class="r data">90480.8</td>
+<td class="r data">0.775560</td>
+<td class="r data">0.911985</td>
+<td class="r data">82517.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">119</th>
+<th class="r rowheader" scope="row">NOV2008</th>
+<td class="r data">11</td>
+<td class="r data">89994.4</td>
+<td class="r data">0.892449</td>
+<td class="r data">0.986846</td>
+<td class="r data">88810.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">120</th>
+<th class="r rowheader" scope="row">DEC2008</th>
+<td class="r data">12</td>
+<td class="r data">89284.1</td>
+<td class="r data">1.186424</td>
+<td class="r data">0.967895</td>
+<td class="r data">86417.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">121</th>
+<th class="r rowheader" scope="row">JAN2009</th>
+<td class="r data">1</td>
+<td class="r data">88525.2</td>
+<td class="r data">1.177971</td>
+<td class="r data">0.968199</td>
+<td class="r data">85710.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">122</th>
+<th class="r rowheader" scope="row">FEB2009</th>
+<td class="r data">2</td>
+<td class="r data">87791.3</td>
+<td class="r data">1.170905</td>
+<td class="r data">0.989150</td>
+<td class="r data">86838.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">123</th>
+<th class="r rowheader" scope="row">MAR2009</th>
+<td class="r data">3</td>
+<td class="r data">86834.0</td>
+<td class="r data">1.115695</td>
+<td class="r data">0.965687</td>
+<td class="r data">83854.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">124</th>
+<th class="r rowheader" scope="row">APR2009</th>
+<td class="r data">4</td>
+<td class="r data">86692.2</td>
+<td class="r data">1.049414</td>
+<td class="r data">0.983182</td>
+<td class="r data">85234.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">125</th>
+<th class="r rowheader" scope="row">MAY2009</th>
+<td class="r data">5</td>
+<td class="r data">87025.4</td>
+<td class="r data">1.094136</td>
+<td class="r data">1.020347</td>
+<td class="r data">88796.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">126</th>
+<th class="r rowheader" scope="row">JUN2009</th>
+<td class="r data">6</td>
+<td class="r data">87114.1</td>
+<td class="r data">1.050876</td>
+<td class="r data">0.983865</td>
+<td class="r data">85708.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">127</th>
+<th class="r rowheader" scope="row">JUL2009</th>
+<td class="r data">7</td>
+<td class="r data">86909.1</td>
+<td class="r data">0.992249</td>
+<td class="r data">1.033902</td>
+<td class="r data">89855.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">128</th>
+<th class="r rowheader" scope="row">AUG2009</th>
+<td class="r data">8</td>
+<td class="r data">86348.6</td>
+<td class="r data">0.830886</td>
+<td class="r data">1.037106</td>
+<td class="r data">89552.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">129</th>
+<th class="r rowheader" scope="row">SEP2009</th>
+<td class="r data">9</td>
+<td class="r data">86179.2</td>
+<td class="r data">0.663434</td>
+<td class="r data">0.941351</td>
+<td class="r data">81124.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">130</th>
+<th class="r rowheader" scope="row">OCT2009</th>
+<td class="r data">10</td>
+<td class="r data">86268.8</td>
+<td class="r data">0.775560</td>
+<td class="r data">1.083989</td>
+<td class="r data">93514.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">131</th>
+<th class="r rowheader" scope="row">NOV2009</th>
+<td class="r data">11</td>
+<td class="r data">85998.0</td>
+<td class="r data">0.892449</td>
+<td class="r data">1.025761</td>
+<td class="r data">88213.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">132</th>
+<th class="r rowheader" scope="row">DEC2009</th>
+<td class="r data">12</td>
+<td class="r data">85739.7</td>
+<td class="r data">1.186424</td>
+<td class="r data">1.034076</td>
+<td class="r data">88661.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">133</th>
+<th class="r rowheader" scope="row">JAN2010</th>
+<td class="r data">1</td>
+<td class="r data">85199.0</td>
+<td class="r data">1.177971</td>
+<td class="r data">0.930452</td>
+<td class="r data">79273.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">134</th>
+<th class="r rowheader" scope="row">FEB2010</th>
+<td class="r data">2</td>
+<td class="r data">84446.2</td>
+<td class="r data">1.170905</td>
+<td class="r data">0.968967</td>
+<td class="r data">81825.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">135</th>
+<th class="r rowheader" scope="row">MAR2010</th>
+<td class="r data">3</td>
+<td class="r data">84303.8</td>
+<td class="r data">1.115695</td>
+<td class="r data">1.013850</td>
+<td class="r data">85471.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">136</th>
+<th class="r rowheader" scope="row">APR2010</th>
+<td class="r data">4</td>
+<td class="r data">84059.0</td>
+<td class="r data">1.049414</td>
+<td class="r data">1.017904</td>
+<td class="r data">85564.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">137</th>
+<th class="r rowheader" scope="row">MAY2010</th>
+<td class="r data">5</td>
+<td class="r data">83493.5</td>
+<td class="r data">1.094136</td>
+<td class="r data">0.988601</td>
+<td class="r data">82541.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">138</th>
+<th class="r rowheader" scope="row">JUN2010</th>
+<td class="r data">6</td>
+<td class="r data">82756.3</td>
+<td class="r data">1.050876</td>
+<td class="r data">1.043068</td>
+<td class="r data">86320.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">139</th>
+<th class="r rowheader" scope="row">JUL2010</th>
+<td class="r data">7</td>
+<td class="r data">82596.3</td>
+<td class="r data">0.992249</td>
+<td class="r data">0.921700</td>
+<td class="r data">76129.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">140</th>
+<th class="r rowheader" scope="row">AUG2010</th>
+<td class="r data">8</td>
+<td class="r data">82935.0</td>
+<td class="r data">0.830886</td>
+<td class="r data">1.015245</td>
+<td class="r data">84199.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">141</th>
+<th class="r rowheader" scope="row">SEP2010</th>
+<td class="r data">9</td>
+<td class="r data">82689.5</td>
+<td class="r data">0.663434</td>
+<td class="r data">0.999853</td>
+<td class="r data">82677.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">142</th>
+<th class="r rowheader" scope="row">OCT2010</th>
+<td class="r data">10</td>
+<td class="r data">82216.2</td>
+<td class="r data">0.775560</td>
+<td class="r data">1.029146</td>
+<td class="r data">84612.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">143</th>
+<th class="r rowheader" scope="row">NOV2010</th>
+<td class="r data">11</td>
+<td class="r data">82064.1</td>
+<td class="r data">0.892449</td>
+<td class="r data">0.983901</td>
+<td class="r data">80743.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">144</th>
+<th class="r rowheader" scope="row">DEC2010</th>
+<td class="r data">12</td>
+<td class="r data">81827.5</td>
+<td class="r data">1.186424</td>
+<td class="r data">0.969921</td>
+<td class="r data">79366.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">145</th>
+<th class="r rowheader" scope="row">JAN2011</th>
+<td class="r data">1</td>
+<td class="r data">81739.4</td>
+<td class="r data">1.177971</td>
+<td class="r data">1.044506</td>
+<td class="r data">85377.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">146</th>
+<th class="r rowheader" scope="row">FEB2011</th>
+<td class="r data">2</td>
+<td class="r data">81474.5</td>
+<td class="r data">1.170905</td>
+<td class="r data">1.014131</td>
+<td class="r data">82625.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">147</th>
+<th class="r rowheader" scope="row">MAR2011</th>
+<td class="r data">3</td>
+<td class="r data">81024.3</td>
+<td class="r data">1.115695</td>
+<td class="r data">0.979365</td>
+<td class="r data">79352.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">148</th>
+<th class="r rowheader" scope="row">APR2011</th>
+<td class="r data">4</td>
+<td class="r data">81015.3</td>
+<td class="r data">1.049414</td>
+<td class="r data">1.002827</td>
+<td class="r data">81244.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">149</th>
+<th class="r rowheader" scope="row">MAY2011</th>
+<td class="r data">5</td>
+<td class="r data">81087.0</td>
+<td class="r data">1.094136</td>
+<td class="r data">1.027883</td>
+<td class="r data">83347.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">150</th>
+<th class="r rowheader" scope="row">JUN2011</th>
+<td class="r data">6</td>
+<td class="r data">81421.5</td>
+<td class="r data">1.050876</td>
+<td class="r data">0.983488</td>
+<td class="r data">80077.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">151</th>
+<th class="r rowheader" scope="row">JUL2011</th>
+<td class="r data">7</td>
+<td class="r data">81677.5</td>
+<td class="r data">0.992249</td>
+<td class="r data">0.986953</td>
+<td class="r data">80611.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">152</th>
+<th class="r rowheader" scope="row">AUG2011</th>
+<td class="r data">8</td>
+<td class="r data">81585.0</td>
+<td class="r data">0.830886</td>
+<td class="r data">0.872620</td>
+<td class="r data">71192.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">153</th>
+<th class="r rowheader" scope="row">SEP2011</th>
+<td class="r data">9</td>
+<td class="r data">81562.0</td>
+<td class="r data">0.663434</td>
+<td class="r data">1.013731</td>
+<td class="r data">82681.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">154</th>
+<th class="r rowheader" scope="row">OCT2011</th>
+<td class="r data">10</td>
+<td class="r data">81476.8</td>
+<td class="r data">0.775560</td>
+<td class="r data">1.035035</td>
+<td class="r data">84331.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">155</th>
+<th class="r rowheader" scope="row">NOV2011</th>
+<td class="r data">11</td>
+<td class="r data">81035.5</td>
+<td class="r data">0.892449</td>
+<td class="r data">1.023188</td>
+<td class="r data">82914.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">156</th>
+<th class="r rowheader" scope="row">DEC2011</th>
+<td class="r data">12</td>
+<td class="r data">80506.2</td>
+<td class="r data">1.186424</td>
+<td class="r data">1.049599</td>
+<td class="r data">84499.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">157</th>
+<th class="r rowheader" scope="row">JAN2012</th>
+<td class="r data">1</td>
+<td class="r data">80548.2</td>
+<td class="r data">1.177971</td>
+<td class="r data">1.060511</td>
+<td class="r data">85422.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">158</th>
+<th class="r rowheader" scope="row">FEB2012</th>
+<td class="r data">2</td>
+<td class="r data">81237.2</td>
+<td class="r data">1.170905</td>
+<td class="r data">0.993198</td>
+<td class="r data">80684.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">159</th>
+<th class="r rowheader" scope="row">MAR2012</th>
+<td class="r data">3</td>
+<td class="r data">81602.3</td>
+<td class="r data">1.115695</td>
+<td class="r data">0.991331</td>
+<td class="r data">80894.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">160</th>
+<th class="r rowheader" scope="row">APR2012</th>
+<td class="r data">4</td>
+<td class="r data">81441.5</td>
+<td class="r data">1.049414</td>
+<td class="r data">0.953539</td>
+<td class="r data">77657.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">161</th>
+<th class="r rowheader" scope="row">MAY2012</th>
+<td class="r data">5</td>
+<td class="r data">81271.0</td>
+<td class="r data">1.094136</td>
+<td class="r data">0.948768</td>
+<td class="r data">77107.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">162</th>
+<th class="r rowheader" scope="row">JUN2012</th>
+<td class="r data">6</td>
+<td class="r data">80848.3</td>
+<td class="r data">1.050876</td>
+<td class="r data">0.921312</td>
+<td class="r data">74486.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">163</th>
+<th class="r rowheader" scope="row">JUL2012</th>
+<td class="r data">7</td>
+<td class="r data">80294.2</td>
+<td class="r data">0.992249</td>
+<td class="r data">1.090348</td>
+<td class="r data">87548.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">164</th>
+<th class="r rowheader" scope="row">AUG2012</th>
+<td class="r data">8</td>
+<td class="r data">80153.8</td>
+<td class="r data">0.830886</td>
+<td class="r data">1.033129</td>
+<td class="r data">82809.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">165</th>
+<th class="r rowheader" scope="row">SEP2012</th>
+<td class="r data">9</td>
+<td class="r data">80025.5</td>
+<td class="r data">0.663434</td>
+<td class="r data">1.016431</td>
+<td class="r data">81340.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">166</th>
+<th class="r rowheader" scope="row">OCT2012</th>
+<td class="r data">10</td>
+<td class="r data">79786.9</td>
+<td class="r data">0.775560</td>
+<td class="r data">1.008977</td>
+<td class="r data">80503.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">167</th>
+<th class="r rowheader" scope="row">NOV2012</th>
+<td class="r data">11</td>
+<td class="r data">79537.7</td>
+<td class="r data">0.892449</td>
+<td class="r data">1.026663</td>
+<td class="r data">81658.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">168</th>
+<th class="r rowheader" scope="row">DEC2012</th>
+<td class="r data">12</td>
+<td class="r data">79636.2</td>
+<td class="r data">1.186424</td>
+<td class="r data">0.965535</td>
+<td class="r data">76891.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">169</th>
+<th class="r rowheader" scope="row">JAN2013</th>
+<td class="r data">1</td>
+<td class="r data">79471.4</td>
+<td class="r data">1.177971</td>
+<td class="r data">1.029247</td>
+<td class="r data">81795.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">170</th>
+<th class="r rowheader" scope="row">FEB2013</th>
+<td class="r data">2</td>
+<td class="r data">78535.0</td>
+<td class="r data">1.170905</td>
+<td class="r data">1.037179</td>
+<td class="r data">81454.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">171</th>
+<th class="r rowheader" scope="row">MAR2013</th>
+<td class="r data">3</td>
+<td class="r data">77834.4</td>
+<td class="r data">1.115695</td>
+<td class="r data">0.993489</td>
+<td class="r data">77327.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">172</th>
+<th class="r rowheader" scope="row">APR2013</th>
+<td class="r data">4</td>
+<td class="r data">77698.7</td>
+<td class="r data">1.049414</td>
+<td class="r data">0.978059</td>
+<td class="r data">75993.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">173</th>
+<th class="r rowheader" scope="row">MAY2013</th>
+<td class="r data">5</td>
+<td class="r data">77773.1</td>
+<td class="r data">1.094136</td>
+<td class="r data">0.941672</td>
+<td class="r data">73236.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">174</th>
+<th class="r rowheader" scope="row">JUN2013</th>
+<td class="r data">6</td>
+<td class="r data">77812.6</td>
+<td class="r data">1.050876</td>
+<td class="r data">1.037943</td>
+<td class="r data">80765.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">175</th>
+<th class="r rowheader" scope="row">JUL2013</th>
+<td class="r data">7</td>
+<td class="r data">77768.1</td>
+<td class="r data">0.992249</td>
+<td class="r data">0.989006</td>
+<td class="r data">76913.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">176</th>
+<th class="r rowheader" scope="row">AUG2013</th>
+<td class="r data">8</td>
+<td class="r data">77680.9</td>
+<td class="r data">0.830886</td>
+<td class="r data">0.881353</td>
+<td class="r data">68464.3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">177</th>
+<th class="r rowheader" scope="row">SEP2013</th>
+<td class="r data">9</td>
+<td class="r data">77717.5</td>
+<td class="r data">0.663434</td>
+<td class="r data">0.951640</td>
+<td class="r data">73959.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">178</th>
+<th class="r rowheader" scope="row">OCT2013</th>
+<td class="r data">10</td>
+<td class="r data">77904.4</td>
+<td class="r data">0.775560</td>
+<td class="r data">1.060502</td>
+<td class="r data">82617.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">179</th>
+<th class="r rowheader" scope="row">NOV2013</th>
+<td class="r data">11</td>
+<td class="r data">78441.8</td>
+<td class="r data">0.892449</td>
+<td class="r data">1.043093</td>
+<td class="r data">81822.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">180</th>
+<th class="r rowheader" scope="row">DEC2013</th>
+<td class="r data">12</td>
+<td class="r data">78957.2</td>
+<td class="r data">1.186424</td>
+<td class="r data">0.982400</td>
+<td class="r data">77567.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">181</th>
+<th class="r rowheader" scope="row">JAN2014</th>
+<td class="r data">1</td>
+<td class="r data">79182.0</td>
+<td class="r data">1.177971</td>
+<td class="r data">1.012972</td>
+<td class="r data">80209.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">182</th>
+<th class="r rowheader" scope="row">FEB2014</th>
+<td class="r data">2</td>
+<td class="r data">79643.9</td>
+<td class="r data">1.170905</td>
+<td class="r data">1.020327</td>
+<td class="r data">81262.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">183</th>
+<th class="r rowheader" scope="row">MAR2014</th>
+<td class="r data">3</td>
+<td class="r data">80309.0</td>
+<td class="r data">1.115695</td>
+<td class="r data">0.975197</td>
+<td class="r data">78317.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">184</th>
+<th class="r rowheader" scope="row">APR2014</th>
+<td class="r data">4</td>
+<td class="r data">80520.4</td>
+<td class="r data">1.049414</td>
+<td class="r data">0.983796</td>
+<td class="r data">79215.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">185</th>
+<th class="r rowheader" scope="row">MAY2014</th>
+<td class="r data">5</td>
+<td class="r data">80269.5</td>
+<td class="r data">1.094136</td>
+<td class="r data">1.020736</td>
+<td class="r data">81934.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">186</th>
+<th class="r rowheader" scope="row">JUN2014</th>
+<td class="r data">6</td>
+<td class="r data">80168.7</td>
+<td class="r data">1.050876</td>
+<td class="r data">1.041315</td>
+<td class="r data">83480.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">187</th>
+<th class="r rowheader" scope="row">JUL2014</th>
+<td class="r data">7</td>
+<td class="r data">80327.2</td>
+<td class="r data">0.992249</td>
+<td class="r data">0.989378</td>
+<td class="r data">79474.0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">188</th>
+<th class="r rowheader" scope="row">AUG2014</th>
+<td class="r data">8</td>
+<td class="r data">80139.8</td>
+<td class="r data">0.830886</td>
+<td class="r data">0.982639</td>
+<td class="r data">78748.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">189</th>
+<th class="r rowheader" scope="row">SEP2014</th>
+<td class="r data">9</td>
+<td class="r data">79788.3</td>
+<td class="r data">0.663434</td>
+<td class="r data">1.067097</td>
+<td class="r data">85141.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">190</th>
+<th class="r rowheader" scope="row">OCT2014</th>
+<td class="r data">10</td>
+<td class="r data">79469.7</td>
+<td class="r data">0.775560</td>
+<td class="r data">1.001549</td>
+<td class="r data">79592.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">191</th>
+<th class="r rowheader" scope="row">NOV2014</th>
+<td class="r data">11</td>
+<td class="r data">78785.9</td>
+<td class="r data">0.892449</td>
+<td class="r data">0.986270</td>
+<td class="r data">77704.1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">192</th>
+<th class="r rowheader" scope="row">DEC2014</th>
+<td class="r data">12</td>
+<td class="r data">77717.5</td>
+<td class="r data">1.186424</td>
+<td class="r data">1.011670</td>
+<td class="r data">78624.5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">193</th>
+<th class="r rowheader" scope="row">JAN2015</th>
+<td class="r data">1</td>
+<td class="r data">76575.1</td>
+<td class="r data">1.177971</td>
+<td class="r data">1.075737</td>
+<td class="r data">82374.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">194</th>
+<th class="r rowheader" scope="row">FEB2015</th>
+<td class="r data">2</td>
+<td class="r data">75311.3</td>
+<td class="r data">1.170905</td>
+<td class="r data">0.999088</td>
+<td class="r data">75242.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">195</th>
+<th class="r rowheader" scope="row">MAR2015</th>
+<td class="r data">3</td>
+<td class="r data">73866.0</td>
+<td class="r data">1.115695</td>
+<td class="r data">1.043429</td>
+<td class="r data">77073.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">196</th>
+<th class="r rowheader" scope="row">APR2015</th>
+<td class="r data">4</td>
+<td class="r data">.</td>
+<td class="r data">1.049414</td>
+<td class="r data">.</td>
+<td class="r data">73251.4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">197</th>
+<th class="r rowheader" scope="row">MAY2015</th>
+<td class="r data">5</td>
+<td class="r data">.</td>
+<td class="r data">1.094136</td>
+<td class="r data">.</td>
+<td class="r data">72654.6</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">198</th>
+<th class="r rowheader" scope="row">JUN2015</th>
+<td class="r data">6</td>
+<td class="r data">.</td>
+<td class="r data">1.050876</td>
+<td class="r data">.</td>
+<td class="r data">68742.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">199</th>
+<th class="r rowheader" scope="row">JUL2015</th>
+<td class="r data">7</td>
+<td class="r data">.</td>
+<td class="r data">0.992249</td>
+<td class="r data">.</td>
+<td class="r data">67451.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">200</th>
+<th class="r rowheader" scope="row">AUG2015</th>
+<td class="r data">8</td>
+<td class="r data">.</td>
+<td class="r data">0.830886</td>
+<td class="r data">.</td>
+<td class="r data">56599.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">201</th>
+<th class="r rowheader" scope="row">SEP2015</th>
+<td class="r data">9</td>
+<td class="r data">.</td>
+<td class="r data">0.663434</td>
+<td class="r data">.</td>
+<td class="r data">60596.8</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX4"></a>
+<div>
+<div  class="c">
+<img alt="Seasonal Decomposition/Adjustment Plots" src="DecompositionPlots1.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
