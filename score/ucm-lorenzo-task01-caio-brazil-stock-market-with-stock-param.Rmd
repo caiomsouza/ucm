@@ -21,6 +21,22 @@ https://www.youtube.com/watch?v=iMET2gbsbHY
 http://www.r-chart.com/2010/06/stock-analysis-using-r.html
 
 
+###TAREA 2: Cuantificación del riesgo de Mercado (primera del profesor Escot)
+
+En esta tarea se trata de que apliquéis los métodos mostrados en clase para cuantificar el riesgo de mercado de los activos financieros.
+
+1- Selección de variables: debeis seleccionar 5 valores  (acciones) del mercado continuo español más el ibex 35 y bajar la serie completa. Para el punto 2 y 3 se utilizarán las series temporales completas hasta el 30 de septiembre de 2015. el mes de octubre se reservará para hacer predicciones 
+
+2.- ¿Son los mercados de estos 6 valores eficientes?
+
+3.- ¿Se puede modelizar la serie de rendimientos diarios de estos valores?. ¿Que modelo predice mejor (utiliazando el error cuadrático medio)?
+
+4.- Utilizando información de los dos últimos años. ¿cual es la mejor cartera que se puede formar con esos 5 valores?. Suponga para ello dos posibilidades, que los agentes son aversos al riesgos y no tienen otras alternativas de inversión (es deseable la cartera de menor riesgo); y en segundo lugar que existe la posibilidad de invertir (o endeudarse) a un tipo de interés sin riesgo del 0.5%. ¿Cómo se comportan estas carteras durante el mes de octubre mejor o peor que el ibex?. ¿Cual es la beta de los 5 valores? ¿y la beta de la cartera?, ¿cual de los cinco valores ha tenido un comportamiento mejor que lo esperado según la teoría del CAPM? 
+
+5. Utilizando información del último año determine el valor en riesgo de su cartera óptima para el día uno de octubre de 2015 suponiendo que posee una riqueza financiera total de 1000 euros que tiene que repartir entre los cinco valores. Repita la estimación del Valor en riesgo para todos los días hábiles del mes de octubre  y realice una prueba de estrés y una prueba de comprobación (backtesting) para saber si su estimación del VaR (Value at Risk) es correcta.
+
+Por favor entregue un archivo word o pdf con los resultados principales de su trabajo explicando qué es lo que obtiene y que se deriva de dichos resultados. Puede incluir en el código R en el texto principal o al final del texto en un anexo, se valorará positivamente.
+
 
 
 ```{r}

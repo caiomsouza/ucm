@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PMML version="4.2" xmlns="http://www.dmg.org/PMML-4_2">
+  <Header copyright="caiomsouza">
+    <Application name="KNIME" version="2.12.2"/>
+  </Header>
+  <DataDictionary numberOfFields="6">
+    <DataField name="CONTACT_ID" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="395.0" rightMargin="5394.0"/>
+    </DataField>
+    <DataField name="AGE" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="ANNUALINCOME" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="EDUCATIONLEVEL_ID" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="NETPRICE_PRO11_AMT" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="NETPRICE_PRO14_AMT" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+  </DataDictionary>
+  <ClusteringModel modelName="k-means" functionName="clustering" modelClass="centerBased" numberOfClusters="10">
+    <MiningSchema>
+      <MiningField name="AGE" invalidValueTreatment="asIs"/>
+      <MiningField name="ANNUALINCOME" invalidValueTreatment="asIs"/>
+    </MiningSchema>
+    <ComparisonMeasure kind="distance">
+      <squaredEuclidean/>
+    </ComparisonMeasure>
+    <ClusteringField field="AGE" compareFunction="absDiff"/>
+    <ClusteringField field="ANNUALINCOME" compareFunction="absDiff"/>
+    <Cluster name="cluster_0">
+      <Array n="2" type="real">0.7268087613604891 0.2992541049661314</Array>
+    </Cluster>
+    <Cluster name="cluster_1">
+      <Array n="2" type="real">0.1777327063945808 0.5534803265715387</Array>
+    </Cluster>
+    <Cluster name="cluster_2">
+      <Array n="2" type="real">0.17473198746613208 0.13468594653172875</Array>
+    </Cluster>
+    <Cluster name="cluster_3">
+      <Array n="2" type="real">0.46219264859895737 0.325429151596885</Array>
+    </Cluster>
+    <Cluster name="cluster_4">
+      <Array n="2" type="real">0.841499277571151 0.501812021053006</Array>
+    </Cluster>
+    <Cluster name="cluster_5">
+      <Array n="2" type="real">0.8464856054793597 0.14148694474114615</Array>
+    </Cluster>
+    <Cluster name="cluster_6">
+      <Array n="2" type="real">0.5005318566113341 0.646581149643275</Array>
+    </Cluster>
+    <Cluster name="cluster_7">
+      <Array n="2" type="real">0.6372931552596228 0.1110548710122708</Array>
+    </Cluster>
+    <Cluster name="cluster_8">
+      <Array n="2" type="real">0.22429515910878234 0.32302174008152984</Array>
+    </Cluster>
+    <Cluster name="cluster_9">
+      <Array n="2" type="real">0.40614543312616425 0.13420839180999622</Array>
+    </Cluster>
+  </ClusteringModel>
+</PMML>

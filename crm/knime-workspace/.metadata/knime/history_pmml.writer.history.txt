@@ -1,0 +1,2 @@
+/Users/caiomsouza/git/github.com/ucm/crm/knime-workspace/k-means-crm-fuzzy-mensual.pmml
+/Users/caiomsouza/git/github.com/ucm/crm/knime-workspace/k-means-crm-fuzzy-mensual

@@ -4,20 +4,20 @@
     "created":"2015-12-04 20:10",
     "nodestats":{
         "org.knime.base.node.io.database.DBReaderNodeModel":{
-            "nrexecs":83,
-            "exectime":24158,
+            "nrexecs":90,
+            "exectime":25952,
             "nrcreated":2,
             "successor":"org.knime.base.node.viz.table.TableNodeModel"
         },
         "org.knime.base.node.preproc.rename.RenameNodeModel":{
-            "nrexecs":11,
-            "exectime":11,
+            "nrexecs":12,
+            "exectime":12,
             "nrcreated":2,
             "successor":"org.knime.base.node.preproc.joiner.Joiner2NodeModel"
         },
         "org.knime.base.node.io.database.connection.JDBCConnectorNodeModel":{
-            "nrexecs":56,
-            "exectime":8882,
+            "nrexecs":57,
+            "exectime":8994,
             "nrcreated":2,
             "successor":"org.knime.base.node.io.database.DBUpdateNodeModel"
         },
@@ -46,8 +46,8 @@
             "successor":"n/a"
         },
         "org.knime.base.node.stats.viz.extended.ExtendedStatisticsNodeModel":{
-            "nrexecs":2,
-            "exectime":2023,
+            "nrexecs":6,
+            "exectime":6170,
             "nrcreated":1,
             "successor":"n/a"
         },
@@ -58,10 +58,10 @@
             "successor":"org.knime.base.node.preproc.joiner.Joiner2NodeModel"
         },
         "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeModel":{
-            "nrexecs":25,
-            "exectime":27,
+            "nrexecs":40,
+            "exectime":49,
             "nrcreated":2,
-            "successor":"org.knime.base.node.io.database.DBWriterNodeModel"
+            "successor":"org.knime.base.node.preproc.normalize.NormalizerDeNodeModel"
         },
         "org.knime.base.node.jsnippet.JavaSnippetNodeModel":{
             "nrexecs":18,
@@ -70,86 +70,110 @@
             "successor":"n/a"
         },
         "org.knime.base.node.viz.table.TableNodeModel":{
-            "nrexecs":2,
-            "exectime":3,
-            "nrcreated":1,
+            "nrexecs":8,
+            "exectime":30,
+            "nrcreated":2,
             "successor":"n/a"
         },
         "org.knime.base.node.util.cache.CacheNodeModel":{
-            "nrexecs":2,
-            "exectime":100,
+            "nrexecs":9,
+            "exectime":412,
             "nrcreated":1,
-            "successor":"org.knime.base.node.viz.plotter.node.DefaultVisualizationNodeModel"
+            "successor":"org.knime.base.node.preproc.normalize.NormalizerApplyNodeModel"
         },
         "org.knime.base.node.viz.plotter.node.DefaultVisualizationNodeModel":{
-            "nrexecs":10,
-            "exectime":166,
-            "nrcreated":5,
+            "nrexecs":44,
+            "exectime":1105,
+            "nrcreated":6,
             "successor":"n/a"
         },
         "org.knime.base.node.preproc.correlation.compute.CorrelationComputeNodeModel":{
-            "nrexecs":1,
-            "exectime":310,
+            "nrexecs":5,
+            "exectime":2449,
             "nrcreated":1,
             "successor":"org.knime.base.node.preproc.correlation.filter.CorrelationFilterNodeModel"
         },
         "org.knime.base.node.preproc.correlation.filter.CorrelationFilterNodeModel":{
-            "nrexecs":1,
-            "exectime":4,
+            "nrexecs":5,
+            "exectime":29,
             "nrcreated":1,
             "successor":"n/a"
         },
         "org.knime.base.node.preproc.normalize3.Normalizer3NodeModel":{
-            "nrexecs":2,
-            "exectime":220,
+            "nrexecs":9,
+            "exectime":1010,
             "nrcreated":1,
-            "successor":"org.knime.base.node.mine.cluster.kmeans.ClusterNodeModel"
+            "successor":"org.knime.base.node.preproc.normalize.NormalizerDeNodeModel"
         },
         "org.knime.base.node.mine.cluster.kmeans.ClusterNodeModel":{
-            "nrexecs":1,
-            "exectime":510,
+            "nrexecs":3,
+            "exectime":1406,
             "nrcreated":1,
             "successor":"org.knime.base.node.preproc.rename.RenameNodeModel"
         },
         "org.knime.base.node.preproc.normalize.NormalizerDeNodeModel":{
-            "nrexecs":2,
-            "exectime":72,
+            "nrexecs":10,
+            "exectime":449,
             "nrcreated":1,
             "successor":"org.knime.base.node.viz.property.color.ColorManager2NodeModel"
         },
         "org.knime.base.node.viz.property.color.ColorManager2NodeModel":{
-            "nrexecs":4,
-            "exectime":4,
+            "nrexecs":16,
+            "exectime":10,
             "nrcreated":2,
             "successor":"org.knime.base.node.viz.plotter.node.DefaultVisualizationNodeModel"
         },
         "org.knime.base.node.io.database.DBUpdateNodeModel":{
-            "nrexecs":1,
-            "exectime":665,
+            "nrexecs":2,
+            "exectime":1773,
             "nrcreated":1,
             "successor":"n/a"
         },
         "org.knime.base.node.io.pmml.write.PMMLWriterNodeModel":{
-            "nrexecs":0,
-            "exectime":0,
-            "nrcreated":1,
+            "nrexecs":2,
+            "exectime":58,
+            "nrcreated":2,
             "successor":"n/a"
         },
         "org.knime.base.node.mine.cluster.fuzzycmeans.FuzzyClusterNodeModel":{
-            "nrexecs":3,
-            "exectime":5196,
+            "nrexecs":9,
+            "exectime":30237,
             "nrcreated":1,
             "successor":"org.knime.base.node.preproc.rename.RenameNodeModel"
         },
         "org.knime.base.node.viz.property.shape.ShapeManagerNodeModel":{
+            "nrexecs":6,
+            "exectime":6,
+            "nrcreated":1,
+            "successor":"org.knime.base.node.viz.property.color.ColorManager2NodeModel"
+        },
+        "org.knime.base.node.mine.cluster.assign.ClusterAssignerNodeModel":{
+            "nrexecs":2,
+            "exectime":196,
+            "nrcreated":1,
+            "successor":"org.knime.base.node.viz.table.TableNodeModel"
+        },
+        "org.knime.base.node.preproc.normalize.NormalizerApplyNodeModel":{
+            "nrexecs":1,
+            "exectime":43,
+            "nrcreated":1,
+            "successor":"org.knime.base.node.mine.cluster.assign.ClusterAssignerNodeModel"
+        },
+        "org.knime.base.node.io.pmml.read.PMMLReaderNodeModel":{
             "nrexecs":1,
             "exectime":1,
             "nrcreated":1,
-            "successor":"org.knime.base.node.viz.property.color.ColorManager2NodeModel"
+            "successor":"org.knime.base.node.mine.cluster.assign.ClusterAssignerNodeModel"
+        },
+        "org.knime.base.node.mine.cluster.hierarchical.HierarchicalClusterNodeModel":{
+            "nrexecs":3,
+            "exectime":2583797,
+            "nrcreated":1,
+            "successor":"org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeModel"
         }
     },
-    "uptime":3302134,
-    "launches":9,
+    "uptime":9945076,
+    "launches":13,
     "crashes":0,
-    "properlyShutDown":false
+    "properlyShutDown":true
 }

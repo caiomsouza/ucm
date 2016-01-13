@@ -85,6 +85,10 @@
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="EXECUTED"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Errors &quot;4980&quot; updating 4980 rows."/>
+</config>
 <entry key="factory" type="xstring" value="org.knime.base.node.io.database.DBUpdateNodeFactory"/>
 <entry key="node-name" type="xstring" value="Database Update"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -106,6 +110,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="da378f06-73c4-4a3a-980c-ec202469c5e6"/>
+<entry key="file_store_id" type="xstring" value="27927cde-8dff-4d13-bcbe-14508606e113"/>
 </config>
 </config>
