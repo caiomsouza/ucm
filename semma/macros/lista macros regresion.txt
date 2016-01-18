@@ -1,0 +1,51 @@
+
+*****************************************************************
+Macros para preparación, creación  y recodificación de variables
+*****************************************************************
+
+Contarvalores		Cuenta el número de valores diferentes de cada variable de una lista (para identificar posibles nominales)
+
+Renombrar		Renombra valores de variables a nombres sencillos con prefijo (tipo x1,x2...)
+
+Reduzcovalores		Renombra valores de variables categóricas a listas numeradas 1,2,3, etc.
+
+Agrupacategorias 	Agrupa categorías de variables cualitativas con criterio de mejor ajuste para predecir la variable dependiente
+
+Interacttodo		Dada una lista de variables cualitativas y continuas, 
+			a) Crea una lista de interacciones dos a dos (si se desea) para pegar en procedimientos estadísticos
+			b) Si se desea, calcula estadísticos AIC, F, p-valor para cada interacción construida o variable y los presenta ordenados.
+  
+Nombresmod		Dada una lista de variables cualitativas, continuas e interacciones a introducir en un modelo, 
+			construye dummys asociadas a 
+
+			a) Cada categoría de las variables categóricas
+			b) Cada interacción presentada en la lista (sea entre dos cualitativas o entre una cualitativa y una continua)
+
+*****************************************************************
+Macros para seleccionar variables y comparar modelos de regresión
+*****************************************************************
+
+Randomselect		Dada una lista de variables-efectos independientes, realiza repetidamente las siguientes operaciones con diferentes semillas:
+
+			a) particiona los datos en training -validacion
+			b) obtiene por stepwise el mejor modelo obtenido solo con los datos training
+			Finalmente se presenta una tabla de frecuencias de las veces que han aparecido los diferentes modelos obtenidos
+
+Train Valida		Realiza una o repetidas veces el particionamiento y calculo de errores de modelos de regresión
+
+Cruzada			Realiza Validación cruzada en modelos de regresión
+
+Cruzada con corrección
+de Varianza		Otra versión que aporta corrección de varianza y gráfico spaghetti si se desea.
+			NOTA: EN EL ARCHIVO CON TODAS LAS MACROS SE LLAMA CRUZADACORR, EN LOS EJEMPLOS CRUZADA 
+
+
+Cruzadabis		Realiza Validación cruzada en modelos de regresión, con variable dependiente transformada logarítmicamente
+			(y deshaciendo la transformación)
+
+
+
+
+
+
+
