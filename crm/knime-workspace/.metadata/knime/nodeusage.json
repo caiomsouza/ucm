@@ -4,10 +4,10 @@
     "created":"2015-12-04 20:10",
     "nodestats":{
         "org.knime.base.node.io.database.DBReaderNodeModel":{
-            "nrexecs":90,
-            "exectime":25952,
-            "nrcreated":2,
-            "successor":"org.knime.base.node.viz.table.TableNodeModel"
+            "nrexecs":93,
+            "exectime":26292,
+            "nrcreated":3,
+            "successor":"org.knime.base.node.preproc.groupby.GroupByNodeModel"
         },
         "org.knime.base.node.preproc.rename.RenameNodeModel":{
             "nrexecs":12,
@@ -30,7 +30,7 @@
         "org.knime.base.node.preproc.joiner.Joiner2NodeModel":{
             "nrexecs":31,
             "exectime":6013,
-            "nrcreated":1,
+            "nrcreated":2,
             "successor":"org.knime.base.node.preproc.filter.row.RowFilterNodeModel"
         },
         "org.knime.base.node.io.database.DBWriterNodeModel":{
@@ -170,10 +170,34 @@
             "exectime":2583797,
             "nrcreated":1,
             "successor":"org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeModel"
+        },
+        "org.knime.base.node.preproc.groupby.GroupByNodeModel":{
+            "nrexecs":0,
+            "exectime":0,
+            "nrcreated":1,
+            "successor":"org.knime.base.node.mine.subgroupminer.SubgroupMinerModel2"
+        },
+        "org.knime.base.node.mine.subgroupminer.SubgroupMinerModel2":{
+            "nrexecs":0,
+            "exectime":0,
+            "nrcreated":1,
+            "successor":"org.knime.base.node.preproc.sorter.SorterNodeModel"
+        },
+        "org.knime.base.node.preproc.sorter.SorterNodeModel":{
+            "nrexecs":0,
+            "exectime":0,
+            "nrcreated":1,
+            "successor":"n/a"
+        },
+        "org.knime.base.node.preproc.matcher.SubsetMatcherNodeModel":{
+            "nrexecs":0,
+            "exectime":0,
+            "nrcreated":1,
+            "successor":"org.knime.base.node.preproc.joiner.Joiner2NodeModel"
         }
     },
-    "uptime":9945076,
-    "launches":13,
+    "uptime":100273626,
+    "launches":14,
     "crashes":0,
     "properlyShutDown":true
 }
