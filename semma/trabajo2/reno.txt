@@ -1,0 +1,25 @@
+rename 
+Col2 = alcovinored
+Col3 = alcovinowhi
+Col4 = densvinored
+Col5 = densvinowhi
+Col6 = volaovinored
+Col7 = volaovinowhi
+Col8 = chlopovinored
+Col9 = chlopovinowhi
+Col10 = totatipovinored
+Col11 = totatipovinowhi
+Col12 = sulppovinored
+Col13 = sulppovinowhi
+Col14 = pHtipovinored
+Col15 = pHtipovinowhi
+Col16 = tipovinored
+Col17 = tipovinowhi
+Col18 = freeipovinored
+Col19 = freeipovinowhi
+Col20 = suganored
+Col21 = suganowhi
+Col22 = fixenored
+Col23 = fixenowhi
+Col24 = pH
+;
