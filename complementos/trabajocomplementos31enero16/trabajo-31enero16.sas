@@ -1,4 +1,12 @@
 /*
+Autor: Caio Fernandes Moreno
+Universidad Complutense de Madrid
+Fecha: 30/01/2016
+
+*/
+
+
+/*
 El archivo \DatosPaises.xlsx" (que podeis descargar del campus) contie-
 ne informacion sobre 7 variables socioeconomicas de 133 paises. Seleccionar
 aleatoriamente una muestra de 100 paises con el procedimiento
@@ -37,6 +45,12 @@ proc print data=sample_paises (obs=100);
 var POBL NATALIDA ESPERANZ MORTALID;
 run;
 
+
+proc corr data=sample_paises outp=sample_paisescorr;
+var POBL NATALIDA ESPERANZ MORTALID;
+run;
+
+
 proc stdize data=sample_paises out=sample_paisesnorm;
 var POBL NATALIDA ESPERANZ MORTALID;
 run;
@@ -48,11 +62,6 @@ run;
 proc print data=sample_paisesnorm;
 run;
 
-
-proc cluster data=sample_paisesnorm method=average pseudo RSQUARE ccc outtree=sample_paisesnormA
-print=10 plots=den(VERTICAL);
-var POBL NATALIDA ESPERANZ MORTALID;
-run;
 
 proc cluster data=sample_paisesnorm method=centroid pseudo ccc RSQUARE
 outtree=sample_paisesnormC
@@ -67,3 +76,163 @@ var POBL NATALIDA ESPERANZ MORTALID;
 run;
 
 
+/*
+Cluster No Jerarquico 
+*/
+
+PROC FASTCLUS DATA=sample_paisesnorm MAXCLUSTERS=4 MEAN=MEDIAS2
+DRIFT OUT=cluster4 maxiter=30;
+var POBL NATALIDA ESPERANZ MORTALID;
+run;
+
+PROC FASTCLUS DATA=sample_paisesnorm MAXCLUSTERS=5 MEAN=MEDIAS2
+DRIFT OUT=cluster5 maxiter=30;
+var POBL NATALIDA ESPERANZ MORTALID;
+run;
+
+PROC FASTCLUS DATA=sample_paisesnorm MAXCLUSTERS=7 MEAN=MEDIAS2
+DRIFT OUT=cluster7 maxiter=30;
+var POBL NATALIDA ESPERANZ MORTALID;
+run;
+
+
+proc means data=cluster4 ; var distance; output out=sumacuad4 uss=w4 ;
+run;
+proc means data=cluster5 ; var distance; output out=sumacuad5 uss=w5 ;
+run;
+proc means data=cluster7 ; var distance; output out=sumacuad7 uss=w7 ;
+run;
+
+data beale;
+    merge sumacuad4 sumacuad5 sumacuad7;
+k1=(_freq_-4)*(4**(-2/8));
+k2=(_freq_-5)*(5**(-2/8));
+k3=(_freq_-7)*(7**(-2/8));
+fbeale1=(w4-w5)*k2/(w5*(k1-k2));
+pvalor=1-probf(fbeale1,(k1-k2),k2);
+fbeale2=(w4-w7)*k3/(w7*(k1-k3));
+pvalor2=1-probf(fbeale2,(k1-k3),k3);
+fbeale3=(w5-w7)*k3/(w7*(k2-k3));
+pvalor3=1-probf(fbeale3,(k2-k3),k3);
+run;
+
+proc print data=beale;run;
+
+
+
+proc sort data=cluster4 out=cluster4s;
+ by cluster;
+
+proc Freq data=cluster4s;
+  by cluster; tables PAIS;
+run;
+
+
+proc sort data=cluster5 out=cluster5s;
+ by cluster;
+
+proc Freq data=cluster5s;
+  by cluster; tables PAIS;
+run;
+
+
+proc sort data=cluster7 out=cluster7s;
+ by cluster;
+
+proc Freq data=cluster7s;
+  by cluster; tables PAIS;
+run;
+
+
+
+proc print data=cluster4;run;
+
+
+
+/*
+
+Antigo
+
+data beale;
+    merge sumacuad2 sumacuad5 sumacuad6;
+k1=(_freq_-2)*(2**(-2/8));
+k2=(_freq_-4)*(4**(-2/8));
+k3=(_freq_-7)*(7**(-2/8));
+fbeale1=(w2-w4)*k2/(w4*(k1-k2));
+pvalor=1-probf(fbeale1,(k1-k2),k2);
+fbeale2=(w2-w7)*k3/(w7*(k1-k3));
+pvalor2=1-probf(fbeale2,(k1-k3),k3);
+fbeale3=(w4-w7)*k3/(w7*(k2-k3));
+pvalor3=1-probf(fbeale3,(k2-k3),k3);
+run;
+ proc print data=beale;run;
+
+*/
+
+
+/*
+
+Analises Discriminante 
+
+*/
+
+
+proc univariate data=cluster4 normal;
+run;
+
+proc contents data=cluster4 out=sa;
+data;set sa;if _n_=1 then put 'LISTA DE VARIABLES CONTINUAS';if type=1 then put name @@;run;
+data;set sa;if _n_=1 then put 'LISTA DE VARIABLES CATEGÓRICAS';if type=2 then put name @@;run;
+
+
+proc univariate data=cluster4 normal;
+class CLUSTER;
+VAR POBL NATALIDA ESPERANZ MORTALID;
+run;
+
+
+proc discrim data=cluster4 method=normal pool=test wcov pcov list crossvalidate crosslist outstat=salida;
+class CLUSTER;
+VAR POBL NATALIDA ESPERANZ MORTALID;
+run;
+
+
+proc discrim data=cluster4 crossvalidate pool=test outstat=salidacluster4;
+class CLUSTER;
+VAR POBL NATALIDA ESPERANZ MORTALID;
+run;
+
+proc print data=salidacluster4;
+run;
+
+
+
+/*
+
+Parte que no he entendido bien se se debe utilizar
+
+*/
+
+
+
+data datos;
+set datos;
+z=0;
+run;
+
+proc transreg data=datos maxiter=0 nozeroconstant detail
+plots=(transformation(dependet) scatter);
+model boxcox(y) = identiy(z);
+output out=tdados;
+run;
+
+
+data datos;
+set corazon;
+z=0;
+run;
+
+proc transreg data=datos maxiter=0 nozeroconstant detail plots=(transformation(dependet) scatter);
+model boxcox(triglice) = identity(z);
+output out=tdatos;
+run;
