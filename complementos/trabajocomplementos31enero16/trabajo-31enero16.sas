@@ -144,30 +144,35 @@ proc Freq data=cluster7s;
 run;
 
 
+proc sort data=cluster4 out=cluster4s;
+ by cluster;
 
-proc print data=cluster4;run;
-
-
-
-/*
-
-Antigo
-
-data beale;
-    merge sumacuad2 sumacuad5 sumacuad6;
-k1=(_freq_-2)*(2**(-2/8));
-k2=(_freq_-4)*(4**(-2/8));
-k3=(_freq_-7)*(7**(-2/8));
-fbeale1=(w2-w4)*k2/(w4*(k1-k2));
-pvalor=1-probf(fbeale1,(k1-k2),k2);
-fbeale2=(w2-w7)*k3/(w7*(k1-k3));
-pvalor2=1-probf(fbeale2,(k1-k3),k3);
-fbeale3=(w4-w7)*k3/(w7*(k2-k3));
-pvalor3=1-probf(fbeale3,(k2-k3),k3);
+proc print data=cluster4s;
 run;
- proc print data=beale;run;
 
-*/
+
+proc Freq data=cluster4 ;
+tables cluster;run;
+proc sort;by cluster;
+proc print;
+by cluster;
+run;
+
+
+proc means data=cluster4 noprint;
+by cluster;
+var POBL NATALIDA ESPERANZ MORTALID;
+output out=centinic mean=POBL NATALIDA ESPERANZ MORTALID;
+run;
+proc print data=centinic;run;
+
+
+PROC STANDARD DATA=cluster4 MEAN=0 STD=1 OUT=cluster4out;
+var POBL NATALIDA ESPERANZ MORTALID;
+RUN;
+PROC PRINT DATA=cluster4out (OBS=7);
+RUN;
+
 
 
 /*
@@ -175,6 +180,23 @@ run;
 Analises Discriminante 
 
 */
+
+
+
+PROC STEPDISC DATA=cluster4 METHOD=STEPWISE SLE=0.10 SLS=0.20;
+var POBL NATALIDA ESPERANZ MORTALID;
+clASS cluster;
+RUN;
+
+
+PROC DISCRIM DATA=cluster4 OUTSTAT=ESTADISTICOS POOL=TEST method=normal DISTANCE CROSSVALIDAte crosslisterr;
+var POBL NATALIDA ESPERANZ MORTALID;
+clASS cluster;
+RUN;
+PROC PRINT DATA=ESTADISTICOS;RUN;
+
+
+
 
 
 proc univariate data=cluster4 normal;
