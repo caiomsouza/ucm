@@ -181,19 +181,29 @@ Analises Discriminante
 
 */
 
+proc univariate data=cluster4 normal plot;
+VAR POBL NATALIDA ESPERANZ MORTALID CLUSTER;
+run;
 
 
-PROC STEPDISC DATA=cluster4 METHOD=STEPWISE SLE=0.10 SLS=0.20;
-var POBL NATALIDA ESPERANZ MORTALID;
-clASS cluster;
-RUN;
+data logcluster;
+set cluster4;
+logESPERANZ = log(ESPERANZ);
+logNATALIDA = log(NATALIDA);
+logPOBL = log(POBL);
+run;
 
 
-PROC DISCRIM DATA=cluster4 OUTSTAT=ESTADISTICOS POOL=TEST method=normal DISTANCE CROSSVALIDAte crosslisterr;
-var POBL NATALIDA ESPERANZ MORTALID;
-clASS cluster;
-RUN;
-PROC PRINT DATA=ESTADISTICOS;RUN;
+proc univariate data=logcluster4 normal plot;
+var logESPERANZ logNATALIDA logNATALIDA logPOBL; 
+by CLUSTER;
+run; 
+
+
+proc discrim data=cluster4 pool=test testlisterr crossvalidate;
+class CLUSTER;
+VAR POBL NATALIDA ESPERANZ MORTALID;
+run;
 
 
 
@@ -258,3 +268,20 @@ proc transreg data=datos maxiter=0 nozeroconstant detail plots=(transformation(d
 model boxcox(triglice) = identity(z);
 output out=tdatos;
 run;
+
+
+
+
+
+
+PROC STEPDISC DATA=cluster4 METHOD=STEPWISE SLE=0.10 SLS=0.20;
+var POBL NATALIDA ESPERANZ MORTALID;
+clASS cluster;
+RUN;
+
+
+PROC DISCRIM DATA=cluster4 OUTSTAT=ESTADISTICOS POOL=TEST method=normal DISTANCE CROSSVALIDAte crosslisterr;
+CLASS x14; 
+VAR x9 x3 x6 x10 x7; 
+RUN;
+PROC PRINT DATA=ESTADISTICOS;RUN;
