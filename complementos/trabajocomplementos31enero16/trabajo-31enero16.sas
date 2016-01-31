@@ -181,29 +181,147 @@ Analises Discriminante
 
 */
 
+
 proc univariate data=cluster4 normal plot;
 VAR POBL NATALIDA ESPERANZ MORTALID CLUSTER;
 run;
 
 
-data logcluster;
+/*
+Quitando datos atipicos - Tentativa 1
+*/
+
+data cluster4id;
 set cluster4;
+id=_N_;
+run;
+
+proc print data=cluster4id;run;
+
+proc print data=cluster4id;
+run;
+
+
+data cluster4sinatipicos;
+set cluster4id;
+if cluster = 3 then delete;
+run;
+
+proc print data=cluster4sinatipicos;
+run;
+
+
+proc univariate data=cluster4sinatipicos normal plot;
+VAR POBL NATALIDA ESPERANZ MORTALID CLUSTER;
+id id;
+run;
+
+
+proc discrim data=cluster4id method=normal pool=test wcov pcov list crossvalidate crosslist outstat=salida;
+class CLUSTER;
+VAR POBL NATALIDA ESPERANZ MORTALID;
+run;
+
+/*
+Quitando datos atipicos - Tentativa 2
+
+*/
+
+data cluster4id;
+set cluster4;
+id=_N_;
+run;
+
+proc discrim data=cluster4id method=normal pool=test wcov pcov list crossvalidate crosslist outstat=salida;
+class CLUSTER;
+VAR POBL NATALIDA ESPERANZ MORTALID;
+run;
+
+
+data cluster4sinatipicos2;
+set cluster4id;
+if _N_ in (7,12,47,13) then delete;
+run;
+
+proc print data=cluster4sinatipicos2;
+run;
+
+
+proc discrim data=cluster4sinatipicos2 method=normal pool=test wcov pcov list crossvalidate crosslist outstat=salida;
+class CLUSTER;
+VAR POBL NATALIDA ESPERANZ MORTALID;
+run;
+
+
+
+data cluster_pequeno;
+set cluster4id;
+DROP POBL NATALIDA ESPERANZ MORTALID;
+run;
+
+proc print data=cluster_pequeno;
+run;
+
+
+data sample_paises_con_clusters;
+    merge sample_paises cluster_pequeno;
+run;
+
+
+proc print data=sample_paises_con_clusters;
+run;
+
+proc print data=sample_paises;
+run;
+
+
+data sample_paises_con_clusterstransf;
+set sample_paises_con_clusters;
+z=0;
+run;
+
+proc transreg data=sample_paises_con_clusterstransf maxiter=0 nozeroconstant detail 
+plots=(transformation(dependent)scatter);
+model boxcox(POBL)=identity(z);
+output out=tdatos;
+run;
+
+proc print data=tdatos;
+run;
+
+
+proc discrim data=tdatos method=normal pool=test wcov pcov list crossvalidate crosslist outstat=salida;
+class _NAME_;
+run;
+
+proc discrim data=tdatos pool=test testlisterr crossvalidate;
+class _NAME_;
+run;
+
+
+data logcluster;
+set sample_paises_con_clusters;
 logESPERANZ = log(ESPERANZ);
 logNATALIDA = log(NATALIDA);
 logPOBL = log(POBL);
 run;
 
+proc print data=logcluster;
+run;
 
-proc univariate data=logcluster4 normal plot;
+
+
+proc univariate data=logcluster normal plot;
 var logESPERANZ logNATALIDA logNATALIDA logPOBL; 
-by CLUSTER;
 run; 
+
 
 
 proc discrim data=cluster4 pool=test testlisterr crossvalidate;
 class CLUSTER;
 VAR POBL NATALIDA ESPERANZ MORTALID;
 run;
+
 
 
 
