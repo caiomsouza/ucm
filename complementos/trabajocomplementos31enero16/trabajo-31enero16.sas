@@ -304,16 +304,27 @@ set sample_paises_con_clusters;
 logESPERANZ = log(ESPERANZ);
 logNATALIDA = log(NATALIDA);
 logPOBL = log(POBL);
+logMORTALID = log(MORTALID);
 run;
 
 proc print data=logcluster;
 run;
 
+proc univariate data=sample_paises_con_clusters normal plot;
+VAR POBL NATALIDA ESPERANZ MORTALID;
+run; 
 
 
 proc univariate data=logcluster normal plot;
-var logESPERANZ logNATALIDA logNATALIDA logPOBL; 
+var logESPERANZ logNATALIDA logMORTALID logPOBL; 
 run; 
+
+
+
+proc discrim data=logcluster pool=test testlisterr crossvalidate;
+var logESPERANZ logNATALIDA logMORTALID logPOBL; 
+class CLUSTER;
+run;
 
 
 
