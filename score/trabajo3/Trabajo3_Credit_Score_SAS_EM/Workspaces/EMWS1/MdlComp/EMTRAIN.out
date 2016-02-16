@@ -1,0 +1,289 @@
+ 
+                                                                                               
+ 
+ 
+
+
+
+
+
+
+
+ 
+Resumen de variables
+
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+
+TARGET     BINARY          1     
+ 
+                                                                                               
+ 
+ 
+
+
+
+
+
+
+
+Estadísticos de ajuste
+Selección de modelo basada en Validar: tasa de error de clasificación (_VMISC_)
+
+ 
+                                                      Validar: tasa
+   Modelo        Nodo del     Descripción              de error de
+seleccionado      modelo      del modelo              clasificación
+
+     Y          Scorecard3    Scorecard - Backward       0.11409   
+                Scorecard     Scorecard                  0.11409   
+
+  Entrenar:       Entrenar:        Validar:
+    error       tasa de error       error
+cuadrado del          de         cuadrado de
+  promedio      clasificación      promedio
+
+  0.073389         0.097990        0.098479 
+  0.073389         0.097990        0.098479 
+ 
+                                                                                               
+ 
+ 
+
+
+
+
+
+
+
+Tabla de estadísticos de ajuste
+Objetivo: DEFAULT
+
+Rol de los datos=Train
+
+Estadísticos
+
+Entrenar: corte de probabilidad Kolmogorov-Smirnov de dos factores basado en variables categori
+Entrenar: estadístico Kolmogorov-Smirnov                                                       
+Entrenar: criterio de información de Akaike                                                    
+Entrenar: error cuadrado del promedio                                                          
+Entrenar: índice Roc                                                                           
+Entrenar: función de error de promedio                                                         
+Entrenar: respuesta capturada de porcentaje acumulado                                          
+Entrenar: respuesta capturada del porcentaje                                                   
+Criterio de selección: Validar: tasa de error de clasificación                                 
+Entrenar: grados de libertad para el error                                                     
+Entrenar: grados de libertad del modelo                                                        
+Entrenar: grados de libertad totales                                                           
+Entrenar: divisor para ASE                                                                     
+Entrenar: función de error                                                                     
+Entrenar: error de predicción final                                                            
+Entrenar: ganancia                                                                             
+Entrenar: coeficiente de Gini                                                                  
+Entrenar: estadístico Kolmogorov-Smirnov de dos factores basado en variables categorizadas     
+Entrenar: corte de probabilidad Kolmogorov-Smirnov                                             
+Entrenar: mejora acumulada                                                                     
+Entrenar: mejora                                                                               
+Entrenar: error absoluto máximo                                                                
+Entrenar: tasa de error de clasificación                                                       
+Entrenar: error cuadrático de la media                                                         
+Entrenar: suma de frecuencias                                                                  
+Entrenar: número de pesos de los estimadores                                                   
+Entrenar: suma del promedio de la raíz de cuadrados                                            
+Entrenar: respuesta de porcentaje acumulado                                                    
+Entrenar: respuesta de porcentaje                                                              
+Entrenar: error de predicción final de la raíz                                                 
+Entrenar: error cuadrático de la media de la raíz                                              
+Entrenar: criterio bayesiano de Schwarz                                                        
+Entrenar: suma de errores cuadrados                                                            
+Entrenar: suma de frec temporales de pesos de caso                                             
+
+Scorecard3    Scorecard
+
+    0.079        0.079 
+    0.552        0.552 
+  207.355      207.355 
+    0.073        0.073 
+    0.862        0.862 
+    0.243        0.243 
+   48.810       48.810 
+   20.238       20.238 
+    0.114        0.114 
+  391.000      391.000 
+    7.000        7.000 
+  398.000      398.000 
+  796.000      796.000 
+  193.355      193.355 
+    0.076        0.076 
+  385.655      385.655 
+    0.724        0.724 
+    0.562        0.562 
+    0.060        0.060 
+    4.857        4.857 
+    4.027        4.027 
+    0.965        0.965 
+    0.098        0.098 
+    0.075        0.075 
+  398.000      398.000 
+    7.000        7.000 
+    0.271        0.271 
+   51.250       51.250 
+   42.500       42.500 
+    0.276        0.276 
+    0.273        0.273 
+  235.261      235.261 
+   58.418       58.418 
+  796.000      796.000 
+
+
+Rol de los datos=Valid
+
+Estadísticos
+
+Validar: estadístico Kolmogorov-Smirnov                                                        
+Validar: error cuadrado de promedio                                                            
+Validar: índice Roc                                                                            
+Validar: función de error de promedio                                                          
+Validar: corte de probabilidad Kolmogorov-Smirnov de dos factores basado en variables categoriz
+Validar: respuesta capturada de porcentaje acumulado                                           
+Validar: respuesta capturada del porcentaje                                                    
+Validar: divisor para VASE                                                                     
+Validar: función de error                                                                      
+Validar: ganancia                                                                              
+Validar: coeficiente de Gini                                                                   
+Validar: estadístico Kolmogorov-Smirnov de dos factores basado en variables categorizadas      
+Validar: corte de probabilidad Kolmogorov-Smirnov                                              
+Validar: mejora acumulada                                                                      
+Validar: mejora                                                                                
+Validar: error absoluto máximo                                                                 
+Validar: tasa de error de clasificación                                                        
+Validar: error cuadrático de la media                                                          
+Validar: suma de frecuencias                                                                   
+Validar: error cuadrado de promedio de la raíz                                                 
+Validar: respuesta de porcentaje acumulado                                                     
+Validar: respuesta de porcentaje                                                               
+Validar: error cuadrático de la media de la raíz                                               
+Validar: suma de errores cuadrados                                                             
+Validar: suma de frec temporales de pesos de caso                                              
+
+Scorecard3    Scorecard
+
+    0.254        0.254 
+    0.098        0.098 
+    0.645        0.645 
+    0.396        0.396 
+    0.336        0.336 
+   29.032       29.032 
+   12.903       12.903 
+  596.000      596.000 
+  236.272      236.272 
+  188.387      188.387 
+    0.290        0.290 
+    0.227        0.227 
+    0.340        0.340 
+    2.884        2.884 
+    2.563        2.563 
+    1.000        1.000 
+    0.114        0.114 
+    0.098        0.098 
+  298.000      298.000 
+    0.314        0.314 
+   30.000       30.000 
+   26.667       26.667 
+    0.314        0.314 
+   58.693       58.693 
+  596.000      596.000 
+
+
+Rol de los datos=Test
+
+Estadísticos
+
+Probar: estadístico Kolmogorov-Smirnov                                                         
+Probar: error cuadrado de promedio                                                             
+Probar: índice Roc                                                                             
+Probar: función de error de promedio                                                           
+Probar: corte de probabilidad Kolmogorov-Smirnov de dos factores basado en variables categoriza
+Probar: respuesta capturada de porcentaje acumulado                                            
+Probar: respuesta capturada del porcentaje                                                     
+Probar: divisor para TASE                                                                      
+Probar: función de error                                                                       
+Probar: ganancia                                                                               
+Probar: coeficiente de Gini                                                                    
+Probar: estadístico Kolmogorov-Smirnov de dos factores basado en variables categorizadas       
+Probar: corte de probabilidad Kolmogorov-Smirnov                                               
+Probar: mejora acumulada                                                                       
+Probar: mejora                                                                                 
+Probar: error absoluto máximo                                                                  
+Probar: tasa de error de clasificación                                                         
+Probar: límite de conf. 95% inferior para TMISC                                                
+Probar: límite de conf. 95% superior para TMISC                                                
+Probar: error cuadrático de la media                                                           
+Probar: suma de frecuencias                                                                    
+Probar: error cuadrado del promedio de la raíz                                                 
+Probar: respuesta de porcentaje acumulado                                                      
+Probar: respuesta de porcentaje                                                                
+Probar: error cuadrático de la media de la raíz                                                
+Probar: suma de errores cuadrados                                                              
+Probar: suma de frec temporales de pesos de caso                                               
+
+Scorecard3    Scorecard
+
+    0.238        0.238 
+    0.099        0.099 
+    0.625        0.625 
+    0.382        0.382 
+    0.104        0.104 
+   19.355       19.355 
+    9.677        9.677 
+  596.000      596.000 
+  227.573      227.573 
+   92.258       92.258 
+    0.251        0.251 
+    0.235        0.235 
+    0.070        0.070 
+    1.923        1.923 
+    1.923        1.923 
+    0.999        0.999 
+    0.111        0.111 
+    0.077        0.077 
+    0.152        0.152 
+    0.099        0.099 
+  298.000      298.000 
+    0.314        0.314 
+   20.000       20.000 
+   20.000       20.000 
+    0.314        0.314 
+   58.927       58.927 
+  596.000      596.000 
+ 
+                                                                                               
+ 
+ 
+
+
+
+
+
+
+
+Tabla de evento de clasificación
+Selección de modelo basada en Validar: tasa de error de clasificación (_VMISC_)
+
+                                      Rol de
+ Nodo del     Descripción             los
+  modelo      del modelo              datos       Objetivo
+
+Scorecard3    Scorecard - Backward    TRAIN       DEFAULT 
+Scorecard3    Scorecard - Backward    VALIDATE    DEFAULT 
+Scorecard     Scorecard               TRAIN       DEFAULT 
+Scorecard     Scorecard               VALIDATE    DEFAULT 
+
+ 
+Etiqueta      Falso     Verdadero      Falso     Verdadero
+objetivo    negativo     negativo    positivo     positivo
+
+DEFAULT        34          351           5           8    
+DEFAULT        26          259           8           5    
+DEFAULT        34          351           5           8    
+DEFAULT        26          259           8           5    

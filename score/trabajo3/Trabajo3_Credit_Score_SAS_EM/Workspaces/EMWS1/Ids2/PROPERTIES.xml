@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  DataSource="csnewclients" Scope="LOCAL" Role="SCORE" Library="RIESGOS" Table="CS_NEW_CLIENTS"
+ NCols="14" NObs="34" NBytes="66560" Segment="" DataSourceRole="RAW" OutputType="VIEW"
+ ForceRun="N" ComputeStatistics="N" DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC"
+ ApplyIntervalLevelLowerLimit="Y" IntervalLowerLimit="20" ApplyMaxPercentMissing="Y"
+ MaxPercentMissing="50" ApplyMaxClassLevels="Y" MaxClassLevels="20" IdentifyEmptyColumns="Y"
+ VariableValidation="STRICT" NewVariableRole="REJECT" DropMapVariables="Y" DsId="csnewclients"
+ DsSampleName="" DsSampleSizeType="" DsSampleSize="" DsCreatedBy="win" DsCreateDate="1771170351.1"
+ DsModifiedBy="win" DsModifyDate="1771170351.1" DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT"
+ SampleSizePercent="20" SampleSizeObs="10000" DBPassThrough="Y" RunAction="Train"
+ Component="DataSource" RawCreateTime="1771173262.4" CreateTime="15FEB2016:16:34:22"
+ Description="" Data="RIESGOS.CS_NEW_CLIENTS" CMeta="WORK.M2U8847R" RunId="ef129ba1-b478-4d07-a180-5eb1919af6a4"
+>
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

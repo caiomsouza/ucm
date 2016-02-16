@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  Location="CATALOG" Catalog="SASHELP.EMCREDIT.IGN.SOURCE" ApplyLevelRule="N" BinMethod="QUANTILE"
+ NumBins="20" UseCodes="N" Freeze="N" ImportWoe="NONE" WoeAdjust="Y" AdjustFactor="0.5"
+ ApplyMinDist="Y" MinDistMethod="PERCENT" MinPercentDist="5" MinCountDist="." Criterion="ENTROPY"
+ MissingValue="SEPARATEIFANY" MinCatSize="5" NodeSample="20000" MaxBranch="5" Precision="2"
+ GroupInt="OPTIMAL" GroupOrd="OPTIMAL" CreateGrouping="N" CreateMethod="OVERWRITE"
+ ImportGrouping="N" VarSelMethod="INFOVAL" GiniCutoff="20" InfoValCutoff="0.1" GrpMsmnt="ORDINAL"
+ MaxVar="10" ApplyMonotonicity="Y" ApplyMinNumNonEvent="Y" ApplyMinNumEvent="Y" ApplyMaxBinTotal="Y"
+ ApplyMinBinDiff="Y" ApplyMinNumBins="Y" MinNumNonEvent="1" MinNumEvent="1" MaxBinTotal="23250"
+ MinBinDiff="0.01" MinNumBins="2" INTTARGETMETHOD="DUPFREQ" TARGETBOUNDS="N" USERMIN="0"
+ USERMAX="1" ALLOWOOB="N" USERCUTVALUE="0.20" RandomSeed="12345" ForceRun="N" RunAction="Train"
+ Component="IGN" CodesData="" ImportData="" DataNeeded="Y" ApplyMaxBinWidth="N" MaxBinWidth="."
+ ApplyMinBinWidth="N" MinBinWidth="." RawCreateTime="1771014698.1" CreateTime="13FEB2016:20:31:38"
+ RunId="d5d9f30d-ad24-437a-95ee-3bbb706c4144" RawLastTimeRun="1771169825.1" RawRunTime="6.8949999809"
+ LastTimeRun="15FEB2016:15:37:05" RunTime="0 Hr. 0 Min. 6.89 Sec.">
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES ><![CDATA[
+USERTRAINCODE
+USERSCORECODE
+USERREPORTCODE
+EMNOTES
+]]>
+</FILEPROPERTIES><EMTARGETATTRIBUTES/>
+</_ROOT_>

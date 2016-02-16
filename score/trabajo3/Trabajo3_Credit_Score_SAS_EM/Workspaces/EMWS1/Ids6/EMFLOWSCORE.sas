@@ -1,0 +1,2 @@
+drop DEFAULT;
+drop ID;

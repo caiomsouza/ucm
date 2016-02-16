@@ -1,0 +1,34 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+          Nivel de     Número de
+Rol        medida     ocurrencias
+
+ID        INTERVAL         1     
+ID        NOMINAL          1     
+INPUT     BINARY           3     
+INPUT     INTERVAL         9     
+TARGET    BINARY           1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+        Variable     Variable
+Obs    de entrada    de grupo        Variable WOE
+
+  1     ACTIVE       GRP_ACTIVE      WOE_ACTIVE  
+  2     AGE          GRP_AGE         WOE_AGE     
+  3     AVGEXP       GRP_AVGEXP      WOE_AVGEXP  
+  4     CARDHLDR     GRP_CARDHLDR    WOE_CARDHLDR
+  5     CUR_ADD      GRP_CUR_ADD     WOE_CUR_ADD 
+  6     DEPNDT       GRP_DEPNDT      WOE_DEPNDT  
+  7     EXP_INC      GRP_EXP_INC     WOE_EXP_INC 
+  8     INCOME       GRP_INCOME      WOE_INCOME  
+  9     INC_PER      GRP_INC_PER     WOE_INC_PER 
+ 10     MAJOR        GRP_MAJOR       WOE_MAJOR   
+ 11     OWNRENT      GRP_OWNRENT     WOE_OWNRENT 
+ 12     SELFEMPL     GRP_SELFEMPL    WOE_SELFEMPL

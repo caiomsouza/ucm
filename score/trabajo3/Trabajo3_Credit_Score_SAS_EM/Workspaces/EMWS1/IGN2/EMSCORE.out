@@ -1,0 +1,20 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+                                                                                                                                        Ordenación
+                                                                                                                                        del valor
+                   Estadístico      Valor de     Nivel para        Rol                         Agrupamiento                               de la
+Obs    Variable      de Gini      información    Interactivo    calculado      Nuevo rol       predefinido      Nivel      Etiqueta    información
+
+  1    ACTIVE         39.079         1.155        INTERVAL      Input        Predeterminado                    INTERVAL    ACTIVE            1    
+  2    CUR_ADD        23.317         0.202        INTERVAL      Input        Predeterminado                    INTERVAL    CUR_ADD           2    
+  3    AGE            23.463         0.183        INTERVAL      Input        Predeterminado                    INTERVAL    AGE               3    
+  4    INCOME         17.861         0.147        INTERVAL      Input        Predeterminado                    INTERVAL    INCOME            4    
+  5    AVGEXP         16.793         0.106        INTERVAL      Input        Predeterminado                    INTERVAL    AVGEXP            5    
+  6    INC_PER        14.551         0.087        INTERVAL      Rechazada    Predeterminado                    INTERVAL    INC_PER           6    
+  7    EXP_INC        11.654         0.052        INTERVAL      Rechazada    Predeterminado                    INTERVAL    EXP_INC           7    
+  8    OWNRENT         6.325         0.016        BINARY        Rechazada    Predeterminado                    BINARY      OWNRENT           8    
+  9    MAJOR           3.882         0.011        INTERVAL      Rechazada    Predeterminado                    INTERVAL    MAJOR             9    
+ 10    SELFEMPL        2.214         0.007        BINARY        Rechazada    Predeterminado                    BINARY      SELFEMPL         10    
+ 11    CARDHLDR        3.265         0.005        BINARY        Rechazada    Predeterminado                    BINARY      CARDHLDR         11    
+ 12    DEPNDT          2.698         0.004        INTERVAL      Rechazada    Predeterminado                    INTERVAL    DEPNDT           12    

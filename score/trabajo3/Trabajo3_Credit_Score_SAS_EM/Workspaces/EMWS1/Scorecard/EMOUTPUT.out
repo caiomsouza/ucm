@@ -1,0 +1,1018 @@
+*------------------------------------------------------------*
+Usuario:                win
+Fecha:                15/02/16
+Hora:                15H37
+*------------------------------------------------------------*
+* Salida de entrenamiento
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Resumen de variables
+ 
+            Nivel de     Número de
+Rol          medida     ocurrencias
+ 
+INPUT       INTERVAL         8
+INPUT       ORDINAL          8
+REJECTED    BINARY           3
+REJECTED    INTERVAL         9
+TARGET      BINARY           1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Eventos del modelo
+ 
+                                   Número
+                      Nivel de       de
+Objetivo    Evento     medida     niveles      Orden       Etiqueta
+ 
+DEFAULT      1.00      BINARY        2       Descending    DEFAULT
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Variables predichas y de decisión
+ 
+Tipo         Variable         Etiqueta
+ 
+TARGET       DEFAULT          DEFAULT
+PREDICTED    P_DEFAULT1_00    Predicted: DEFAULT=1.00
+RESIDUAL     R_DEFAULT1_00    Residual: DEFAULT=1.00
+PREDICTED    P_DEFAULT0_00    Predicted: DEFAULT=0.00
+RESIDUAL     R_DEFAULT0_00    Residual: DEFAULT=0.00
+FROM         F_DEFAULT        From: DEFAULT
+INTO         I_DEFAULT        Into: DEFAULT
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento DMREG
+ 
+                    Model Information
+ 
+Conjunto de datos de entrenamiento    WORK.EM_DMREG.VIEW
+Catálogo DMDB                         WORK.SCORECARD_DMDB
+Variable objetivo                     DEFAULT (DEFAULT)
+Nivel de medida del objetivo          Ordinal
+Número de categorías del objetivo     2
+Error                                 MBernoulli
+Función de vínculo                    Logit
+Número de parámetros modelo           9
+Número de observaciones               398
+ 
+ 
+          Target Profile
+ 
+   Valor                     Total
+ordenado     DEFAULT     Frequency
+ 
+       1     1.00               42
+       2     0.00              356
+ 
+ 
+ 
+ 
+Procedimiento de selección paso a paso
+ 
+ 
+Paso 0: término independiente introducido.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento DMREG
+ 
+Optimización Newton-Raphson Ridge
+ 
+Ajuste a escala sin parámetro
+ 
+Estimaciones de parámetro               1
+ 
+                                    Inicio de optimización
+ 
+Restricciones activas                        0  Función objetivo                  134.15043395
+Elemento gradiente absoluto máx   2.545186E-14
+ 
+                                  Resultados de optimización
+ 
+Iteraciones                                  0  Invocaciones de función                      3
+Invocaciones del hessiano                    1  Restricciones activas                        0
+Función objetivo                  134.15043395  Elemento gradiente absoluto máx   2.545186E-14
+Ridge                                        0  Actual Over Pred Change                      0
+ 
+Convergence criterion (ABSGCONV=0.00001) satisfied.
+ 
+ 
+        Likelihood Ratio Test for Global Null Hypothesis: BETA=0
+ 
+        -2 Log Likelihood
+                         Términos     Likelihood
+ Sólo términos     independientes          Ratio
+independientes      & covariables     Chi-Square       DF     Pr > ChiSq
+ 
+       268.301            268.301         0.0000        0          .
+ 
+ 
+                         Analysis of Maximum Likelihood Estimates
+ 
+                              Standard         Wald                    Estimador
+Parameter     DF   Estimate      Error   Chi-Square   Pr > ChiSq   estandarizado   Exp(Est)
+ 
+Intercept      1    -2.1373     0.1632       171.61       <.0001                      0.118
+ 
+ 
+ 
+ 
+Paso 1: efecto WOE_ACTIVE introducido.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento DMREG
+ 
+Optimización Newton-Raphson Ridge
+ 
+Ajuste a escala sin parámetro
+ 
+Estimaciones de parámetro               2
+ 
+                                    Inicio de optimización
+ 
+Restricciones activas                        0  Función objetivo                  134.15043395
+Elemento gradiente absoluto máx   18.330620527
+ 
+ 
+                                                                                        Ratio
+                                                                                      Between
+                                                                                       Actual
+                                                       Objective   Max Abs                and
+                 Function       Active      Objective   Function  Gradient          Predicted
+Iter   Restarts     Calls  Constraints       Function     Change   Element   Ridge     Change
+ 
+   1          0         2            0      123.87985    10.2706    6.0223       0      1.158
+   2          0         3            0      121.19028     2.6896    1.5179       0      1.227
+   3          0         4            0      120.63128     0.5590    0.3672       0      1.138
+   4          0         5            0      120.60113     0.0301    0.0237       0      1.035
+   5          0         6            0      120.60105   0.000089  0.000074       0      1.002
+ 
+                                  Resultados de optimización
+ 
+Iteraciones                                  5  Invocaciones de función                      8
+Invocaciones del hessiano                    6  Restricciones activas                        0
+Función objetivo                  120.60104602  Elemento gradiente absoluto máx   0.0000744319
+Ridge                                        0  Actual Over Pred Change           1.0019625533
+ 
+Convergence criterion (GCONV=1E-6) satisfied.
+ 
+ 
+        Likelihood Ratio Test for Global Null Hypothesis: BETA=0
+ 
+        -2 Log Likelihood
+                         Términos     Likelihood
+ Sólo términos     independientes          Ratio
+independientes      & covariables     Chi-Square       DF     Pr > ChiSq
+ 
+       268.301            241.202        27.0988        1         <.0001
+ 
+ 
+                         Analysis of Maximum Likelihood Estimates
+ 
+                              Standard         Wald                    Estimador
+Parameter     DF   Estimate      Error   Chi-Square   Pr > ChiSq   estandarizado   Exp(Est)
+ 
+Intercept      1    -2.1978     0.1982       123.01       <.0001                      0.111
+WOE_ACTIVE     1    -1.1514     0.3213        12.84       0.0003         -0.8583      0.316
+ 
+ 
+    Odds Ratio Estimates
+ 
+                       Point
+Effect              Estimate
+ 
+WOE_ACTIVE             0.316
+ 
+ 
+Paso 2: efecto WOE_AVGEXP introducido.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento DMREG
+ 
+Optimización Newton-Raphson Ridge
+ 
+Ajuste a escala sin parámetro
+ 
+Estimaciones de parámetro               3
+ 
+                                    Inicio de optimización
+ 
+Restricciones activas                        0  Función objetivo                  134.15043395
+Elemento gradiente absoluto máx   18.330620527
+ 
+ 
+                                                                                        Ratio
+                                                                                      Between
+                                                                                       Actual
+                                                       Objective   Max Abs                and
+                 Function       Active      Objective   Function  Gradient          Predicted
+Iter   Restarts     Calls  Constraints       Function     Change   Element   Ridge     Change
+ 
+   1          0         2            0      118.17247    15.9780    9.7783       0      1.120
+   2          0         3            0      113.97519     4.1973    2.3425       0      1.217
+   3          0         4            0      113.14384     0.8313    0.5200       0      1.145
+   4          0         5            0      113.09044     0.0534    0.0394       0      1.046
+   5          0         6            0      113.09018   0.000269  0.000215       0      1.003
+   6          0         7            0      113.09018   7.095E-9  5.727E-9       0      1.000
+ 
+                                  Resultados de optimización
+ 
+Iteraciones                                  6  Invocaciones de función                      9
+Invocaciones del hessiano                    7  Restricciones activas                        0
+Función objetivo                  113.09017553  Elemento gradiente absoluto máx   5.7267047E-9
+Ridge                                        0  Actual Over Pred Change           1.0000142394
+ 
+Convergence criterion (GCONV=1E-6) satisfied.
+ 
+ 
+        Likelihood Ratio Test for Global Null Hypothesis: BETA=0
+ 
+        -2 Log Likelihood
+                         Términos     Likelihood
+ Sólo términos     independientes          Ratio
+independientes      & covariables     Chi-Square       DF     Pr > ChiSq
+ 
+       268.301            226.180        42.1205        2         <.0001
+ 
+ 
+                         Analysis of Maximum Likelihood Estimates
+ 
+                              Standard         Wald                    Estimador
+Parameter     DF   Estimate      Error   Chi-Square   Pr > ChiSq   estandarizado   Exp(Est)
+ 
+Intercept      1    -2.2370     0.2114       111.97       <.0001                      0.107
+WOE_ACTIVE     1    -1.1600     0.3235        12.86       0.0003         -0.8647      0.314
+WOE_AVGEXP     1    -1.1857     0.3607        10.81       0.0010         -0.5149      0.306
+ 
+ 
+    Odds Ratio Estimates
+ 
+                       Point
+Effect              Estimate
+ 
+WOE_ACTIVE             0.314
+WOE_AVGEXP             0.306
+ 
+ 
+Paso 3: efecto WOE_AGE introducido.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento DMREG
+ 
+Optimización Newton-Raphson Ridge
+ 
+Ajuste a escala sin parámetro
+ 
+Estimaciones de parámetro               4
+ 
+                                    Inicio de optimización
+ 
+Restricciones activas                        0  Función objetivo                  134.15043395
+Elemento gradiente absoluto máx   18.330620527
+ 
+ 
+                                                                                        Ratio
+                                                                                      Between
+                                                                                       Actual
+                                                       Objective   Max Abs                and
+                 Function       Active      Objective   Function  Gradient          Predicted
+Iter   Restarts     Calls  Constraints       Function     Change   Element   Ridge     Change
+ 
+   1          0         2            0      114.44602    19.7044   13.9370       0      1.020
+   2          0         3            0      109.74956     4.6965    2.6485       0      1.190
+   3          0         4            0      108.95580     0.7938    0.5015       0      1.144
+   4          0         5            0      108.90491     0.0509    0.0374       0      1.047
+   5          0         6            0      108.90464   0.000277  0.000220       0      1.004
+   6          0         7            0      108.90464   8.926E-9  7.162E-9       0      1.000
+ 
+                                  Resultados de optimización
+ 
+Iteraciones                                  6  Invocaciones de función                      9
+Invocaciones del hessiano                    7  Restricciones activas                        0
+Función objetivo                  108.90463563  Elemento gradiente absoluto máx   7.1620287E-9
+Ridge                                        0  Actual Over Pred Change            1.000018285
+ 
+Convergence criterion (GCONV=1E-6) satisfied.
+ 
+ 
+        Likelihood Ratio Test for Global Null Hypothesis: BETA=0
+ 
+        -2 Log Likelihood
+                         Términos     Likelihood
+ Sólo términos     independientes          Ratio
+independientes      & covariables     Chi-Square       DF     Pr > ChiSq
+ 
+       268.301            217.809        50.4916        3         <.0001
+ 
+ 
+                         Analysis of Maximum Likelihood Estimates
+ 
+                              Standard         Wald                    Estimador
+Parameter     DF   Estimate      Error   Chi-Square   Pr > ChiSq   estandarizado   Exp(Est)
+ 
+Intercept      1    -2.2077     0.2126       107.84       <.0001                      0.110
+WOE_AGE        1    -0.8313     0.3102         7.18       0.0074         -0.3102      0.435
+WOE_ACTIVE     1    -1.0561     0.3122        11.44       0.0007         -0.7872      0.348
+WOE_AVGEXP     1    -1.0948     0.3599         9.26       0.0023         -0.4754      0.335
+ 
+ 
+    Odds Ratio Estimates
+ 
+                       Point
+Effect              Estimate
+ 
+WOE_AGE                0.435
+WOE_ACTIVE             0.348
+WOE_AVGEXP             0.335
+ 
+ 
+Paso 4: efecto WOE_CUR_ADD introducido.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento DMREG
+ 
+Optimización Newton-Raphson Ridge
+ 
+Ajuste a escala sin parámetro
+ 
+Estimaciones de parámetro               5
+ 
+                                    Inicio de optimización
+ 
+Restricciones activas                        0  Función objetivo                  134.15043395
+Elemento gradiente absoluto máx   18.330620527
+ 
+ 
+                                                                                        Ratio
+                                                                                      Between
+                                                                                       Actual
+                                                       Objective   Max Abs                and
+                 Function       Active      Objective   Function  Gradient          Predicted
+Iter   Restarts     Calls  Constraints       Function     Change   Element   Ridge     Change
+ 
+   1          0         2            0      111.95337    22.1971   15.9499       0      1.000
+   2          0         3            0      106.25761     5.6958    3.1226       0      1.194
+   3          0         4            0      105.19979     1.0578    0.6394       0      1.160
+   4          0         5            0      105.11060     0.0892    0.0620       0      1.062
+   5          0         6            0      105.10976   0.000842  0.000642       0      1.006
+   6          0         7            0      105.10976   8.009E-8  6.197E-8       0      1.000
+ 
+                                  Resultados de optimización
+ 
+Iteraciones                                  6  Invocaciones de función                      9
+Invocaciones del hessiano                    7  Restricciones activas                        0
+Función objetivo                   105.1097617  Elemento gradiente absoluto máx    6.197258E-8
+Ridge                                        0  Actual Over Pred Change           1.0000636533
+ 
+Convergence criterion (GCONV=1E-6) satisfied.
+ 
+ 
+        Likelihood Ratio Test for Global Null Hypothesis: BETA=0
+ 
+        -2 Log Likelihood
+                         Términos     Likelihood
+ Sólo términos     independientes          Ratio
+independientes      & covariables     Chi-Square       DF     Pr > ChiSq
+ 
+       268.301            210.220        58.0813        4         <.0001
+ 
+ 
+                         Analysis of Maximum Likelihood Estimates
+ 
+                              Standard         Wald                    Estimador
+Parameter     DF   Estimate      Error   Chi-Square   Pr > ChiSq   estandarizado   Exp(Est)
+ 
+Intercept      1    -2.2204     0.2199       101.94       <.0001                      0.109
+WOE_AGE        1    -0.7732     0.3048         6.43       0.0112         -0.2885      0.462
+WOE_ACTIVE     1    -1.0495     0.3283        10.22       0.0014         -0.7823      0.350
+WOE_AVGEXP     1    -1.0487     0.3542         8.77       0.0031         -0.4554      0.350
+WOE_CUR_ADD    1    -0.8441     0.3362         6.31       0.0120         -0.3325      0.430
+ 
+ 
+    Odds Ratio Estimates
+ 
+                       Point
+Effect              Estimate
+ 
+WOE_AGE                0.462
+WOE_ACTIVE             0.350
+WOE_AVGEXP             0.350
+WOE_CUR_ADD            0.430
+ 
+ 
+Paso 5: efecto WOE_INCOME introducido.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento DMREG
+ 
+Optimización Newton-Raphson Ridge
+ 
+Ajuste a escala sin parámetro
+ 
+Estimaciones de parámetro               6
+ 
+                                    Inicio de optimización
+ 
+Restricciones activas                        0  Función objetivo                  134.15043395
+Elemento gradiente absoluto máx   18.330620527
+ 
+ 
+                                                                                        Ratio
+                                                                                      Between
+                                                                                       Actual
+                                                       Objective   Max Abs                and
+                 Function       Active      Objective   Function  Gradient          Predicted
+Iter   Restarts     Calls  Constraints       Function     Change   Element   Ridge     Change
+ 
+   1          0         2            0      109.96807    24.1824   19.2430       0      0.902
+   2          0         3            0      103.01691     6.9512    3.4444       0      1.169
+   3          0         4            0      101.97202     1.0449    0.6380       0      1.150
+   4          0         5            0      101.89422     0.0778    0.0552       0      1.060
+   5          0         6            0      101.89352   0.000701  0.000547       0      1.007
+   6          0         7            0      101.89352    6.79E-8  5.367E-8       0      1.000
+ 
+                                  Resultados de optimización
+ 
+Iteraciones                                  6  Invocaciones de función                      9
+Invocaciones del hessiano                    7  Restricciones activas                        0
+Función objetivo                   101.8935159  Elemento gradiente absoluto máx   5.3667993E-8
+Ridge                                        0  Actual Over Pred Change           1.0000668459
+ 
+Convergence criterion (GCONV=1E-6) satisfied.
+ 
+ 
+        Likelihood Ratio Test for Global Null Hypothesis: BETA=0
+ 
+        -2 Log Likelihood
+                         Términos     Likelihood
+ Sólo términos     independientes          Ratio
+independientes      & covariables     Chi-Square       DF     Pr > ChiSq
+ 
+       268.301            203.787        64.5138        5         <.0001
+ 
+ 
+                         Analysis of Maximum Likelihood Estimates
+ 
+                              Standard         Wald                    Estimador
+Parameter     DF   Estimate      Error   Chi-Square   Pr > ChiSq   estandarizado   Exp(Est)
+ 
+Intercept      1    -2.1839     0.2165       101.72       <.0001                      0.113
+WOE_AGE        1    -0.7549     0.3159         5.71       0.0169         -0.2817      0.470
+WOE_INCOME     1    -0.8125     0.3197         6.46       0.0111         -0.2242      0.444
+WOE_ACTIVE     1    -0.9677     0.3071         9.93       0.0016         -0.7214      0.380
+WOE_AVGEXP     1    -0.9638     0.3491         7.62       0.0058         -0.4185      0.381
+WOE_CUR_ADD    1    -0.8964     0.3462         6.70       0.0096         -0.3531      0.408
+ 
+ 
+    Odds Ratio Estimates
+ 
+                       Point
+Effect              Estimate
+ 
+WOE_AGE                0.470
+WOE_INCOME             0.444
+WOE_ACTIVE             0.380
+WOE_AVGEXP             0.381
+WOE_CUR_ADD            0.408
+ 
+ 
+Paso 6: efecto WOE_DEPNDT introducido.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento DMREG
+ 
+Optimización Newton-Raphson Ridge
+ 
+Ajuste a escala sin parámetro
+ 
+Estimaciones de parámetro               7
+ 
+                                    Inicio de optimización
+ 
+Restricciones activas                        0  Función objetivo                  134.15043395
+Elemento gradiente absoluto máx   18.330620527
+ 
+ 
+                                                                                        Ratio
+                                                                                      Between
+                                                                                       Actual
+                                                       Objective   Max Abs                and
+                 Function       Active      Objective   Function  Gradient          Predicted
+Iter   Restarts     Calls  Constraints       Function     Change   Element   Ridge     Change
+ 
+   1          0         2            0      106.64582    27.5046   21.2003       0      0.912
+   2          0         3            0       98.27193     8.3739    4.1549       0      1.183
+   3          0         4            0       96.80908     1.4628    0.8478       0      1.162
+   4          0         5            0       96.67938     0.1297    0.0872       0      1.071
+   5          0         6            0       96.67769    0.00169   0.00129       0      1.010
+   6          0         7            0       96.67769   4.079E-7  3.209E-7       0      1.000
+ 
+                                  Resultados de optimización
+ 
+Iteraciones                                  6  Invocaciones de función                      9
+Invocaciones del hessiano                    7  Restricciones activas                        0
+Función objetivo                  96.677685837  Elemento gradiente absoluto máx    3.208777E-7
+Ridge                                        0  Actual Over Pred Change           1.0001891043
+ 
+Convergence criterion (GCONV=1E-6) satisfied.
+ 
+ 
+        Likelihood Ratio Test for Global Null Hypothesis: BETA=0
+ 
+        -2 Log Likelihood
+                         Términos     Likelihood
+ Sólo términos     independientes          Ratio
+independientes      & covariables     Chi-Square       DF     Pr > ChiSq
+ 
+       268.301            193.355        74.9455        6         <.0001
+ 
+ 
+                         Analysis of Maximum Likelihood Estimates
+ 
+                              Standard         Wald                    Estimador
+Parameter     DF   Estimate      Error   Chi-Square   Pr > ChiSq   estandarizado   Exp(Est)
+ 
+Intercept      1    -2.2452     0.2324        93.34       <.0001                      0.106
+WOE_AGE        1    -0.9154     0.3281         7.78       0.0053         -0.3416      0.400
+WOE_INCOME     1    -0.9300     0.3381         7.57       0.0059         -0.2566      0.395
+WOE_ACTIVE     1    -1.0285     0.3134        10.77       0.0010         -0.7667      0.358
+WOE_AVGEXP     1    -1.0243     0.3643         7.91       0.0049         -0.4448      0.359
+WOE_CUR_ADD    1    -0.8304     0.3516         5.58       0.0182         -0.3271      0.436
+WOE_DEPNDT     1    -2.5598     1.2838         3.98       0.0462         -0.5284      0.077
+ 
+ 
+    Odds Ratio Estimates
+ 
+                       Point
+Effect              Estimate
+ 
+WOE_AGE                0.400
+WOE_INCOME             0.395
+WOE_ACTIVE             0.358
+WOE_AVGEXP             0.359
+WOE_CUR_ADD            0.436
+WOE_DEPNDT             0.077
+ 
+ 
+NOTE: No (additional) effects met the 0.05 significance level for entry into the model.
+ 
+ 
+                           Summary of Stepwise Selection
+ 
+              Effect               Number         Score          Wald
+    Step    Entered          DF        In    Chi-Square    Chi-Square    Pr > ChiSq
+ 
+       1    WOE_ACTIVE        1         1       17.7406                      <.0001
+       2    WOE_AVGEXP        1         2       11.1121                      0.0009
+       3    WOE_AGE           1         3        7.6199                      0.0058
+       4    WOE_CUR_ADD       1         4        6.7966                      0.0091
+       5    WOE_INCOME        1         5        6.6534                      0.0099
+       6    WOE_DEPNDT        1         6        7.1009                      0.0077
+ 
+ 
+El modelo seleccionado es el modelo entrenado en el último paso (Paso 6). Consta de los
+siguientes efectos:
+ 
+Intercept  WOE_AGE  WOE_INCOME  WOE_ACTIVE  WOE_AVGEXP  WOE_CUR_ADD  WOE_DEPNDT
+ 
+ 
+        Likelihood Ratio Test for Global Null Hypothesis: BETA=0
+ 
+        -2 Log Likelihood
+                         Términos     Likelihood
+ Sólo términos     independientes          Ratio
+independientes      & covariables     Chi-Square       DF     Pr > ChiSq
+ 
+       268.301            193.355        74.9455        6         <.0001
+ 
+ 
+                         Analysis of Maximum Likelihood Estimates
+ 
+                              Standard         Wald                    Estimador
+Parameter     DF   Estimate      Error   Chi-Square   Pr > ChiSq   estandarizado   Exp(Est)
+ 
+Intercept      1    -2.2452     0.2324        93.34       <.0001                      0.106
+WOE_AGE        1    -0.9154     0.3281         7.78       0.0053         -0.3416      0.400
+WOE_INCOME     1    -0.9300     0.3381         7.57       0.0059         -0.2566      0.395
+WOE_ACTIVE     1    -1.0285     0.3134        10.77       0.0010         -0.7667      0.358
+WOE_AVGEXP     1    -1.0243     0.3643         7.91       0.0049         -0.4448      0.359
+WOE_CUR_ADD    1    -0.8304     0.3516         5.58       0.0182         -0.3271      0.436
+WOE_DEPNDT     1    -2.5598     1.2838         3.98       0.0462         -0.5284      0.077
+ 
+ 
+    Odds Ratio Estimates
+ 
+                       Point
+Effect              Estimate
+ 
+WOE_AGE                0.400
+WOE_INCOME             0.395
+WOE_ACTIVE             0.358
+WOE_AVGEXP             0.359
+WOE_CUR_ADD            0.436
+WOE_DEPNDT             0.077
+ 
+ 
+ 
+ 
+Scorecard
+ 
+                                                             Puntos de
+Obs    Variable    Grupo    Etiqueta                         scorecard
+ 
+  1    ACTIVE        -2     Puntuación neutral                   25
+  2    ACTIVE         1     ACTIVE< 2                           114
+  3    ACTIVE         2     2<= ACTIVE< 7, _MISSING_             27
+  4    ACTIVE         3     7<= ACTIVE< 11                       20
+  5    ACTIVE         4     11<= ACTIVE< 12                      51
+  6    ACTIVE         5     12<= ACTIVE                           1
+  7    AGE           -2     Puntuación neutral                   25
+  8    AGE            1     AGE< 27.75, _MISSING_                43
+  9    AGE            2     27.75<= AGE< 29.83                    6
+ 10    AGE            3     29.83<= AGE< 32.33                   65
+ 11    AGE            4     32.33<= AGE< 44.92                   13
+ 12    AGE            5     44.92<= AGE                          26
+ 13    AVGEXP        -2     Puntuación neutral                   25
+ 14    AVGEXP         1     AVGEXP< 87.15, _MISSING_             17
+ 15    AVGEXP         2     87.15<= AVGEXP< 132.85               40
+ 16    AVGEXP         3     132.85<= AVGEXP< 175.44              91
+ 17    AVGEXP         4     175.44<= AVGEXP< 420.58              33
+ 18    AVGEXP         5     420.58<= AVGEXP                       3
+ 19    CUR_ADD       -2     Puntuación neutral                   25
+ 20    CUR_ADD        1     CUR_ADD< 6                           59
+ 21    CUR_ADD        2     6<= CUR_ADD< 12                      18
+ 22    CUR_ADD        3     12<= CUR_ADD< 24                     52
+ 23    CUR_ADD        4     24<= CUR_ADD< 94, _MISSING_          14
+ 24    CUR_ADD        5     94<= CUR_ADD                         30
+ 25    DEPNDT        -2     Puntuación neutral                   25
+ 26    DEPNDT         1     DEPNDT< 1, _MISSING_                 15
+ 27    DEPNDT         2     1<= DEPNDT< 2                        24
+ 28    DEPNDT         3     2<= DEPNDT< 3                        40
+ 29    DEPNDT         4     3<= DEPNDT< 4                        19
+ 30    DEPNDT         5     4<= DEPNDT                          142
+ 31    INCOME        -2     Puntuación neutral                   25
+ 32    INCOME         1     INCOME< 1.68                         47
+ 33    INCOME         2     1.68<= INCOME< 2.1                    5
+ 34    INCOME         3     2.1<= INCOME< 3.11, _MISSING_        27
+ 35    INCOME         4     3.11<= INCOME< 5.92                  40
+ 36    INCOME         5     5.92<= INCOME                         1
+
+
+*------------------------------------------------------------*
+* Salida de puntuación
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Salida del informe
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Estadísticos de ajuste
+ 
+Objetivo=DEFAULT Etiqueta objetivo=DEFAULT
+ 
+Estadísticos
+ de ajuste    Etiqueta de estadísticos                    Entrenamiento  Validación   Prueba
+ 
+  _AIC_        criterio de información de Akaike             207.355          .         .
+  _ASE_        error cuadrado del promedio                     0.073         0.098     0.099
+  _AVERR_      función de error de promedio                    0.243         0.396     0.382
+  _DFE_        grados de libertad para el error              391.000          .         .
+  _DFM_        grados de libertad del modelo                   7.000          .         .
+  _DFT_        grados de libertad totales                    398.000          .         .
+  _DIV_        divisor para ASE                              796.000       596.000   596.000
+  _ERR_        función de error                              193.355       236.272   227.573
+  _FPE_        error de predicción final                       0.076          .         .
+  _MAX_        error absoluto máximo                           0.965         1.000     0.999
+  _MSE_        error cuadrático de la media                    0.075         0.098     0.099
+  _NOBS_       suma de frecuencias                           398.000       298.000   298.000
+  _NW_         número de pesos de los estimadores              7.000          .         .
+  _RASE_       suma del promedio de la raíz de cuadrados       0.271         0.314     0.314
+  _RFPE_       error de predicción final de la raíz            0.276          .         .
+  _RMSE_       error cuadrático de la media de la raíz         0.273         0.314     0.314
+  _SBC_        criterio bayesiano de Schwarz                 235.261          .         .
+  _SSE_        suma de errores cuadrados                      58.418        58.693    58.927
+  _SUMW_       suma de frec temporales de pesos de caso      796.000       596.000   596.000
+  _MISC_       tasa de error de clasificación                  0.098         0.114     0.111
+  _AUR_       Área bajo ROC                                    0.862         0.645     0.625
+  _Gini_      Coeficiente Gini                                 0.724         0.290     0.251
+  _KS_        Estadístico de Kolmogorov-Smirno                 0.566         0.254     0.253
+  _ARATIO_    Ratio de exactitud                               0.724         0.290     0.251
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Tabla de clasificación
+ 
+Rol de los datos=TRAIN Variable objetivo=DEFAULT Etiqueta objetivo=DEFAULT
+ 
+                         Porcentaje    Porcentaje     Número de     Porcentaje
+Objetivo    Resultado     objetivo      resultado    ocurrencias       total
+ 
+  0.00        0.00         91.1688       98.5955         351          88.1910
+  1.00        0.00          8.8312       80.9524          34           8.5427
+  0.00        1.00         38.4615        1.4045           5           1.2563
+  1.00        1.00         61.5385       19.0476           8           2.0101
+ 
+ 
+Rol de los datos=VALIDATE Variable objetivo=DEFAULT Etiqueta objetivo=DEFAULT
+ 
+                         Porcentaje    Porcentaje     Número de     Porcentaje
+Objetivo    Resultado     objetivo      resultado    ocurrencias       total
+ 
+  0.00        0.00         90.8772       97.0037         259          86.9128
+  1.00        0.00          9.1228       83.8710          26           8.7248
+  0.00        1.00         61.5385        2.9963           8           2.6846
+  1.00        1.00         38.4615       16.1290           5           1.6779
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Tabla de evento de clasificación
+ 
+Rol de los datos=TRAIN Objetivo=DEFAULT Etiqueta objetivo=DEFAULT
+ 
+  Falso     Verdadero      Falso     Verdadero
+negativo     negativo    positivo     positivo
+ 
+   34          351           5           8
+ 
+ 
+Rol de los datos=VALIDATE Objetivo=DEFAULT Etiqueta objetivo=DEFAULT
+ 
+  Falso     Verdadero      Falso     Verdadero
+negativo     negativo    positivo     positivo
+ 
+   26          259           8           5
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Clasificaciones de puntuación de evaluación
+ 
+Rol de los datos=TRAIN Variable objetivo=DEFAULT Etiqueta objetivo=DEFAULT
+ 
+                                                          %
+                                                      acumulado                 Probabilidad
+                                  Mejora       %          de       Número de    posterior de
+Profundidad  Ganancia   Mejora  acumulada  respuesta  respuesta  observaciones    la media
+ 
+      5       468.571  5.68571   5.68571    60.0000    60.0000         20          0.57143
+     10       385.655  4.02738   4.85655    42.5000    51.2500         20          0.36139
+     15       279.048  1.65833   3.79048    17.5000    40.0000         20          0.27548
+     20       196.131  0.47381   2.96131     5.0000    31.2500         20          0.20047
+     25       155.857  0.94762   2.55857    10.0000    27.0000         20          0.15066
+     30       160.595  2.84286   2.60595    30.0000    27.5000         20          0.12191
+     35       123.367  0.00000   2.23367     0.0000    23.5714         20          0.09796
+     40       125.060  2.36905   2.25060    25.0000    23.7500         20          0.07771
+     45       105.317  0.47381   2.05317     5.0000    21.6667         20          0.06508
+     50        95.238  0.99749   1.95238    10.5263    20.6030         19          0.05071
+     55        77.408  0.00000   1.77408     0.0000    18.7215         20          0.03941
+     60        66.527  0.47381   1.66527     5.0000    17.5732         20          0.02891
+     65        53.668  0.00000   1.53668     0.0000    16.2162         20          0.02252
+     70        42.652  0.00000   1.42652     0.0000    15.0538         20          0.01636
+     75        33.110  0.00000   1.33110     0.0000    14.0468         20          0.00932
+     80        24.765  0.00000   1.24765     0.0000    13.1661         20          0.00585
+     85        17.404  0.00000   1.17404     0.0000    12.3894         20          0.00361
+     90        10.864  0.00000   1.10864     0.0000    11.6992         20          0.00213
+     95         5.013  0.00000   1.05013     0.0000    11.0818         20          0.00127
+    100         0.000  0.00000   1.00000     0.0000    10.5528         19          0.00037
+ 
+ 
+Rol de los datos=VALIDATE Variable objetivo=DEFAULT Etiqueta objetivo=DEFAULT
+ 
+                                                          %
+                                                      acumulado                 Probabilidad
+                                  Mejora       %          de       Número de    posterior de
+Profundidad  Ganancia   Mejora  acumulada  respuesta  respuesta  observaciones    la media
+ 
+      5       220.430  3.20430   3.20430    33.3333    33.3333         15          0.60141
+     10       188.387  2.56344   2.88387    26.6667    30.0000         15          0.41194
+     15       134.982  1.28172   2.34982    13.3333    24.4444         15          0.33389
+     20        92.258  0.64086   1.92258     6.6667    20.0000         15          0.27077
+     25        79.441  1.28172   1.79441    13.3333    18.6667         15          0.19905
+     30        49.534  0.00000   1.49534     0.0000    15.5556         15          0.15741
+     35        37.327  0.64086   1.37327     6.6667    14.2857         15          0.12669
+     40        28.172  0.64086   1.28172     6.6667    13.3333         15          0.09979
+     45        35.293  1.92258   1.35293    20.0000    14.0741         15          0.07386
+     50        29.032  0.68664   1.29032     7.1429    13.4228         14          0.05706
+     55        34.815  1.92258   1.34815    20.0000    14.0244         15          0.04365
+     60        23.518  0.00000   1.23518     0.0000    12.8492         15          0.03218
+     65        18.923  0.64086   1.18923     6.6667    12.3711         15          0.02293
+     70        14.987  0.64086   1.14987     6.6667    11.9617         15          0.01439
+     75        15.870  1.28172   1.15870    13.3333    12.0536         15          0.00859
+     80        16.642  1.28172   1.16642    13.3333    12.1339         15          0.00568
+     85         9.754  0.00000   1.09754     0.0000    11.4173         15          0.00334
+     90         3.634  0.00000   1.03634     0.0000    10.7807         15          0.00190
+     95         1.545  0.64086   1.01545     6.6667    10.5634         15          0.00116
+    100         0.000  0.68664   1.00000     7.1429    10.4027         14          0.00031
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Distribución de puntuación de evaluación
+ 
+Rol de los datos=TRAIN Variable objetivo=DEFAULT Etiqueta objetivo=DEFAULT
+ 
+Rango de la      Número                  Probabilidad
+probabilidad       de       Número de    posterior de
+ posterior      eventos    no eventos      la media      Porcentaje
+ 
+ 0.75-0.80         3             1          0.77890         1.0050
+ 0.65-0.70         0             1          0.66443         0.2513
+ 0.60-0.65         2             2          0.61467         1.0050
+ 0.55-0.60         1             0          0.55399         0.2513
+ 0.50-0.55         2             1          0.52165         0.7538
+ 0.45-0.50         1             0          0.48253         0.2513
+ 0.40-0.45         3             3          0.43141         1.5075
+ 0.35-0.40         5             6          0.38077         2.7638
+ 0.30-0.35         5             9          0.33062         3.5176
+ 0.25-0.30         2             6          0.27887         2.0101
+ 0.20-0.25         0            16          0.22920         4.0201
+ 0.15-0.20         1            21          0.17196         5.5276
+ 0.10-0.15         8            28          0.12320         9.0452
+ 0.05-0.10         7            57          0.07292        16.0804
+ 0.00-0.05         2           205          0.01435        52.0101
+ 
+ 
+Rol de los datos=VALIDATE Variable objetivo=DEFAULT Etiqueta objetivo=DEFAULT
+ 
+Rango de la      Número                  Probabilidad
+probabilidad       de       Número de    posterior de
+ posterior      eventos    no eventos      la media      Porcentaje
+ 
+ 0.80-0.85          1            0          0.83295         0.3356
+ 0.75-0.80          1            1          0.77782         0.6711
+ 0.60-0.65          1            2          0.62743         1.0067
+ 0.55-0.60          1            2          0.55675         1.0067
+ 0.50-0.55          1            3          0.53009         1.3423
+ 0.45-0.50          0            2          0.47980         0.6711
+ 0.40-0.45          3            6          0.42921         3.0201
+ 0.35-0.40          1            7          0.38082         2.6846
+ 0.30-0.35          2           12          0.32729         4.6980
+ 0.25-0.30          1           11          0.27300         4.0268
+ 0.20-0.25          0            8          0.22362         2.6846
+ 0.15-0.20          2           19          0.17176         7.0470
+ 0.10-0.15          2           22          0.12380         8.0537
+ 0.05-0.10          4           35          0.07220        13.0872
+ 0.00-0.05         11          137          0.01325        49.6644

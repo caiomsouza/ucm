@@ -1,3 +1,5 @@
+
+
 /* EJEMPLO SUBMISSION 
 
 LA VARIABLE IP_1 SALIDA DE LA LOGÍSTICA ES EL RESULTADO QUE HAY QUE DAR.
@@ -6,10 +8,27 @@ UTILIZAR VALIDACIÓN CRUZADA Y MACROS PARA DETERMINAR LOS MODELOS BUENOS.
  
 */
 
+libname discoc 'C:\Users\win\Documents\GitHub\ucm\semma\kaggle-credit-card';
+
+
 data union;
 set discoc.creditostrain discoc.creditostestalumnos;
 run;
 
+proc contents data=union;run;
+
+data union;
+set union;
+logcantidad = log(cantidad);
+expcantidad = cantidad**2; 
+run;
+
+
+proc standard data=union out=salida_standard mean=0 std=1; var age baths beds lot sqft tax;
+run;
+
+
+/* tentativa 1 */
 proc logistic data=union;
 class malo;
 model malo=
@@ -18,11 +37,51 @@ roc;
 output out=sal1 predprobs=(I) ;
 run;
 
-data;file 'c:\submission2.csv' dlm=','; /* EL ARCHIVO CREADO SE METE EN KAGGLE */
+/* tentativa 2 */
+
+proc logistic data=union;
+class malo;
+model malo=
+campo1 campo2 campo3 campo4 campo5 cantidad flag1 flag2 flag3 flag4 flag5 hora1 hora2 indicador1 indicador2 expcantidad logcantidad total zip1  /selection=stepwise;
+roc;
+output out=sal1 predprobs=(I) ;
+run;
+
+
+/* tentativa 3 */
+
+proc logistic data=union;
+class malo;
+model malo=
+campo1 campo2 campo3 campo4 campo5 cantidad flag1 flag2 flag3 flag4 flag5 hora1 hora2 indicador1 indicador2 total zip1  /selection=stepwise;
+roc;
+output out=sal1 predprobs=(I) ;
+run;
+
+/* tentativa 4 */
+
+proc logistic data=union;
+class malo;
+model malo=
+campo1 campo2 campo3 campo4 campo5 cantidad flag1 flag2 flag3 flag4 flag5 hora1 hora2 indicador1 indicador2 total zip1 cantidad*total /selection=stepwise;
+roc;
+output out=sal1 predprobs=(I) ;
+run;
+
+/* dominio1 estado1 */
+
+%interacttodo(archivo=union,vardep=malo,
+listclass=dominio1 estado1 ,listconti=campo1 campo2 campo3 campo4 campo5 cantidad flag1 flag2 flag3 flag4 flag5 hora1 hora2 indicador1 indicador2 total zip1,
+interac=1,directorio=C:\Users\win\Documents\GitHub\ucm\semma\kaggle-credit-card\logs\);
+
+
+
+data;file 'C:\Users\win\Documents\GitHub\ucm\semma\kaggle-credit-card\submission-caio03-09feb16.csv' dlm=','; /* EL ARCHIVO CREADO SE METE EN KAGGLE */
 set sal1;
 if _n_=1 then put 'row_id,value';
 if malo=. then put id ip_1;
 run;
+
 
 
 
