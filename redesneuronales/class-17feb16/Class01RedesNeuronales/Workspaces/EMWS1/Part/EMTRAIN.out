@@ -1,0 +1,26 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+            Nivel de     Número de
+Rol          medida     ocurrencias
+
+INPUT       INTERVAL         2     
+INPUT       NOMINAL          1     
+REJECTED    INTERVAL         1     
+REJECTED    NOMINAL          1     
+TARGET      INTERVAL         1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de partición
+
+             Conjunto          Número de
+Tipo         de datos        observaciones
+
+DATA     EMWS1.Ids_DATA            45     
+TRAIN    EMWS1.Part_TRAIN          32     
+TEST     EMWS1.Part_TEST           13     

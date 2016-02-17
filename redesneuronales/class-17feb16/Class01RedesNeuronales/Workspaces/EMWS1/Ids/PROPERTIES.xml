@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  DataSource="fitness" Scope="LOCAL" Role="RAW" Library="UCM" Table="FITNESS" NCols="6"
+ NObs="45" NBytes="5120" Segment="" DataSourceRole="RAW" OutputType="VIEW" ForceRun="N"
+ ComputeStatistics="N" DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC"
+ ApplyIntervalLevelLowerLimit="Y" IntervalLowerLimit="20" ApplyMaxPercentMissing="Y"
+ MaxPercentMissing="50" ApplyMaxClassLevels="Y" MaxClassLevels="20" IdentifyEmptyColumns="Y"
+ VariableValidation="STRICT" NewVariableRole="REJECT" DropMapVariables="Y" DsId="fitness"
+ DsSampleName="" DsSampleSizeType="" DsSampleSize="" DsCreatedBy="win" DsCreateDate="1771358095.9"
+ DsModifiedBy="win" DsModifyDate="1771358095.9" DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT"
+ SampleSizePercent="20" SampleSizeObs="10000" DBPassThrough="Y" RunAction="Train"
+ Component="DataSource" RawCreateTime="1771358099.5" CreateTime="17FEB2016:19:54:59"
+ Description="" Data="UCM.FITNESS" CMeta="WORK.M1PQZHQ3" RunId="8f0de23a-4038-4b81-b5a6-50d844f1849c"
+>
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

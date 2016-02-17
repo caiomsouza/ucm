@@ -1,0 +1,28 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Estadísticos descriptivos para las variables objetivo intervalo
+
+Datos=DATA
+
+                                             Número de                 Desviación
+Variable    Máximo     Media     Mínimo    observaciones    Ausente     estándar     Etiqueta
+
+  AERO       70.6     33.1932     13.6           44            1         10.8324             
+
+
+Datos=TEST
+
+                                             Número de                 Desviación
+Variable    Máximo     Media     Mínimo    observaciones    Ausente     estándar     Etiqueta
+
+  AERO       50.1     33.9077     15.7           13            0         9.87501             
+
+
+Datos=TRAIN
+
+                                             Número de                 Desviación
+Variable    Máximo     Media     Mínimo    observaciones    Ausente     estándar     Etiqueta
+
+  AERO       70.6     32.8935     13.6           31            1         11.3520             

@@ -1,0 +1,92 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Estadísticos de ajuste
+
+Objetivo=AERO Etiqueta objetivo=' '
+
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                    Entrenamiento     Prueba
+
+  _DFT_         grados de libertad totales                      31.000           .  
+  _DFE_         grados de libertad para el error                 0.000           .  
+  _DFM_         grados de libertad del modelo                   31.000           .  
+  _NW_          número de pesos estimados                       31.000           .  
+  _AIC_         criterio de información de Akaike                 .              .  
+  _SBC_         criterio bayesiano de Schwarz                     .              .  
+  _ASE_         error cuadrado de promedio                      19.946        150.19
+  _MAX_         error absoluto máximo                           18.186         21.04
+  _DIV_         divisor para ASE                                31.000         13.00
+  _NOBS_        suma de frecuencias                             31.000         13.00
+  _RASE_        error cuadrado de promedio de la raíz            4.466         12.26
+  _SSE_         suma de errores cuadrados                      618.338       1952.47
+  _SUMW_        suma de frec temporales de pesos de caso        31.000         13.00
+  _FPE_         error de predicción final                         .              .  
+  _MSE_         error cuadrático de la media                      .           150.19
+  _RFPE_        error de predicción final de la raíz              .              .  
+  _RMSE_        error cuadrático de la media de la raíz           .            12.26
+  _AVERR_       función de error de promedio                    19.946        150.19
+  _ERR_         función de error                               618.338       1952.47
+  _MISC_        tasa de error de clasificación                    .              .  
+  _WRONG_       número de clasificaciones erróneas                .              .  
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Clasificaciones de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=AERO Etiqueta objetivo=' '
+
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo     predicha
+
+      5              3            52.2333       52.4141
+     15              1            47.8000       48.2678
+     20              2            43.5500       43.1594
+     25              2            40.4000       40.6125
+     30              1            38.1000       37.2388
+     35              2            37.5000       37.2122
+     40              1            36.6000       36.6084
+     45              2            35.1500       33.9947
+     50              1            33.0000       32.7360
+     55              3            30.3333       31.2612
+     60              1            30.3000       30.4624
+     65              1            29.9000       29.7859
+     70              2            26.8000       27.4501
+     75              1            26.2000       24.5548
+     80              2            23.3000       22.7871
+     85              2            22.1000       22.3150
+     90              1            21.3000       21.8363
+     95              2            18.8000       18.8133
+    100              1            13.6000       15.0854
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Distribución de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=AERO Etiqueta objetivo=' '
+
+                    Media de la
+   Rango para         variable       Media       Número de      Puntuación
+    predicho          objetivo     predicha    observaciones    del modelo
+
+50.548 -  52.414      52.2333       52.4141          3            51.4809 
+46.815 -  48.681      47.8000       48.2678          1            47.7480 
+43.082 -  44.948      44.0000       43.5487          1            44.0151 
+41.215 -  43.082      43.1000       42.7701          1            42.1487 
+39.349 -  41.215      40.4000       40.6125          2            40.2823 
+35.616 -  37.483      37.4250       37.0679          4            36.5494 
+33.750 -  35.616      34.2000       34.6672          1            34.6830 
+31.883 -  33.750      32.6667       32.6804          3            32.8165 
+30.017 -  31.883      30.8000       30.7543          3            30.9501 
+28.150 -  30.017      30.9500       29.0004          2            29.0837 
+26.284 -  28.150      21.6000       26.6853          1            27.2172 
+24.418 -  26.284      26.2000       24.5548          1            25.3508 
+22.551 -  24.418      23.0667       22.7461          3            23.4844 
+20.685 -  22.551      21.4500       21.9011          2            21.6179 
+18.818 -  20.685      18.9000       18.9714          1            19.7515 
+16.952 -  18.818      18.7000       18.6552          1            17.8851 
+15.085 -  16.952      13.6000       15.0854          1            16.0186 

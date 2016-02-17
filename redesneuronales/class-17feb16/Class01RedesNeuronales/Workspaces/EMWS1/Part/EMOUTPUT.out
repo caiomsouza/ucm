@@ -1,0 +1,71 @@
+*------------------------------------------------------------*
+Usuario:                win
+Fecha:                17/02/16
+Hora:                20H20
+*------------------------------------------------------------*
+* Salida de entrenamiento
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Resumen de variables
+ 
+            Nivel de     Número de
+Rol          medida     ocurrencias
+ 
+INPUT       INTERVAL         2
+INPUT       NOMINAL          1
+REJECTED    INTERVAL         1
+REJECTED    NOMINAL          1
+TARGET      INTERVAL         1
+ 
+ 
+ 
+ 
+Resumen de partición
+ 
+             Conjunto          Número de
+Tipo         de datos        observaciones
+ 
+DATA     EMWS1.Ids_DATA            45
+TRAIN    EMWS1.Part_TRAIN          32
+TEST     EMWS1.Part_TEST           13
+
+
+*------------------------------------------------------------*
+* Salida de puntuación
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Salida del informe
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Estadísticos descriptivos para las variables objetivo intervalo
+ 
+Datos=DATA
+ 
+                                             Número de                 Desviación
+Variable    Máximo     Media     Mínimo    observaciones    Ausente     estándar     Etiqueta
+ 
+  AERO       70.6     33.1932     13.6           44            1         10.8324
+ 
+ 
+Datos=TEST
+ 
+                                             Número de                 Desviación
+Variable    Máximo     Media     Mínimo    observaciones    Ausente     estándar     Etiqueta
+ 
+  AERO       50.1     33.9077     15.7           13            0         9.87501
+ 
+ 
+Datos=TRAIN
+ 
+                                             Número de                 Desviación
+Variable    Máximo     Media     Mínimo    observaciones    Ausente     estándar     Etiqueta
+ 
+  AERO       70.6     32.8935     13.6           31            1         11.3520

@@ -1,0 +1,80 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+            Nivel de     Número de
+Rol          medida     ocurrencias
+
+INPUT       INTERVAL         2     
+INPUT       NOMINAL          1     
+REJECTED    INTERVAL         1     
+REJECTED    NOMINAL          1     
+TARGET      INTERVAL         1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variables predichas y de decisión
+
+Tipo         Variable       Etiqueta
+
+TARGET        AERO                      
+PREDICTED     P_AERO     Predicted: AERO
+RESIDUAL      R_AERO     Residual: AERO 
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento DMREG
+
+                   Model Information
+
+Conjunto de datos de entrenamiento    WORK.EM_DMREG.VIEW
+Catálogo DMDB                         WORK.REG_DMDB     
+Variable objetivo                     AERO              
+Nivel de medida del objetivo          Interval          
+Error                                 Normal            
+Función de vínculo                    Identity          
+Número de parámetros modelo           4                 
+Número de observaciones               31                
+
+
+                             Analysis of Variance
+ 
+                                  Suma de     Cuadrado de
+Fuente                 DF       cuadrados        la media    F-Valor    Pr > F
+
+Model                   3     2116.753406      705.584469      10.89    <.0001
+Error                  27     1749.285304       64.788345                     
+Corrected Total        30     3866.038710                                     
+
+
+              Model Fit Statistics
+
+R-Square        0.5475     Adj R-Sq        0.4973
+AIC           133.0222     BIC           136.1635
+SBC           138.7582     C(p)            4.0000
+
+
+            Type 3 Analysis of Effects
+ 
+                       Suma de
+Effect        DF     cuadrados    F-Valor    Pr > F
+
+EXER           1       41.5282       0.64    0.4303
+HEART          1      182.4828       2.82    0.1048
+SEX            1     1274.0706      19.67    0.0001
+
+
+            Analysis of Maximum Likelihood Estimates
+ 
+                                 Standard
+Parameter      DF    Estimate       Error    Valor t    Pr > |t|
+
+Intercept       1     49.9044     15.0825       3.31      0.0027
+EXER            1      1.5911      1.9874       0.80      0.4303
+HEART           1     -0.2739      0.1632      -1.68      0.1048
+SEX       F     1     -6.5616      1.4797      -4.43      0.0001

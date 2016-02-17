@@ -1,0 +1,245 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+            Nivel de     Número de
+Rol          medida     ocurrencias
+
+INPUT       INTERVAL         2     
+INPUT       NOMINAL          1     
+REJECTED    INTERVAL         1     
+REJECTED    NOMINAL          1     
+TARGET      INTERVAL         1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variables predichas y de decisión
+
+Tipo         Variable       Etiqueta
+
+TARGET        AERO                      
+PREDICTED     P_AERO     Predicted: AERO
+RESIDUAL      R_AERO     Residual: AERO 
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1               12345    39.20958824816           10                
+        2          1797629599    43.01055731025           10                
+        3          1935380089    25.27434847261           10                
+        4           734635899    39.03451756675           10                
+        5           600222438    43.02684118034           10                
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+            Inicio de optimización
+              Parameter Estimates
+                                      Gradient
+                                     Objective
+  N Parameter        Estimador        Function
+
+  1 EXER_H11          3.071901        0.267301
+  2 HEART_H11        -6.333599        4.737396
+  3 EXER_H12         -2.200197       -0.563681
+  4 HEART_H12        -0.536268        0.248841
+  5 EXER_H13          1.198361       -0.076315
+  6 HEART_H13        -2.325180        0.042808
+  7 EXER_H14         -2.619391       -0.286674
+  8 HEART_H14        -1.955769        1.600864
+  9 EXER_H15         -6.066983        0.588323
+ 10 HEART_H15        -5.706415       -0.195054
+ 11 EXER_H16         -1.423015        0.607477
+ 12 HEART_H16         5.437524        0.201807
+ 13 SEXF_H11         -3.153682       -1.882984
+ 14 SEXF_H12         -0.205824       -0.859667
+ 15 SEXF_H13          0.865624       -0.072087
+ 16 SEXF_H14          3.802086        0.480971
+ 17 SEXF_H15          1.482654       -0.610412
+ 18 SEXF_H16          0.787562       -0.316937
+ 19 BIAS_H11          4.969162        4.718260
+ 20 BIAS_H12         -1.451259        2.287394
+ 21 BIAS_H13          2.695066        0.142831
+ 22 BIAS_H14         -0.881965        0.572481
+ 23 BIAS_H15         -0.542802       -2.011219
+ 24 BIAS_H16         -0.704950        0.058294
+ 25 H11_AERO        -10.539925       -0.222902
+ 26 H12_AERO         -8.118214        0.996799
+ 27 H13_AERO          1.382359       -0.491991
+ 28 H14_AERO         -9.989397        0.538906
+ 29 H15_AERO          6.146385       -0.029048
+ 30 H16_AERO         -7.443262        0.022239
+ 31 BIAS_AERO        29.912906       -1.072785
+
+Valor de la función objetivo = 25.274348473
+
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+Optimización Levenberg-Marquardt
+
+
+Iteraciones mímimas                                          0
+Iteraciones máximas                                         50
+Invocaciones máximas de la función                  2147483647
+Tiempo CPU máximo                                        14400
+Criterio gradiente ABSGCONV                            0.00001
+Criterio gradiente GCONV                                  1E-8
+Criterio gradiente GCONV2                                    0
+Criterio de la función ABSFCONV                              0
+Criterio de la función FCONV                            0.0001
+Criterio de la función FCONV2                                0
+Parámetro FSIZE                                              0
+Criterio de cambio de parámetro ABSXCONV                     0
+Criterio de cambio de parámetro XCONV                        0
+Parámetro XSIZE                                              0
+Criterio de función ABSCONV                        0.128867957
+Factor de radio inicial de región de confianza               1
+Tolerancia de singularidad (SINGULAR)                     1E-8
+
+Optimización Levenberg-Marquardt
+
+Ajuste a escala de la actualización de More (1978)
+
+Estimaciones de parámetro              31
+
+                                           Inicio de optimización
+
+Restricciones activas                               0  Función objetivo                         25.274348473
+Elemento gradiente absoluto máx          4.7373958747  Radio                                    33.945146417
+
+
+                                                                                                         Ratio
+                                                                                                       Between
+                                                                                                        Actual
+                                                                 Objective     Max Abs                     and
+                     Function         Active        Objective     Function    Gradient               Predicted
+Iter     Restarts       Calls    Constraints         Function       Change     Element     Lambda       Change
+
+   1*           0           3              0         23.52434       1.7500      1.9210     0.0126        0.608
+   2*           0           5              0         22.90966       0.6147      2.2865      0.735        0.555
+   3*           0           7              0         22.82230       0.0874      2.3301      3.209        0.117
+   4*           0           8              0         22.55423       0.2681      1.3754      1.935        0.510
+   5*           0           9              0         22.49543       0.0588      1.8386      1.497        0.166
+   6*           0          10              0         22.32363       0.1718      1.2940      1.362        0.458
+   7*           0          11              0         22.27168       0.0519      1.7852      1.338        0.165
+   8*           0          12              0         22.11756       0.1541      1.2228      1.182        0.461
+   9*           0          13              0         22.06902       0.0485      1.6981      1.184        0.176
+  10*           0          14              0         21.93222       0.1368      1.1350      1.012        0.472
+  11*           0          15              0         21.88541       0.0468      1.5803      1.040        0.199
+  12*           0          16              0         21.76551       0.1199      1.0333      0.872        0.489
+  13*           0          17              0         21.71852       0.0470      1.4332      0.909        0.239
+  14*           0          18              0         21.61451       0.1040      0.9196      0.761        0.514
+  15*           0          19              0         21.56577       0.0487      1.2595      0.796        0.303
+  16*           0          20              0         21.47578       0.0900      0.7984      0.681        0.552
+  17*           0          21              0         21.42434       0.0514      1.0677      0.708        0.396
+  18*           0          22              0         21.34565       0.0787      0.6773      0.634        0.606
+  19*           0          23              0         21.29115       0.0545      0.8760      0.652        0.516
+  20*           0          24              0         21.22056       0.0706      0.5664      0.621        0.673
+  21*           0          25              0         21.16332       0.0572      0.7092      0.623        0.641
+  22*           0          26              0         20.98050       0.1828      0.4802      0.183        0.886
+  23*           0          27              0         20.74157       0.2389      1.4564     0.0863        0.646
+  24*           0          29              0         20.62314       0.1184      0.4619      1.104        0.713
+  25*           0          30              0         20.56702       0.0561      0.3576      0.617        0.884
+  26*           0          31              0         20.48719       0.0798      0.3087      0.318        0.824
+  27*           0          32              0         20.37085       0.1163      0.9879      0.142        0.649
+  28*           0          34              0         20.31168       0.0592      0.5233      0.620        0.498
+  29*           0          35              0         20.29418       0.0175      1.0079      0.500        0.212
+  30*           0          36              0         20.24848       0.0457      0.5336      0.552        0.399
+  31*           0          38              0         20.22971       0.0188      0.7271      1.793        0.317
+  32*           0          39              0         20.20641       0.0233      0.3544      1.160        0.530
+  33*           0          40              0         20.19407       0.0123      0.5190      1.240        0.377
+  34*           0          41              0         20.17520       0.0189      0.3010      1.089        0.576
+  35*           0          42              0         20.16177       0.0134      0.4281      1.090        0.493
+  36*           0          43              0         20.14437       0.0174      0.2702      1.030        0.618
+  37*           0          44              0         20.13073       0.0136      0.3843      1.025        0.550
+  38*           0          45              0         20.09061       0.0401      0.2897      0.284        0.648
+  39*           0          47              0         20.08053       0.0101      0.6267      1.422        0.244
+  40*           0          48              0         20.06193       0.0186      0.3150      0.983        0.489
+  41*           0          49              0         20.05329      0.00865      0.5335      1.121        0.272
+  42*           0          50              0         20.03657       0.0167      0.2910      0.976        0.491
+  43*           0          51              0         20.02758      0.00899      0.4856      1.013        0.315
+  44*           0          52              0         20.01210       0.0155      0.2756      0.944        0.492
+  45*           0          53              0         20.00345      0.00865      0.4664      0.964        0.320
+  46*           0          54              0         19.98885       0.0146      0.2673      0.918        0.481
+  47*           0          55              0         19.98090      0.00795      0.4629      0.939        0.301
+  48*           0          56              0         19.96695       0.0140      0.2627      0.901        0.464
+  49*           0          57              0         19.95982      0.00714      0.4660      0.926        0.272
+  50*           0          58              0         19.94637       0.0134      0.2594      0.888        0.445
+
+                                         Resultados de optimización
+
+Iteraciones                                        50  Invocaciones de función                            60
+Invocaciones del jacobiano                         52  Restricciones activas                               0
+Función objetivo                         19.946371923  Elemento gradiente absoluto máx          0.2594408069
+Lambda                                   0.8879757139  Actual Over Pred Change                  0.4453873724
+Radio                                    0.1459630132                                                       
+
+LEVMAR necesita más de 50 iteraciones o 2147483647 invocaciones de función.                       
+
+WARNING: LEVMAR No se puede completar la optimización.
+
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+          Resultados de optimización
+              Parameter Estimates
+                                      Gradient
+                                     Objective
+  N Parameter        Estimador        Function
+
+  1 EXER_H11          3.652917       -0.013352
+  2 HEART_H11        -7.182475       -0.004527
+  3 EXER_H12         -2.471024        0.100515
+  4 HEART_H12        -0.533101       -0.107346
+  5 EXER_H13          3.872844       -0.024415
+  6 HEART_H13         0.498358        0.023828
+  7 EXER_H14         -1.417499        0.090977
+  8 HEART_H14        -1.349259       -0.137845
+  9 EXER_H15        -12.866305        0.259441
+ 10 HEART_H15       -13.342360       -0.184724
+ 11 EXER_H16         -0.976645       -0.003951
+ 12 HEART_H16         6.199213        0.006046
+ 13 SEXF_H11         -3.128696       -0.029472
+ 14 SEXF_H12         -0.562784       -0.085251
+ 15 SEXF_H13          3.446198       -0.007259
+ 16 SEXF_H14          2.930182       -0.061399
+ 17 SEXF_H15          3.072841       -0.121938
+ 18 SEXF_H16          2.178091       -0.018202
+ 19 BIAS_H11          5.452611       -0.031233
+ 20 BIAS_H12         -2.124879       -0.079541
+ 21 BIAS_H13         -0.929398        0.024961
+ 22 BIAS_H14         -1.706150       -0.071742
+ 23 BIAS_H15          0.347843       -0.108711
+ 24 BIAS_H16         -2.076604       -0.005793
+ 25 H11_AERO        -12.973349        0.016049
+ 26 H12_AERO         -7.735851       -0.020764
+ 27 H13_AERO          5.364476       -0.031375
+ 28 H14_AERO        -15.797568        0.054818
+ 29 H15_AERO          9.673973       -0.011744
+ 30 H16_AERO         -7.844292        0.020835
+ 31 BIAS_AERO        29.617058        0.038088
+
+Valor de la función objetivo = 19.946371923
+

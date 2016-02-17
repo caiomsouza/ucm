@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  NumberOfReportedLevels="1E-6" NormalizeReportingVariables="Y" DecileBin="20" LiftEpsilon="1E-6"
+ ProfitEpsilon="1E-6" RoiEpsilon="1E-6" ScoreDistBin="20" RocChart="Y" RocEpsilon="0.01"
+ AssessAllTargetLevels="N" SelectionData="DEFAULT" HPCriteria="DEFAULT" SelectionTable="TRAIN"
+ SelectionCriteria="DEFAULT" SelectionDepth="10" NumberofBins="20" RecomputeAssess="N"
+ TargetName="AERO" ModelId="Neural" ModelDescription="Red neuronal" ModelCriteria="Entrenar: error cuadrado de promedio"
+ ForceRun="N" RunAction="Train" Component="ModelCompare" RawCreateTime="1771359226.7"
+ CreateTime="17FEB2016:20:13:47" RunId="9481adf6-3d63-4ea7-8eea-773b7d28031e" StatisticUsed="_ASE_"
+ TargetLabel="">
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

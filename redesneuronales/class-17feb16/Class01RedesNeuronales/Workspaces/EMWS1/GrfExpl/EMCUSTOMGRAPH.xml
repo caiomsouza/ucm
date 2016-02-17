@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><StatGraph silkCompat="true" version="9.2_S2DVR">
+<LayoutOverlay actionMode="brush" name="LayoutOverlay 2">
+<Scatter data="SAMPLE_DATA" name="Dispersión">
+<Role discrete="false" type="X" variable="AERO"/>
+<Role discrete="false" type="Y" variable="HEART"/>
+<Role discrete="false" type="Group" variable="SEX"/>
+</Scatter>
+<Legend type="Group" visible="true">
+<Title textAlign="Left" verticalAlign="Bottom"/>
+</Legend>
+</LayoutOverlay>
+</StatGraph>
+<StatGraph silkCompat="true" version="9.2_S2DVR">
+<LayoutOverlay actionMode="brush" name="LayoutOverlay 1">
+<Scatter data="SAMPLE_DATA" name="Dispersión">
+<Role discrete="false" type="X" variable="EXER"/>
+<Role discrete="false" type="Y" variable="AERO"/>
+<Role discrete="false" type="Group" variable="SEX"/>
+</Scatter>
+<Legend type="Group" visible="true">
+<Title textAlign="Left" verticalAlign="Bottom"/>
+</Legend>
+</LayoutOverlay>
+</StatGraph>
