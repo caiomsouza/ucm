@@ -27,7 +27,6 @@ The Art of War<BR>
 Sun Tzu<BR>
 http://web.stanford.edu/class/polisci211z/1.1/Sun%20Tzu.pdf<BR>
 
-
 El Príncipe<BR>
 Nicolas Maquiavelo<BR>
 http://www.ciudadoriental.com/elprincipe.pdf<BR>
@@ -41,7 +40,5 @@ http://www.amazon.com/The-Lean-Startup-Entrepreneurs-Continuous/dp/0307887898/re
 The Innovator's Dilemma: The Revolutionary Book That Will Change the Way You Do Business<BR>
 http://www.amazon.com/The-Innovators-Dilemma-Revolutionary-Business/dp/0062060244/ref=pd_sim_14_5?ie=UTF8&dpID=41lZYsjj6dL&dpSrc=sims&preST=_AC_UL160_SR107%2C160_&refRID=1CXZR3ZNYZF3H1PS5XV1<BR>
 
-Estrategia<BR>
+Estrategia
 * Tener un objetivo y un plan
-
-
