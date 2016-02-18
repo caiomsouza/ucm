@@ -1,4 +1,4 @@
-#Inteligencia de Negocios y Cuadro de Mando Integral
+###Inteligencia de Negocios y Cuadro de Mando Integral
 
 Dr. Gregorio Martín de Castro<BR>
 Campus Somosaguas<BR>
