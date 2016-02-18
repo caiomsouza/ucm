@@ -16,6 +16,18 @@ https://www.researchgate.net/profile/Gregorio_Martin-de_Castro<BR>
 https://scholar.google.co.uk/citations?user=qeAbKAcAAAAJ<BR>
 https://es.linkedin.com/in/gregorio-martin-de-castro-a100372<BR>
 
+###Class Notes:
+
+Forum Davos<BR>
+http://www.weforum.org<BR>
+
+Libros:<BR>
+
+The Art of War<BR>
+Sun Tzu<BR>
+http://web.stanford.edu/class/polisci211z/1.1/Sun%20Tzu.pdf<BR>
 
 
-
+El Príncipe<BR>
+Nicolas Maquiavelo<BR>
+http://www.ciudadoriental.com/elprincipe.pdf<BR>
