@@ -46,5 +46,10 @@ Donde se encuentra información relevante de forma explicita:
 * Wall Street Times
 * Financial Times
 
+Indicadores Claves
+* Perdida de clientes
+
+
+
 
 
