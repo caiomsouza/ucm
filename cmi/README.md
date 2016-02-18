@@ -2,7 +2,6 @@
 Master en Minería de Datos y Inteligencia de Negocios<BR>
 Universidad Complutense de Madrid<BR>
 
-
 Dr. Gregorio Martín de Castro<BR>
 Campus Somosaguas<BR>
 gregorio.martin@ccee.ucm.es<BR>
@@ -42,3 +41,10 @@ http://www.amazon.com/The-Innovators-Dilemma-Revolutionary-Business/dp/006206024
 
 Estrategia
 * Tener un objetivo y un plan
+
+Donde se encuentra información relevante de forma explicita:
+* Wall Street Times
+* Financial Times
+
+
+
