@@ -1,6 +1,7 @@
 ### Inteligencia de Negocios y Cuadro de Mando Integral
-### Master en Minería de Datos y Inteligencia de Negocios
-### Universidad Complutense de Madrid
+Master en Minería de Datos y Inteligencia de Negocios<BR>
+Universidad Complutense de Madrid<BR>
+
 
 Dr. Gregorio Martín de Castro<BR>
 Campus Somosaguas<BR>
