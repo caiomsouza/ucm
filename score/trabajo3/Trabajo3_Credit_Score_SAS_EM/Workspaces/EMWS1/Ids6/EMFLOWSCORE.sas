@@ -1,2 +1,0 @@
-drop DEFAULT;
-drop ID;
