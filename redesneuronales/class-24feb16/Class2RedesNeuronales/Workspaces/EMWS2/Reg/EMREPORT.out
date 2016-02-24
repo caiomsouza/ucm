@@ -1,0 +1,92 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Estadísticos de ajuste
+
+Objetivo=SalePrice Etiqueta objetivo=SalePrice
+
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                     Entrenamiento           Prueba
+
+  _AIC_         criterio de información de Akaike                 41645.28              .  
+  _ASE_         error cuadrado del promedio                   605161299.10    1294256914.88
+  _AVERR_       función de error de promedio                  605161299.10    1294256914.88
+  _DFE_         grados de libertad para el error                   1965.00              .  
+  _DFM_         grados de libertad del modelo                        86.00              .  
+  _DFT_         grados de libertad totales                         2051.00              .  
+  _DIV_         divisor para ASE                                   2051.00           879.00
+  _ERR_         función de error                              1.2411858E12    1137651828175
+  _FPE_         error de predicción final                     658132160.91              .  
+  _MAX_         error absoluto máximo                            352037.25        422837.48
+  _MSE_         error cuadrático de la media                  631646730.01    1294256914.88
+  _NOBS_        suma de frecuencias                                2051.00           879.00
+  _NW_          número de pesos de los estimadores                   86.00              .  
+  _RASE_        suma del promedio de la raíz de cuadrados         24600.03         35975.78
+  _RFPE_        error de predicción final de la raíz              25654.09              .  
+  _RMSE_        error cuadrático de la media de la raíz           25132.58         35975.78
+  _SBC_         criterio bayesiano de Schwarz                     42129.13              .  
+  _SSE_         suma de errores cuadrados                     1.2411858E12    1137651828175
+  _SUMW_        suma de frec temporales de pesos de caso           2051.00           879.00
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Clasificaciones de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=SalePrice Etiqueta objetivo=SalePrice
+
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo      predicha
+
+      5             103          401473.79     391236.95
+     10             103          301627.98     310950.39
+     15             102          269597.15     266325.44
+     20             103          237924.66     237723.50
+     25             102          218842.05     220270.06
+     30             103          203578.34     207267.62
+     35             102          192751.99     196469.62
+     40             113          185004.14     185246.86
+     45              92          171846.07     176114.13
+     50             103          165810.58     167842.77
+     55             103          158019.46     159691.17
+     60             102          148654.90     152166.72
+     65             103          143550.68     145461.41
+     70             102          139036.62     138326.85
+     75             103          132452.18     131753.08
+     80             102          126128.55     124966.49
+     85             103          118834.17     117589.66
+     90             102          111890.62     107977.46
+     95             103          100393.03      94740.67
+    100             102           78495.91      68948.87
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Distribución de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=SalePrice Etiqueta objetivo=SalePrice
+
+                            Media de la
+                              variable       Media        Número de      Puntuación
+  Rango para predicho         objetivo      predicha    observaciones    del modelo
+
+603123.829 -  634177.715     750000.00     631017.97           2          618650.77
+509962.172 -  541016.057     160000.00     512037.25           1          525489.11
+478908.286 -  509962.172     545224.00     483661.96           1          494435.23
+447854.400 -  478908.286     543371.00     462464.75           6          463381.34
+416800.515 -  447854.400     469750.80     431756.86          15          432327.46
+385746.629 -  416800.515     400888.00     398675.36          23          401273.57
+354692.743 -  385746.629     372313.79     367491.09          28          370219.69
+323638.857 -  354692.743     332889.40     337434.12          52          339165.80
+292584.972 -  323638.857     299914.94     308354.55          65          308111.91
+261531.086 -  292584.972     274529.78     276563.90          74          277058.03
+230477.200 -  261531.086     245909.04     244185.44         130          246004.14
+199423.314 -  230477.200     210900.09     213443.74         241          214950.26
+168369.429 -  199423.314     181135.52     183340.59         325          183896.37
+137315.543 -  168369.429     150321.59     152344.94         440          152842.49
+106261.657 -  137315.543     124695.44     123353.52         406          121788.60
+75207.771 -  106261.657       98550.74      92894.72         190           90734.71
+44153.886 -  75207.771        71369.98      62095.03          44           59680.83
+13100.000 -  44153.886        63700.50      32651.36           8           28626.94

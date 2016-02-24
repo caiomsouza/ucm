@@ -1,0 +1,185 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+
+INPUT     INTERVAL         11    
+INPUT     NOMINAL          17    
+TARGET    INTERVAL          1    
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variables predichas y de decisión
+
+Tipo          Variable      Etiqueta
+
+TARGET       SalePrice      SalePrice           
+PREDICTED    P_SalePrice    Predicted: SalePrice
+RESIDUAL     R_SalePrice    Residual: SalePrice 
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento DMREG
+
+                     Model Information
+
+Conjunto de datos de entrenamiento    WORK.EM_DMREG.VIEW   
+Catálogo DMDB                         WORK.REG_DMDB        
+Variable objetivo                     SalePrice (SalePrice)
+Nivel de medida del objetivo          Interval             
+Error                                 Normal               
+Función de vínculo                    Identity             
+Número de parámetros modelo           86                   
+Número de observaciones               2035                 
+
+
+                             Analysis of Variance
+ 
+                                  Suma de     Cuadrado de
+Fuente                 DF       cuadrados        la media    F-Valor    Pr > F
+
+Model                  85    1.2007494E13    141264637153     239.38    <.0001
+Error                1949    1.1501575E12       590126999                     
+Corrected Total      2034    1.3157652E13                                     
+
+
+              Model Fit Statistics
+
+R-Square        0.9126     Adj R-Sq        0.9088
+AIC         41182.6813     BIC         41192.2669
+SBC         41665.8509     C(p)           86.0000
+
+
+                Type 3 Analysis of Effects
+ 
+                               Suma de
+Effect                DF     cuadrados    F-Valor    Pr > F
+
+BsmtFin_SF_1           1    2.43094E10      41.19    <.0001
+Bsmt_Full_Bath         1    8484836549      14.38    0.0002
+Exter_Qual             3    2.45263E10      13.85    <.0001
+Fireplaces             1    1.00592E10      17.05    <.0001
+G_Bldg_Type            3    1.26215E10       7.13    <.0001
+G_Bsmt_Exposure        4    7.07411E10      29.97    <.0001
+G_Bsmt_Qual            3    4.29978E10      24.29    <.0001
+G_Condition_1          4    2.79616E10      11.85    <.0001
+G_Condition_2          3      1.207E11      68.18    <.0001
+G_Exterior_1st         8    2.42236E10       5.13    <.0001
+G_Functional           3    1.68625E10       9.52    <.0001
+G_Garage_Qual          3    4645555984       2.62    0.0490
+G_House_Style          5    8198391213       2.78    0.0166
+G_Kitchen_Qual         3    4.01324E10      22.67    <.0001
+G_MS_SubClass          8    1658736290       0.35    0.9455
+G_Neighborhood        13    1.68478E11      21.96    <.0001
+G_Pool_QC              2    8.31636E10      70.46    <.0001
+G_Roof_Matl            2    3.02672E10      25.64    <.0001
+G_Sale_Condition       4    3.04265E10      12.89    <.0001
+Garage_Cars            1    3.12917E10      53.03    <.0001
+Gr_Liv_Area            1     4.1605E11     705.02    <.0001
+Land_Contour           3    6059442305       3.42    0.0166
+Lot_Area               1    1.05216E10      17.83    <.0001
+Mas_Vnr_Area           1    1.08839E10      18.44    <.0001
+Overall_Cond           1    5.82635E10      98.73    <.0001
+Overall_Qual           1    5.15472E10      87.35    <.0001
+Screen_Porch           1    1.01134E10      17.14    <.0001
+Year_Built             1     2.8133E10      47.67    <.0001
+
+
+                Analysis of Maximum Likelihood Estimates
+ 
+                                          Standard
+Parameter               DF    Estimate       Error    Valor t    Pr > |t|
+
+Intercept                1     -803044      109265      -7.35      <.0001
+BsmtFin_SF_1             1     11.5622      1.8015       6.42      <.0001
+Bsmt_Full_Bath           1      5381.0      1419.1       3.79      0.0002
+Exter_Qual       Ex      1     18323.4      3386.3       5.41      <.0001
+Exter_Qual       Fa      1     -3747.8      4155.8      -0.90      0.3673
+Exter_Qual       Gd      1     -5496.8      1942.4      -2.83      0.0047
+Fireplaces               1      4379.6      1060.8       4.13      <.0001
+G_Bldg_Type      0       1      6576.4     13732.1       0.48      0.6321
+G_Bldg_Type      1       1    -11803.9      5394.0      -2.19      0.0288
+G_Bldg_Type      2       1     11069.7      4946.1       2.24      0.0253
+G_Bsmt_Exposure  0       1    -12018.6      3852.4      -3.12      0.0018
+G_Bsmt_Exposure  1       1     -5926.3      1309.0      -4.53      <.0001
+G_Bsmt_Exposure  2       1     -3993.7      1855.2      -2.15      0.0315
+G_Bsmt_Exposure  3       1      2465.5      1718.9       1.43      0.1516
+G_Bsmt_Qual      0       1     -4179.5      2738.8      -1.53      0.1272
+G_Bsmt_Qual      1       1     -6406.4      1464.8      -4.37      <.0001
+G_Bsmt_Qual      2       1     -6338.8      1446.0      -4.38      <.0001
+G_Condition_1    0       1     -4194.1      3500.6      -1.20      0.2310
+G_Condition_1    1       1     -6956.2      2912.7      -2.39      0.0170
+G_Condition_1    2       1      6676.3      2432.6       2.74      0.0061
+G_Condition_1    3       1     -8776.2      8316.3      -1.06      0.2914
+G_Condition_2    0       1     83434.0      9363.4       8.91      <.0001
+G_Condition_2    1       1     81683.8      8188.5       9.98      <.0001
+G_Condition_2    2       1     -281270     19753.7     -14.24      <.0001
+G_Exterior_1st   0       1     -9205.2      4681.8      -1.97      0.0494
+G_Exterior_1st   1       1     -7693.2      2578.4      -2.98      0.0029
+G_Exterior_1st   2       1     -5863.3      2546.5      -2.30      0.0214
+G_Exterior_1st   3       1     -6799.9      2627.3      -2.59      0.0097
+G_Exterior_1st   4       1     -7840.1      2853.9      -2.75      0.0061
+G_Exterior_1st   5       1     12326.5      3744.9       3.29      0.0010
+G_Exterior_1st   6       1     -3675.0      2528.5      -1.45      0.1463
+G_Exterior_1st   7       1      1384.0      3504.2       0.39      0.6929
+G_Functional     0       1    -21034.9     19680.2      -1.07      0.2853
+G_Functional     1       1     -4876.3      8888.9      -0.55      0.5834
+G_Functional     2       1      7648.5      6920.3       1.11      0.2692
+G_Garage_Qual    0       1      4641.5      2765.0       1.68      0.0934
+G_Garage_Qual    1       1     -4352.5      2648.3      -1.64      0.1004
+G_Garage_Qual    2       1     -3345.4      1885.4      -1.77      0.0762
+G_House_Style    0       1     13595.3      7960.8       1.71      0.0878
+G_House_Style    1       1      2383.5      4055.3       0.59      0.5568
+G_House_Style    2       1     -5701.3      4076.6      -1.40      0.1621
+G_House_Style    3       1    -10055.7      7424.9      -1.35      0.1758
+G_House_Style    4       1      5492.3      3979.5       1.38      0.1677
+G_Kitchen_Qual   0       1     -5905.1      2917.8      -2.02      0.0431
+G_Kitchen_Qual   1       1     -7893.6      1437.1      -5.49      <.0001
+G_Kitchen_Qual   2       1     -4678.7      1475.4      -3.17      0.0015
+G_MS_SubClass    0       1      2133.5      4607.6       0.46      0.6434
+G_MS_SubClass    1       1      -816.7      7054.8      -0.12      0.9079
+G_MS_SubClass    2       1    -10240.7     16227.7      -0.63      0.5281
+G_MS_SubClass    3       1      -548.4      4118.6      -0.13      0.8941
+G_MS_SubClass    4       1      4588.7      3814.6       1.20      0.2292
+G_MS_SubClass    5       1      6232.0      8549.4       0.73      0.4661
+G_MS_SubClass    6       1    -63.8259      3961.8      -0.02      0.9871
+G_MS_SubClass    7       1     -2344.3      4788.7      -0.49      0.6245
+G_Neighborhood   0       1    -11389.0      2855.2      -3.99      <.0001
+G_Neighborhood   1       1    -12384.8      2450.0      -5.05      <.0001
+G_Neighborhood   2       1    -14547.2      2360.3      -6.16      <.0001
+G_Neighborhood   3       1     -5696.0      2236.6      -2.55      0.0110
+G_Neighborhood   4       1    -10819.1      1852.7      -5.84      <.0001
+G_Neighborhood   5       1     -8831.8      2732.2      -3.23      0.0012
+G_Neighborhood   6       1     -2932.5      2772.0      -1.06      0.2902
+G_Neighborhood   7       1    -11107.5      1998.8      -5.56      <.0001
+G_Neighborhood   8       1     -5232.3      2063.2      -2.54      0.0113
+G_Neighborhood   9       1      6582.7      2701.9       2.44      0.0149
+G_Neighborhood   10      1     13037.4      2584.7       5.04      <.0001
+G_Neighborhood   11      1     -2533.1      2912.1      -0.87      0.3845
+G_Neighborhood   12      1     27656.1      2665.8      10.37      <.0001
+G_Pool_QC        0       1     -8795.5      7426.9      -1.18      0.2364
+G_Pool_QC        1       1     -121341     10275.2     -11.81      <.0001
+G_Roof_Matl      0       1    -22920.5      5105.5      -4.49      <.0001
+G_Roof_Matl      1       1    -28693.8      7895.8      -3.63      0.0003
+G_Sale_Condition 0       1     12736.0      6760.2       1.88      0.0597
+G_Sale_Condition 1       1    -14055.8      2586.2      -5.43      <.0001
+G_Sale_Condition 2       1     -4929.3      3512.5      -1.40      0.1607
+G_Sale_Condition 3       1     -2106.9      2025.2      -1.04      0.2983
+Garage_Cars              1      8996.2      1235.4       7.28      <.0001
+Gr_Liv_Area              1     55.3902      2.0861      26.55      <.0001
+Land_Contour     Bnk     1     -5081.6      2422.2      -2.10      0.0360
+Land_Contour     HLS     1      6900.5      2545.7       2.71      0.0068
+Land_Contour     Low     1     -3234.9      3318.4      -0.97      0.3298
+Lot_Area                 1      0.3134      0.0742       4.22      <.0001
+Mas_Vnr_Area             1     16.2986      3.7952       4.29      <.0001
+Overall_Cond             1      5890.7       592.8       9.94      <.0001
+Overall_Qual             1      7380.9       789.7       9.35      <.0001
+Screen_Porch             1     41.9051     10.1226       4.14      <.0001
+Year_Built               1       375.1     54.3214       6.90      <.0001

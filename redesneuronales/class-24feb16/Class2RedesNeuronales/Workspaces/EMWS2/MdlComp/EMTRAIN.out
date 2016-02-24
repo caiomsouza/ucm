@@ -1,0 +1,104 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+
+TARGET    INTERVAL         1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+
+
+
+
+
+
+Estadísticos de ajuste
+Selección de modelo basada en Entrenar: error cuadrado del promedio (_ASE_)
+
+                                                     Entrenar:       Entrenar:
+                                                       error       tasa de error
+   Modelo       Nodo del      Descripción          cuadrado del          de
+seleccionado    modelo        del modelo             promedio      clasificación
+
+     Y          Neural4       Red neuronal 30      287572157.67          .      
+                Neural3       Red neuronal - 20    355596868.67          .      
+                Neural2       Red neuronal - 10    466484244.90          .      
+                Neural        Red neuronal         593306543.97          .      
+                AutoNeural    Autoneuronal         605161299.10          .      
+                Reg           Regresión            605161299.10          .      
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+
+
+
+
+
+
+Tabla de estadísticos de ajuste
+Objetivo: SalePrice
+
+Rol de los datos=Train
+
+Estadísticos                                                             Neural4            Neural3            Neural2          Neural      AutoNeural             Reg
+
+Entrenar: criterio de información de Akaike                                  .             43864.77           42681.47        41956.71        41645.28        41645.28
+Entrenar: error cuadrado del promedio                               287572157.67       355596868.67       466484244.90    593306543.97    605161299.10    605161299.10
+Entrenar: función de error de promedio                              287572157.67       355596868.67       466484244.90    593306543.97    605161299.10    605161299.10
+Criterio de selección: Entrenar: error cuadrado del promedio        287572157.67       355596868.67       466484244.90    593306543.97    605161299.10    605161299.10
+Entrenar: grados de libertad para el error                               -560.00             310.00            1180.00         1789.00         1965.00         1965.00
+Entrenar: grados de libertad del modelo                                  2611.00            1741.00             871.00          262.00           86.00           86.00
+Entrenar: grados de libertad totales                                     2051.00            2051.00            2051.00         2051.00         2051.00         2051.00
+Entrenar: divisor para ASE                                               2051.00            2051.00            2051.00         2051.00         2051.00         2051.00
+Entrenar: función de error                                       589810495373.59    729329177647.01    956759186296.65    1.2168717E12    1.2411858E12    1.2411858E12
+Entrenar: error de predicción final                                          .        4349752664.53      1155141494.58    767086660.82    658132160.91    658132160.91
+Entrenar: error absoluto máximo                                        163952.63          185923.62          264988.29       309864.42       352037.25       352037.25
+Entrenar: tasa de error de clasificación                                     .                  .                  .               .               .               .  
+Entrenar: error cuadrático de la media                                       .        2352674766.60       810812869.74    680196602.40    631646730.01    631646730.01
+Entrenar: suma de frecuencias                                            2051.00            2051.00            2051.00         2051.00         2051.00         2051.00
+Entrenar: número de pesos de los estimadores                             2611.00            1741.00             871.00          262.00           86.00           86.00
+Entrenar: suma del promedio de la raíz de cuadrados                     16957.95           18857.28           21598.25        24357.88        24600.03        24600.03
+Entrenar: error de predicción final de la raíz                               .             65952.65           33987.37        27696.33        25654.09        25654.09
+Entrenar: error cuadrático de la media de la raíz                            .             48504.38           28474.78        26080.58        25132.58        25132.58
+Entrenar: criterio bayesiano de Schwarz                                      .             53659.78           47581.79        43430.74        42129.13        42129.13
+Entrenar: suma de errores cuadrados                              589810495373.59    729329177647.01    956759186296.65    1.2168717E12    1.2411858E12    1.2411858E12
+Entrenar: suma de frec temporales de pesos de caso                       2051.00            2051.00            2051.00         2051.00         2051.00         2051.00
+Entrenar: número de clasificaciones erróneas                                 .                  .                  .               .               .               .  
+
+
+Rol de los datos=Test
+
+Estadísticos                                                  Neural4            Neural3            Neural2             Neural       AutoNeural              Reg
+
+                                                                  .                  .                  .                  .                .                .  
+                                                                  .                  .                  .                  .                .                .  
+Probar: límite de confianza 95% inferior para TASE                .                  .                  .                  .                .       716632269.12
+Probar: límite confianza 95% superior para TASE                   .                  .                  .                  .                .      2039791261.92
+Probar: error cuadrado de promedio                       570647599.47       603227136.80       595972819.30       743841501.66    1294256914.88    1294256914.88
+Probar: función de error de promedio                     570647599.47       603227136.80       595972819.30       743841501.66    1294256914.88    1294256914.88
+Probar: divisor para TASE                                      879.00             879.00             879.00             879.00           879.00           879.00
+Probar: función de error                              501599239935.50    530236653250.88    523860108166.78    653836679957.31    1137651828176    1137651828175
+                                                                  .                  .                  .                  .                .                .  
+                                                                  .                  .                  .                  .                .                .  
+                                                                  .                  .                  .                  .                .                .  
+                                                                  .                  .                  .                  .                .                .  
+Probar: error absoluto máximo                               284819.63          284819.63          284819.63          284819.63        422837.48        422837.48
+Probar: tasa de error de clasificación                            .                  .                  .                  .                .                .  
+Probar: límite conf. 95% inferior para TMISC                      .                  .                  .                  .                .                .  
+Probar: límite conf. 95% superior para TMISC                      .                  .                  .                  .                .                .  
+Probar: error cuadrático de la media                     570647599.47       603227136.80       595972819.30       743841501.66    1294256914.88    1294256914.88
+Probar: suma de frecuencias                                    879.00             879.00             879.00             879.00           879.00           879.00
+Probar: error cuadrado del promedio de la raíz               23888.23           24560.68           24412.55           27273.46         35975.78         35975.78
+Probar: error cuadrático de la media de la raíz              23888.23           24560.68           24412.55           27273.46         35975.78         35975.78
+Probar: suma de errores cuadrados                     501599239935.50    530236653250.88    523860108166.78    653836679957.31    1137651828176    1137651828175
+Probar: suma de frec temporales de pesos de caso               879.00             879.00             879.00             879.00           879.00           879.00
+Probar: número de clasificaciones erróneas                        .                  .                  .                  .                .                .  

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  NumberOfReportedLevels="1E-6" NormalizeReportingVariables="Y" DecileBin="20" LiftEpsilon="1E-6"
+ ProfitEpsilon="1E-6" RoiEpsilon="1E-6" ScoreDistBin="20" RocChart="Y" RocEpsilon="0.01"
+ AssessAllTargetLevels="N" SelectionData="DEFAULT" HPCriteria="DEFAULT" SelectionTable="TRAIN"
+ SelectionCriteria="DEFAULT" SelectionDepth="10" NumberofBins="20" RecomputeAssess="N"
+ TargetName="SalePrice" ModelId="Neural4" ModelDescription="Red neuronal 30" ModelCriteria="Entrenar: error cuadrado del promedio"
+ ForceRun="N" RunAction="Train" Component="ModelCompare" RawCreateTime="1771962568.5"
+ CreateTime="24FEB2016:19:49:28" RunId="a5bedc61-27e8-4c82-90cc-15c81bbc2e31" StatisticUsed="_ASE_"
+ TargetLabel="SalePrice" RawLastTimeRun="1771963050.7" RawRunTime="6.4110000134" LastTimeRun="24FEB2016:19:57:31"
+ RunTime="0 Hr. 0 Min. 6.41 Sec.">
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

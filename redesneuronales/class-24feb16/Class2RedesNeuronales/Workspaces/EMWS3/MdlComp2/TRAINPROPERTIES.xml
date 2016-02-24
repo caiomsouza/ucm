@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  NumberOfReportedLevels="1E-6" NormalizeReportingVariables="Y" DecileBin="20" LiftEpsilon="1E-6"
+ ProfitEpsilon="1E-6" RoiEpsilon="1E-6" ScoreDistBin="20" RocChart="Y" RocEpsilon="0.01"
+ AssessAllTargetLevels="N" SelectionData="DEFAULT" HPCriteria="DEFAULT" SelectionTable="TRAIN"
+ SelectionCriteria="DEFAULT" SelectionDepth="10" NumberofBins="20" RecomputeAssess="N"
+ TargetName="FEV" ModelId="Neural7" ModelDescription="Red neuronal (7)" ModelCriteria="Validar: error cuadrado de promedio"
+ ForceRun="N" RunAction="Train" Component="ModelCompare" RawCreateTime="1771965234.8"
+ CreateTime="24FEB2016:20:33:55" RunId="ea6162e4-c795-4d4e-ac7c-251a17645dde" StatisticUsed="_VASE_"
+ TargetLabel="" RawLastTimeRun="1771965588.4" RawRunTime="2.8399999142" LastTimeRun="24FEB2016:20:39:48"
+ RunTime="0 Hr. 0 Min. 2.84 Sec.">
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  Architecture="SINGLE LAYER" TrainAction="SEARCH" Termination="OVERFITTING" TargetError="DEFAULT"
+ Hidden="2" TotalHidden="30" MaxIter="8" AdjustIterations="Y" FinalTrain="Y" FinalIter="5"
+ TotalTime="1 HOUR" Freeze="N" Direct="Y" Tanh="Y" Normal="Y" Sine="Y" Exponential="N"
+ Identity="N" Logistic="N" Reciprocal="N" Softmax="N" Square="N" Tolerance="MEDIUM"
+ Residuals="Y" Standardizations="N" HiddenUnits="N" outfit="" weights="" estds=""
+ Bestds="" HistoryDs="" ForceRun="N" RunAction="Train" Component="AutoNeural" RawCreateTime="1771963326.1"
+ CreateTime="24FEB2016:20:02:06" RunId="49b00aca-3880-492a-b6ee-285a34aaa977" RawLastTimeRun="1771965673.4"
+ RawRunTime="4.3990001678" LastTimeRun="24FEB2016:20:41:13" RunTime="0 Hr. 0 Min. 4.40 Sec."
+>
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

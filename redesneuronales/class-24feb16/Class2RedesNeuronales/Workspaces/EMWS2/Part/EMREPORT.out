@@ -1,0 +1,28 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Estadísticos descriptivos para las variables objetivo intervalo
+
+Datos=DATA
+
+                                                Número de                 Desviación
+Variable     Máximo      Media      Mínimo    observaciones    Ausente     estándar     Etiqueta
+
+SalePrice    755000    180796.06     12789         2930           0        79886.69     SalePrice
+
+
+Datos=TEST
+
+                                                Número de                 Desviación
+Variable     Máximo      Media      Mínimo    observaciones    Ausente     estándar     Etiqueta
+
+SalePrice    615000    181625.82     35000         879            0        78736.69     SalePrice
+
+
+Datos=TRAIN
+
+                                                Número de                 Desviación
+Variable     Máximo      Media      Mínimo    observaciones    Ausente     estándar     Etiqueta
+
+SalePrice    755000    180440.45     12789         2051           0        80390.94     SalePrice

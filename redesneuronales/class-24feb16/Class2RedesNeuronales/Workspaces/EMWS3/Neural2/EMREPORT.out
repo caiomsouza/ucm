@@ -1,0 +1,95 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Estadísticos de ajuste
+
+Objetivo=FEV Etiqueta objetivo=' '
+
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                    Entrenamiento     Prueba
+
+  _DFT_         grados de libertad totales                      458.000         .   
+  _DFE_         grados de libertad para el error                397.000         .   
+  _DFM_         grados de libertad del modelo                    61.000         .   
+  _NW_          número de pesos estimados                        61.000         .   
+  _AIC_         criterio de información de Akaike              -868.737         .   
+  _SBC_         criterio bayesiano de Schwarz                  -616.998         .   
+  _ASE_         error cuadrado de promedio                        0.115        0.179
+  _MAX_         error absoluto máximo                             1.463        1.633
+  _DIV_         divisor para ASE                                458.000      196.000
+  _NOBS_        suma de frecuencias                             458.000      196.000
+  _RASE_        error cuadrado de promedio de la raíz             0.339        0.423
+  _SSE_         suma de errores cuadrados                        52.651       35.067
+  _SUMW_        suma de frec temporales de pesos de caso        458.000      196.000
+  _FPE_         error de predicción final                         0.150         .   
+  _MSE_         error cuadrático de la media                      0.133        0.179
+  _RFPE_        error de predicción final de la raíz              0.388         .   
+  _RMSE_        error cuadrático de la media de la raíz           0.364        0.423
+  _AVERR_       función de error de promedio                      0.115        0.179
+  _ERR_         función de error                                 52.651       35.067
+  _MISC_        tasa de error de clasificación                     .            .   
+  _WRONG_       número de clasificaciones erróneas                 .            .   
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Clasificaciones de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=FEV Etiqueta objetivo=' '
+
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo     predicha
+
+      5              23           4.53061       4.54075
+     10              23           3.90761       3.88118
+     15              23           3.56470       3.50469
+     20              23           3.24561       3.26781
+     25              23           3.09857       3.06538
+     30              23           3.01296       2.98855
+     35              23           2.85535       2.92744
+     40              23           2.76922       2.84582
+     45              23           2.79248       2.76231
+     50              22           2.66036       2.69130
+     55              23           2.58374       2.61343
+     60              24           2.47721       2.49152
+     65              23           2.37887       2.31206
+     70              22           2.07136       2.11216
+     75              23           2.01222       1.97812
+     80              23           1.87130       1.86883
+     85              26           1.76715       1.76933
+     90              20           1.69260       1.67682
+     95              23           1.53617       1.56262
+    100              22           1.34350       1.30863
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Distribución de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=FEV Etiqueta objetivo=' '
+
+                  Media de la
+  Rango para        variable       Media       Número de      Puntuación
+   predicho         objetivo     predicha    observaciones    del modelo
+
+5.247 -  5.473      5.63300       5.47282           1           5.35974 
+4.794 -  5.021      4.72400       4.80834           1           4.90743 
+4.568 -  4.794      4.66211       4.68194           9           4.68128 
+4.342 -  4.568      4.59660       4.44568           5           4.45512 
+4.116 -  4.342      4.07844       4.23100           9           4.22897 
+3.890 -  4.116      4.19040       4.00430          10           4.00282 
+3.664 -  3.890      3.65182       3.72140          11           3.77666 
+3.437 -  3.664      3.57624       3.53589          17           3.55051 
+3.211 -  3.437      3.27230       3.33348          23           3.32435 
+2.985 -  3.211      3.15229       3.05935          42           3.09820 
+2.759 -  2.985      2.81743       2.88032          68           2.87204 
+2.533 -  2.759      2.65684       2.65375          64           2.64589 
+2.307 -  2.533      2.41534       2.41900          29           2.41974 
+2.081 -  2.307      2.16167       2.18490          24           2.19358 
+1.854 -  2.081      1.98989       1.96179          47           1.96743 
+1.628 -  1.854      1.73728       1.74218          53           1.74127 
+1.402 -  1.628      1.54583       1.53958          29           1.51512 
+1.176 -  1.402      1.34536       1.31951          11           1.28897 
+0.950 -  1.176      1.05220       1.11353           5           1.06281 

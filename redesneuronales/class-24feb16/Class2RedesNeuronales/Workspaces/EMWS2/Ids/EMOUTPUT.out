@@ -1,0 +1,80 @@
+*------------------------------------------------------------*
+Usuario:                win
+Fecha:                24/02/16
+Hora:                19H50
+*------------------------------------------------------------*
+* Salida de entrenamiento
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Resumen de variables
+ 
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+ 
+INPUT     INTERVAL         36
+INPUT     NOMINAL          45
+TARGET    INTERVAL          1
+ 
+ 
+ 
+ 
+Atributos de la tabla de salida
+ 
+Atributo                 Valor
+ 
+Tabla de salida          EMWS2.Ids_DATA
+Tipo de salida           Vista
+Variables descartadas    0
+Rol de Data Mining       Plano
+ 
+ 
+ 
+ 
+Atributos de la tabla input
+ 
+Atributo                                              Valor
+ 
+Fuente de datos                                       ameshousing
+ 
+Nombre de la librería                                 REDES
+Nombre del miembro de librería                        AMESHOUSING
+Etiqueta del conjunto de datos
+Conjunto de datos tipo especial (De TYPE=)
+Observaciones en conjunto de datos                    2930
+Nombre del engine                                     BASE
+Fecha de creación                                     06/02/2013 10:01:09
+Fecha de la última modificación                       06/02/2013 10:01:09
+Observaciones borradas en conjunto de datos           0
+Uso de variable en índices                            NONE
+Tipo de miembro de librería                           DATA
+Número de índices para conjunto de datos              0
+Protección contraseña (Lectura Escritura Modificac    ---
+Actualización indicadores (Proteger Contribuir Aña    ---
+Rutina de compresión                                  NO
+Volver a usar espacio                                 NO
+Clasificado/validado                                  .
+Pos. de variable en cláusula Sortedby                 .
+Conj. de caracteres del host
+Secuencia de intercalación
+Opción de clasificación: no claves duplicadas         NO
+Opción de clasificación: no registros duplicados      NO
+Rutina de codificación                                NO
+Apuntar a observaciones                               YES
+Número máximo de generaciones                         0
+Número de generación                                  .
+Número de siguiente generación                        .
+Variables alfanuméricas transcodificadas              YES
+Variables                                             82
+
+
+*------------------------------------------------------------*
+* Salida de puntuación
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Salida del informe
+*------------------------------------------------------------*

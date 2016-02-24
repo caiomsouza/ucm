@@ -1,0 +1,817 @@
+*------------------------------------------------------------*
+Usuario:                win
+Fecha:                24/02/16
+Hora:                19H52
+*------------------------------------------------------------*
+* Salida de entrenamiento
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Resumen de variables
+ 
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+ 
+INPUT     INTERVAL         11
+INPUT     NOMINAL          17
+TARGET    INTERVAL          1
+ 
+ 
+ 
+ 
+Variables predichas y de decisión
+ 
+Tipo          Variable      Etiqueta
+ 
+TARGET       SalePrice      SalePrice
+PREDICTED    P_SalePrice    Predicted: SalePrice
+RESIDUAL     R_SalePrice    Residual: SalePrice
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+ 
+        1               12345    1303320384.378           10
+        2            37160956    3303835643.749           10
+        3          1615307595    2903956723.456           10
+        4          2014201968    1913965214.346           10
+        5           876742626    1625968252.129           10
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+                  Inicio de optimización
+                   Parameter Estimates
+                                                 Gradient
+                                                Objective
+  N Parameter                   Estimador        Function
+ 
+  1 BsmtFin_SF_1_H11            -0.035359       -80370289
+  2 Bsmt_Full_Bath_H11           0.015900       -27723935
+  3 Fireplaces_H11               0.172714        50382706
+  4 Garage_Cars_H11              0.056236         4099712
+  5 Gr_Liv_Area_H11             -0.208928       -66326916
+  6 Lot_Area_H11                -0.018438       -81704611
+  7 Mas_Vnr_Area_H11            -0.142919       -78486059
+  8 Overall_Cond_H11            -0.023348      -148748885
+  9 Overall_Qual_H11            -0.042682        24364358
+ 10 Screen_Porch_H11            -0.075589       -46018217
+ 11 Year_Built_H11              -0.063707       157261194
+ 12 BsmtFin_SF_1_H12             0.256869        67424441
+ 13 Bsmt_Full_Bath_H12           0.025325       -30430833
+ 14 Fireplaces_H12              -0.067971      -179236473
+ 15 Garage_Cars_H12              0.224377      -248529122
+ 16 Gr_Liv_Area_H12              0.570243        -7092642
+ 17 Lot_Area_H12                 0.115869       296390284
+ 18 Mas_Vnr_Area_H12            -0.044234      -110158486
+ 19 Overall_Cond_H12             0.242360       349605507
+ 20 Overall_Qual_H12             0.451228      -433089572
+ 21 Screen_Porch_H12             0.052135       150618932
+ 22 Year_Built_H12               0.051624      -598660111
+ 23 BsmtFin_SF_1_H13             0.147758       128956024
+ 24 Bsmt_Full_Bath_H13           0.099802       165019718
+ 25 Fireplaces_H13               0.059603        13152198
+ 26 Garage_Cars_H13              0.191258        87382503
+ 27 Gr_Liv_Area_H13              0.427289        90847188
+ 28 Lot_Area_H13                -0.100664       173792830
+ 29 Mas_Vnr_Area_H13            -0.012046        27035156
+ 30 Overall_Cond_H13             0.079650       127302248
+ 31 Overall_Qual_H13             0.327700        98774611
+ 32 Screen_Porch_H13             0.096336        77136252
+ 33 Year_Built_H13               0.103892      -197433651
+ 34 Exter_QualEx_H11             0.047987       -80040487
+ 35 Exter_QualFa_H11             0.035124       -70880282
+ 36 Exter_QualGd_H11             0.039428        64204557
+ 37 G_Bldg_Type0_H11            -0.120320       -97722370
+ 38 G_Bldg_Type1_H11            -0.044008       -91010121
+ 39 G_Bldg_Type2_H11            -0.211457        49391597
+ 40 G_Bsmt_Exposure0_H11        -0.025566       -34693726
+ 41 G_Bsmt_Exposure1_H11        -0.117326        82143156
+ 42 G_Bsmt_Exposure2_H11         0.034694       -25821859
+ 43 G_Bsmt_Exposure3_H11        -0.073676        -4024214
+ 44 G_Bsmt_Qual0_H11             0.251103        20255593
+ 45 G_Bsmt_Qual1_H11            -0.067261        10217530
+ 46 G_Bsmt_Qual2_H11            -0.034998       203938275
+ 47 G_Condition_10_H11          -0.030150        -7670283
+ 48 G_Condition_11_H11           0.256224         5341387
+ 49 G_Condition_12_H11          -0.076996       244285833
+ 50 G_Condition_13_H11          -0.154873        -2824645
+ 51 G_Condition_20_H11          -0.177578         1611468
+ 52 G_Condition_21_H11          -0.019068       256161313
+ 53 G_Condition_22_H11          -0.048646          746564
+ 54 G_Exterior_1st0_H11         -0.242155         1328059
+ 55 G_Exterior_1st1_H11         -0.025716        28628272
+ 56 G_Exterior_1st2_H11         -0.024318        19196556
+ 57 G_Exterior_1st3_H11         -0.078883        31115269
+ 58 G_Exterior_1st4_H11         -0.085634        17818316
+ 59 G_Exterior_1st5_H11         -0.035593         6884944
+ 60 G_Exterior_1st6_H11          0.086544       128781800
+ 61 G_Exterior_1st7_H11         -0.002753        16698908
+ 62 G_Functional0_H11            0.112094      -228062237
+ 63 G_Functional1_H11            0.199624      -227509364
+ 64 G_Functional2_H11            0.136781      -209830683
+ 65 G_Garage_Qual0_H11          -0.099504        18207802
+ 66 G_Garage_Qual1_H11           0.067012         3419320
+ 67 G_Garage_Qual2_H11           0.015577       238278125
+ 68 G_House_Style0_H11          -0.088690      -132208375
+ 69 G_House_Style1_H11           0.092249      -140506988
+ 70 G_House_Style2_H11          -0.050414      -125551047
+ 71 G_House_Style3_H11          -0.005014      -130881523
+ 72 G_House_Style4_H11          -0.095567        -7384011
+ 73 G_Kitchen_Qual0_H11          0.011863         9889355
+ 74 G_Kitchen_Qual1_H11          0.070657        82918291
+ 75 G_Kitchen_Qual2_H11          0.036960       148595477
+ 76 G_MS_SubClass0_H11           0.075686       -82422244
+ 77 G_MS_SubClass1_H11          -0.191444      -100311291
+ 78 G_MS_SubClass2_H11          -0.116491      -102502569
+ 79 G_MS_SubClass3_H11           0.053634       -84281824
+ 80 G_MS_SubClass4_H11          -0.028136       -90767490
+ 81 G_MS_SubClass5_H11          -0.048313      -100640565
+ 82 G_MS_SubClass6_H11          -0.126344       -78936245
+ 83 G_MS_SubClass7_H11           0.042838       -16638650
+ 84 G_Neighborhood0_H11         -0.003161        32145127
+ 85 G_Neighborhood1_H11         -0.073713        -6259212
+ 86 G_Neighborhood2_H11         -0.172493         5178565
+ 87 G_Neighborhood3_H11         -0.113025          534757
+ 88 G_Neighborhood4_H11         -0.099468         9493837
+ 89 G_Neighborhood5_H11          0.036311        11756361
+ 90 G_Neighborhood6_H11          0.126189        29031567
+ 91 G_Neighborhood7_H11          0.134254        49381504
+ 92 G_Neighborhood8_H11          0.018103        54671223
+ 93 G_Neighborhood9_H11         -0.134555        16384620
+ 94 G_Neighborhood10_H11         0.015750        38656439
+ 95 G_Neighborhood11_H11        -0.010413        -1599390
+ 96 G_Neighborhood12_H11        -0.084529        33717328
+ 97 G_Pool_QC0_H11               0.020054       258209334
+ 98 G_Pool_QC1_H11              -0.030428        -5140027
+ 99 G_Roof_Matl0_H11             0.108500       257478485
+100 G_Roof_Matl1_H11             0.171294         -901594
+101 G_Sale_Condition0_H11        0.067814       -25094925
+102 G_Sale_Condition1_H11        0.029499       -22089536
+103 G_Sale_Condition2_H11       -0.047285       -18966721
+104 G_Sale_Condition3_H11       -0.155290       190190537
+105 Land_ContourBnk_H11          0.096943      -201685018
+106 Land_ContourHLS_H11          0.252049      -184502556
+107 Land_ContourLow_H11          0.184268      -204504100
+108 Exter_QualEx_H12             0.123877        15782053
+109 Exter_QualFa_H12             0.062759        77955814
+110 Exter_QualGd_H12             0.133908      -278758505
+111 G_Bldg_Type0_H12             0.028265       191546807
+112 G_Bldg_Type1_H12            -0.032082       143258497
+113 G_Bldg_Type2_H12             0.032717      -152856305
+114 G_Bsmt_Exposure0_H12        -0.073765        60591214
+115 G_Bsmt_Exposure1_H12        -0.189336      -251228413
+116 G_Bsmt_Exposure2_H12         0.194220        68102471
+117 G_Bsmt_Exposure3_H12         0.094391       -22001191
+118 G_Bsmt_Qual0_H12             0.129749        26184124
+119 G_Bsmt_Qual1_H12             0.073542        64140707
+120 G_Bsmt_Qual2_H12            -0.241571      -430616097
+121 G_Condition_10_H12          -0.028787        13352464
+122 G_Condition_11_H12           0.045993         3955352
+123 G_Condition_12_H12          -0.111358      -518156892
+124 G_Condition_13_H12           0.019567        -6522570
+125 G_Condition_20_H12           0.070242        -1815381
+126 G_Condition_21_H12          -0.306591      -465994422
+127 G_Condition_22_H12          -0.015245        -2216509
+128 G_Exterior_1st0_H12          0.108903         1206439
+129 G_Exterior_1st1_H12         -0.045177        52365456
+130 G_Exterior_1st2_H12         -0.125488       -70020986
+131 G_Exterior_1st3_H12         -0.185307       -59671239
+132 G_Exterior_1st4_H12         -0.245937       -19204799
+133 G_Exterior_1st5_H12         -0.040461       -10954733
+134 G_Exterior_1st6_H12         -0.077130      -312565826
+135 G_Exterior_1st7_H12         -0.044300       -37920816
+136 G_Functional0_H12            0.175072       489494248
+137 G_Functional1_H12            0.195701       489629626
+138 G_Functional2_H12            0.067341       518081750
+139 G_Garage_Qual0_H12           0.055133        -8108763
+140 G_Garage_Qual1_H12           0.069431        -2534762
+141 G_Garage_Qual2_H12          -0.165922      -541721457
+142 G_House_Style0_H12           0.127672       188571919
+143 G_House_Style1_H12           0.135037       233935370
+144 G_House_Style2_H12           0.168487       188462052
+145 G_House_Style3_H12           0.059070       198362874
+146 G_House_Style4_H12          -0.023120      -139643326
+147 G_Kitchen_Qual0_H12          0.136280        51882709
+148 G_Kitchen_Qual1_H12         -0.169580        -8596981
+149 G_Kitchen_Qual2_H12         -0.010625      -323348930
+150 G_MS_SubClass0_H12          -0.106562       157045359
+151 G_MS_SubClass1_H12          -0.158314       156883736
+152 G_MS_SubClass2_H12          -0.255355       185781380
+153 G_MS_SubClass3_H12          -0.227820       153773051
+154 G_MS_SubClass4_H12           0.124850       153978762
+155 G_MS_SubClass5_H12          -0.066889       167321292
+156 G_MS_SubClass6_H12           0.132941       -27040371
+157 G_MS_SubClass7_H12          -0.001043         2163740
+158 G_Neighborhood0_H12          0.130439       -19853200
+159 G_Neighborhood1_H12         -0.126545        16525663
+160 G_Neighborhood2_H12         -0.083202       -36746512
+161 G_Neighborhood3_H12         -0.112776        -7997174
+162 G_Neighborhood4_H12         -0.103707       -18403514
+163 G_Neighborhood5_H12         -0.179375       -55491634
+164 G_Neighborhood6_H12         -0.018846       -81774537
+165 G_Neighborhood7_H12          0.058182       -37352859
+166 G_Neighborhood8_H12         -0.040325      -119525800
+167 G_Neighborhood9_H12          0.052084       -28392866
+168 G_Neighborhood10_H12         0.097009      -165729584
+169 G_Neighborhood11_H12        -0.003859        10310430
+170 G_Neighborhood12_H12         0.045001      -191930636
+171 G_Pool_QC0_H12              -0.473725      -476927893
+172 G_Pool_QC1_H12              -0.019526         2627507
+173 G_Roof_Matl0_H12            -0.335016      -490336308
+174 G_Roof_Matl1_H12             0.084893        -8800299
+175 G_Sale_Condition0_H12       -0.067547        54151881
+176 G_Sale_Condition1_H12       -0.156825        67336235
+177 G_Sale_Condition2_H12       -0.113306        55060551
+178 G_Sale_Condition3_H12       -0.063284      -366725784
+179 Land_ContourBnk_H12          0.070976       526447114
+180 Land_ContourHLS_H12          0.089870       468582546
+181 Land_ContourLow_H12          0.209948       510627505
+182 Exter_QualEx_H13             0.101462        84023233
+183 Exter_QualFa_H13            -0.058226        67504315
+184 Exter_QualGd_H13            -0.029401       -42911813
+185 G_Bldg_Type0_H13             0.039385        99924356
+186 G_Bldg_Type1_H13            -0.017517        94857230
+187 G_Bldg_Type2_H13             0.190407       -18954583
+188 G_Bsmt_Exposure0_H13        -0.018938        18482168
+189 G_Bsmt_Exposure1_H13        -0.002022       -94984184
+190 G_Bsmt_Exposure2_H13        -0.053379        -5868683
+191 G_Bsmt_Exposure3_H13        -0.064356       -47187130
+192 G_Bsmt_Qual0_H13            -0.043453         -650045
+193 G_Bsmt_Qual1_H13            -0.108039        -8236327
+194 G_Bsmt_Qual2_H13            -0.137774      -211905089
+195 G_Condition_10_H13          -0.110916        21981718
+196 G_Condition_11_H13          -0.013080         4962551
+197 G_Condition_12_H13           0.050158      -205076865
+198 G_Condition_13_H13           0.121010        13053983
+199 G_Condition_20_H13          -0.011753        -5609019
+200 G_Condition_21_H13           0.123602      -224842300
+201 G_Condition_22_H13          -0.032913          -61271
+202 G_Exterior_1st0_H13         -0.027714        -6820446
+203 G_Exterior_1st1_H13         -0.043991         5916426
+204 G_Exterior_1st2_H13         -0.011668        -2198442
+205 G_Exterior_1st3_H13         -0.103208       -56615390
+206 G_Exterior_1st4_H13         -0.136033       -30844615
+207 G_Exterior_1st5_H13          0.042862        -5128655
+208 G_Exterior_1st6_H13          0.046593       -95236079
+209 G_Exterior_1st7_H13          0.004249       -31348254
+210 G_Functional0_H13           -0.193507       203619336
+211 G_Functional1_H13           -0.147013       203731663
+212 G_Functional2_H13            0.119738       179656086
+213 G_Garage_Qual0_H13           0.030540       -34652486
+214 G_Garage_Qual1_H13          -0.023731         7072683
+215 G_Garage_Qual2_H13          -0.088130      -208028659
+216 G_House_Style0_H13           0.101110       155554673
+217 G_House_Style1_H13           0.047625       219058902
+218 G_House_Style2_H13           0.005322       127440441
+219 G_House_Style3_H13          -0.014796       135801114
+220 G_House_Style4_H13           0.006983        46592680
+221 G_Kitchen_Qual0_H13         -0.062247       -12103851
+222 G_Kitchen_Qual1_H13         -0.164723      -127609968
+223 G_Kitchen_Qual2_H13         -0.003057      -102792546
+224 G_MS_SubClass0_H13          -0.041580        63505068
+225 G_MS_SubClass1_H13          -0.049202        87461470
+226 G_MS_SubClass2_H13          -0.034979        94396994
+227 G_MS_SubClass3_H13           0.141965       110420005
+228 G_MS_SubClass4_H13          -0.072366        62221752
+229 G_MS_SubClass5_H13           0.050265        79261624
+230 G_MS_SubClass6_H13           0.132368        81491106
+231 G_MS_SubClass7_H13          -0.000616        34755730
+232 G_Neighborhood0_H13         -0.192071       -59082708
+233 G_Neighborhood1_H13         -0.032598        37635672
+234 G_Neighborhood2_H13          0.061287        20282687
+235 G_Neighborhood3_H13          0.023684         2500043
+236 G_Neighborhood4_H13         -0.040543        -5952683
+237 G_Neighborhood5_H13         -0.050795       -18990775
+238 G_Neighborhood6_H13         -0.067469       -30776269
+239 G_Neighborhood7_H13          0.087350       -42454018
+240 G_Neighborhood8_H13          0.030310       -35327294
+241 G_Neighborhood9_H13          0.168323       -10594559
+242 G_Neighborhood10_H13        -0.052154       -33022138
+243 G_Neighborhood11_H13         0.063640        -3892451
+244 G_Neighborhood12_H13         0.066198       -13934915
+245 G_Pool_QC0_H13               0.025408      -229710254
+246 G_Pool_QC1_H13               0.186794         -748776
+247 G_Roof_Matl0_H13             0.128973      -228074077
+248 G_Roof_Matl1_H13            -0.329334        -1806104
+249 G_Sale_Condition0_H13       -0.302114         3509317
+250 G_Sale_Condition1_H13       -0.018684        18801111
+251 G_Sale_Condition2_H13        0.021450        18717091
+252 G_Sale_Condition3_H13        0.023411      -193435878
+253 Land_ContourBnk_H13          0.015233       187624673
+254 Land_ContourHLS_H13          0.096360       202993557
+255 Land_ContourLow_H13         -0.093243       196002901
+256 BIAS_H11                    -0.559489       254299300
+257 BIAS_H12                     0.345363      -461156473
+258 BIAS_H13                     1.029799      -230266883
+259 H11_SalePrice                  -55559           17083
+260 H12_SalePrice                  141020           20690
+261 H13_SalePrice                   74108          -15622
+262 BIAS_SalePrice                 178474          -19843
+ 
+Valor de la función objetivo = 1303320384.4
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+Optimización Dual Quasi-Newton
+ 
+ 
+Iteraciones mímimas                                      0
+Iteraciones máximas                                     50
+Invocaciones máximas de la función              2147483647
+Tiempo CPU máximo                                    14400
+Criterio gradiente ABSGCONV                        0.00001
+Criterio gradiente GCONV                              1E-8
+Criterio de la función ABSFCONV                          0
+Criterio de la función FCONV                        0.0001
+Criterio de la función FCONV2                            0
+Parámetro FSIZE                                          0
+Criterio de cambio de parámetro ABSXCONV                 0
+Criterio de cambio de parámetro XCONV                    0
+Parámetro XSIZE                                          0
+Criterio de función ABSCONV                   6462703.0498
+Método de búsqueda lineal                                2
+Alpha inicial para búsqueda de línea                     1
+Precisión de búsqueda de línea LSPRECISION             0.4
+Parámetro DAMPSTEP para búsqueda de línea                .
+Tolerancia de singularidad (SINGULAR)                 1E-8
+ 
+Optimización Dual Quasi-Newton
+ 
+Actualización Dual Broyden - Fletcher - Goldfarb - Shanno (DBFGS)
+ 
+Estimaciones de parámetro             262
+ 
+                                           Inicio de optimización
+ 
+Restricciones activas                               0  Función objetivo                         1303320384.4
+Elemento gradiente absoluto máx          598660111.24
+ 
+ 
+                                                                 Objective     Max Abs                Slope of
+                     Function         Active        Objective     Function    Gradient       Step       Search
+Iter     Restarts       Calls    Constraints         Function       Change     Element       Size    Direction
+ 
+   1            0          23              0       1218927288     84393097    5.6836E8    2.02E-9      -714E14
+   2            0          35              0       1037874360     1.8105E8    1.0678E9    0.00001       -33E12
+   3            0          46              0        971763134     66111226    8.5016E8    4.51E-6       -25E12
+   4            0          56              0        887067602     84695532    9.5988E8    6.83E-6      -249E11
+   5            0          66              0        827323268     59744333    7.0121E8    9.93E-6      -122E11
+   6            0          74              0        778985441     48337827    7.1813E8    0.00001      -5143E9
+   7            0          83              0        756146287     22839154     6.582E8    5.68E-6      -9725E9
+   8            0          91              0        720369519     35776768    8.0358E8    0.00001      -3933E9
+   9            0          98              0        705723422     14646096    6.6097E8    0.00002      -216E10
+  10            0         105              0        682539278     23184144    6.4658E8    0.00002      -1595E9
+  11            0         112              0        666612214     15927064    7.0752E8    0.00002      -1493E9
+  12            0         119              0        656367746     10244468    6.6617E8    0.00001      -1165E9
+  13            0         126              0        648857191      7510555    6.3465E8    0.00002       -768E9
+  14            0         133              0        643030996      5826196    6.0885E8    0.00002       -605E9
+  15            0         140              0        638793281      4237714    6.4658E8    0.00001       -631E9
+  16            0         146              0        631109387      7683895    5.9285E8    0.00004       -352E9
+  17            0         152              0        628810404      2298982    5.3252E8    0.00003       -405E9
+  18            0         158              0        624723250      4087154    5.7931E8    0.00003       -302E9
+  19            0         164              0        619962316      4760934    5.6823E8    0.00003       -293E9
+  20            0         170              0        613786597      6175719    5.6143E8    0.00005       -215E9
+  21            0         176              0        609295870      4490727     5.272E8    0.00004       -207E9
+  22            0         182              0        606197092      3098778    5.1106E8    0.00004       -156E9
+  23            0         188              0        602662103      3534989    4.9482E8    0.00005       -149E9
+  24            0         194              0        600741681      1920422    4.9407E8    0.00004       -865E8
+  25            0         200              0        596906824      3834857     4.896E8    0.00006       -122E9
+  26            0         206              0        594525489      2381335     4.931E8    0.00004       -119E9
+  27            0         211              0        593039138      1486351    5.1574E8    0.00010       -768E8
+  28            0         217              0        591267450      1771688    4.6366E8    0.00004       -903E8
+  29            0         222              0        589395234      1872216    4.5882E8    0.00010       -578E8
+  30            0         227              0        586716687      2678547    4.5216E8    0.00010       -557E8
+  31            0         232              0        585583181      1133506    4.6521E8    0.00010       -479E8
+  32            0         237              0        584447694      1135487    4.3577E8    0.00010       -532E8
+  33            0         243              0        583015594      1432100    4.3127E8    0.00004       -654E8
+  34            0         248              0        581898261      1117332    4.2466E8    0.00010       -467E8
+  35            0         253              0        580066632      1831630     4.295E8    0.00010       -538E8
+  36            0         258              0        577999935      2066697    3.8362E8    0.00010       -563E8
+  37            0         263              0        576155071      1844864    3.8116E8    0.00010       -458E8
+  38            0         268              0        574426964      1728107    3.9546E8    0.00010       -397E8
+  39            0         273              0        572508727      1918237    3.9827E8    0.00010       -326E8
+  40            0         278              0        570353422      2155305    4.0383E8    0.00015       -317E8
+  41            0         283              0        567730560      2622862    3.8579E8    0.00013       -374E8
+  42            0         288              0        566482856      1247705    3.6108E8    0.00010       -402E8
+  43            0         293              0        564368054      2114802    3.6478E8    0.00010       -414E8
+  44            0         298              0        562484657      1883396     3.654E8    0.00013       -282E8
+  45            0         303              0        560506151      1978506    3.0548E8    0.00014       -304E8
+  46            0         308              0        558720563      1785589    3.2532E8    0.00012       -281E8
+  47            0         313              0        557293139      1427424     3.072E8    0.00011       -221E8
+  48            0         318              0        556010516      1282623    3.2673E8    0.00011       -211E8
+  49            0         323              0        554684267      1326249    3.2558E8    0.00017       -151E8
+  50            0         328              0        553240009      1444258    3.1195E8    0.00015       -185E8
+ 
+                                         Resultados de optimización
+ 
+Iteraciones                                        50  Invocaciones de función                           330
+Invocaciones del gradiente                         53  Restricciones activas                               0
+Función objetivo                         553240009.23  Elemento gradiente absoluto máx          311952099.55
+Coeficiente angular de la dirección de   -18481815805
+búsqueda
+ 
+QUANEW necesita más de 50 iteraciones o 2147483647 invocaciones de función.
+ 
+WARNING: QUANEW No se puede completar la optimización.
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+                Resultados de optimización
+                   Parameter Estimates
+                                                 Gradient
+                                                Objective
+  N Parameter                   Estimador        Function
+ 
+  1 BsmtFin_SF_1_H11             0.270987        41405857
+  2 Bsmt_Full_Bath_H11          -0.245651        13458541
+  3 Fireplaces_H11               0.103031        48215002
+  4 Garage_Cars_H11             -0.313027        39675638
+  5 Gr_Liv_Area_H11              0.205768        72241522
+  6 Lot_Area_H11                 0.068594        21590752
+  7 Mas_Vnr_Area_H11            -0.119393        33967533
+  8 Overall_Cond_H11             0.285975        -5224605
+  9 Overall_Qual_H11             0.145238        61447358
+ 10 Screen_Porch_H11            -0.011147         8756979
+ 11 Year_Built_H11               0.704206        36911863
+ 12 BsmtFin_SF_1_H12             0.107463      -122570098
+ 13 Bsmt_Full_Bath_H12           0.016013       -89403112
+ 14 Fireplaces_H12               0.041386      -156842468
+ 15 Garage_Cars_H12              0.017947      -204079764
+ 16 Gr_Liv_Area_H12              0.366615      -275122050
+ 17 Lot_Area_H12                 0.072346      -158429361
+ 18 Mas_Vnr_Area_H12             0.004714      -227907386
+ 19 Overall_Cond_H12             0.133423       107577347
+ 20 Overall_Qual_H12             0.126405      -311952100
+ 21 Screen_Porch_H12             0.022507      -131894713
+ 22 Year_Built_H12               0.246771      -138396629
+ 23 BsmtFin_SF_1_H13             0.025373        -8496059
+ 24 Bsmt_Full_Bath_H13           0.015912         9401526
+ 25 Fireplaces_H13               0.028936       -19499089
+ 26 Garage_Cars_H13              0.062743       -14128158
+ 27 Gr_Liv_Area_H13              0.301856         -335051
+ 28 Lot_Area_H13                -0.049444       -71763339
+ 29 Mas_Vnr_Area_H13            -0.008158       -38643595
+ 30 Overall_Cond_H13             0.100398        21503006
+ 31 Overall_Qual_H13             0.030000       -66305452
+ 32 Screen_Porch_H13             0.019098       -14370891
+ 33 Year_Built_H13               0.142517       -35966686
+ 34 Exter_QualEx_H11            -0.077312        -7239955
+ 35 Exter_QualFa_H11            -0.676046       -12911206
+ 36 Exter_QualGd_H11             0.327394        29481931
+ 37 G_Bldg_Type0_H11             0.173522          459170
+ 38 G_Bldg_Type1_H11             0.893272         3389325
+ 39 G_Bldg_Type2_H11             0.069202        54934481
+ 40 G_Bsmt_Exposure0_H11        -0.196818       -20009510
+ 41 G_Bsmt_Exposure1_H11         0.017221         8109377
+ 42 G_Bsmt_Exposure2_H11         0.215303       -13934654
+ 43 G_Bsmt_Exposure3_H11        -0.273288       -12254932
+ 44 G_Bsmt_Qual0_H11            -0.241286       -14887693
+ 45 G_Bsmt_Qual1_H11             0.734110         2371427
+ 46 G_Bsmt_Qual2_H11             0.101337        14763053
+ 47 G_Condition_10_H11           0.551734         3744632
+ 48 G_Condition_11_H11          -0.098836         5617374
+ 49 G_Condition_12_H11           0.027111        52074867
+ 50 G_Condition_13_H11           0.191394         1763381
+ 51 G_Condition_20_H11          -0.173069         3194433
+ 52 G_Condition_21_H11          -1.147352        59054373
+ 53 G_Condition_22_H11           0.348820         -342029
+ 54 G_Exterior_1st0_H11         -0.364947          276737
+ 55 G_Exterior_1st1_H11         -0.710092         5867450
+ 56 G_Exterior_1st2_H11         -0.378887         2808762
+ 57 G_Exterior_1st3_H11         -0.250540         9250982
+ 58 G_Exterior_1st4_H11         -0.991509         1895978
+ 59 G_Exterior_1st5_H11         -0.063223         2625423
+ 60 G_Exterior_1st6_H11          0.040446        31971029
+ 61 G_Exterior_1st7_H11          0.355771         8749659
+ 62 G_Functional0_H11            0.092433       -58705539
+ 63 G_Functional1_H11            0.263888       -58642587
+ 64 G_Functional2_H11           -0.293457       -56454003
+ 65 G_Garage_Qual0_H11          -0.811100          -49946
+ 66 G_Garage_Qual1_H11           0.281572        -1560364
+ 67 G_Garage_Qual2_H11           0.042514        56812463
+ 68 G_House_Style0_H11           0.059594       -36524071
+ 69 G_House_Style1_H11          -0.225807       -32684430
+ 70 G_House_Style2_H11          -0.083915       -36984414
+ 71 G_House_Style3_H11           0.286343       -35962555
+ 72 G_House_Style4_H11          -0.289197       -20043860
+ 73 G_Kitchen_Qual0_H11         -0.586310       -10799997
+ 74 G_Kitchen_Qual1_H11         -0.268078        -1375982
+ 75 G_Kitchen_Qual2_H11          0.455601        30911957
+ 76 G_MS_SubClass0_H11          -0.358400       -34608236
+ 77 G_MS_SubClass1_H11           0.003485       -34208680
+ 78 G_MS_SubClass2_H11          -0.164773       -33145017
+ 79 G_MS_SubClass3_H11           0.254859       -25977068
+ 80 G_MS_SubClass4_H11          -0.075233       -34590614
+ 81 G_MS_SubClass5_H11           0.229569       -32934290
+ 82 G_MS_SubClass6_H11           0.483968       -18152428
+ 83 G_MS_SubClass7_H11          -0.399079       -32823434
+ 84 G_Neighborhood0_H11         -0.839105       -11230023
+ 85 G_Neighborhood1_H11          0.851088        -6897952
+ 86 G_Neighborhood2_H11          0.151986        -8741866
+ 87 G_Neighborhood3_H11          0.357828        -7189906
+ 88 G_Neighborhood4_H11          0.298305        -7724613
+ 89 G_Neighborhood5_H11          0.106552        -9702282
+ 90 G_Neighborhood6_H11         -0.251539       -10655389
+ 91 G_Neighborhood7_H11          0.014193        -4452524
+ 92 G_Neighborhood8_H11         -0.211151       -10474566
+ 93 G_Neighborhood9_H11          0.200011       -10380991
+ 94 G_Neighborhood10_H11        -0.181530        -6013439
+ 95 G_Neighborhood11_H11         0.015453        -6239220
+ 96 G_Neighborhood12_H11        -0.649581        -6619583
+ 97 G_Pool_QC0_H11              -0.295936        55101443
+ 98 G_Pool_QC1_H11               1.131281        -1524807
+ 99 G_Roof_Matl0_H11             0.225396        57930732
+100 G_Roof_Matl1_H11             0.849828         -258813
+101 G_Sale_Condition0_H11        0.171973       -14185940
+102 G_Sale_Condition1_H11       -0.194986        -8180613
+103 G_Sale_Condition2_H11       -0.182553       -12791204
+104 G_Sale_Condition3_H11       -0.224315        25566127
+105 Land_ContourBnk_H11         -0.017872       -37552012
+106 Land_ContourHLS_H11         -0.164548       -31169911
+107 Land_ContourLow_H11          0.686977       -34825326
+108 Exter_QualEx_H12             0.295185       -74398167
+109 Exter_QualFa_H12            -0.440715       -53808154
+110 Exter_QualGd_H12             0.051296      -265175652
+111 G_Bldg_Type0_H12            -1.467282        37870779
+112 G_Bldg_Type1_H12             0.460201        48129749
+113 G_Bldg_Type2_H12             0.609567      -111386167
+114 G_Bsmt_Exposure0_H12        -0.239591       128536934
+115 G_Bsmt_Exposure1_H12         0.017119        60335270
+116 G_Bsmt_Exposure2_H12         0.021612       100805249
+117 G_Bsmt_Exposure3_H12         0.075773       156124238
+118 G_Bsmt_Qual0_H12             0.231987        47681332
+119 G_Bsmt_Qual1_H12            -0.041410        15857707
+120 G_Bsmt_Qual2_H12            -0.082738       -85563797
+121 G_Condition_10_H12          -0.214943       -12965766
+122 G_Condition_11_H12           0.045249       -10368332
+123 G_Condition_12_H12           0.267976      -150255350
+124 G_Condition_13_H12          -0.259968        -6796341
+125 G_Condition_20_H12          -0.677294        -2589694
+126 G_Condition_21_H12          -0.371734      -174212154
+127 G_Condition_22_H12           0.207507          248072
+128 G_Exterior_1st0_H12         -0.464478         -896011
+129 G_Exterior_1st1_H12         -0.136078       -37405760
+130 G_Exterior_1st2_H12         -0.006916       -16375115
+131 G_Exterior_1st3_H12         -0.150702       -40188195
+132 G_Exterior_1st4_H12         -0.162908         3973180
+133 G_Exterior_1st5_H12          0.172252        -3373145
+134 G_Exterior_1st6_H12         -0.024204       -63049292
+135 G_Exterior_1st7_H12          0.003215       -35520310
+136 G_Functional0_H12            0.494298       166225424
+137 G_Functional1_H12            0.185197       166591439
+138 G_Functional2_H12           -0.462421       154705091
+139 G_Garage_Qual0_H12          -0.223621         9286300
+140 G_Garage_Qual1_H12           0.026945         2594278
+141 G_Garage_Qual2_H12           0.112817      -155317022
+142 G_House_Style0_H12           0.416452       105207636
+143 G_House_Style1_H12          -0.036079        85996206
+144 G_House_Style2_H12          -0.168072       108664852
+145 G_House_Style3_H12           0.037540       104696473
+146 G_House_Style4_H12          -0.236795        49979150
+147 G_Kitchen_Qual0_H12         -0.096770        19518047
+148 G_Kitchen_Qual1_H12         -0.040357        47460319
+149 G_Kitchen_Qual2_H12          0.023970      -166152235
+150 G_MS_SubClass0_H12           0.545667       128971321
+151 G_MS_SubClass1_H12          -0.080354       124591623
+152 G_MS_SubClass2_H12          -1.517016       124291930
+153 G_MS_SubClass3_H12           0.060162       119057953
+154 G_MS_SubClass4_H12           0.286639       131227837
+155 G_MS_SubClass5_H12          -0.022765       124232294
+156 G_MS_SubClass6_H12           0.364827       106911609
+157 G_MS_SubClass7_H12           0.425096        82966965
+158 G_Neighborhood0_H12         -0.073383       104516400
+159 G_Neighborhood1_H12          0.072509        95584992
+160 G_Neighborhood2_H12          0.065998       106244692
+161 G_Neighborhood3_H12         -0.684343       100204702
+162 G_Neighborhood4_H12         -0.192350        95742357
+163 G_Neighborhood5_H12          0.142948       117116777
+164 G_Neighborhood6_H12          0.082155       113433628
+165 G_Neighborhood7_H12         -0.096364        92352983
+166 G_Neighborhood8_H12          0.082051       102677649
+167 G_Neighborhood9_H12          0.044665        90091033
+168 G_Neighborhood10_H12         0.311117       113805595
+169 G_Neighborhood11_H12        -0.082268        73906193
+170 G_Neighborhood12_H12         0.242591        84405125
+171 G_Pool_QC0_H12              -0.136910      -166737834
+172 G_Pool_QC1_H12               0.280745          682627
+173 G_Roof_Matl0_H12            -0.016913      -160635764
+174 G_Roof_Matl1_H12            -0.053469        -2104339
+175 G_Sale_Condition0_H12        0.134539        12844759
+176 G_Sale_Condition1_H12       -0.298571        -3531061
+177 G_Sale_Condition2_H12       -0.061398        11467372
+178 G_Sale_Condition3_H12        0.005037      -135998505
+179 Land_ContourBnk_H12         -0.068827       104852162
+180 Land_ContourHLS_H12          0.115941        72749783
+181 Land_ContourLow_H12         -0.001098        76071728
+182 Exter_QualEx_H13            -0.534397        42567926
+183 Exter_QualFa_H13             0.183969        54569080
+184 Exter_QualGd_H13             0.217809        22740380
+185 G_Bldg_Type0_H13             0.124108         7635739
+186 G_Bldg_Type1_H13            -0.150408       -12494439
+187 G_Bldg_Type2_H13             0.044084       -48630904
+188 G_Bsmt_Exposure0_H13        -0.170304        23584481
+189 G_Bsmt_Exposure1_H13        -0.044179       -51527108
+190 G_Bsmt_Exposure2_H13        -0.007282        15267286
+191 G_Bsmt_Exposure3_H13        -0.015389        24243678
+192 G_Bsmt_Qual0_H13            -0.154907        12585689
+193 G_Bsmt_Qual1_H13            -0.065089       -49166481
+194 G_Bsmt_Qual2_H13            -0.029822       -27665364
+195 G_Condition_10_H13          -0.067952        -3330433
+196 G_Condition_11_H13          -0.122509       -10872805
+197 G_Condition_12_H13          -0.029793       -48308782
+198 G_Condition_13_H13          -0.275517        -3260882
+199 G_Condition_20_H13           0.210362         3655190
+200 G_Condition_21_H13          -0.114697       -64319277
+201 G_Condition_22_H13          -0.013565          220513
+202 G_Exterior_1st0_H13         -0.193988         5228817
+203 G_Exterior_1st1_H13         -0.235850       -11669217
+204 G_Exterior_1st2_H13         -0.259847       -10408728
+205 G_Exterior_1st3_H13         -0.231873       -22927926
+206 G_Exterior_1st4_H13         -0.257012         4647145
+207 G_Exterior_1st5_H13         -0.215401        -1868550
+208 G_Exterior_1st6_H13         -0.242558       -15399079
+209 G_Exterior_1st7_H13         -0.383038        -8729493
+210 G_Functional0_H13           -0.327315        69301051
+211 G_Functional1_H13           -0.331803        65129897
+212 G_Functional2_H13            0.344131        78820602
+213 G_Garage_Qual0_H13          -0.028325         6653020
+214 G_Garage_Qual1_H13          -0.093336          372387
+215 G_Garage_Qual2_H13          -0.071067       -70255937
+216 G_House_Style0_H13           0.064433        21078665
+217 G_House_Style1_H13          -0.021909         4911212
+218 G_House_Style2_H13           0.088831        27206301
+219 G_House_Style3_H13          -0.160433        18755993
+220 G_House_Style4_H13           0.137777        -8906061
+221 G_Kitchen_Qual0_H13         -0.095768         9246964
+222 G_Kitchen_Qual1_H13         -0.071729       -38778150
+223 G_Kitchen_Qual2_H13          0.011928       -24143793
+224 G_MS_SubClass0_H13          -0.151114        21682422
+225 G_MS_SubClass1_H13          -0.027526         7289303
+226 G_MS_SubClass2_H13          -0.038792        12433275
+227 G_MS_SubClass3_H13           0.020545       -25037695
+228 G_MS_SubClass4_H13          -0.023911        15168450
+229 G_MS_SubClass5_H13           0.231747         7061831
+230 G_MS_SubClass6_H13          -0.117963       -41884722
+231 G_MS_SubClass7_H13          -0.119203         5537208
+232 G_Neighborhood0_H13         -0.211991        -1919871
+233 G_Neighborhood1_H13         -0.195392        -3885201
+234 G_Neighborhood2_H13         -0.232618        -1699618
+235 G_Neighborhood3_H13          0.063500        -7897748
+236 G_Neighborhood4_H13         -0.030125       -15015205
+237 G_Neighborhood5_H13         -0.170059         6581415
+238 G_Neighborhood6_H13         -0.077994         3609242
+239 G_Neighborhood7_H13          0.074468        -2179040
+240 G_Neighborhood8_H13         -0.220238        -4880633
+241 G_Neighborhood9_H13          0.202128         2878423
+242 G_Neighborhood10_H13        -0.320091        -5916642
+243 G_Neighborhood11_H13         0.773791         1187483
+244 G_Neighborhood12_H13        -0.120845        -4507758
+245 G_Pool_QC0_H13               0.152683       -61058084
+246 G_Pool_QC1_H13               0.291751         -104634
+247 G_Roof_Matl0_H13            -0.128162       -60148349
+248 G_Roof_Matl1_H13             0.010475         -576579
+249 G_Sale_Condition0_H13        0.233552        11930668
+250 G_Sale_Condition1_H13       -0.078948        -6001941
+251 G_Sale_Condition2_H13       -0.027368         6523212
+252 G_Sale_Condition3_H13        0.009177       -32054437
+253 Land_ContourBnk_H13          0.008499        60178250
+254 Land_ContourHLS_H13         -0.030369        55967493
+255 Land_ContourLow_H13          0.029090        55532850
+256 BIAS_H11                    -1.354374        61019862
+257 BIAS_H12                    -1.348731      -177267532
+258 BIAS_H13                     0.927876       -61091959
+259 H11_SalePrice                  -55559     4099.019309
+260 H12_SalePrice                  141020     -122.930013
+261 H13_SalePrice                   74108    -3387.698273
+262 BIAS_SalePrice                 178474    -4087.796299
+ 
+Valor de la función objetivo = 553240009.23
+ 
+
+
+*------------------------------------------------------------*
+* Salida de puntuación
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Salida del informe
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Estadísticos de ajuste
+ 
+Objetivo=SalePrice Etiqueta objetivo=SalePrice
+ 
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                    Entrenamiento             Prueba
+ 
+  _DFT_         grados de libertad totales                        2051.00                .
+  _DFE_         grados de libertad para el error                  1789.00                .
+  _DFM_         grados de libertad del modelo                      262.00                .
+  _NW_          número de pesos estimados                          262.00                .
+  _AIC_         criterio de información de Akaike                41956.71                .
+  _SBC_         criterio bayesiano de Schwarz                    43430.74                .
+  _ASE_         error cuadrado de promedio                   593306543.97       743841501.66
+  _MAX_         error absoluto máximo                           309864.42          284819.63
+  _DIV_         divisor para ASE                                  2051.00             879.00
+  _NOBS_        suma de frecuencias                               2051.00             879.00
+  _RASE_        error cuadrado de promedio de la raíz            24357.88           27273.46
+  _SSE_         suma de errores cuadrados                    1.2168717E12    653836679957.31
+  _SUMW_        suma de frec temporales de pesos de caso          2051.00             879.00
+  _FPE_         error de predicción final                    767086660.82                .
+  _MSE_         error cuadrático de la media                 680196602.40       743841501.66
+  _RFPE_        error de predicción final de la raíz             27696.33                .
+  _RMSE_        error cuadrático de la media de la raíz          26080.58           27273.46
+  _AVERR_       función de error de promedio                 593306543.97       743841501.66
+  _ERR_         función de error                             1.2168717E12    653836679957.31
+  _MISC_        tasa de error de clasificación                        .                  .
+  _WRONG_       número de clasificaciones erróneas                    .                  .
+ 
+ 
+ 
+ 
+Clasificaciones de puntuación de evaluación
+ 
+Rol de los datos=TRAIN Variable objetivo=SalePrice Etiqueta objetivo=SalePrice
+ 
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo      predicha
+ 
+      5             103          403291.26     382308.31
+     10             103          304126.29     307790.93
+     15             102          265779.69     266057.92
+     20             103          241043.19     236138.00
+     25             102          216721.69     215250.26
+     30             103          204357.31     200457.61
+     35             102          191933.28     189870.82
+     40             103          185166.76     180909.91
+     45             102          174884.68     172546.95
+     50             103          164242.21     163440.42
+     55             103          157940.16     155569.62
+     60             102          147157.16     149062.52
+     65             103          142729.59     142755.31
+     70             102          139530.26     137426.69
+     75             103          133468.01     131927.38
+     80             102          128775.75     126630.05
+     85             103          117784.06     120040.45
+     90             102          110750.16     110630.49
+     95             103          101590.93      97313.25
+    100             102           75861.11      75362.89
+ 
+ 
+ 
+ 
+Distribución de puntuación de evaluación
+ 
+Rol de los datos=TRAIN Variable objetivo=SalePrice Etiqueta objetivo=SalePrice
+ 
+                            Media de la
+                              variable       Media        Número de      Puntuación
+  Rango para predicho         objetivo      predicha    observaciones    del modelo
+ 
+424635.280 -  445135.578     600837.44     431483.57           9          434885.43
+404134.982 -  424635.280     467043.60     416395.63          15          414385.13
+383634.684 -  404134.982     407475.16     394383.96          19          393884.83
+363134.386 -  383634.684     377571.72     376135.22          29          373384.54
+342634.088 -  363134.386     348386.79     353028.67          24          352884.24
+322133.790 -  342634.088     318059.93     332343.79          28          332383.94
+301633.492 -  322133.790     308323.44     311626.66          41          311883.64
+281133.194 -  301633.492     289449.28     291001.60          50          291383.34
+260632.896 -  281133.194     267018.14     270039.33          59          270883.05
+240132.598 -  260632.896     254253.83     249558.50          64          250382.75
+219632.300 -  240132.598     233773.09     230250.86          95          229882.45
+199132.002 -  219632.300     211603.90     208913.76         141          209382.15
+178631.704 -  199132.002     191344.11     187910.03         233          188881.85
+158131.406 -  178631.704     169510.45     167887.81         236          168381.56
+137631.108 -  158131.406     147474.54     147245.00         337          147881.26
+117130.810 -  137631.108     128893.70     128163.15         351          127380.96
+96630.512 -  117130.810      108865.18     107613.94         175          106880.66
+76130.214 -  96630.512        90706.80      87520.87         103           86380.36
+55629.916 -  76130.214        65365.66      68312.98          32           65880.06
+35129.618 -  55629.916        51280.70      47578.83          10           45379.77

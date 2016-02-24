@@ -1,0 +1,176 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+
+INPUT     INTERVAL         2     
+INPUT     NOMINAL          1     
+TARGET    INTERVAL         1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variables predichas y de decisión
+
+Tipo         Variable       Etiqueta
+
+TARGET        FEV                      
+PREDICTED     P_FEV      Predicted: FEV
+RESIDUAL      R_FEV      Residual: FEV 
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1               12345    0.143738139856           10                
+        2          1718339575    0.143940092671           10                
+        3          1797629599    0.142521538422           10                
+        4           866987325    0.145233085267           10                
+        5          1935380089    0.142050882516           10                
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+              Inicio de optimización
+               Parameter Estimates
+                                         Gradient
+                                        Objective
+  N Parameter           Estimador        Function
+
+  1 Age_H11              0.038154        0.000952
+  2 Height_H11          -0.425849        0.001123
+  3 Age_H12             -1.126680        0.000471
+  4 Height_H12          -0.386665       -0.000161
+  5 Age_H13             -0.027189    -0.000001914
+  6 Height_H13          -0.529946       -0.000175
+  7 SexFemale_H11        0.041482        0.000292
+  8 SexFemale_H12       -0.930123        0.000367
+  9 SexFemale_H13        1.114882        0.000440
+ 10 BIAS_H11            -0.644676       -0.001051
+ 11 BIAS_H12             0.593148       -0.000294
+ 12 BIAS_H13             2.028828       -0.000662
+ 13 H11_FEV             -1.015272       -0.000505
+ 14 H12_FEV             -0.456443        0.001119
+ 15 H13_FEV             -1.305907        0.000801
+ 16 BIAS_FEV             3.212692        0.000693
+
+Valor de la función objetivo = 0.1420508825
+
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+Optimización Levenberg-Marquardt
+
+
+Iteraciones mímimas                                          0
+Iteraciones máximas                                         50
+Invocaciones máximas de la función                  2147483647
+Tiempo CPU máximo                                        14400
+Criterio gradiente ABSGCONV                            0.00001
+Criterio gradiente GCONV                                  1E-8
+Criterio gradiente GCONV2                                    0
+Criterio de la función ABSFCONV                              0
+Criterio de la función FCONV                            0.0001
+Criterio de la función FCONV2                                0
+Parámetro FSIZE                                              0
+Criterio de cambio de parámetro ABSXCONV                     0
+Criterio de cambio de parámetro XCONV                        0
+Parámetro XSIZE                                              0
+Criterio de función ABSCONV                       0.0007625426
+Factor de radio inicial de región de confianza               1
+Tolerancia de singularidad (SINGULAR)                     1E-8
+
+Optimización Levenberg-Marquardt
+
+Ajuste a escala de la actualización de More (1978)
+
+Estimaciones de parámetro              16
+
+                                           Inicio de optimización
+
+Restricciones activas                               0  Función objetivo                         0.1420508825
+Elemento gradiente absoluto máx          0.0011231208  Radio                                               1
+
+
+                                                                                                         Ratio
+                                                                                                       Between
+                                                                                                        Actual
+                                                                 Objective     Max Abs                     and
+                     Function         Active        Objective     Function    Gradient               Predicted
+Iter     Restarts       Calls    Constraints         Function       Change     Element     Lambda       Change
+
+   1            0           3              0          0.14193     0.000118     0.00404    0.00732        1.072
+   2            0           4              0          0.14183     0.000100      0.0127    0.00301        0.616
+   3            0           5              0          0.14171     0.000122      0.0132    0.00242        0.523
+   4            0           6              0          0.14150     0.000215     0.00468    0.00132        0.941
+   5            0           7              0          0.14142     0.000076     0.00356    0.00034        0.768
+   6            0           8              0          0.14139     0.000027     0.00219    0.00003        0.419
+   7            0          11              0          0.14139     8.119E-6     0.00317    0.00005        0.571
+   8            0          12              0          0.14138     7.174E-6    0.000231     2.7E-6        0.752
+   9            0          14              0          0.14138     1.316E-6    0.000348    0.00033        0.293
+  10            0          15              0          0.14137     2.253E-6    0.000342    0.00007        0.615
+  11            0          16              0          0.14137     1.085E-6    0.000297    0.00021        0.380
+  12            0          17              0          0.14137     1.607E-6    0.000329    0.00007        0.668
+  13            0          18              0          0.14137     8.936E-7    0.000269    0.00016        0.474
+  14            0          19              0          0.14137     1.198E-6    0.000302    0.00007        0.750
+  15            0          20              0          0.14137     8.155E-7     0.00107    0.00005        0.434
+  16            0          21              0          0.14137     1.806E-6    0.000829    0.00001        0.937
+
+                                         Resultados de optimización
+
+Iteraciones                                        16  Invocaciones de función                            23
+Invocaciones del jacobiano                         18  Restricciones activas                               0
+Función objetivo                         0.1413674216  Elemento gradiente absoluto máx          0.0008294143
+Lambda                                   0.0000126874  Actual Over Pred Change                  0.9365050556
+Radio                                     0.415282077                                                       
+
+Convergence criterion (FCONV=0.0001) satisfied.                                                   
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+            Resultados de optimización
+               Parameter Estimates
+                                         Gradient
+                                        Objective
+  N Parameter           Estimador        Function
+
+  1 Age_H11              0.022263        0.000109
+  2 Height_H11          -0.690141        0.000106
+  3 Age_H12             -1.689949     0.000056158
+  4 Height_H12          -0.260894        0.000138
+  5 Age_H13             -0.052589        0.000785
+  6 Height_H13          -0.541062        0.000829
+  7 SexFemale_H11        0.057413    -0.000046662
+  8 SexFemale_H12       -1.169498    -0.000047184
+  9 SexFemale_H13        2.649671       -0.000604
+ 10 BIAS_H11            -0.455543        0.000118
+ 11 BIAS_H12             0.705240        0.000110
+ 12 BIAS_H13             3.989328        0.000603
+ 13 H11_FEV             -0.734431        0.000393
+ 14 H12_FEV             -0.335173    -0.000055673
+ 15 H13_FEV             -1.943645       -0.000284
+ 16 BIAS_FEV             4.155398       -0.000515
+
+Valor de la función objetivo = 0.1413674216
+

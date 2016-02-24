@@ -1,0 +1,105 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+
+INPUT     INTERVAL         2     
+INPUT     NOMINAL          2     
+TARGET    INTERVAL         1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+The DMINE Procedure
+
+R-cuadrados para variable objetivo: FEV
+ 
+Effect                DF        R-Square
+
+AOV16: Height         15        0.768340
+Var:   Height          1        0.744417
+AOV16: Age            15        0.622098
+Var:   Age             1        0.598063
+Class: Sex*Smoker      3        0.125679
+Class: Smoker          1        0.079281
+Class: Sex             1        0.028086
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+The DMINE Procedure
+
+                              Efectos elegidos para el objetivo: FEV
+ 
+                                                                             Sum of      Error Mean
+Effect                DF        R-Square         F Value    p-Value         Squares          Square
+
+Var:   Height          1        0.744417     1328.158204     <.0001      259.415989        0.195320
+Var:   Age             1        0.018422       35.342395     <.0001        6.419605        0.181640
+Class: Sex             1        0.007838       15.517989     <.0001        2.731536        0.176024
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+The DMINE Procedure
+
+      Tabla ANOVA final para el objetivo: FEV
+ 
+                                              Sum of
+Effect            DF        R-Square         Squares
+
+Model              3        0.770677      268.567130
+Error            454               .       79.914823
+Total            457               .      348.481954
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+The DMINE Procedure
+
+                    Ningún efecto elegido para el objetivo: FEV
+ 
+                                                                             Sum of
+Effect                DF        R-Square         F Value    p-Value         Squares
+
+Class: Smoker          1        0.000304        0.601229     0.4385        0.105924
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------
+Resumen de Selección de variable para el entrenamiento
+-------------------------------------------------------------------
+
+
+Nombre de la variable objetivo : FEV
+Nivel de la variable objetivo : INTERVAL
+Modelo de selección de la variable: R-cuadrado
+
+Número total de inputs: 4
+Número total de inputs utilizados: 4
+Número total de inputs no utilizados: 0
+Número total de inputs rechazados: 1
+
+Porcentaje máximo ausente: 50
+NOTE: el porcentaje ausente máximo no ha rechazado ninguna variable
+
+Nivel de clase máximo: 100
+NOTE: el nivel de clase máximo no ha rechazado ninguna variable

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  DataSource="fev" Scope="LOCAL" Role="RAW" Library="REDES" Table="FEV" NCols="6" NObs="654"
+ NBytes="37888" Segment="" DataSourceRole="RAW" OutputType="VIEW" ForceRun="N" ComputeStatistics="N"
+ DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC" ApplyIntervalLevelLowerLimit="Y"
+ IntervalLowerLimit="20" ApplyMaxPercentMissing="Y" MaxPercentMissing="50" ApplyMaxClassLevels="Y"
+ MaxClassLevels="20" IdentifyEmptyColumns="Y" VariableValidation="STRICT" NewVariableRole="REJECT"
+ DropMapVariables="Y" DsId="fev" DsSampleName="" DsSampleSizeType="" DsSampleSize=""
+ DsCreatedBy="win" DsCreateDate="1771963210.1" DsModifiedBy="win" DsModifyDate="1771963210.1"
+ DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT" SampleSizePercent="20" SampleSizeObs="10000"
+ DBPassThrough="Y" RunAction="Train" Component="DataSource" RawCreateTime="1771965109.1"
+ CreateTime="24FEB2016:20:31:49" Description="" Data="REDES.FEV" CMeta="WORK.M23N18W7"
+ RunId="bdab0832-ab31-40de-8038-bc91ec3997aa">
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

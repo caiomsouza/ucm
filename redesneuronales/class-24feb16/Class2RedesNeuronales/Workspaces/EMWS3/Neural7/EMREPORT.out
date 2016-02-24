@@ -1,0 +1,150 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Estadísticos de ajuste
+
+Objetivo=FEV Etiqueta objetivo=' '
+
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                    Entrenamiento    Validación     Prueba
+
+  _DFT_         grados de libertad totales                      262.000           .           .   
+  _DFE_         grados de libertad para el error                249.000           .           .   
+  _DFM_         grados de libertad del modelo                    13.000           .           .   
+  _NW_          número de pesos estimados                        13.000           .           .   
+  _AIC_         criterio de información de Akaike              -526.690           .           .   
+  _SBC_         criterio bayesiano de Schwarz                  -480.301           .           .   
+  _ASE_         error cuadrado de promedio                        0.121          0.156       0.173
+  _MAX_         error absoluto máximo                             1.376          1.331       1.205
+  _DIV_         divisor para ASE                                262.000        196.000     196.000
+  _NOBS_        suma de frecuencias                             262.000        196.000     196.000
+  _RASE_        error cuadrado de promedio de la raíz             0.348          0.394       0.416
+  _SSE_         suma de errores cuadrados                        31.780         30.485      33.996
+  _SUMW_        suma de frec temporales de pesos de caso        262.000        196.000     196.000
+  _FPE_         error de predicción final                         0.134           .           .   
+  _MSE_         error cuadrático de la media                      0.128          0.156       0.173
+  _RFPE_        error de predicción final de la raíz              0.366           .           .   
+  _RMSE_        error cuadrático de la media de la raíz           0.357          0.394       0.416
+  _AVERR_       función de error de promedio                      0.121          0.156       0.173
+  _ERR_         función de error                                 31.780         30.485      33.996
+  _MISC_        tasa de error de clasificación                     .              .           .   
+  _WRONG_       número de clasificaciones erróneas                 .              .           .   
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Clasificaciones de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=FEV Etiqueta objetivo=' '
+
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo     predicha
+
+      5              14           4.60914       4.48465
+     10              13           3.76546       3.92570
+     15              13           3.59715       3.57490
+     20              13           3.36892       3.28152
+     25              13           3.08115       3.15149
+     30              13           3.13400       3.05556
+     35              13           2.97500       2.99511
+     40              13           2.92854       2.96929
+     45              13           2.90346       2.94022
+     50              13           2.79962       2.82229
+     55              15           2.61567       2.66190
+     60              13           2.50677       2.54932
+     65              13           2.52515       2.41514
+     70              12           2.24458       2.28255
+     75              14           2.01943       2.11533
+     80              13           1.92831       1.93118
+     85              13           1.91938       1.79660
+     90              12           1.61042       1.66145
+     95              13           1.68423       1.54197
+    100              13           1.32123       1.38961
+
+
+Rol de los datos=VALIDATE Variable objetivo=FEV Etiqueta objetivo=' '
+
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo     predicha
+
+      5              10           4.31440       4.56662
+     10              10           4.21460       4.00777
+     15              10           3.76460       3.63360
+     20              10           3.49080       3.40825
+     25               9           3.01478       3.18838
+     30              10           2.98270       3.02199
+     35              10           2.98650       2.95310
+     40              10           2.91060       2.87839
+     45              10           2.81390       2.77443
+     50               9           2.77267       2.63924
+     55              10           2.45130       2.53534
+     60              10           2.41570       2.37022
+     65              10           2.19410       2.18608
+     70              10           2.14210       2.04184
+     75              10           2.04370       1.95137
+     80               9           1.96833       1.81663
+     85              10           1.85030       1.71045
+     90              10           1.67330       1.59558
+     95              10           1.50350       1.47533
+    100               9           1.34656       1.35546
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Distribución de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=FEV Etiqueta objetivo=' '
+
+                  Media de la
+  Rango para        variable       Media       Número de      Puntuación
+   predicho         objetivo     predicha    observaciones    del modelo
+
+4.912 -  5.101      5.10200       5.10069           1           5.00628 
+4.723 -  4.912      5.07100       4.84142           2           4.81746 
+4.534 -  4.723      4.24800       4.64065           2           4.62863 
+4.345 -  4.534      4.92700       4.47806           3           4.43981 
+4.157 -  4.345      4.41000       4.23168           5           4.25099 
+3.968 -  4.157      4.05420       4.08474           5           4.06217 
+3.779 -  3.968      3.62633       3.85979           9           3.87335 
+3.590 -  3.779      3.60250       3.70646           6           3.68453 
+3.401 -  3.590      3.59257       3.46213           7           3.49570 
+3.212 -  3.401      3.36892       3.28152          13           3.30688 
+3.024 -  3.212      3.09868       3.10678          25           3.11806 
+2.835 -  3.024      2.92098       2.96085          44           2.92924 
+2.646 -  2.835      2.74144       2.74379          18           2.74042 
+2.457 -  2.646      2.58196       2.55397          24           2.55159 
+2.268 -  2.457      2.28453       2.33289          17           2.36277 
+2.080 -  2.268      2.14515       2.16533          13           2.17395 
+1.891 -  2.080      1.91653       1.95764          17           1.98513 
+1.702 -  1.891      1.89388       1.78112          16           1.79631 
+1.513 -  1.702      1.63079       1.59811          19           1.60749 
+1.324 -  1.513      1.37881       1.40887          16           1.41866 
+
+
+Rol de los datos=VALIDATE Variable objetivo=FEV Etiqueta objetivo=' '
+
+                  Media de la
+  Rango para        variable       Media       Número de      Puntuación
+   predicho         objetivo     predicha    observaciones    del modelo
+
+4.793 -  4.976      4.18950       4.86528           4           4.88436 
+4.425 -  4.609      4.54200       4.55603           3           4.51696 
+4.058 -  4.241      4.35867       4.13879           6           4.14955 
+3.874 -  4.058      4.10771       3.96884           7           3.96585 
+3.690 -  3.874      4.39300       3.79057           1           3.78215 
+3.507 -  3.690      3.69478       3.61616           9           3.59844 
+3.323 -  3.507      3.46967       3.41935           9           3.41474 
+3.139 -  3.323      3.10300       3.20791           9           3.23104 
+2.955 -  3.139      2.92162       3.01045          16           3.04734 
+2.772 -  2.955      2.96919       2.87341          21           2.86363 
+2.588 -  2.772      2.74454       2.66586          13           2.67993 
+2.404 -  2.588      2.44967       2.49519          15           2.49623 
+2.221 -  2.404      2.36500       2.28652          10           2.31253 
+2.037 -  2.221      1.98988       2.10544           8           2.12882 
+1.853 -  2.037      2.13768       1.96975          19           1.94512 
+1.670 -  1.853      1.86806       1.74945          17           1.76142 
+1.486 -  1.670      1.65923       1.57672          13           1.57772 
+1.302 -  1.486      1.39481       1.40068          16           1.39401 

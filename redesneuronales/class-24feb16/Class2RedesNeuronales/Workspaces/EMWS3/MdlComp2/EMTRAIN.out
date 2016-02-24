@@ -1,0 +1,118 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+
+TARGET    INTERVAL         1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+
+
+
+
+
+
+Estadísticos de ajuste
+Selección de modelo basada en Validar: error cuadrado de promedio (_VASE_)
+
+                                                  Validar:      Entrenar:       Entrenar:
+                                                   error          error       tasa de error
+   Modelo       Nodo del      Descripción       cuadrado de    cuadrado de          de
+seleccionado     modelo        del modelo         promedio       promedio     clasificación
+
+     Y          Neural7     Red neuronal (7)      0.15554        0.12130            .      
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+
+
+
+
+
+
+Tabla de estadísticos de ajuste
+Objetivo: FEV
+
+Rol de los datos=Train
+
+Estadísticos                                                   Neural7
+
+Entrenar: criterio de información de Akaike                   -526.690
+Entrenar: error cuadrado de promedio                             0.121
+Entrenar: función de error de promedio                           0.121
+Criterio de selección: Validar: error cuadrado de promedio       0.156
+Entrenar: grados de libertad para el error                     249.000
+Entrenar: grados de libertad del modelo                         13.000
+Entrenar: grados de libertad totales                           262.000
+Entrenar: divisor para ASE                                     262.000
+Entrenar: función de error                                      31.780
+Entrenar: error de predicción final                              0.134
+Entrenar: error absoluto máximo                                  1.376
+Entrenar: tasa de error de clasificación                          .   
+Entrenar: error cuadrático de la media                           0.128
+Entrenar: suma de frecuencias                                  262.000
+Entrenar: número de pesos estimados                             13.000
+Entrenar: error cuadrado de promedio de la raíz                  0.348
+Entrenar: error de predicción final de la raíz                   0.366
+Entrenar: error cuadrático de la media de la raíz                0.357
+Entrenar: criterio bayesiano de Schwarz                       -480.301
+Entrenar: suma de errores cuadrados                             31.780
+Entrenar: suma de frec temporales de pesos de caso             262.000
+Entrenar: número de clasificaciones erróneas                      .   
+
+
+Rol de los datos=Valid
+
+Estadísticos                                         Neural7
+
+Validar: error cuadrado de promedio                    0.156
+Validar: función de error de promedio                  0.156
+Validar: divisor para VASE                           196.000
+Validar: función de error                             30.485
+Validar: error absoluto máximo                         1.331
+Validar: tasa de error de clasificación                 .   
+Validar: error cuadrático de la media                  0.156
+Validar: suma de frecuencias                         196.000
+Validar: error cuadrado del promedio de la raíz        0.394
+Validar: error cuadrático de la media de la raíz       0.394
+Validar: suma de errores cuadrados                    30.485
+Validar: suma de frec temporales de pesos de caso    196.000
+Validar: número de clasificaciones erróneas             .   
+
+
+Rol de los datos=Test
+
+Estadísticos                                        Neural7
+
+                                                       .   
+                                                       .   
+Probar: límite conf. 95% inferior para TASE            .   
+Probar: límite conf. 95% superior para TASE            .   
+Probar: error cuadrado de promedio                    0.173
+Probar: función de error de promedio                  0.173
+Probar: divisor para TASE                           196.000
+Probar: función de error                             33.996
+                                                       .   
+                                                       .   
+                                                       .   
+                                                       .   
+Probar: error absoluto máximo                         1.205
+Probar: tasa de error de clasificación                 .   
+Probar: límite conf. 95% inferior para TMISC           .   
+Probar: límite conf. 95% superior para TMISC           .   
+Probar: error cuadrático de la media                  0.173
+Probar: suma de frecuencias                         196.000
+Probar: error cuadrado de promedio de la raíz         0.416
+Probar: error cuadrado de la media de la raíz         0.416
+Probar: suma de errores cuadrados                    33.996
+Probar: suma de frec temporales de pesos de caso    196.000
+Probar: número de clasificaciones erróneas             .   

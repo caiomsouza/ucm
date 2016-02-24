@@ -1,0 +1,96 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Estadísticos de ajuste
+
+Objetivo=SalePrice Etiqueta objetivo=SalePrice
+
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                    Entrenamiento             Prueba
+
+  _DFT_         grados de libertad totales                        2051.00                .  
+  _DFE_         grados de libertad para el error                  1789.00                .  
+  _DFM_         grados de libertad del modelo                      262.00                .  
+  _NW_          número de pesos estimados                          262.00                .  
+  _AIC_         criterio de información de Akaike                41956.71                .  
+  _SBC_         criterio bayesiano de Schwarz                    43430.74                .  
+  _ASE_         error cuadrado de promedio                   593306543.97       743841501.66
+  _MAX_         error absoluto máximo                           309864.42          284819.63
+  _DIV_         divisor para ASE                                  2051.00             879.00
+  _NOBS_        suma de frecuencias                               2051.00             879.00
+  _RASE_        error cuadrado de promedio de la raíz            24357.88           27273.46
+  _SSE_         suma de errores cuadrados                    1.2168717E12    653836679957.31
+  _SUMW_        suma de frec temporales de pesos de caso          2051.00             879.00
+  _FPE_         error de predicción final                    767086660.82                .  
+  _MSE_         error cuadrático de la media                 680196602.40       743841501.66
+  _RFPE_        error de predicción final de la raíz             27696.33                .  
+  _RMSE_        error cuadrático de la media de la raíz          26080.58           27273.46
+  _AVERR_       función de error de promedio                 593306543.97       743841501.66
+  _ERR_         función de error                             1.2168717E12    653836679957.31
+  _MISC_        tasa de error de clasificación                        .                  .  
+  _WRONG_       número de clasificaciones erróneas                    .                  .  
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Clasificaciones de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=SalePrice Etiqueta objetivo=SalePrice
+
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo      predicha
+
+      5             103          403291.26     382308.31
+     10             103          304126.29     307790.93
+     15             102          265779.69     266057.92
+     20             103          241043.19     236138.00
+     25             102          216721.69     215250.26
+     30             103          204357.31     200457.61
+     35             102          191933.28     189870.82
+     40             103          185166.76     180909.91
+     45             102          174884.68     172546.95
+     50             103          164242.21     163440.42
+     55             103          157940.16     155569.62
+     60             102          147157.16     149062.52
+     65             103          142729.59     142755.31
+     70             102          139530.26     137426.69
+     75             103          133468.01     131927.38
+     80             102          128775.75     126630.05
+     85             103          117784.06     120040.45
+     90             102          110750.16     110630.49
+     95             103          101590.93      97313.25
+    100             102           75861.11      75362.89
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Distribución de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=SalePrice Etiqueta objetivo=SalePrice
+
+                            Media de la
+                              variable       Media        Número de      Puntuación
+  Rango para predicho         objetivo      predicha    observaciones    del modelo
+
+424635.280 -  445135.578     600837.44     431483.57           9          434885.43
+404134.982 -  424635.280     467043.60     416395.63          15          414385.13
+383634.684 -  404134.982     407475.16     394383.96          19          393884.83
+363134.386 -  383634.684     377571.72     376135.22          29          373384.54
+342634.088 -  363134.386     348386.79     353028.67          24          352884.24
+322133.790 -  342634.088     318059.93     332343.79          28          332383.94
+301633.492 -  322133.790     308323.44     311626.66          41          311883.64
+281133.194 -  301633.492     289449.28     291001.60          50          291383.34
+260632.896 -  281133.194     267018.14     270039.33          59          270883.05
+240132.598 -  260632.896     254253.83     249558.50          64          250382.75
+219632.300 -  240132.598     233773.09     230250.86          95          229882.45
+199132.002 -  219632.300     211603.90     208913.76         141          209382.15
+178631.704 -  199132.002     191344.11     187910.03         233          188881.85
+158131.406 -  178631.704     169510.45     167887.81         236          168381.56
+137631.108 -  158131.406     147474.54     147245.00         337          147881.26
+117130.810 -  137631.108     128893.70     128163.15         351          127380.96
+96630.512 -  117130.810      108865.18     107613.94         175          106880.66
+76130.214 -  96630.512        90706.80      87520.87         103           86380.36
+55629.916 -  76130.214        65365.66      68312.98          32           65880.06
+35129.618 -  55629.916        51280.70      47578.83          10           45379.77

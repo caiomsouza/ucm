@@ -1,0 +1,534 @@
+*------------------------------------------------------------*
+Usuario:                win
+Fecha:                24/02/16
+Hora:                20H41
+*------------------------------------------------------------*
+* Salida de entrenamiento
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Resumen de variables
+ 
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+ 
+INPUT     INTERVAL         2
+INPUT     NOMINAL          2
+TARGET    INTERVAL         1
+ 
+ 
+ 
+ 
+Variables predichas y de decisión
+ 
+Tipo         Variable       Etiqueta
+ 
+TARGET        FEV
+PREDICTED     P_FEV      Predicted: FEV
+RESIDUAL      R_FEV      Residual: FEV
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+ 
+        1               12345    0.148101069273           10
+        2           290132246    0.146107049119           10
+        3          1679002304    0.146707900644           10
+        4           968533477    0.150524500436           10
+        5          1886791866    0.150070272805           10
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+                Inicio de optimización
+                  Parameter Estimates
+                                              Gradient
+                                             Objective
+  N Parameter                Estimador        Function
+ 
+  1 Age_H101                  0.235977     0.000048830
+  2 Height_H101              -0.173689        0.000169
+  3 Age_H102                 -0.369703       -0.002188
+  4 Height_H102              -0.266764       -0.001108
+  5 Age_H103                  0.298425    -0.000093521
+  6 Height_H103               1.119462     0.000059221
+  7 Age_H104                  0.523859     0.000045008
+  8 Height_H104              -0.324778        0.000130
+  9 Age_H105                 -0.374384        0.002136
+ 10 Height_H105               0.615584        0.000627
+ 11 Age_H106                 -0.982544        0.000982
+ 12 Height_H106              -0.901233       -0.003195
+ 13 Age_H107                 -0.437016       -0.009590
+ 14 Height_H107              -0.527098       -0.000478
+ 15 Age_H108                 -0.362475       -0.000107
+ 16 Height_H108               0.379302    -0.000087628
+ 17 Age_H109                  0.314350     0.000074177
+ 18 Height_H109               0.801916       -0.001172
+ 19 Age_H110                  0.188040       -0.000415
+ 20 Height_H110               0.182551       -0.003136
+ 21 Age_H111                 -0.135439        0.000353
+ 22 Height_H111               0.601528       -0.001205
+ 23 Age_H112                  0.441488       -0.000913
+ 24 Height_H112           -0.000049395       -0.001690
+ 25 Age_H113                  0.339126       -0.001656
+ 26 Height_H113               0.347238       -0.003195
+ 27 Age_H114                 -0.073467        0.000775
+ 28 Height_H114               0.642821       -0.000388
+ 29 Age_H115                  0.084059       -0.000457
+ 30 Height_H115              -0.549036       -0.000303
+ 31 Age_H116                 -0.282550       -0.000128
+ 32 Height_H116              -0.423705     0.000052873
+ 33 Age_H117                 -0.284951        0.000236
+ 34 Height_H117              -0.712324       -0.000111
+ 35 Age_H118                  0.121946        0.000400
+ 36 Height_H118              -0.033017        0.000570
+ 37 Age_H119                  0.040810        0.001043
+ 38 Height_H119               0.182934       -0.004933
+ 39 Age_H120                  0.455841       -0.000241
+ 40 Height_H120               0.564930        0.000765
+ 41 SexFemale_H101            0.422115    -0.000036483
+ 42 SmokerCurrent_H101       -0.025561    -0.000008957
+ 43 SexFemale_H102           -0.199259       -0.001703
+ 44 SmokerCurrent_H102        0.528413       -0.002416
+ 45 SexFemale_H103            0.083768        0.000256
+ 46 SmokerCurrent_H103        0.043818       -0.000538
+ 47 SexFemale_H104            0.169183    -0.000069960
+ 48 SmokerCurrent_H104       -0.343219    -0.000000281
+ 49 SexFemale_H105           -0.586569       -0.002886
+ 50 SmokerCurrent_H105       -0.629548        0.000395
+ 51 SexFemale_H106           -0.855677        0.002154
+ 52 SmokerCurrent_H106       -1.383824       -0.001824
+ 53 SexFemale_H107           -1.045262       -0.000112
+ 54 SmokerCurrent_H107        0.188675       -0.005831
+ 55 SexFemale_H108           -0.354209     0.000070819
+ 56 SmokerCurrent_H108        0.250568    -0.000046218
+ 57 SexFemale_H109            0.365182       -0.000843
+ 58 SmokerCurrent_H109        0.786478        0.003507
+ 59 SexFemale_H110           -1.030180       -0.000320
+ 60 SmokerCurrent_H110       -0.498943       -0.002714
+ 61 SexFemale_H111           -0.622783       -0.001100
+ 62 SmokerCurrent_H111       -0.623224       -0.001897
+ 63 SexFemale_H112           -1.450931        0.000326
+ 64 SmokerCurrent_H112       -0.240040       -0.000553
+ 65 SexFemale_H113            0.773768       -0.002034
+ 66 SmokerCurrent_H113       -0.253589       -0.000202
+ 67 SexFemale_H114            0.291792       -0.001965
+ 68 SmokerCurrent_H114       -0.211340        0.000330
+ 69 SexFemale_H115            0.033057       -0.000421
+ 70 SmokerCurrent_H115       -1.097139       -0.000346
+ 71 SexFemale_H116           -0.494446    -0.000042582
+ 72 SmokerCurrent_H116       -0.060233       -0.000230
+ 73 SexFemale_H117           -0.243854       -0.000249
+ 74 SmokerCurrent_H117        0.463047        0.000150
+ 75 SexFemale_H118           -0.405772    -0.000075593
+ 76 SmokerCurrent_H118       -0.084927        0.000173
+ 77 SexFemale_H119           -0.521008        0.001724
+ 78 SmokerCurrent_H119        0.318528        0.000561
+ 79 SexFemale_H120           -0.198184        0.000506
+ 80 SmokerCurrent_H120       -0.500399       -0.001173
+ 81 BIAS_H101                 1.034530     0.000034207
+ 82 BIAS_H102                 1.096250        0.001547
+ 83 BIAS_H103                 0.158634        0.000474
+ 84 BIAS_H104                 0.765185     0.000054032
+ 85 BIAS_H105                 0.042117     0.000067067
+ 86 BIAS_H106                 0.290896        0.001367
+ 87 BIAS_H107                -0.317322        0.006999
+ 88 BIAS_H108                 0.916405     0.000004546
+ 89 BIAS_H109                 0.832585       -0.003271
+ 90 BIAS_H110                -0.472635        0.002690
+ 91 BIAS_H111                -0.463699        0.001985
+ 92 BIAS_H112                 1.606874        0.000309
+ 93 BIAS_H113                -1.765296       -0.000907
+ 94 BIAS_H114                 1.040753        0.000302
+ 95 BIAS_H115                -0.730327        0.000289
+ 96 BIAS_H116                 0.507072        0.000220
+ 97 BIAS_H117                -0.618678    -0.000024051
+ 98 BIAS_H118                 1.361743    -0.000096197
+ 99 BIAS_H119                -0.123538        0.001412
+100 BIAS_H120                 0.066636        0.000430
+101 H101_FEV                 -0.007392       -0.000645
+102 H102_FEV                 -0.317816       -0.005326
+103 H103_FEV                 -0.022774       -0.001164
+104 H104_FEV                 -0.010005        0.000148
+105 H105_FEV                  0.176762       -0.001565
+106 H106_FEV                 -0.342984       -0.018085
+107 H107_FEV                 -0.577509        0.002787
+108 H108_FEV                 -0.005793       -0.000697
+109 H109_FEV                  0.216757        0.000739
+110 H110_FEV                  0.341124       -0.000575
+111 H111_FEV                  0.198671       -0.003072
+112 H112_FEV                 -0.067976        0.003874
+113 H113_FEV                 -0.234099        0.011945
+114 H114_FEV                  0.109816       -0.011196
+115 H115_FEV                 -0.053930       -0.004783
+116 H116_FEV                 -0.020277       -0.008432
+117 H117_FEV                  0.036060        0.008796
+118 H118_FEV                  0.051508       -0.003394
+119 H119_FEV                  0.337437       -0.001003
+120 H120_FEV                 -0.097428       -0.004509
+121 BIAS_FEV                  2.627639       -0.004498
+ 
+Valor de la función objetivo = 0.1461070491
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+Optimización Dual Quasi-Newton
+ 
+ 
+Iteraciones mímimas                                      0
+Iteraciones máximas                                     50
+Invocaciones máximas de la función              2147483647
+Tiempo CPU máximo                                    14400
+Criterio gradiente ABSGCONV                        0.00001
+Criterio gradiente GCONV                              1E-8
+Criterio de la función ABSFCONV                          0
+Criterio de la función FCONV                        0.0001
+Criterio de la función FCONV2                            0
+Parámetro FSIZE                                          0
+Criterio de cambio de parámetro ABSXCONV                 0
+Criterio de cambio de parámetro XCONV                    0
+Parámetro XSIZE                                          0
+Criterio de función ABSCONV                   0.0007625426
+Método de búsqueda lineal                                2
+Alpha inicial para búsqueda de línea                     1
+Precisión de búsqueda de línea LSPRECISION             0.4
+Parámetro DAMPSTEP para búsqueda de línea                .
+Tolerancia de singularidad (SINGULAR)                 1E-8
+ 
+Optimización Dual Quasi-Newton
+ 
+Actualización Dual Broyden - Fletcher - Goldfarb - Shanno (DBFGS)
+ 
+Estimaciones de parámetro             121
+ 
+                                           Inicio de optimización
+ 
+Restricciones activas                               0  Función objetivo                         0.1461070491
+Elemento gradiente absoluto máx          0.0180849359
+ 
+ 
+                                                                 Objective     Max Abs                Slope of
+                     Function         Active        Objective     Function    Gradient       Step       Search
+Iter     Restarts       Calls    Constraints         Function       Change     Element       Size    Direction
+ 
+   1            0           6              0          0.14598     0.000129      0.0177    0.00209       -0.123
+   2            0          10              0          0.14529     0.000684      0.0158      3.383      -0.0004
+   3            0          13              0          0.14509     0.000201     0.00623      0.356      -0.0011
+   4            0          17              0          0.14446     0.000638      0.0149      4.672      -0.0003
+   5            0          19              0          0.14419     0.000266      0.0226      1.000      -0.0011
+   6            0          23              0          0.14284      0.00135      0.0202      3.097      -0.0009
+   7            0          25              0          0.14148      0.00136      0.0139      2.887      -0.0012
+   8            0          28              0          0.14123     0.000254      0.0146      0.787      -0.0007
+   9            0          30              0          0.14094     0.000286      0.0122      1.167      -0.0005
+  10            0          34              0          0.13992      0.00102      0.0193      3.841      -0.0006
+  11            0          37              0          0.13961     0.000315     0.00561      1.136      -0.0005
+  12            0          39              0          0.13918     0.000426      0.0135      4.981      -0.0002
+  13            0          41              0          0.13864     0.000544     0.00612      2.592      -0.0004
+  14            0          44              0          0.13839     0.000246     0.00585      1.242      -0.0004
+  15            0          46              0          0.13801     0.000380      0.0125      2.864      -0.0002
+  16            0          48              0          0.13761     0.000403     0.00797      2.356      -0.0004
+  17            0          51              0          0.13735     0.000256     0.00933      1.765      -0.0003
+  18            0          53              0          0.13694     0.000417     0.00854      2.585      -0.0002
+  19            0          55              0          0.13652     0.000419     0.00991      1.797      -0.0006
+  20            0          58              0          0.13628     0.000238     0.00521      1.042      -0.0005
+  21            0          62              0          0.13582     0.000457      0.0122      9.047      -0.0001
+  22            0          65              0          0.13562     0.000198     0.00583      1.134      -0.0004
+  23            0          68              0          0.13549     0.000138     0.00499      1.382      -0.0002
+  24            0          72              0          0.13517     0.000316      0.0133      2.992      -0.0002
+  25            0          74              0          0.13486     0.000313     0.00974      1.682      -0.0005
+  26            0          76              0          0.13465     0.000208      0.0112      2.801      -0.0003
+  27            0          78              0          0.13456     0.000087      0.0100      1.822      -0.0003
+  28            0          80              0          0.13445     0.000112     0.00273      1.111      -0.0002
+  29            0          83              0          0.13438     0.000072     0.00681      2.942      -457E-7
+  30            0          87              0          0.13397     0.000405      0.0125      4.962      -0.0002
+  31            0          89              0          0.13353     0.000445     0.00672      1.371      -0.0007
+  32            0          92              0          0.13327     0.000255     0.00443      1.766      -0.0003
+  33            0          95              0          0.13318     0.000097     0.00300      1.399      -0.0001
+  34            0          98              0          0.13311     0.000065     0.00355      1.606      -0.0001
+  35            0         100              0          0.13303     0.000085     0.00476      2.130      -0.0001
+  36            0         104              0          0.13274     0.000291      0.0115      3.209      -0.0002
+  37            0         106              0          0.13238     0.000354     0.00587      1.781      -0.0004
+  38            0         109              0          0.13229     0.000090     0.00287      1.145      -0.0002
+  39            0         112              0          0.13224     0.000055     0.00316      1.209      -0.0001
+  40            0         116              0          0.13210     0.000134     0.00905      2.383      -0.0001
+  41            0         118              0          0.13192     0.000186     0.00182      1.782      -0.0002
+  42            0         120              0          0.13187     0.000047     0.00984      3.011      -0.0002
+  43            0         124              0          0.13169     0.000179     0.00284      1.219      -0.0003
+  44            0         127              0          0.13163     0.000064     0.00240      1.752        -6E-5
+  45            0         129              0          0.13159     0.000040     0.00708      2.333      -0.0001
+  46            0         133              0          0.13150     0.000086     0.00338      1.590      -0.0001
+  47            0         135              0          0.13138     0.000123     0.00322      1.201      -0.0002
+  48            0         139              0          0.13112     0.000263     0.00394      2.886      -0.0002
+  49            0         142              0          0.13105     0.000067     0.00248      1.268      -0.0001
+  50            0         146              0          0.13088     0.000166     0.00755      4.754      -0.0001
+ 
+                                         Resultados de optimización
+ 
+Iteraciones                                        50  Invocaciones de función                           148
+Invocaciones del gradiente                         65  Restricciones activas                               0
+Función objetivo                         0.1308842738  Elemento gradiente absoluto máx          0.0075456373
+Coeficiente angular de la dirección de   -0.000070049
+búsqueda
+ 
+QUANEW necesita más de 50 iteraciones o 2147483647 invocaciones de función.
+ 
+WARNING: QUANEW No se puede completar la optimización.
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+              Resultados de optimización
+                  Parameter Estimates
+                                              Gradient
+                                             Objective
+  N Parameter                Estimador        Function
+ 
+  1 Age_H101                  0.083362       -0.000702
+  2 Height_H101              -0.274044       -0.000784
+  3 Age_H102                 -0.383975        0.000241
+  4 Height_H102              -0.157722       -0.000616
+  5 Age_H103                  0.313441     0.000078804
+  6 Height_H103               1.099534        0.000303
+  7 Age_H104                  0.318102        0.000103
+  8 Height_H104              -0.321636        0.000157
+  9 Age_H105                 -0.680314        0.001410
+ 10 Height_H105               1.259015        0.002281
+ 11 Age_H106                 -1.607424       -0.000419
+ 12 Height_H106              -0.188960       -0.001479
+ 13 Age_H107                  0.114393       -0.003784
+ 14 Height_H107              -0.862696       -0.004309
+ 15 Age_H108                 -0.270423       -0.000337
+ 16 Height_H108               0.399092       -0.001325
+ 17 Age_H109                  0.338614        0.000237
+ 18 Height_H109               1.422942        0.001177
+ 19 Age_H110                  0.546945        0.001988
+ 20 Height_H110              -0.103221        0.002896
+ 21 Age_H111                 -0.135396       -0.000234
+ 22 Height_H111               0.460054       -0.000562
+ 23 Age_H112                  0.549309       -0.000598
+ 24 Height_H112               0.307156       -0.001173
+ 25 Age_H113                 -0.433954       -0.000872
+ 26 Height_H113               0.556650       -0.001133
+ 27 Age_H114                 -0.308018        0.000717
+ 28 Height_H114               0.432767        0.001942
+ 29 Age_H115                 -0.136407       -0.000217
+ 30 Height_H115              -0.596911        0.000247
+ 31 Age_H116                  0.043310       -0.000823
+ 32 Height_H116              -0.564418       -0.001394
+ 33 Age_H117                 -0.303970        0.001845
+ 34 Height_H117              -0.750991        0.002827
+ 35 Age_H118                  0.141135     0.000076431
+ 36 Height_H118              -0.127834        0.000289
+ 37 Age_H119                  0.122978        0.001689
+ 38 Height_H119               0.160613        0.003200
+ 39 Age_H120                  0.619485       -0.000977
+ 40 Height_H120               0.296688       -0.001357
+ 41 SexFemale_H101            0.461866       -0.000355
+ 42 SmokerCurrent_H101       -0.008016       -0.000597
+ 43 SexFemale_H102           -0.089739       -0.000210
+ 44 SmokerCurrent_H102        0.337518       -0.000429
+ 45 SexFemale_H103            0.017981        0.000410
+ 46 SmokerCurrent_H103        0.043222    -0.000039857
+ 47 SexFemale_H104            0.140901     0.000066777
+ 48 SmokerCurrent_H104       -0.450654     0.000094161
+ 49 SexFemale_H105           -0.536140        0.003961
+ 50 SmokerCurrent_H105       -0.539690        0.001907
+ 51 SexFemale_H106           -1.610603    -0.000052511
+ 52 SmokerCurrent_H106       -0.672524       -0.000948
+ 53 SexFemale_H107           -1.326265        0.001884
+ 54 SmokerCurrent_H107       -0.150011       -0.002579
+ 55 SexFemale_H108           -0.328903       -0.000167
+ 56 SmokerCurrent_H108        0.244358       -0.000749
+ 57 SexFemale_H109            0.288605        0.000668
+ 58 SmokerCurrent_H109        0.908160       -0.001208
+ 59 SexFemale_H110           -1.179828        0.001752
+ 60 SmokerCurrent_H110       -0.235215        0.003013
+ 61 SexFemale_H111           -0.583328       -0.000295
+ 62 SmokerCurrent_H111       -0.471097       -0.000362
+ 63 SexFemale_H112           -1.587169       -0.000127
+ 64 SmokerCurrent_H112       -0.307728        0.000917
+ 65 SexFemale_H113            1.146222       -0.000140
+ 66 SmokerCurrent_H113       -0.232292       -0.000669
+ 67 SexFemale_H114            0.609455        0.001060
+ 68 SmokerCurrent_H114       -0.298929        0.001426
+ 69 SexFemale_H115            0.095134        0.000437
+ 70 SmokerCurrent_H115       -1.217981        0.000328
+ 71 SexFemale_H116           -0.705773        0.000244
+ 72 SmokerCurrent_H116        0.018306       -0.000291
+ 73 SexFemale_H117           -0.157057    -0.000086807
+ 74 SmokerCurrent_H117        0.467860        0.001863
+ 75 SexFemale_H118           -0.420770     0.000015458
+ 76 SmokerCurrent_H118       -0.029025     0.000092538
+ 77 SexFemale_H119           -0.846385        0.003023
+ 78 SmokerCurrent_H119        0.496320        0.002965
+ 79 SexFemale_H120           -0.109531       -0.000965
+ 80 SmokerCurrent_H120       -0.256838       -0.000170
+ 81 BIAS_H101                 1.037322        0.000324
+ 82 BIAS_H102                 1.359753        0.000232
+ 83 BIAS_H103                 0.157443       -0.000109
+ 84 BIAS_H104                 0.770033    -0.000052454
+ 85 BIAS_H105                -0.129899       -0.000243
+ 86 BIAS_H106                 0.207022       -0.000580
+ 87 BIAS_H107                 0.186779        0.001925
+ 88 BIAS_H108                 0.931226        0.001015
+ 89 BIAS_H109                 0.893836        0.000846
+ 90 BIAS_H110                -0.827687       -0.002632
+ 91 BIAS_H111                -0.616477        0.000267
+ 92 BIAS_H112                 1.494275    -0.000097570
+ 93 BIAS_H113                -1.986635     0.000075184
+ 94 BIAS_H114                 1.105145       -0.001520
+ 95 BIAS_H115                -0.586177       -0.000471
+ 96 BIAS_H116                 0.538139        0.000143
+ 97 BIAS_H117                -0.640521       -0.002259
+ 98 BIAS_H118                 1.348487    -0.000086367
+ 99 BIAS_H119                -0.142282       -0.003463
+100 BIAS_H120                -0.071584        0.000591
+101 H101_FEV                 -0.229931       -0.003259
+102 H102_FEV                 -0.425614       -0.003553
+103 H103_FEV                  0.082491        0.006595
+104 H104_FEV                  0.051017       -0.003925
+105 H105_FEV                  0.541690        0.002133
+106 H106_FEV                 -0.417956       -0.007546
+107 H107_FEV                 -0.875121       -0.004636
+108 H108_FEV                 -0.320098       -0.001387
+109 H109_FEV                  0.388154        0.007353
+110 H110_FEV                  0.898065        0.000485
+111 H111_FEV                 -0.096494        0.001324
+112 H112_FEV                 -0.520561       -0.001324
+113 H113_FEV                 -1.252367        0.004392
+114 H114_FEV                  0.553105       -0.002276
+115 H115_FEV                  0.467933       -0.003835
+116 H116_FEV                 -0.373755       -0.004565
+117 H117_FEV                  0.344406       -0.002168
+118 H118_FEV                  0.159792       -0.003781
+119 H119_FEV                  0.912899        0.001333
+120 H120_FEV                 -0.321345        0.003581
+121 BIAS_FEV                  2.656010       -0.004042
+ 
+Valor de la función objetivo = 0.1308842738
+ 
+
+
+*------------------------------------------------------------*
+* Salida de puntuación
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Salida del informe
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Estadísticos de ajuste
+ 
+Objetivo=FEV Etiqueta objetivo=' '
+ 
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                    Entrenamiento     Prueba
+ 
+  _DFT_         grados de libertad totales                      458.000         .
+  _DFE_         grados de libertad para el error                337.000         .
+  _DFM_         grados de libertad del modelo                   121.000         .
+  _NW_          número de pesos estimados                       121.000         .
+  _AIC_         criterio de información de Akaike              -689.316         .
+  _SBC_         criterio bayesiano de Schwarz                  -189.965         .
+  _ASE_         error cuadrado de promedio                        0.131        0.174
+  _MAX_         error absoluto máximo                             1.405        1.690
+  _DIV_         divisor para ASE                                458.000      196.000
+  _NOBS_        suma de frecuencias                             458.000      196.000
+  _RASE_        error cuadrado de promedio de la raíz             0.362        0.417
+  _SSE_         suma de errores cuadrados                        59.945       34.027
+  _SUMW_        suma de frec temporales de pesos de caso        458.000      196.000
+  _FPE_         error de predicción final                         0.225         .
+  _MSE_         error cuadrático de la media                      0.178        0.174
+  _RFPE_        error de predicción final de la raíz              0.474         .
+  _RMSE_        error cuadrático de la media de la raíz           0.422        0.417
+  _AVERR_       función de error de promedio                      0.131        0.174
+  _ERR_         función de error                                 59.945       34.027
+  _MISC_        tasa de error de clasificación                     .            .
+  _WRONG_       número de clasificaciones erróneas                 .            .
+ 
+ 
+ 
+ 
+Clasificaciones de puntuación de evaluación
+ 
+Rol de los datos=TRAIN Variable objetivo=FEV Etiqueta objetivo=' '
+ 
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo     predicha
+ 
+      5              23           4.53126       4.53820
+     10              24           3.79092       3.83082
+     15              23           3.57713       3.43711
+     20              22           3.31514       3.23155
+     25              23           2.91074       3.10436
+     30              24           3.01921       3.01415
+     35              22           2.87782       2.94312
+     40              24           2.87413       2.87902
+     45              22           2.81191       2.80265
+     50              23           2.69000       2.70332
+     55              26           2.63596       2.54823
+     60              19           2.39584       2.43512
+     65              23           2.37991       2.29034
+     70              24           2.01592       2.13319
+     75              25           2.04084       2.00907
+     80              20           1.90335       1.90429
+     85              24           1.76100       1.78661
+     90              22           1.67927       1.64987
+     95              23           1.54613       1.50628
+    100              22           1.35000       1.32877
+ 
+ 
+ 
+ 
+Distribución de puntuación de evaluación
+ 
+Rol de los datos=TRAIN Variable objetivo=FEV Etiqueta objetivo=' '
+ 
+                  Media de la
+  Rango para        variable       Media       Número de      Puntuación
+   predicho         objetivo     predicha    observaciones    del modelo
+ 
+5.101 -  5.312      5.63300       5.31164           1           5.20620
+4.679 -  4.890      4.62050       4.76589           8           4.78442
+4.468 -  4.679      4.49520       4.57543           5           4.57353
+4.257 -  4.468      4.59767       4.36232           3           4.36265
+4.046 -  4.257      4.15978       4.13389           9           4.15176
+3.835 -  4.046      3.95125       3.91128           8           3.94087
+3.625 -  3.835      3.63746       3.72462          13           3.72998
+3.414 -  3.625      3.68990       3.53132          10           3.51909
+3.203 -  3.414      3.36985       3.31677          26           3.30820
+2.992 -  3.203      3.04360       3.08904          50           3.09732
+2.781 -  2.992      2.86579       2.88981          70           2.88643
+2.570 -  2.781      2.71972       2.69645          32           2.67554
+2.359 -  2.570      2.50776       2.48203          42           2.46465
+2.148 -  2.359      2.27733       2.25372          30           2.25376
+1.937 -  2.148      2.00550       2.03130          46           2.04287
+1.727 -  1.937      1.84897       1.84281          32           1.83199
+1.516 -  1.727      1.64017       1.64378          35           1.62110
+1.305 -  1.516      1.49659       1.42638          32           1.41021
+1.094 -  1.305      1.11283       1.21832           6           1.19932

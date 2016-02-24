@@ -1,0 +1,293 @@
+*------------------------------------------------------------*
+Usuario:                win
+Fecha:                24/02/16
+Hora:                20H41
+*------------------------------------------------------------*
+* Salida de entrenamiento
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Resumen de variables
+ 
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+ 
+INPUT     INTERVAL         2
+INPUT     NOMINAL          2
+TARGET    INTERVAL         1
+ 
+ 
+ 
+ 
+Variables predichas y de decisión
+ 
+Tipo         Variable       Etiqueta
+ 
+TARGET        FEV
+PREDICTED     P_FEV      Predicted: FEV
+RESIDUAL      R_FEV      Residual: FEV
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+ 
+        1               12345    0.140385257601           10
+        2           494012387    0.143015157067           10
+        3           936745137    0.143912719609           10
+        4           337281485    0.140803848742           10
+        5            42129862    0.138427294803           10
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+                Inicio de optimización
+                 Parameter Estimates
+                                             Gradient
+                                            Objective
+  N Parameter               Estimador        Function
+ 
+  1 Age_H11                  0.459758        0.000879
+  2 Height_H11              -0.429656        0.002323
+  3 Age_H12                  0.083957       -0.010633
+  4 Height_H12               0.228210       -0.013088
+  5 Age_H13                 -0.713828        0.000544
+  6 Height_H13              -0.539623        0.000870
+  7 SexFemale_H11            2.148040        0.002556
+  8 SmokerCurrent_H11        0.300817       -0.000224
+  9 SexFemale_H12            0.861931       -0.018840
+ 10 SmokerCurrent_H12       -0.070217       -0.009864
+ 11 SexFemale_H13           -0.974118        0.001441
+ 12 SmokerCurrent_H13       -0.560864       -0.002104
+ 13 BIAS_H11                 0.679309       -0.002633
+ 14 BIAS_H12                 0.494509        0.016937
+ 15 BIAS_H13                 0.132243        0.000167
+ 16 H11_FEV                 -1.807045       -0.009148
+ 17 H12_FEV                  2.368873       -0.005591
+ 18 H13_FEV                 -0.630131        0.008670
+ 19 BIAS_FEV                 2.077847        0.008990
+ 
+Valor de la función objetivo = 0.1384272948
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+Optimización Levenberg-Marquardt
+ 
+ 
+Iteraciones mímimas                                          0
+Iteraciones máximas                                         50
+Invocaciones máximas de la función                  2147483647
+Tiempo CPU máximo                                        14400
+Criterio gradiente ABSGCONV                            0.00001
+Criterio gradiente GCONV                                  1E-8
+Criterio gradiente GCONV2                                    0
+Criterio de la función ABSFCONV                              0
+Criterio de la función FCONV                            0.0001
+Criterio de la función FCONV2                                0
+Parámetro FSIZE                                              0
+Criterio de cambio de parámetro ABSXCONV                     0
+Criterio de cambio de parámetro XCONV                        0
+Parámetro XSIZE                                              0
+Criterio de función ABSCONV                       0.0007625426
+Factor de radio inicial de región de confianza               1
+Tolerancia de singularidad (SINGULAR)                     1E-8
+ 
+Optimización Levenberg-Marquardt
+ 
+Ajuste a escala de la actualización de More (1978)
+ 
+Estimaciones de parámetro              19
+ 
+                                           Inicio de optimización
+ 
+Restricciones activas                               0  Función objetivo                         0.1384272948
+Elemento gradiente absoluto máx          0.0188401925  Radio                                               1
+ 
+ 
+                                                                                                         Ratio
+                                                                                                       Between
+                                                                                                        Actual
+                                                                 Objective     Max Abs                     and
+                     Function         Active        Objective     Function    Gradient               Predicted
+Iter     Restarts       Calls    Constraints         Function       Change     Element     Lambda       Change
+ 
+   1            0           3              0          0.13809     0.000337      0.0141     0.0203        0.872
+   2            0           4              0          0.13773     0.000357      0.0106    0.00785        0.949
+   3            0           5              0          0.13750     0.000238      0.0394    0.00221        0.455
+   4            0           6              0          0.13723     0.000263     0.00565    0.00052        0.830
+   5            0           7              0          0.13723     7.387E-6    0.000690    0.00002        0.284
+   6            0          11              0          0.13722     1.825E-6    0.000564    0.00093        0.169
+   7            0          13              0          0.13722     3.065E-6    0.000237    0.00387        0.468
+   8            0          14              0          0.13722     4.365E-7    0.000124    0.00046        0.260
+   9            0          15              0          0.13722     1.333E-7    0.000111    0.00034       0.0871
+  10            0          16              0          0.13722     5.977E-7    0.000042    0.00383        0.427
+  11            0          17              0          0.13722     1.619E-7    0.000039    0.00068        0.377
+  12            0          18              0          0.13722     1.071E-7    0.000033    0.00089        0.283
+  13            0          19              0          0.13722     1.028E-7    0.000032    0.00067        0.310
+  14            0          20              0          0.13722     8.967E-8    0.000032    0.00078        0.277
+ 
+                                         Resultados de optimización
+ 
+Iteraciones                                        14  Invocaciones de función                            22
+Invocaciones del jacobiano                         16  Restricciones activas                               0
+Función objetivo                         0.1372193036  Elemento gradiente absoluto máx          0.0000323886
+Lambda                                   0.0007805815  Actual Over Pred Change                  0.2768212801
+Radio                                    0.0127786305
+ 
+Convergence criterion (FCONV=0.0001) satisfied.
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+              Resultados de optimización
+                 Parameter Estimates
+                                             Gradient
+                                            Objective
+  N Parameter               Estimador        Function
+ 
+  1 Age_H11                  0.872532     0.000009336
+  2 Height_H11              -0.988990     0.000004252
+  3 Age_H12                  0.054050    -0.000015450
+  4 Height_H12               0.249239    -0.000032389
+  5 Age_H13                 -0.821613    -0.000009812
+  6 Height_H13              -0.664990    -0.000011517
+  7 SexFemale_H11            6.260078    -0.000004228
+  8 SmokerCurrent_H11        0.790137     0.000003670
+  9 SexFemale_H12            0.849500     0.000023183
+ 10 SmokerCurrent_H12       -0.025421     0.000004011
+ 11 SexFemale_H13           -1.152819    -0.000012637
+ 12 SmokerCurrent_H13       -0.279758    -0.000026714
+ 13 BIAS_H11                 4.052363     0.000004220
+ 14 BIAS_H12                 0.508912    -0.000021611
+ 15 BIAS_H13                 0.526292    -0.000020787
+ 16 H11_FEV                 -1.819530     0.000012484
+ 17 H12_FEV                  2.527717    -0.000009357
+ 18 H13_FEV                 -0.562845     0.000002162
+ 19 BIAS_FEV                 2.001498    -0.000017485
+ 
+Valor de la función objetivo = 0.1372193036
+ 
+
+
+*------------------------------------------------------------*
+* Salida de puntuación
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Salida del informe
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Estadísticos de ajuste
+ 
+Objetivo=FEV Etiqueta objetivo=' '
+ 
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                    Entrenamiento     Prueba
+ 
+  _DFT_         grados de libertad totales                      458.000         .
+  _DFE_         grados de libertad para el error                439.000         .
+  _DFM_         grados de libertad del modelo                    19.000         .
+  _NW_          número de pesos estimados                        19.000         .
+  _AIC_         criterio de información de Akaike              -871.668         .
+  _SBC_         criterio bayesiano de Schwarz                  -793.258         .
+  _ASE_         error cuadrado de promedio                        0.137        0.159
+  _MAX_         error absoluto máximo                             1.457        1.466
+  _DIV_         divisor para ASE                                458.000      196.000
+  _NOBS_        suma de frecuencias                             458.000      196.000
+  _RASE_        error cuadrado de promedio de la raíz             0.370        0.399
+  _SSE_         suma de errores cuadrados                        62.846       31.169
+  _SUMW_        suma de frec temporales de pesos de caso        458.000      196.000
+  _FPE_         error de predicción final                         0.149         .
+  _MSE_         error cuadrático de la media                      0.143        0.159
+  _RFPE_        error de predicción final de la raíz              0.386         .
+  _RMSE_        error cuadrático de la media de la raíz           0.378        0.399
+  _AVERR_       función de error de promedio                      0.137        0.159
+  _ERR_         función de error                                 62.846       31.169
+  _MISC_        tasa de error de clasificación                     .            .
+  _WRONG_       número de clasificaciones erróneas                 .            .
+ 
+ 
+ 
+ 
+Clasificaciones de puntuación de evaluación
+ 
+Rol de los datos=TRAIN Variable objetivo=FEV Etiqueta objetivo=' '
+ 
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo     predicha
+ 
+      5              23           4.50913       4.52597
+     10              23           3.77957       3.87156
+     15              24           3.59800       3.44948
+     20              23           3.15004       3.12927
+     25              22           2.99255       3.05868
+     30              23           3.09348       3.01099
+     35              23           2.85565       2.95363
+     40              23           2.95374       2.88495
+     45              23           2.72557       2.81020
+     50              24           2.71342       2.68400
+     55              25           2.55560       2.56143
+     60              20           2.51300       2.44689
+     65              22           2.29350       2.30938
+     70              23           2.14770       2.16972
+     75              23           2.00330       2.06438
+     80              24           1.93296       1.92327
+     85              23           1.75896       1.76628
+     90              23           1.64248       1.65239
+     95              22           1.58759       1.53459
+    100              22           1.32209       1.32131
+ 
+ 
+ 
+ 
+Distribución de puntuación de evaluación
+ 
+Rol de los datos=TRAIN Variable objetivo=FEV Etiqueta objetivo=' '
+ 
+                  Media de la
+  Rango para        variable       Media       Número de      Puntuación
+   predicho         objetivo     predicha    observaciones    del modelo
+ 
+4.924 -  5.130      5.63300       5.13032           1           5.02707
+4.717 -  4.924      4.71129       4.76170           7           4.82056
+4.511 -  4.717      4.48600       4.60851           5           4.61406
+4.304 -  4.511      4.45600       4.39902           4           4.40755
+4.098 -  4.304      4.33575       4.20792           4           4.20104
+3.891 -  4.098      4.01692       3.99609          13           3.99454
+3.685 -  3.891      3.53382       3.78458          11           3.78803
+3.478 -  3.685      3.81310       3.60028          10           3.58152
+3.272 -  3.478      3.46900       3.37729          13           3.37502
+3.065 -  3.272      3.12503       3.12789          31           3.16851
+2.859 -  3.065      2.98382       2.97320          82           2.96200
+2.652 -  2.859      2.73862       2.77537          42           2.75550
+2.446 -  2.652      2.55189       2.55399          44           2.54899
+2.239 -  2.446      2.35739       2.33671          31           2.34249
+2.033 -  2.239      2.08123       2.12348          43           2.13598
+1.826 -  2.033      1.92560       1.92548          30           1.92947
+1.620 -  1.826      1.71297       1.71225          38           1.72297
+1.413 -  1.620      1.55756       1.52648          34           1.51646
+1.207 -  1.413      1.30309       1.31278          11           1.30995
+1.000 -  1.207      1.11625       1.13051           4           1.10345

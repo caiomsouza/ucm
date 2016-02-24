@@ -1,0 +1,422 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+
+INPUT     INTERVAL         2     
+INPUT     NOMINAL          2     
+TARGET    INTERVAL         1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variables predichas y de decisión
+
+Tipo         Variable       Etiqueta
+
+TARGET        FEV                      
+PREDICTED     P_FEV      Predicted: FEV
+RESIDUAL      R_FEV      Residual: FEV 
+ 
+                                                                                
+ 
+ 
+Search # 1 SINGLE LAYER trial # 1 : DIRECT : Entrenamiento
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   0      -115.163    0.76088       .  
+   1      -790.233    0.17426       .  
+   1      -790.233    0.17426       .  
+ 
+                                                                                
+ 
+ 
+Iteración seleccionada basada en _AVERR_
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   1      -790.233    0.17426       .  
+ 
+                                                                                
+ 
+ 
+Search # 1 SINGLE LAYER trial # 2 : TANH : Prelim
+
+Procedimiento NEURAL
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1           505338228     0.14642567913            8                
+        2           108862300     0.14651697393            8                
+        3           936745137    0.140736027702            8                
+        4          1056274352    0.147553438271            8                
+        5           805870530     0.14641082652            8                
+        6            42129862    0.146346471909            8                
+        7          1070099194    0.156832568976            8                
+        8            66513337    0.152495069608            8                
+ 
+                                                                                
+ 
+ 
+Search # 1 SINGLE LAYER trial # 2 : TANH : Entrenamiento
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   0      -872.078    0.14074       .  
+   1      -872.097    0.14073       .  
+   2      -872.101    0.14073       .  
+   3      -872.103    0.14073       .  
+   4      -872.103    0.14073       .  
+   5      -872.103    0.14073       .  
+   6      -872.103    0.14073       .  
+   7      -872.103    0.14073       .  
+   7      -872.103    0.14073       .  
+ 
+                                                                                
+ 
+ 
+Iteración seleccionada basada en _AVERR_
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   7      -872.103    0.14073       .  
+ 
+                                                                                
+ 
+ 
+Search # 1 SINGLE LAYER trial # 3 : NORMAL : Prelim
+
+Procedimiento NEURAL
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1           505338228    0.156533990839            8                
+        2           108862300    0.149956523978            8                
+        3           936745137    0.164849644494            8                
+        4          1056274352    0.146057719628            8                
+        5           805870530    0.144321064878            8                
+        6            42129862    0.144205917345            8                
+        7          1070099194    0.154812807101            8                
+        8            66513337     0.14333365316            8                
+ 
+                                                                                
+ 
+ 
+Search # 1 SINGLE LAYER trial # 3 : NORMAL : Entrenamiento
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   0      -863.702    0.14333       .  
+   1      -863.934    0.14326       .  
+   2      -864.131    0.14320       .  
+   3      -864.267    0.14316       .  
+   4      -864.344    0.14313       .  
+   5      -864.389    0.14312       .  
+   6      -864.398    0.14312       .  
+   7      -864.420    0.14311       .  
+   8      -864.439    0.14310       .  
+   8      -864.439    0.14310       .  
+ 
+                                                                                
+ 
+ 
+Iteración seleccionada basada en _AVERR_
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   8      -864.439    0.14310       .  
+ 
+                                                                                
+ 
+ 
+Search # 1 SINGLE LAYER trial # 4 : SINE : Prelim
+
+Procedimiento NEURAL
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1           505338228    0.145298599068            8                
+        2           108862300    0.151915014823            8                
+        3           936745137    0.145461216752            8                
+        4          1056274352    0.157321228984            8                
+        5           805870530    0.152299466488            8                
+        6            42129862    0.148262317908            8                
+        7          1070099194    0.151242467459            8                
+        8            66513337    0.156548745656            8                
+ 
+                                                                                
+ 
+ 
+Search # 1 SINGLE LAYER trial # 4 : SINE : Entrenamiento
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   0      -857.466    0.14530       .  
+   1      -857.621    0.14525       .  
+   2      -857.755    0.14521       .  
+   3      -857.919    0.14515       .  
+   4      -858.031    0.14512       .  
+   5      -858.109    0.14509       .  
+   6      -858.236    0.14505       .  
+   7      -858.334    0.14502       .  
+   8      -858.417    0.14500       .  
+   8      -858.417    0.14500       .  
+ 
+                                                                                
+ 
+ 
+Iteración seleccionada basada en _AVERR_
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   8      -858.417    0.14500       .  
+ 
+                                                                                
+ 
+ 
+Search # 2 SINGLE LAYER trial # 1 : DIRECT : Prelim
+
+Procedimiento NEURAL
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1               12345    0.139488805363            8                
+ 
+                                                                                
+ 
+ 
+Search # 2 SINGLE LAYER trial # 1 : DIRECT : Entrenamiento
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   0      -868.155    0.13949       .  
+   1      -868.155    0.13949       .  
+   2      -868.156    0.13949       .  
+   3      -868.156    0.13949       .  
+   3      -868.156    0.13949       .  
+ 
+                                                                                
+ 
+ 
+Iteración seleccionada basada en _AVERR_
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   3      -868.156    0.13949       .  
+ 
+                                                                                
+ 
+ 
+Search # 2 SINGLE LAYER trial # 2 : TANH : Prelim
+
+Procedimiento NEURAL
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1           505338228    0.138376013494            8                
+        2           108862300    0.136696020827            8                
+        3           936745137    0.136635094099            8                
+        4          1056274352    0.138097410428            8                
+        5           805870530    0.137004389334            8                
+        6            42129862    0.136954352242            8                
+        7          1070099194    0.133706417736            8                
+        8            66513337    0.136599419413            8                
+ 
+                                                                                
+ 
+ 
+Search # 2 SINGLE LAYER trial # 2 : TANH : Entrenamiento
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   0      -871.546    0.13371       .  
+   1      -872.487    0.13343       .  
+   2      -872.967    0.13329       .  
+   3      -873.306    0.13319       .  
+   4      -873.578    0.13311       .  
+   5      -873.684    0.13308       .  
+   6      -873.710    0.13308       .  
+   7      -874.623    0.13281       .  
+   8      -874.732    0.13278       .  
+   8      -874.732    0.13278       .  
+ 
+                                                                                
+ 
+ 
+Iteración seleccionada basada en _AVERR_
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   8      -874.732    0.13278       .  
+ 
+                                                                                
+ 
+ 
+Search # 2 SINGLE LAYER trial # 3 : NORMAL : Prelim
+
+Procedimiento NEURAL
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1           505338228    0.135571271243            8                
+        2           108862300    0.135512723135            8                
+        3           936745137     0.13357568144            8                
+        4          1056274352    0.135418144973            8                
+        5           805870530    0.139341007936            8                
+        6            42129862    0.139227352182            8                
+        7          1070099194    0.134716789298            8                
+        8            66513337     0.13636132838            8                
+ 
+                                                                                
+ 
+ 
+Search # 2 SINGLE LAYER trial # 3 : NORMAL : Entrenamiento
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   0      -871.994    0.13358       .  
+   1      -873.356    0.13318       .  
+   2      -874.252    0.13292       .  
+   3      -876.041    0.13240       .  
+   4      -876.535    0.13226       .  
+   5      -877.505    0.13198       .  
+   6      -877.961    0.13185       .  
+   7      -878.424    0.13171       .  
+   8      -878.757    0.13162       .  
+   8      -878.757    0.13162       .  
+ 
+                                                                                
+ 
+ 
+Iteración seleccionada basada en _AVERR_
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   8      -878.757    0.13162       .  
+ 
+                                                                                
+ 
+ 
+Search # 2 SINGLE LAYER trial # 4 : SINE : Prelim
+
+Procedimiento NEURAL
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1           505338228    0.136533497851            8                
+        2           108862300    0.136663819524            8                
+        3           936745137    0.136217274897            8                
+        4          1056274352    0.135153177036            8                
+        5           805870530    0.137630368254            8                
+        6            42129862    0.135953726171            8                
+        7          1070099194    0.137070477786            8                
+        8            66513337    0.136583407351            8                
+ 
+                                                                                
+ 
+ 
+Search # 2 SINGLE LAYER trial # 4 : SINE : Entrenamiento
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   0      -866.617    0.13515       .  
+   1      -869.174    0.13440       .  
+   2      -870.301    0.13407       .  
+   3      -870.631    0.13397       .  
+   4      -870.643    0.13397       .  
+   5      -871.035    0.13386       .  
+   6      -871.131    0.13383       .  
+   7      -871.197    0.13381       .  
+   8      -871.236    0.13380       .  
+   8      -871.236    0.13380       .  
+ 
+                                                                                
+ 
+ 
+Iteración seleccionada basada en _AVERR_
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   8      -871.236    0.13380       .  
+ 
+                                                                                
+ 
+ 
+Entrenamiento final Prelim
+
+Procedimiento NEURAL
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1               12345    0.140728313592            0      ABSGCONV  
+ 
+                                                                                
+ 
+ 
+Entrenamiento final Entrenamiento
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   0      -872.103    0.14073       .  
+   0      -872.103    0.14073       .  
+ 
+                                                                                
+ 
+ 
+Iteración seleccionada basada en _AVERR_
+
+_ITER_      _AIC_     _AVERR_    _MISC_
+
+   0      -872.103    0.14073       .  
+ 
+                                                                                
+ 
+ 
+Historia final de entrenamiento
+
+    _step_        _func_    _status_     _iter_    _AVERR_    _MISC_      _AIC_
+
+SINGLE LAYER 1    DIRECT    initial         0      0.76088       .      -115.163
+SINGLE LAYER 1    DIRECT    candidate       1      0.17426       .      -790.233
+SINGLE LAYER 1    TANH      candidate       7      0.14073       .      -872.103
+SINGLE LAYER 1    NORMAL    reject          8      0.14310       .      -864.439
+SINGLE LAYER 1    SINE      reject          8      0.14500       .      -858.417
+SINGLE LAYER 1    TANH      keep            7      0.14073       .      -872.103
+SINGLE LAYER 2    DIRECT    reject          3      0.13949       .      -868.156
+SINGLE LAYER 2    TANH      reject          8      0.13278       .      -874.732
+SINGLE LAYER 2    NORMAL    reject          8      0.13162       .      -878.757
+SINGLE LAYER 2    SINE      reject          8      0.13380       .      -871.236
+                            Final           0      0.14073       .      -872.103
+ 
+                                                                                
+ 
+ 
+Modelo final
+Deteniendo: Se han cumplido los criterios de terminación: sobreajuste basado en 
+
+_func_    _AVERR_    neurons
+
+ TANH     0.14073       2   
+                     =======
+                        2   

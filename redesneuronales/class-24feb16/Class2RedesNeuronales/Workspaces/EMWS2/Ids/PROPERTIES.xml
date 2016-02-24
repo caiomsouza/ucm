@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  DataSource="ameshousing" Scope="LOCAL" Role="RAW" Library="REDES" Table="AMESHOUSING"
+ NCols="82" NObs="2930" NBytes="1524736" Segment="" DataSourceRole="RAW" OutputType="VIEW"
+ ForceRun="N" ComputeStatistics="N" DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC"
+ ApplyIntervalLevelLowerLimit="Y" IntervalLowerLimit="20" ApplyMaxPercentMissing="Y"
+ MaxPercentMissing="50" ApplyMaxClassLevels="Y" MaxClassLevels="20" IdentifyEmptyColumns="Y"
+ VariableValidation="STRICT" NewVariableRole="REJECT" DropMapVariables="Y" DsId="ameshousing"
+ DsSampleName="" DsSampleSizeType="" DsSampleSize="" DsCreatedBy="win" DsCreateDate="1771962415.1"
+ DsModifiedBy="win" DsModifyDate="1771962415.2" DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT"
+ SampleSizePercent="20" SampleSizeObs="10000" DBPassThrough="Y" RunAction="Train"
+ Component="DataSource" RawCreateTime="1771962441.7" CreateTime="24FEB2016:19:47:22"
+ Description="" Data="REDES.AMESHOUSING" CMeta="WORK.M256LY3C" RunId="c5561df2-5af7-40cb-964c-01a8c0d4e8fc"
+>
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

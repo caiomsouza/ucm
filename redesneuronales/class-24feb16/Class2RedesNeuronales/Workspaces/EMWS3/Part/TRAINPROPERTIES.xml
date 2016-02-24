@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  Method="DEFAULT" TrainPct="70" ValidatePct="0" TestPct="30" RandomSeed="31523" OutputType="DATA"
+ IntervalDistribution="Y" ClassDistribution="Y" ForceRun="N" RunAction="Train" Component="Partition"
+ RawCreateTime="1771963229.1" CreateTime="24FEB2016:20:00:29" RunId="f44db1b2-88cc-4716-b3e0-a5afdaabdec9"
+ RawLastTimeRun="1771965666.1" RawRunTime="1.2949998379" LastTimeRun="24FEB2016:20:41:06"
+ RunTime="0 Hr. 0 Min. 1.29 Sec.">
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

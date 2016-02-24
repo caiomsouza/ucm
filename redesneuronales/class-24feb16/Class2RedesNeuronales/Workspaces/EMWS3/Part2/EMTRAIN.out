@@ -1,0 +1,26 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+          Nivel de     Número de
+Rol        medida     ocurrencias
+
+ID        NOMINAL          1     
+INPUT     INTERVAL         2     
+INPUT     NOMINAL          2     
+TARGET    INTERVAL         1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de partición
+
+                                      Número de
+Tipo         Conjunto de datos      observaciones
+
+DATA        EMWS3.Ids2_DATA              654     
+TRAIN       EMWS3.Part2_TRAIN            262     
+VALIDATE    EMWS3.Part2_VALIDATE         196     
+TEST        EMWS3.Part2_TEST             196     

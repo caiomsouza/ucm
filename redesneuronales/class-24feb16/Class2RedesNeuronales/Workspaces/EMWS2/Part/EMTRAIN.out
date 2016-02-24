@@ -1,0 +1,25 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+
+ASSESS    NOMINAL           1    
+INPUT     INTERVAL         11    
+INPUT     NOMINAL          17    
+TARGET    INTERVAL          1    
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de partición
+
+                                 Número de
+Tipo     Conjunto de datos     observaciones
+
+DATA     EMWS2.Varsel_TRAIN         2930    
+TRAIN    EMWS2.Part_TRAIN           2051    
+TEST     EMWS2.Part_TEST             879    
