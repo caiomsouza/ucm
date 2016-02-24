@@ -1,0 +1,56 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Estadísticos de ajuste
+
+Objetivo=hat Etiqueta objetivo=' '
+
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                     Entrenamiento
+
+  _AIC_         criterio de información de Akaike               -335.395  
+  _ASE_         error cuadrado del promedio                        0.461  
+  _AVERR_       función de error de promedio                       0.461  
+  _DFE_         grados de libertad para el error                 438.000  
+  _DFM_         grados de libertad del modelo                      3.000  
+  _DFT_         grados de libertad totales                       441.000  
+  _DIV_         divisor para ASE                                 441.000  
+  _ERR_         función de error                                 203.345  
+  _FPE_         error de predicción final                          0.467  
+  _MAX_         error absoluto máximo                              1.277  
+  _MSE_         error cuadrático de la media                       0.464  
+  _NOBS_        suma de frecuencias                              441.000  
+  _NW_          número de pesos de los estimadores                 3.000  
+  _RASE_        suma del promedio de la raíz de cuadrados          0.679  
+  _RFPE_        error de predicción final de la raíz               0.684  
+  _RMSE_        error cuadrático de la media de la raíz            0.681  
+  _SBC_         criterio bayesiano de Schwarz                   -323.128  
+  _SSE_         suma de errores cuadrados                        203.345  
+  _SUMW_        suma de frec temporales de pesos de caso         441.000  
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Clasificaciones de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=hat Etiqueta objetivo=' '
+
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo     predicha
+
+     5              441           -0.27662     -0.27662
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Distribución de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=hat Etiqueta objetivo=' '
+
+                    Media de la
+   Rango para         variable       Media       Número de      Puntuación
+    predicho          objetivo     predicha    observaciones    del modelo
+
+-0.277 -  -0.277      -0.27662     -0.27662         441          -0.27662 

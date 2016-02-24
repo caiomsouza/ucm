@@ -1,0 +1,28 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Estadísticos descriptivos para las variables objetivo intervalo
+
+Datos=DATA
+
+                                                         Número de                 Desviación
+     Variable         Máximo      Media      Mínimo    observaciones    Ausente     estándar     Etiqueta
+
+Median_House_value    500001    206855.82     14999        20640           0        115395.62            
+
+
+Datos=TEST
+
+                                                         Número de                 Desviación
+     Variable         Máximo      Media      Mínimo    observaciones    Ausente     estándar     Etiqueta
+
+Median_House_value    500001    206448.12     14999         6192           0        114434.82            
+
+
+Datos=TRAIN
+
+                                                         Número de                 Desviación
+     Variable         Máximo      Media      Mínimo    observaciones    Ausente     estándar     Etiqueta
+
+Median_House_value    500001    207030.54     17500        14448           0        115808.45            

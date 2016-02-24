@@ -1,0 +1,68 @@
+*------------------------------------------------------------*
+Usuario:                win
+Fecha:                24/02/16
+Hora:                19H24
+*------------------------------------------------------------*
+* Salida de entrenamiento
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Resumen de variables
+ 
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+ 
+INPUT     INTERVAL         8
+TARGET    INTERVAL         1
+ 
+ 
+ 
+ 
+Resumen de partición
+ 
+             Conjunto          Número de
+Tipo         de datos        observaciones
+ 
+DATA     EMWS1.Ids2_DATA         20640
+TRAIN    EMWS1.Part_TRAIN        14448
+TEST     EMWS1.Part_TEST          6192
+
+
+*------------------------------------------------------------*
+* Salida de puntuación
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Salida del informe
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Estadísticos descriptivos para las variables objetivo intervalo
+ 
+Datos=DATA
+ 
+                                                         Número de                 Desviación
+     Variable         Máximo      Media      Mínimo    observaciones    Ausente     estándar     Etiqueta
+ 
+Median_House_value    500001    206855.82     14999        20640           0        115395.62
+ 
+ 
+Datos=TEST
+ 
+                                                         Número de                 Desviación
+     Variable         Máximo      Media      Mínimo    observaciones    Ausente     estándar     Etiqueta
+ 
+Median_House_value    500001    206448.12     14999         6192           0        114434.82
+ 
+ 
+Datos=TRAIN
+ 
+                                                         Número de                 Desviación
+     Variable         Máximo      Media      Mínimo    observaciones    Ausente     estándar     Etiqueta
+ 
+Median_House_value    500001    207030.54     17500        14448           0        115808.45

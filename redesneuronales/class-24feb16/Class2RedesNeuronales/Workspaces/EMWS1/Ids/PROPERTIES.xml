@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  DataSource="superficies" Scope="LOCAL" Role="RAW" Library="REDES" Table="SUPERFICIES"
+ NCols="17" NObs="441" NBytes="74752" Segment="" DataSourceRole="RAW" OutputType="VIEW"
+ ForceRun="N" ComputeStatistics="N" DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC"
+ ApplyIntervalLevelLowerLimit="Y" IntervalLowerLimit="20" ApplyMaxPercentMissing="Y"
+ MaxPercentMissing="50" ApplyMaxClassLevels="Y" MaxClassLevels="20" IdentifyEmptyColumns="Y"
+ VariableValidation="STRICT" NewVariableRole="REJECT" DropMapVariables="Y" DsId="superficies"
+ DsSampleName="" DsSampleSizeType="" DsSampleSize="" DsCreatedBy="win" DsCreateDate="1771959297.4"
+ DsModifiedBy="win" DsModifyDate="1771959297.4" DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT"
+ SampleSizePercent="20" SampleSizeObs="10000" DBPassThrough="Y" RunAction="Train"
+ Component="DataSource" RawCreateTime="1771959303.3" CreateTime="24FEB2016:18:55:03"
+ Description="" Data="REDES.SUPERFICIES" CMeta="WORK.M3C3GLPD" RunId="0620fd0e-6361-4b06-bc44-6336045e9555"
+>
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

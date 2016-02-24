@@ -1,0 +1,23 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+
+INPUT     INTERVAL         8     
+TARGET    INTERVAL         1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de partición
+
+             Conjunto          Número de
+Tipo         de datos        observaciones
+
+DATA     EMWS1.Ids2_DATA         20640    
+TRAIN    EMWS1.Part_TRAIN        14448    
+TEST     EMWS1.Part_TEST          6192    

@@ -1,0 +1,27 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+
+INPUT     INTERVAL         8     
+TARGET    INTERVAL         1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+Variables de intervalo
+
+Obs    NAME                      NMISS            N          MIN           MAX          MEAN          STD    SKEWNESS    KURTOSIS
+
+ 1     Median_House_value            0        20640     14999.00     500001.00     206855.82    115395.62     0.97776      0.3279
+ 2     households                    0        20640         1.00       6082.00        499.54       382.33     3.41044     22.0580
+ 3     housing_median_age            0        20640         1.00         52.00         28.64        12.59     0.06033     -0.8006
+ 4     latitude                      0        20640        32.54         41.95         35.63         2.14     0.46595     -1.1178
+ 5     longitude                     0        20640      -124.35       -114.31       -119.57         2.00    -0.29780     -1.3302
+ 6     median_income                 0        20640         0.50         15.00          3.87         1.90     1.64666      4.9525
+ 7     population                    0        20640         3.00      35682.00       1425.48      1132.46     4.93586     73.5531
+ 8     total_bedrooms                0        20640         1.00       6445.00        537.90       421.25     3.45307     21.9235
+ 9     total_rooms                   0        20640         2.00      39320.00       2635.76      2181.62     4.14734     32.6309

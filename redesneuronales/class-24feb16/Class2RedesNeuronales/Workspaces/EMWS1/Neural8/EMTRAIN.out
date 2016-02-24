@@ -1,0 +1,381 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+
+INPUT     INTERVAL         8     
+TARGET    INTERVAL         1     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variables predichas y de decisión
+
+Tipo               Variable                    Etiqueta
+
+TARGET       Median_House_value                                   
+PREDICTED    P_Median_House_value    Predicted: Median_House_value
+RESIDUAL     R_Median_House_value    Residual: Median_House_value 
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1               12345     5561005145.25           10                
+        2          1962974514    6738935923.776           10                
+        3          1452355784    5399879602.164           10                
+        4           604901746    4712681330.091           10                
+        5          1161293754    3988404238.133           10                
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+                   Inicio de optimización
+                    Parameter Estimates
+                                                   Gradient
+                                                  Objective
+  N Parameter                     Estimador        Function
+
+  1 households_H101               -0.681834       -47270067
+  2 housing_median_age_H101       -0.669033       -29117567
+  3 latitude_H101                  1.098478       -25392076
+  4 longitude_H101                 0.349926       -27065411
+  5 median_income_H101            -0.584606       103956323
+  6 population_H101               -0.118971       -72779381
+  7 total_bedrooms_H101           -0.512556       -47429621
+  8 total_rooms_H101               0.225930       -58139240
+  9 households_H102               -0.320439       161307966
+ 10 housing_median_age_H102       -0.411109      -108653916
+ 11 latitude_H102                  0.947572      -499690239
+ 12 longitude_H102                 1.180427       500245921
+ 13 median_income_H102            -1.094762      -120536045
+ 14 population_H102                1.590254        64000310
+ 15 total_bedrooms_H102           -0.471231       162317930
+ 16 total_rooms_H102              -0.546169       117741955
+ 17 households_H103               -0.363835       -53203166
+ 18 housing_median_age_H103        0.142899         5180329
+ 19 latitude_H103                  0.325109       153639919
+ 20 longitude_H103                -0.050052       -77488353
+ 21 median_income_H103             0.525851      -202383837
+ 22 population_H103               -0.130195       -40599768
+ 23 total_bedrooms_H103           -0.071159       -44882322
+ 24 total_rooms_H103              -0.208073       -62703861
+ 25 households_H104                0.332322        27797863
+ 26 housing_median_age_H104        0.139302       -30243775
+ 27 latitude_H104                  0.049930        49990476
+ 28 longitude_H104                 0.188023       -30502192
+ 29 median_income_H104             0.666887       -69775508
+ 30 population_H104               -0.149349        21091661
+ 31 total_bedrooms_H104            0.111769        32926603
+ 32 total_rooms_H104               0.390651        15980718
+ 33 households_H105               -0.227751        63226886
+ 34 housing_median_age_H105        0.396510       -23835888
+ 35 latitude_H105                  0.285499      -124252062
+ 36 longitude_H105                 0.829589        27851356
+ 37 median_income_H105             0.053249       310885606
+ 38 population_H105                0.340630        -4950800
+ 39 total_bedrooms_H105           -0.199631        78980234
+ 40 total_rooms_H105               0.747868        91240488
+ 41 households_H106                0.539840       -94436187
+ 42 housing_median_age_H106       -0.109061        69599777
+ 43 latitude_H106                 -0.712810       257575865
+ 44 longitude_H106                -0.393392       -97840735
+ 45 median_income_H106             0.054964      -448526066
+ 46 population_H106               -0.515645       -47943128
+ 47 total_bedrooms_H106            0.730911      -117483391
+ 48 total_rooms_H106              -0.241490      -134582230
+ 49 households_H107               -0.059495       -26147259
+ 50 housing_median_age_H107       -0.425956          666309
+ 51 latitude_H107                 -0.163917        74931255
+ 52 longitude_H107                 0.284459       -55177131
+ 53 median_income_H107             0.297166       -61753271
+ 54 population_H107                0.261216       -26480067
+ 55 total_bedrooms_H107           -0.322621       -21948399
+ 56 total_rooms_H107              -0.307555       -30676865
+ 57 households_H108               -0.291293         4903502
+ 58 housing_median_age_H108        0.270728        -1571902
+ 59 latitude_H108                  0.127460       -14740883
+ 60 longitude_H108                -0.325459         9325672
+ 61 median_income_H108            -0.170161         9619605
+ 62 population_H108                0.444567         8852922
+ 63 total_bedrooms_H108            0.002725         4780930
+ 64 total_rooms_H108              -0.288998         3144187
+ 65 households_H109                0.154905        -1228843
+ 66 housing_median_age_H109        0.264446        -2816053
+ 67 latitude_H109                  0.169379         2835775
+ 68 longitude_H109                -0.113354         5947744
+ 69 median_income_H109             0.430305       -18390996
+ 70 population_H109               -0.352720        -5920617
+ 71 total_bedrooms_H109           -0.095777     4941.003571
+ 72 total_rooms_H109               0.259469        -2738548
+ 73 households_H110                0.194668       -76255358
+ 74 housing_median_age_H110       -0.161392         -307045
+ 75 latitude_H110                 -0.299000       150223377
+ 76 longitude_H110                -0.102810       -95417333
+ 77 median_income_H110             0.228844      -159393987
+ 78 population_H110                0.134830       -76206581
+ 79 total_bedrooms_H110           -0.291038       -67101027
+ 80 total_rooms_H110              -0.237492       -94806110
+ 81 BIAS_H101                      0.677194       -74846433
+ 82 BIAS_H102                      1.209166       -73758208
+ 83 BIAS_H103                      0.824719        95737039
+ 84 BIAS_H104                     -1.403253       -11906506
+ 85 BIAS_H105                     -0.664303      -141536742
+ 86 BIAS_H106                      0.375017       340504539
+ 87 BIAS_H107                      1.022711        48136599
+ 88 BIAS_H108                     -1.887834       -11176240
+ 89 BIAS_H109                      1.884987        13128340
+ 90 BIAS_H110                      0.721728       111609528
+ 91 H101_Median_House_value          -53377     8909.539556
+ 92 H102_Median_House_value          -95660     6385.239932
+ 93 H103_Median_House_value           37183     3558.469394
+ 94 H104_Median_House_value           27761    -7939.074019
+ 95 H105_Median_House_value          -55646    -5433.292198
+ 96 H106_Median_House_value           52986    -3689.203870
+ 97 H107_Median_House_value           10756     1422.585335
+ 98 H108_Median_House_value    -6799.564863    -4385.113947
+ 99 H109_Median_House_value           10512     4566.664878
+100 H110_Median_House_value           20517      609.331330
+101 BIAS_Median_House_value          207031     5128.228827
+
+Valor de la función objetivo = 3988404238.1
+
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+Optimización Dual Quasi-Newton
+
+
+Iteraciones mímimas                                      0
+Iteraciones máximas                                     50
+Invocaciones máximas de la función              2147483647
+Tiempo CPU máximo                                    14400
+Criterio gradiente ABSGCONV                        0.00001
+Criterio gradiente GCONV                              1E-8
+Criterio de la función ABSFCONV                          0
+Criterio de la función FCONV                        0.0001
+Criterio de la función FCONV2                            0
+Parámetro FSIZE                                          0
+Criterio de cambio de parámetro ABSXCONV                 0
+Criterio de cambio de parámetro XCONV                    0
+Parámetro XSIZE                                          0
+Criterio de función ABSCONV                   13411596.846
+Método de búsqueda lineal                                2
+Alpha inicial para búsqueda de línea                     1
+Precisión de búsqueda de línea LSPRECISION             0.4
+Parámetro DAMPSTEP para búsqueda de línea                .
+Tolerancia de singularidad (SINGULAR)                 1E-8
+
+Optimización Dual Quasi-Newton
+
+Actualización Dual Broyden - Fletcher - Goldfarb - Shanno (DBFGS)
+
+Estimaciones de parámetro             101
+
+                                           Inicio de optimización
+
+Restricciones activas                               0  Función objetivo                         3988404238.1
+Elemento gradiente absoluto máx          500245921.21                                                       
+
+
+                                                                 Objective     Max Abs                Slope of
+                     Function         Active        Objective     Function    Gradient       Step       Search
+Iter     Restarts       Calls    Constraints         Function       Change     Element       Size    Direction
+
+   1            0          21              0       3930706912     57697326    3.7322E8    1.07E-8      -144E14
+   2            0          30              0       3891106399     39600513    2.7499E8    0.00001      -5386E9
+   3            0          38              0       3842155863     48950535    2.3664E8    0.00002      -3546E9
+   4            0          47              0       3801682382     40473481     2.124E8    7.09E-6      -8559E9
+   5            0          56              0       3775586425     26095957    1.8223E8    9.35E-6      -5352E9
+   6            0          63              0       3760323710     15262715    2.0202E8    0.00003      -1109E9
+   7            0          71              0       3733407925     26915785     1.357E8    0.00003      -173E10
+   8            0          77              0       3707668664     25739260    1.4239E8    0.00009       -494E9
+   9            0          84              0       3685337734     22330931    1.3508E8    0.00006       -662E9
+  10            0          90              0       3671857175     13480559    2.3134E8    0.00011       -337E9
+  11            0          97              0       3661824807     10032367    2.6227E8    0.00004       -445E9
+  12            0         103              0       3642192794     19632013    2.7477E8    0.00021       -184E9
+  13            0         109              0       3633964664      8228130    3.1017E8    0.00018       -333E9
+  14            0         115              0       3619876119     14088545    2.2467E8    0.00016       -189E9
+  15            0         120              0       3605743717     14132402     1.899E8    0.00029       -107E9
+  16            0         126              0       3601133871      4609846    2.0019E8    0.00009       -969E8
+  17            0         131              0       3595452331      5681540    1.7384E8    0.00022       -548E8
+  18            0         136              0       3591494947      3957384    1.9897E8    0.00022       -337E8
+  19            0         141              0       3583953012      7541934     2.463E8    0.00031       -458E8
+  20            0         146              0       3579496981      4456031    1.9241E8    0.00021       -442E8
+  21            0         151              0       3570984432      8512549    1.7423E8    0.00030       -517E8
+  22            0         156              0       3563681067      7303364    1.2589E8    0.00031       -531E8
+  23            0         161              0       3547143686     16537381    1.1756E8    0.00038        -62E9
+  24            0         166              0       3531435575     15708111    1.3231E8    0.00022       -114E9
+  25            0         171              0       3521915453      9520123    1.3402E8    0.00025       -594E8
+  26            0         176              0       3511365127     10550326    1.6276E8    0.00019       -125E9
+  27            0         181              0       3505072941      6292187    1.7866E8    0.00019       -541E8
+  28            0         186              0       3501171315      3901625    1.5327E8    0.00034       -231E8
+  29            0         191              0       3497383341      3787974    1.5692E8    0.00041       -194E8
+  30            0         196              0       3493890073      3493267    1.6145E8    0.00053       -131E8
+  31            0         201              0       3491412932      2477141    1.7228E8    0.00037       -129E8
+  32            0         206              0       3488505160      2907772    1.7051E8    0.00037       -142E8
+  33            0         211              0       3484960807      3544353    1.8227E8    0.00034       -186E8
+  34            0         216              0       3480626815      4333992    2.0565E8    0.00048       -157E8
+  35            0         221              0       3477510343      3116473    2.2426E8    0.00043       -137E8
+  36            0         225              0       3473229404      4280939    2.1235E8    0.00137      -5.59E9
+  37            0         229              0       3471814910      1414494     2.507E8    0.00100      -7.63E9
+  38            0         233              0       3468465292      3349619    2.5646E8    0.00176      -3.78E9
+  39            0         237              0       3463794350      4670942    2.8966E8    0.00100      -7.99E9
+  40            0         241              0       3461235401      2558949    2.9585E8    0.00100      -8.37E9
+  41            0         245              0       3458832842      2402559    2.7792E8    0.00104      -4.11E9
+  42            0         249              0       3455568215      3264627    2.8741E8    0.00182      -3.14E9
+  43            0         253              0       3453922350      1645865    2.9812E8    0.00100      -3.08E9
+  44            0         257              0       3452826494      1095856    2.8196E8    0.00100      -2.05E9
+  45            0         261              0       3451102711      1723783     2.935E8    0.00257      -1.38E9
+  46            0         265              0       3449146943      1955768    2.8407E8    0.00144      -2.84E9
+  47            0         269              0       3447287773      1859170    2.8929E8    0.00192      -1.77E9
+  48            0         273              0       3446375250       912522    2.8658E8    0.00159      -1.07E9
+  49            0         277              0       3444446006      1929244    2.8977E8    0.00140      -2.03E9
+  50            0         284              0       3439708927      4737079    2.9236E8    0.00150      -4.06E9
+
+                                         Resultados de optimización
+
+Iteraciones                                        50  Invocaciones de función                           286
+Invocaciones del gradiente                         53  Restricciones activas                               0
+Función objetivo                         3439708926.8  Elemento gradiente absoluto máx             292360619
+Coeficiente angular de la dirección de    -4055048457                                                       
+búsqueda                                                                                                    
+
+QUANEW necesita más de 50 iteraciones o 2147483647 invocaciones de función.                       
+
+WARNING: QUANEW No se puede completar la optimización.
+
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+                 Resultados de optimización
+                    Parameter Estimates
+                                                   Gradient
+                                                  Objective
+  N Parameter                     Estimador        Function
+
+  1 households_H101                2.710961        94158678
+  2 housing_median_age_H101       -0.148072       -24952474
+  3 latitude_H101                  4.437574      -129740796
+  4 longitude_H101                 3.515451       104104770
+  5 median_income_H101             0.041175       104894491
+  6 population_H101               -1.060526        63273323
+  7 total_bedrooms_H101           -1.755228        65372548
+  8 total_rooms_H101              -0.009890        56871668
+  9 households_H102               -1.391197        15763137
+ 10 housing_median_age_H102       -0.648005        51735687
+ 11 latitude_H102                 -0.069727      -214670681
+ 12 longitude_H102                 0.002418       159987265
+ 13 median_income_H102            -1.153794        50043260
+ 14 population_H102                2.365884       -47329479
+ 15 total_bedrooms_H102           -0.625974        -9847539
+ 16 total_rooms_H102              -0.135771       -24713966
+ 17 households_H103                2.875964       -71106793
+ 18 housing_median_age_H103        0.728839        13871156
+ 19 latitude_H103                  2.210316        33899034
+ 20 longitude_H103                 2.048781       -19072043
+ 21 median_income_H103             1.037395        35843131
+ 22 population_H103                0.608264       -77012757
+ 23 total_bedrooms_H103           -3.309445       -66154201
+ 24 total_rooms_H103              -0.532604       -35981044
+ 25 households_H104               -1.460961         -548224
+ 26 housing_median_age_H104       -1.287841         4656699
+ 27 latitude_H104                  0.141315        17742313
+ 28 longitude_H104                -0.234091       -16962068
+ 29 median_income_H104            -0.587043        -7126698
+ 30 population_H104               -0.087073        -5759755
+ 31 total_bedrooms_H104           -4.225733         6423314
+ 32 total_rooms_H104               5.471756         1332135
+ 33 households_H105               -1.634772       100998812
+ 34 housing_median_age_H105        0.132284        22045172
+ 35 latitude_H105                 -0.735187      -205716936
+ 36 longitude_H105                -0.472651       181875457
+ 37 median_income_H105            -0.454409        10599854
+ 38 population_H105                0.616228       118664522
+ 39 total_bedrooms_H105            0.495402        89032670
+ 40 total_rooms_H105               0.629481        65934785
+ 41 households_H106               -4.028997       -23724844
+ 42 housing_median_age_H106       -0.349232       -53196009
+ 43 latitude_H106                 -3.170374       125710039
+ 44 longitude_H106                -3.012797      -106730542
+ 45 median_income_H106             0.308205       -68294767
+ 46 population_H106               -2.330360        -9991399
+ 47 total_bedrooms_H106            6.091266        -3874444
+ 48 total_rooms_H106               0.804340         1511056
+ 49 households_H107                0.952562       -15645699
+ 50 housing_median_age_H107       -0.362151         4171052
+ 51 latitude_H107                 -1.577947         1343083
+ 52 longitude_H107                -1.115379          694259
+ 53 median_income_H107             0.754310        -4116345
+ 54 population_H107                0.913745       -12079369
+ 55 total_bedrooms_H107           -0.964870       -13754873
+ 56 total_rooms_H107              -1.248725       -16946793
+ 57 households_H108               -0.329260         3659861
+ 58 housing_median_age_H108       -1.444828          283120
+ 59 latitude_H108                  0.982244        -6257467
+ 60 longitude_H108                -0.162534         3773054
+ 61 median_income_H108            -1.010018          420257
+ 62 population_H108                0.819268         3837039
+ 63 total_bedrooms_H108            0.050553         2780165
+ 64 total_rooms_H108              -0.630530         1626371
+ 65 households_H109               -0.497590        -5491614
+ 66 housing_median_age_H109        0.249411         5787934
+ 67 latitude_H109                  1.634119         -460017
+ 68 longitude_H109                -2.365577         -278224
+ 69 median_income_H109             0.202200         6801019
+ 70 population_H109                0.672568        -5524415
+ 71 total_bedrooms_H109           -0.979760        -5496154
+ 72 total_rooms_H109               0.672160         -400560
+ 73 households_H110                0.223227        -7244520
+ 74 housing_median_age_H110       -0.808715       -14231118
+ 75 latitude_H110                 -1.398187         3085001
+ 76 longitude_H110                -0.954981         4652889
+ 77 median_income_H110            -0.613394       -19272004
+ 78 population_H110                0.654901        -6429125
+ 79 total_bedrooms_H110           -2.800540        -3370737
+ 80 total_rooms_H110               1.450723         1408156
+ 81 BIAS_H101                     -0.033496       185737661
+ 82 BIAS_H102                      1.649313       212871719
+ 83 BIAS_H103                      1.377318       -99405647
+ 84 BIAS_H104                     -2.620565       -18106220
+ 85 BIAS_H105                     -0.533042       292360619
+ 86 BIAS_H106                     -0.548062      -193123299
+ 87 BIAS_H107                      1.154395       -19262489
+ 88 BIAS_H108                     -4.308421         -952868
+ 89 BIAS_H109                      4.827681        -6085273
+ 90 BIAS_H110                      3.190853        -7525434
+ 91 H101_Median_House_value          -53377     4611.915027
+ 92 H102_Median_House_value          -95660    -4519.653116
+ 93 H103_Median_House_value           37183    -5601.060219
+ 94 H104_Median_House_value           27761     6150.312684
+ 95 H105_Median_House_value          -55646     2668.250326
+ 96 H106_Median_House_value           52986     3706.957223
+ 97 H107_Median_House_value           10756    -7314.800327
+ 98 H108_Median_House_value    -6799.566402     7403.469578
+ 99 H109_Median_House_value           10512    -8641.001741
+100 H110_Median_House_value           20517    -6762.991754
+101 BIAS_Median_House_value          207031    -7130.527053
+
+Valor de la función objetivo = 3439708926.8
+

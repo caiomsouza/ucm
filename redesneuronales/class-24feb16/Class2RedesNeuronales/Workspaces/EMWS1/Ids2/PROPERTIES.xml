@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  DataSource="californiahousing" Scope="LOCAL" Role="RAW" Library="REDES" Table="CALIFORNIAHOUSING"
+ NCols="9" NObs="20640" NBytes="1500160" Segment="" DataSourceRole="RAW" OutputType="VIEW"
+ ForceRun="N" ComputeStatistics="N" DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC"
+ ApplyIntervalLevelLowerLimit="Y" IntervalLowerLimit="20" ApplyMaxPercentMissing="Y"
+ MaxPercentMissing="50" ApplyMaxClassLevels="Y" MaxClassLevels="20" IdentifyEmptyColumns="Y"
+ VariableValidation="STRICT" NewVariableRole="REJECT" DropMapVariables="Y" DsId="californiahousing"
+ DsSampleName="" DsSampleSizeType="" DsSampleSize="" DsCreatedBy="win" DsCreateDate="1771960237.6"
+ DsModifiedBy="win" DsModifyDate="1771960237.7" DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT"
+ SampleSizePercent="20" SampleSizeObs="10000" DBPassThrough="Y" RunAction="Train"
+ Component="DataSource" RawCreateTime="1771960243.4" CreateTime="24FEB2016:19:10:43"
+ Description="" Data="REDES.CALIFORNIAHOUSING" CMeta="WORK.M136TJGP" RunId="ea516c21-35aa-48a0-9653-6cd2268934f1"
+>
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

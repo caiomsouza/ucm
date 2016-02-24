@@ -1,0 +1,196 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+            Nivel de     Número de
+Rol          medida     ocurrencias
+
+INPUT       INTERVAL          2    
+REJECTED    INTERVAL         14    
+TARGET      INTERVAL          1    
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variables predichas y de decisión
+
+Tipo         Variable       Etiqueta
+
+TARGET        hat                      
+PREDICTED     P_hat      Predicted: hat
+RESIDUAL      R_hat      Residual: hat 
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+
+        1               12345    0.370504477728           10                
+        2           389325501    0.147358738292           10                
+        3           463937847    0.150805413679           10                
+        4          1190861051    0.144240385683           10                
+        5           866987325    0.150487208906           10                
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+            Inicio de optimización
+              Parameter Estimates
+                                      Gradient
+                                     Objective
+  N Parameter        Estimador        Function
+
+  1 x1_H11           -1.264144       -0.005358
+  2 x2_H11           -1.230592       -0.002651
+  3 x1_H12           -0.483487        0.022600
+  4 x2_H12            0.000265     0.000054581
+  5 x1_H13           -1.262163       -0.005582
+  6 x2_H13            1.226854        0.002441
+  7 BIAS_H11         -1.529375        0.007480
+  8 BIAS_H12         -0.146895       -0.035544
+  9 BIAS_H13         -1.525132        0.007655
+ 10 H11_hat          -1.736397        0.005076
+ 11 H12_hat           3.252441       -0.003540
+ 12 H13_hat          -1.739258        0.005132
+ 13 BIAS_hat         -1.775390       -0.013572
+
+Valor de la función objetivo = 0.1442403857
+
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+Optimización Levenberg-Marquardt
+
+
+Iteraciones mímimas                                          0
+Iteraciones máximas                                         50
+Invocaciones máximas de la función                  2147483647
+Tiempo CPU máximo                                        14400
+Criterio gradiente ABSGCONV                            0.00001
+Criterio gradiente GCONV                                  1E-8
+Criterio gradiente GCONV2                                    0
+Criterio de la función ABSFCONV                              0
+Criterio de la función FCONV                            0.0001
+Criterio de la función FCONV2                                0
+Parámetro FSIZE                                              0
+Criterio de cambio de parámetro ABSXCONV                     0
+Criterio de cambio de parámetro XCONV                        0
+Parámetro XSIZE                                              0
+Criterio de función ABSCONV                       0.0004621484
+Factor de radio inicial de región de confianza               1
+Tolerancia de singularidad (SINGULAR)                     1E-8
+
+Optimización Levenberg-Marquardt
+
+Ajuste a escala de la actualización de More (1978)
+
+Estimaciones de parámetro              13
+
+                                           Inicio de optimización
+
+Restricciones activas                               0  Función objetivo                         0.1442403857
+Elemento gradiente absoluto máx          0.0355436268  Radio                                               1
+
+
+                                                                                                         Ratio
+                                                                                                       Between
+                                                                                                        Actual
+                                                                 Objective     Max Abs                     and
+                     Function         Active        Objective     Function    Gradient               Predicted
+Iter     Restarts       Calls    Constraints         Function       Change     Element     Lambda       Change
+
+   1            0           3              0          0.14393     0.000314     0.00326     0.0217        1.009
+   2            0           4              0          0.14353     0.000393      0.0240    0.00962        0.949
+   3            0           5              0          0.14309     0.000442      0.1061    0.00402        0.592
+   4            0           6              0          0.14227     0.000817      0.0935    0.00359        0.820
+   5            0           8              0          0.14170     0.000576      0.0249    0.00602        0.992
+   6            0           9              0          0.14126     0.000437      0.1183    0.00263        0.649
+   7            0          10              0          0.14052     0.000741      0.1007    0.00236        0.849
+   8            0          12              0          0.13999     0.000536      0.0347    0.00355        0.990
+   9            0          13              0          0.13957     0.000415      0.1561    0.00155        0.599
+  10            0          14              0          0.13878     0.000788      0.1334    0.00137        0.834
+  11            0          16              0          0.13821     0.000574      0.0419    0.00218        0.997
+  12            0          17              0          0.13777     0.000436      0.1791    0.00095        0.636
+  13            0          18              0          0.13699     0.000777      0.1543    0.00081        0.846
+  14            0          20              0          0.13639     0.000605      0.0655    0.00109        0.987
+  15            0          21              0          0.13598     0.000408      0.2420    0.00044        0.554
+  16            0          22              0          0.13512     0.000858      0.1624    0.00036        0.885
+  17            0          24              0          0.13461     0.000512      0.0555    0.00047        1.001
+  18            0          25              0          0.13427     0.000343      0.0976    0.00017        0.656
+  19            0          26              0          0.13379     0.000474      0.0919    0.00012        0.873
+  20            0          28              0          0.13361     0.000181     0.00395    0.00037        1.019
+  21            0          29              0          0.13350     0.000114      0.0493    0.00018        0.904
+  22            0          31              0          0.13340     0.000101      0.0388    0.00016        0.959
+  23            0          32              0          0.13335     0.000044      0.1929    0.00006        0.294
+  24            0          33              0          0.13320     0.000153      0.1441    0.00004        0.761
+  25            0          35              0          0.13313     0.000076     0.00464    0.00012        1.013
+  26            0          36              0          0.13309     0.000033      0.0501    0.00005        0.846
+  27            0          38              0          0.13306     0.000032      0.0343    0.00005        0.939
+  28            0          39              0          0.13305     8.935E-6      0.1444    0.00002        0.195
+  29            0          40              0          0.13301     0.000046      0.1154    0.00001        0.695
+  30            0          41              0          0.13298     0.000025      0.1114    8.17E-6        0.597
+  31            0          42              0          0.13296     0.000018      0.1050    5.15E-6        0.570
+  32            0          43              0          0.13295     0.000012      0.0995    2.88E-6        0.519
+  33            0          45              0          0.13294     0.000015      0.0295    3.33E-6        0.965
+  34            0          47              0          0.13294     1.986E-6     0.00329    9.66E-6        1.034
+  35            0          48              0          0.13293     1.173E-6      0.0158     3.6E-6        0.833
+  36            0          50              0          0.13293     9.116E-7     0.00508    4.47E-6        1.031
+  37            0          51              0          0.13293     3.693E-7      0.0220    9.44E-7        0.462
+  38            0          52              0          0.13293     6.742E-7      0.0111          0        0.962
+  39            0          53              0          0.13293     1.762E-7    0.000719          0        1.105
+  40            0          54              0          0.13293     1.189E-8    0.000529          0        1.328
+  41            0          55              0          0.13293     2.361E-9    0.000047          0        1.323
+  42            0          56              0          0.13293        4E-10    0.000035          0        1.354
+
+                                         Resultados de optimización
+
+Iteraciones                                        42  Invocaciones de función                            58
+Invocaciones del jacobiano                         44  Restricciones activas                               0
+Función objetivo                         0.1329323875  Elemento gradiente absoluto máx            0.00003462
+Lambda                                              0  Actual Over Pred Change                  1.3537632125
+Radio                                    0.0377386904                                                       
+
+Convergence criterion (GCONV=1E-8) satisfied.                                                     
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+Procedimiento NEURAL
+
+          Resultados de optimización
+              Parameter Estimates
+                                      Gradient
+                                     Objective
+  N Parameter        Estimador        Function
+
+  1 x1_H11           -0.876341     0.000018915
+  2 x2_H11           -0.327872    -0.000013396
+  3 x1_H12           -0.699344    -0.000034620
+  4 x2_H12        -1.458453E-8    -3.331146E-8
+  5 x1_H13           -0.876341     0.000018912
+  6 x2_H13            0.327872     0.000013423
+  7 BIAS_H11         -1.006096    -0.000001521
+  8 BIAS_H12         -0.880281     0.000000995
+  9 BIAS_H13         -1.006096    -0.000001520
+ 10 H11_hat         -11.978357     0.000000298
+ 11 H12_hat          26.668826     0.000000247
+ 12 H13_hat         -11.978355     0.000000297
+ 13 BIAS_hat          1.499031     0.000000141
+
+Valor de la función objetivo = 0.1329323875
+

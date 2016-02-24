@@ -1,0 +1,96 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Estadísticos de ajuste
+
+Objetivo=Median_House_value Etiqueta objetivo=' '
+
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                    Entrenamiento           Prueba
+
+  _DFT_         grados de libertad totales                       14448.00              .  
+  _DFE_         grados de libertad para el error                 14247.00              .  
+  _DFM_         grados de libertad del modelo                      201.00              .  
+  _NW_          número de pesos estimados                          201.00              .  
+  _AIC_         criterio de información de Akaike               315957.18              .  
+  _SBC_         criterio bayesiano de Schwarz                   317480.42              .  
+  _ASE_         error cuadrado de promedio                  3057157997.73    3156460232.38
+  _MAX_         error absoluto máximo                           399641.09        413252.24
+  _DIV_         divisor para ASE                                 14448.00          6192.00
+  _NOBS_        suma de frecuencias                              14448.00          6192.00
+  _RASE_        error cuadrado de promedio de la raíz            55291.57         56182.38
+  _SSE_         suma de errores cuadrados                   4.41698188E13    1.95448018E13
+  _SUMW_        suma de frec temporales de pesos de caso         14448.00          6192.00
+  _FPE_         error de predicción final                   3143420194.34              .  
+  _MSE_         error cuadrático de la media                3100289096.03    3156460232.38
+  _RFPE_        error de predicción final de la raíz             56066.21              .  
+  _RMSE_        error cuadrático de la media de la raíz          55680.24         56182.38
+  _AVERR_       función de error de promedio                3057157997.73    3156460232.38
+  _ERR_         función de error                            4.41698188E13    1.95448018E13
+  _MISC_        tasa de error de clasificación                        .                .  
+  _WRONG_       número de clasificaciones erróneas                    .                .  
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Clasificaciones de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=Median_House_value Etiqueta objetivo=' '
+
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo      predicha
+
+      5             723          465934.26     469232.83
+     10             722          386019.55     386254.25
+     15             723          336538.50     335464.35
+     20             722          303428.02     299996.87
+     25             722          269666.64     274152.96
+     30             723          248656.02     253994.33
+     35             722          233567.18     236516.50
+     40             723          217438.32     220340.91
+     45             722          207163.99     204837.73
+     50             722          191620.78     192109.11
+     55             723          179844.12     180382.21
+     60             722          169150.14     169017.77
+     65             723          157954.36     157956.57
+     70             722          146421.47     147341.20
+     75             722          137432.27     136024.95
+     80             723          123655.46     124040.26
+     85             722          110073.68     111436.65
+     90             723          100023.65      97601.70
+     95             722           85839.06      79539.75
+    100             722           69942.66      51711.55
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Distribución de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=Median_House_value Etiqueta objetivo=' '
+
+                            Media de la
+                              variable         Media      Número de      Puntuación
+  Rango para predicho         objetivo      predicha    observaciones    del modelo
+
+535316.644 -  564536.868     500001.00     550523.85            7         549926.76
+506096.420 -  535316.644     492298.64     516959.71           88         520706.53
+476876.196 -  506096.420     491454.17     489955.31          212         491486.31
+447655.972 -  476876.196     458138.50     461889.41          195         462266.08
+418435.747 -  447655.972     434821.36     432726.63          248         433045.86
+389215.523 -  418435.747     402470.94     402935.29          287         403825.64
+359995.299 -  389215.523     373264.96     373798.61          367         374605.41
+330775.075 -  359995.299     344572.46     344741.99          482         345385.19
+301554.851 -  330775.075     319203.65     314940.21          612         316164.96
+272334.626 -  301554.851     288787.75     286058.17          798         286944.74
+243114.402 -  272334.626     249808.37     257092.69         1124         257724.51
+213894.178 -  243114.402     224417.70     228234.87         1289         228504.29
+184673.954 -  213894.178     199443.42     198362.33         1610         199284.07
+155453.730 -  184673.954     169443.60     169803.82         1883         170063.84
+126233.506 -  155453.730     141024.97     141260.88         1870         140843.62
+97013.281 -  126233.506      112652.21     112015.24         1609         111623.39
+67793.057 -  97013.281        88275.43      83037.71         1103          82403.17
+38572.833 -  67793.057        71369.71      55778.70          525          53182.95
+9352.609 -  38572.833         62072.52      31070.87          131          23962.72
+-19867.615 -  9352.609        54962.50        432.31            8          -5257.50

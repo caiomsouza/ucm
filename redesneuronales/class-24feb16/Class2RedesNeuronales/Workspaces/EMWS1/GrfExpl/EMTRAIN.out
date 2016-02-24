@@ -1,0 +1,15 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Resumen de variables
+
+            Nivel de     Número de
+Rol          medida     ocurrencias
+
+ASSESS      NOMINAL           1    
+INPUT       INTERVAL          2    
+PREDICT     INTERVAL          1    
+REJECTED    INTERVAL         14    
+RESIDUAL    INTERVAL          1    
+TARGET      INTERVAL          1    

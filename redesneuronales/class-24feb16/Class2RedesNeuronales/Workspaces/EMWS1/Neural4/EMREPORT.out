@@ -1,0 +1,96 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Estadísticos de ajuste
+
+Objetivo=hat Etiqueta objetivo=' '
+
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                    Entrenamiento
+
+  _DFT_         grados de libertad totales                       441.00  
+  _DFE_         grados de libertad para el error                 280.00  
+  _DFM_         grados de libertad del modelo                    161.00  
+  _NW_          número de pesos estimados                        161.00  
+  _AIC_         criterio de información de Akaike              -1231.37  
+  _SBC_         criterio bayesiano de Schwarz                   -573.03  
+  _ASE_         error cuadrado de promedio                         0.03  
+  _MAX_         error absoluto máximo                              1.16  
+  _DIV_         divisor para ASE                                 441.00  
+  _NOBS_        suma de frecuencias                              441.00  
+  _RASE_        error cuadrado de promedio de la raíz              0.17  
+  _SSE_         suma de errores cuadrados                         13.02  
+  _SUMW_        suma de frec temporales de pesos de caso         441.00  
+  _FPE_         error de predicción final                          0.06  
+  _MSE_         error cuadrático de la media                       0.05  
+  _RFPE_        error de predicción final de la raíz               0.25  
+  _RMSE_        error cuadrático de la media de la raíz            0.22  
+  _AVERR_       función de error de promedio                       0.03  
+  _ERR_         función de error                                  13.02  
+  _MISC_        tasa de error de clasificación                      .    
+  _WRONG_       número de clasificaciones erróneas                  .    
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Clasificaciones de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=hat Etiqueta objetivo=' '
+
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo     predicha
+
+      5              23            0.72925      1.06273
+     10              22            0.96240      0.86673
+     15              22            0.87738      0.68494
+     20              22            0.60918      0.48684
+     25              22            0.46450      0.31342
+     30              22            0.15182      0.11732
+     35              22            0.05370     -0.01170
+     40              22           -0.24438     -0.19959
+     45              22           -0.25562     -0.28835
+     50              22           -0.50875     -0.44637
+     55              22           -0.55505     -0.53752
+     60              22           -0.67911     -0.60518
+     65              22           -0.77069     -0.70245
+     70              22           -0.78333     -0.76268
+     75              22           -0.90479     -0.81772
+     80              22           -0.93826     -0.85967
+     85              22           -0.96125     -0.88811
+     90              22           -0.94454     -0.92449
+     95              22           -0.95296     -0.98047
+    100              22           -0.92767     -1.18714
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Distribución de puntuación de evaluación
+
+Rol de los datos=TRAIN Variable objetivo=hat Etiqueta objetivo=' '
+
+                    Media de la
+   Rango para         variable       Media       Número de      Puntuación
+    predicho          objetivo     predicha    observaciones    del modelo
+
+1.034 -  1.157         0.64537      1.09450          15           1.09518 
+0.910 -  1.034         0.93286      0.97106          14           0.97183 
+0.787 -  0.910         0.97001      0.86836          12           0.84848 
+0.663 -  0.787         0.89832      0.73153          19           0.72513 
+0.540 -  0.663         0.82247      0.58961          10           0.60178 
+0.417 -  0.540         0.57654      0.48135          18           0.47843 
+0.293 -  0.417         0.50792      0.34178          17           0.35508 
+0.170 -  0.293         0.25139      0.21899          11           0.23173 
+0.047 -  0.170         0.17032      0.09502          18           0.10838 
+-0.077 -  0.047        0.06551     -0.00478          19          -0.01498 
+-0.200 -  -0.077      -0.28234     -0.15733          12          -0.13833 
+-0.323 -  -0.200      -0.23730     -0.26209          32          -0.26168 
+-0.447 -  -0.323      -0.39007     -0.38957          11          -0.38503 
+-0.570 -  -0.447      -0.55722     -0.51549          35          -0.50838 
+-0.693 -  -0.570      -0.69844     -0.62396          30          -0.63173 
+-0.817 -  -0.693      -0.80818     -0.75532          44          -0.75508 
+-0.940 -  -0.817      -0.93598     -0.87614          76          -0.87843 
+-1.063 -  -0.940      -0.95848     -0.97530          26          -1.00178 
+-1.187 -  -1.063      -0.91219     -1.11440          10          -1.12513 
+-1.310 -  -1.187      -0.94058     -1.24775          12          -1.24848 

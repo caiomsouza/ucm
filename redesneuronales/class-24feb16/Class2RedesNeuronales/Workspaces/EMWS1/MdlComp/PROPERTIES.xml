@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  NumberOfReportedLevels="1E-6" NormalizeReportingVariables="Y" DecileBin="20" LiftEpsilon="1E-6"
+ ProfitEpsilon="1E-6" RoiEpsilon="1E-6" ScoreDistBin="20" RocChart="Y" RocEpsilon="0.01"
+ AssessAllTargetLevels="N" SelectionData="DEFAULT" HPCriteria="DEFAULT" SelectionTable="TRAIN"
+ SelectionCriteria="DEFAULT" SelectionDepth="10" NumberofBins="20" RecomputeAssess="N"
+ TargetName="Median_House_value" ModelId="Neural9" ModelDescription="Red neuronal 40"
+ ModelCriteria="Entrenar: error cuadrado de promedio" ForceRun="N" RunAction="Train"
+ Component="ModelCompare" RawCreateTime="1771960398.8" CreateTime="24FEB2016:19:13:19"
+ RunId="527c61d2-6b6c-44bd-a06d-f12f46eef4e9" StatisticUsed="_ASE_" TargetLabel=""
+>
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

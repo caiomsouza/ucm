@@ -1,0 +1,140 @@
+*------------------------------------------------------------*
+Usuario:                win
+Fecha:                24/02/16
+Hora:                19H07
+*------------------------------------------------------------*
+* Salida de entrenamiento
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Resumen de variables
+ 
+            Nivel de     Número de
+Rol          medida     ocurrencias
+ 
+INPUT       INTERVAL          2
+REJECTED    INTERVAL         14
+TARGET      INTERVAL          1
+ 
+ 
+ 
+ 
+Variables predichas y de decisión
+ 
+Tipo         Variable       Etiqueta
+ 
+TARGET        hat
+PREDICTED     P_hat      Predicted: hat
+RESIDUAL      R_hat      Residual: hat
+ 
+ 
+ 
+ 
+ 
+Procedimiento DMREG
+ 
+                   Model Information
+ 
+Conjunto de datos de entrenamiento    WORK.EM_DMREG.VIEW
+Catálogo DMDB                         WORK.REG_DMDB
+Variable objetivo                     hat
+Nivel de medida del objetivo          Interval
+Error                                 Normal
+Función de vínculo                    Identity
+Número de parámetros modelo           3
+Número de observaciones               441
+ 
+ 
+                             Analysis of Variance
+ 
+                                  Suma de     Cuadrado de
+Fuente                 DF       cuadrados        la media    F-Valor    Pr > F
+ 
+Model                   2               0               0       0.00    1.0000
+Error                 438      203.345289        0.464259
+Corrected Total       440      203.345289
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.0000     Adj R-Sq       -0.0046
+AIC          -335.3955     BIC          -333.3545
+SBC          -323.1283     C(p)            3.0000
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    Valor t    Pr > |t|
+ 
+Intercept     1     -0.2766      0.0324      -8.53      <.0001
+x1            1     -22E-20      0.0107      -0.00      1.0000
+x2            1    3.08E-18      0.0107       0.00      1.0000
+
+
+*------------------------------------------------------------*
+* Salida de puntuación
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Salida del informe
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Estadísticos de ajuste
+ 
+Objetivo=hat Etiqueta objetivo=' '
+ 
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                     Entrenamiento
+ 
+  _AIC_         criterio de información de Akaike               -335.395
+  _ASE_         error cuadrado del promedio                        0.461
+  _AVERR_       función de error de promedio                       0.461
+  _DFE_         grados de libertad para el error                 438.000
+  _DFM_         grados de libertad del modelo                      3.000
+  _DFT_         grados de libertad totales                       441.000
+  _DIV_         divisor para ASE                                 441.000
+  _ERR_         función de error                                 203.345
+  _FPE_         error de predicción final                          0.467
+  _MAX_         error absoluto máximo                              1.277
+  _MSE_         error cuadrático de la media                       0.464
+  _NOBS_        suma de frecuencias                              441.000
+  _NW_          número de pesos de los estimadores                 3.000
+  _RASE_        suma del promedio de la raíz de cuadrados          0.679
+  _RFPE_        error de predicción final de la raíz               0.684
+  _RMSE_        error cuadrático de la media de la raíz            0.681
+  _SBC_         criterio bayesiano de Schwarz                   -323.128
+  _SSE_         suma de errores cuadrados                        203.345
+  _SUMW_        suma de frec temporales de pesos de caso         441.000
+ 
+ 
+ 
+ 
+Clasificaciones de puntuación de evaluación
+ 
+Rol de los datos=TRAIN Variable objetivo=hat Etiqueta objetivo=' '
+ 
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo     predicha
+ 
+     5              441           -0.27662     -0.27662
+ 
+ 
+ 
+ 
+Distribución de puntuación de evaluación
+ 
+Rol de los datos=TRAIN Variable objetivo=hat Etiqueta objetivo=' '
+ 
+                    Media de la
+   Rango para         variable       Media       Número de      Puntuación
+    predicho          objetivo     predicha    observaciones    del modelo
+ 
+-0.277 -  -0.277      -0.27662     -0.27662         441          -0.27662

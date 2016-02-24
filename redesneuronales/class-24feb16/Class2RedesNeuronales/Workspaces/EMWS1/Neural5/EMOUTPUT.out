@@ -1,0 +1,333 @@
+*------------------------------------------------------------*
+Usuario:                win
+Fecha:                24/02/16
+Hora:                19H25
+*------------------------------------------------------------*
+* Salida de entrenamiento
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Resumen de variables
+ 
+          Nivel de     Número de
+ Rol       medida     ocurrencias
+ 
+INPUT     INTERVAL         8
+TARGET    INTERVAL         1
+ 
+ 
+ 
+ 
+Variables predichas y de decisión
+ 
+Tipo               Variable                    Etiqueta
+ 
+TARGET       Median_House_value
+PREDICTED    P_Median_House_value    Predicted: Median_House_value
+RESIDUAL     R_Median_House_value    Residual: Median_House_value
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+ 
+        1               12345    5944903477.916           10
+        2          1190861051    3854423886.903           10
+        3           998823970    3886186830.145           10
+        4          1425928522    3977042110.819           10
+        5           679865644    3825999158.922           10
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+                   Inicio de optimización
+                    Parameter Estimates
+                                                   Gradient
+                                                  Objective
+  N Parameter                     Estimador        Function
+ 
+  1 households_H11                -0.246494         5442921
+  2 housing_median_age_H11         0.796063         7368984
+  3 latitude_H11                   3.132876          108124
+  4 longitude_H11                  2.761571         3952079
+  5 median_income_H11             -3.010963       -19711973
+  6 population_H11                10.665264         2447389
+  7 total_bedrooms_H11           -17.361457         6083485
+  8 total_rooms_H11                8.021986         2746939
+  9 households_H12                -0.942092          834235
+ 10 housing_median_age_H12        -0.400810       -13251058
+ 11 latitude_H12                  -7.458683        21527313
+ 12 longitude_H12                 -6.921296       -22170103
+ 13 median_income_H12              4.157059         9781308
+ 14 population_H12                 2.838110        11727731
+ 15 total_bedrooms_H12             1.300584          284211
+ 16 total_rooms_H12               -3.777281         6164002
+ 17 households_H13                 0.662945       -46059240
+ 18 housing_median_age_H13         0.260210       -77165007
+ 19 latitude_H13                  -0.978215        -1641846
+ 20 longitude_H13                 -0.880251        23863182
+ 21 median_income_H13              0.635919       -48491735
+ 22 population_H13                -0.791678         3692591
+ 23 total_bedrooms_H13            -0.180705       -40458872
+ 24 total_rooms_H13                0.332764       -45920946
+ 25 BIAS_H11                       1.840853         1097299
+ 26 BIAS_H12                       1.946845       -16614940
+ 27 BIAS_H13                      -0.979624      -163607322
+ 28 H11_Median_House_value           -21199     1304.359835
+ 29 H12_Median_House_value            26820    -2713.236976
+ 30 H13_Median_House_value           156824     -183.011455
+ 31 BIAS_Median_House_value          295038     -804.593830
+ 
+Valor de la función objetivo = 3825999158.9
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+Optimización Levenberg-Marquardt
+ 
+ 
+Iteraciones mímimas                                          0
+Iteraciones máximas                                         50
+Invocaciones máximas de la función                  2147483647
+Tiempo CPU máximo                                        14400
+Criterio gradiente ABSGCONV                            0.00001
+Criterio gradiente GCONV                                  1E-8
+Criterio gradiente GCONV2                                    0
+Criterio de la función ABSFCONV                              0
+Criterio de la función FCONV                            0.0001
+Criterio de la función FCONV2                                0
+Parámetro FSIZE                                              0
+Criterio de cambio de parámetro ABSXCONV                     0
+Criterio de cambio de parámetro XCONV                        0
+Parámetro XSIZE                                              0
+Criterio de función ABSCONV                       13411596.846
+Factor de radio inicial de región de confianza               1
+Tolerancia de singularidad (SINGULAR)                     1E-8
+ 
+Optimización Levenberg-Marquardt
+ 
+Ajuste a escala de la actualización de More (1978)
+ 
+Estimaciones de parámetro              31
+ 
+                                           Inicio de optimización
+ 
+Restricciones activas                               0  Función objetivo                         3825999158.9
+Elemento gradiente absoluto máx          163607321.97  Radio                                    2.5614479E13
+ 
+ 
+                                                                                                         Ratio
+                                                                                                       Between
+                                                                                                        Actual
+                                                                 Objective     Max Abs                     and
+                     Function         Active        Objective     Function    Gradient               Predicted
+Iter     Restarts       Calls    Constraints         Function       Change     Element     Lambda       Change
+ 
+   1            0           3              0       3795504631     30494528    60822018    0.00931        1.375
+   2            0           4              0       3771243957     24260675    1.2417E8    0.00273        1.220
+   3            0           5              0       3764472967      6770990    61259881          0        0.593
+   4            0           6              0       3755102406      9370561    23206611          0        0.692
+   5            0           7              0       3750261506      4840900    74463086          0        0.561
+   6            0           8              0       3743920387      6341119    50991491          0        0.645
+   7            0           9              0       3739769006      4151382    41184085          0        0.604
+   8            0          10              0       3735620192      4148813    25712137          0        0.634
+   9            0          11              0       3732321369      3298824    33406718          0        0.626
+  10            0          12              0       3728243805      4077563    24166415          0        0.769
+  11            0          13              0       3724115651      4128154    26887783          0        0.908
+  12            0          14              0       3719080092      5035559    27447029          0        1.126
+  13            0          15              0       3714236676      4843416    21130420          0        1.274
+  14            0          16              0       3709748082      4488594    23294187          0        1.391
+  15            0          17              0       3706328356      3419725    14456637          0        1.440
+  16            0          18              0       3704225259      2103097    13731963          0        1.407
+  17            0          19              0       3703152456      1072803     7521567          0        1.418
+  18            0          20              0       3702611182       541274     6489003          0        1.440
+  19            0          21              0       3702329001       282182     4991273          0        1.495
+  20            0          22              0       3702169472       159529     3428807          0        1.558
+  21            0          23              0       3702073699      95773.3     3124604          0        1.627
+  22            0          24              0       3702011365      62334.1     2103857          0        1.698
+  23            0          25              0       3701968078      43287.0     2037077          0        1.760
+  24            0          26              0       3701935760      32317.8     1680649          0        1.819
+  25            0          27              0       3701910088      25672.3     1592721          0        1.866
+  26            0          28              0       3701888337      21750.4     1642981          0        1.910
+  27            0          29              0       3701868803      19534.2     1600176          0        1.946
+  28            0          30              0       3701850174      18629.5     1717197          0        1.982
+ 
+                                         Resultados de optimización
+ 
+Iteraciones                                        28  Invocaciones de función                            32
+Invocaciones del jacobiano                         30  Restricciones activas                               0
+Función objetivo                         3701850173.7  Elemento gradiente absoluto máx          1717196.5844
+Lambda                                              0  Actual Over Pred Change                  1.9822981411
+Radio                                    1610.7265116
+ 
+Convergence criterion (FCONV=0.0001) satisfied.
+ 
+NOTE: At least one element of the gradient is greater than 1e-3.
+ 
+ 
+ 
+ 
+ 
+ 
+Procedimiento NEURAL
+ 
+                 Resultados de optimización
+                    Parameter Estimates
+                                                   Gradient
+                                                  Objective
+  N Parameter                     Estimador        Function
+ 
+  1 households_H11                 0.371609         1717197
+  2 housing_median_age_H11         0.509532         -979584
+  3 latitude_H11                  -0.516225           51885
+  4 longitude_H11                 -0.518137         -103203
+  5 median_income_H11              0.284119         -104879
+  6 population_H11                 5.012133         1613880
+  7 total_bedrooms_H11            -5.183363         1635799
+  8 total_rooms_H11                0.119298         1543289
+  9 households_H12                 0.176326         -152652
+ 10 housing_median_age_H12         0.101109         -361710
+ 11 latitude_H12                  -1.678625          336148
+ 12 longitude_H12                 -1.525878         -179075
+ 13 median_income_H12              1.007630          208609
+ 14 population_H12                 0.911162          -93785
+ 15 total_bedrooms_H12            -0.283488         -200162
+ 16 total_rooms_H12               -0.817427          -50521
+ 17 households_H13                 0.489083          591700
+ 18 housing_median_age_H13         0.311198         -371447
+ 19 latitude_H13                  -1.007642          238096
+ 20 longitude_H13                 -0.907430         -215719
+ 21 median_income_H13              0.708464          239392
+ 22 population_H13                -0.725582          930898
+ 23 total_bedrooms_H13            -0.029490          508397
+ 24 total_rooms_H13                0.289368          809202
+ 25 BIAS_H11                       0.337144         1112997
+ 26 BIAS_H12                       0.624363          107609
+ 27 BIAS_H13                      -1.174039           59769
+ 28 H11_Median_House_value           -41465        0.649704
+ 29 H12_Median_House_value            70832        0.113537
+ 30 H13_Median_House_value           162322       -0.211211
+ 31 BIAS_Median_House_value          295270        0.270085
+ 
+Valor de la función objetivo = 3701850173.7
+ 
+
+
+*------------------------------------------------------------*
+* Salida de puntuación
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Salida del informe
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Estadísticos de ajuste
+ 
+Objetivo=Median_House_value Etiqueta objetivo=' '
+ 
+Estadísticos
+ de ajuste      Etiqueta de estadísticos                    Entrenamiento           Prueba
+ 
+  _DFT_         grados de libertad totales                       14448.00              .
+  _DFE_         grados de libertad para el error                 14417.00              .
+  _DFM_         grados de libertad del modelo                       31.00              .
+  _NW_          número de pesos estimados                           31.00              .
+  _AIC_         criterio de información de Akaike               318381.76              .
+  _SBC_         criterio bayesiano de Schwarz                   318616.69              .
+  _ASE_         error cuadrado de promedio                  3701850173.67    3679215878.18
+  _MAX_         error absoluto máximo                           402349.25        384664.16
+  _DIV_         divisor para ASE                                 14448.00          6192.00
+  _NOBS_        suma de frecuencias                              14448.00          6192.00
+  _RASE_        error cuadrado de promedio de la raíz            60842.83         60656.54
+  _SSE_         suma de errores cuadrados                   5.34843313E13    2.27817047E13
+  _SUMW_        suma de frec temporales de pesos de caso         14448.00          6192.00
+  _FPE_         error de predicción final                   3717769901.13              .
+  _MSE_         error cuadrático de la media                3709810037.40    3679215878.18
+  _RFPE_        error de predicción final de la raíz             60973.52              .
+  _RMSE_        error cuadrático de la media de la raíz          60908.21         60656.54
+  _AVERR_       función de error de promedio                3701850173.67    3679215878.18
+  _ERR_         función de error                            5.34843313E13    2.27817047E13
+  _MISC_        tasa de error de clasificación                        .                .
+  _WRONG_       número de clasificaciones erróneas                    .                .
+ 
+ 
+ 
+ 
+Clasificaciones de puntuación de evaluación
+ 
+Rol de los datos=TRAIN Variable objetivo=Median_House_value Etiqueta objetivo=' '
+ 
+                                Media de la
+                 Número de        variable       Media
+Profundidad    observaciones      objetivo      predicha
+ 
+      5             723          461928.29     461015.69
+     10             722          377692.12     376826.83
+     15             723          331855.66     325386.32
+     20             722          295116.80     293291.69
+     25             722          268432.85     269693.11
+     30             723          250603.47     251654.34
+     35             722          233765.95     235624.14
+     40             723          218377.19     221085.85
+     45             722          204696.68     207305.76
+     50             722          190840.31     193704.50
+     55             723          177457.54     181423.98
+     60             722          171375.90     169667.98
+     65             723          159471.78     160241.83
+     70             722          147816.34     150595.86
+     75             722          138965.10     138813.78
+     80             723          121800.00     125362.79
+     85             722          113554.43     113481.48
+     90             723          104655.33     105100.66
+     95             722           94918.98      93599.99
+    100             722           77050.83      66494.58
+ 
+ 
+ 
+ 
+Distribución de puntuación de evaluación
+ 
+Rol de los datos=TRAIN Variable objetivo=Median_House_value Etiqueta objetivo=' '
+ 
+                            Media de la
+                              variable       Media        Número de      Puntuación
+  Rango para predicho         objetivo      predicha    observaciones    del modelo
+ 
+528863.615 -  555267.868     480387.47     545095.01           15         542065.74
+502459.362 -  528863.615     488112.59     515783.12           17         515661.49
+476055.110 -  502459.362     485337.91     486020.08          216         489257.24
+449650.857 -  476055.110     473846.71     463439.53          213         462852.98
+423246.604 -  449650.857     435954.28     435403.20          180         436448.73
+396842.351 -  423246.604     413667.48     409642.15          223         410044.48
+370438.099 -  396842.351     385162.54     383256.56          279         383640.22
+344033.846 -  370438.099     354902.17     356575.49          339         357235.97
+317629.593 -  344033.846     339862.49     329911.77          463         330831.72
+291225.340 -  317629.593     304985.89     304010.86          622         304427.47
+264821.088 -  291225.340     278635.00     277403.19          855         278023.21
+238416.835 -  264821.088     249358.97     251225.14         1155         251618.96
+212012.582 -  238416.835     222047.68     224610.99         1330         225214.71
+185608.329 -  212012.582     195118.16     198182.26         1443         198810.46
+159204.077 -  185608.329     170153.08     171246.40         1773         172406.20
+132799.824 -  159204.077     146009.96     146948.85         1687         146001.95
+106395.571 -  132799.824     116923.09     118103.93         1685         119597.70
+79991.318 -  106395.571       97863.66      96770.29         1329          93193.44
+53587.066 -  79991.318        75739.64      68453.87          497          66789.19
+27182.813 -  53587.066        67097.64      46896.29          127          40384.94
