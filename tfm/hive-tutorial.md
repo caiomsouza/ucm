@@ -68,11 +68,11 @@ beeline -u jdbc:hive2://localhost:10000/tweets -n hive -f t.sql
 
 
 beeline -u jdbc:hive2://localhost:10000/ -n hive 
-  901  ls
-  902  hive
-  903  hadoop fs -ls /user/hive
-  904  beeline -?
-  905  beeline -u jdbc:hive2://localhost:10000/tweets -n hive 
+
+
+beeline -?
+
+beeline -u jdbc:hive2://localhost:10000/tweets -n hive 
   906  hadoop fs -ls /user/hive
   907  beeline -u jdbc:hive2://localhost:10000/tweets -n hive 
   908  beeline -u jdbc:hive2://localhost:10000/tweets -n hive -f t.sql 
@@ -185,5 +185,31 @@ drwxrwxrwx   - hive supergroup          0 2016-04-11 16:41 /user/hive/foodmart.d
 drwxrwxrwx   - hive supergroup          0 2016-04-11 16:41 /user/hive/foodmart.db/warehouse_class
 hive@r2d2:~$
 ```
+
+### Load JSON to Hive
+
+http://hortonworks.com/blog/discovering-hive-schema-in-collections-of-json-documents/<BR>
+http://hortonworks.com/blog/howto-use-hive-to-sqlize-your-own-tweets-part-two-loading-hive-sql-queries/<BR>
+
+Read - Write JSON SerDe for Apache Hive. <BR>
+https://github.com/rcongiu/Hive-JSON-Serde<BR>
+https://gist.github.com/omalley/5125691<BR>
+
+
+
+###Hive JSON Schema Finder
+
+https://github.com/hortonworks/hive-json
+
+```
+./bin/find-json-schema /Users/caiomsouza/git/github.com/TwitterRawData/examples/example-of-twitter-dataset_ok2.js
+```
+
+
+
+Links:
+http://aws.amazon.com/articles/2855
+https://azure.microsoft.com/es-es/documentation/articles/hdinsight-using-json-in-hive/
+
 
 
