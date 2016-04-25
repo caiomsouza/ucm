@@ -69,6 +69,15 @@ Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
 > 
 ```
 
+### Exit Spark
+```
+> quit();
+````
+
+
+
+
+
 
 
 
