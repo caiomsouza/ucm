@@ -1,9 +1,10 @@
-### Run a Scala Test Script
-
+### Basic about Scala
 
 ###Scala by Example
 http://www.scala-lang.org/docu/files/ScalaByExample.pdf
 
+
+### Run a Scala Test Script
 
 ```
 spark-shell -i scala-example.scala
