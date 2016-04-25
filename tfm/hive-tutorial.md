@@ -1,11 +1,8 @@
 ### Run Hive
 
-Links:
-https://cwiki.apache.org/confluence/display/Hive/GettingStarted
-
-
-https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL
-
+Links:<BR>
+https://cwiki.apache.org/confluence/display/Hive/GettingStarted<BR>
+https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL<BR>
 
 
 ```
@@ -66,6 +63,7 @@ Run a .SQL Script in Hive
 beeline -u jdbc:hive2://localhost:10000/tweets -n hive -f t.sql
 ```
 
+```
 
 beeline -u jdbc:hive2://localhost:10000/ -n hive 
 
@@ -104,6 +102,7 @@ hadoop fs -ls /usr/hive
   735  ls
   736  cd sales_fact/
 
+```
 
 ### Hadoop
 
@@ -199,7 +198,7 @@ https://gist.github.com/omalley/5125691<BR>
 
 ###Hive JSON Schema Finder
 
-https://github.com/hortonworks/hive-json
+https://github.com/hortonworks/hive-json<BR>
 
 ```
 ./bin/find-json-schema /Users/caiomsouza/git/github.com/TwitterRawData/examples/example-of-twitter-dataset_ok2.js
@@ -207,9 +206,8 @@ https://github.com/hortonworks/hive-json
 
 
 
-Links:
-http://aws.amazon.com/articles/2855
-https://azure.microsoft.com/es-es/documentation/articles/hdinsight-using-json-in-hive/
-
+Links:<BR>
+http://aws.amazon.com/articles/2855<BR>
+https://azure.microsoft.com/es-es/documentation/articles/hdinsight-using-json-in-hive/<BR>
 
 
