@@ -1,4 +1,9 @@
-# Run a Scala Test Script
+### Run a Scala Test Script
+
+
+###Scala by Example
+http://www.scala-lang.org/docu/files/ScalaByExample.pdf
+
 
 ```
 spark-shell -i scala-example.scala
