@@ -1,5 +1,13 @@
 ### Run Hive
 
+Links:
+https://cwiki.apache.org/confluence/display/Hive/GettingStarted
+
+
+https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL
+
+
+
 ```
 hive
 ```
@@ -45,6 +53,11 @@ Shelley	["New York"]	{"sex":"Female","age":27}	{"Python":80}	{"Test":["Lead"],"C
 Lucy	["Vancouver"]	{"sex":"Female","age":57}	{"Sales":89,"HR":94}	{"Sales":["Lead"]}
 Time taken: 0.157 seconds, Fetched: 4 row(s)
 hive>
+```
+
+Exit
+```
+hive> exit;
 ```
 
 
