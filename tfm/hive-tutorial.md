@@ -25,6 +25,31 @@ hive>
 
 ```
 
+Show databases;
+
+```
+hive> show databases;
+OK
+default
+foodmart
+patata
+tweets
+Time taken: 0.015 seconds, Fetched: 4 row(s)
+```
+
+Use database;
+
+```
+hive> use tweets;
+OK
+Time taken: 0.02 seconds
+hive> show tables;
+OK
+Time taken: 0.024 seconds
+hive> 
+
+```
+
 Show tables
 
 ```
